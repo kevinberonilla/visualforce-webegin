@@ -1,11 +1,10 @@
 <apex:page docType="html-5.0" applyHtmlTag="false" applyBodyTag="false" showHeader="false" sidebar="false">
     <html>
         <head>
-            <meta name="robots" content="noindex, nofollow">
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="robots" content="noindex, nofollow"/>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <title>Page Title | Site Title</title>
-            <apex:stylesheet value="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
             <apex:stylesheet value="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css"/>
             <apex:stylesheet value="http://dev.appiphony.com/visualforce-webegin/icomoon.min.css"/>
             <apex:stylesheet value="http://dev.appiphony.com/visualforce-webegin/proximanovasoft.min.css"/>
@@ -16,7 +15,6 @@
                 Hello, world!
             </div>
             <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"/>
-            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"/>
             <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"/>
             <apex:includeScript value="http://dev.appiphony.com/visualforce-webegin/main.js"/>
         </body>
