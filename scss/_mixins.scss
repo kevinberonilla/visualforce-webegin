@@ -1,0 +1,197 @@
+@mixin animated($property: all, $duration: 250ms, $function: ease) {
+    transition: $property $duration $function;
+    transform: translateZ(0);
+}
+@mixin column-width($width, $affix) {
+    &-#{$affix} {
+        width: $width;
+    }
+}
+@mixin column-margin($margin, $affix) {
+    &-#{$affix} {
+        margin-left: $margin;
+    }
+}
+@mixin column-float-right-margin($margin, $affix) {
+    &-#{$affix} {
+        margin-left: 0;
+        margin-right: $margin;
+    }
+}
+@mixin breakpoint-columns($override, $establish) {
+    .col {
+        @if ($override) {
+            &.no-padding-#{$override} {
+                padding: $col-padding;
+            }
+            &.twelfth-#{$override}, &.twelfth-x11-#{$override}, &.twelfth-x7-#{$override}, &.twelfth-x5-#{$override}, &.eighth-#{$override}, &.eighth-x7-#{$override}, &.eighth-x5-#{$override}, &.eighth-x3-#{$override}, &.sixth-#{$override}, &.sixth-x5-#{$override}, &.fourth-#{$override}, &.fourth-x3-#{$override}, &.third-#{$override}, &.third-x2-#{$override}, &.half-#{$override} {
+                width: 100%;
+            }
+        } @else {
+            &.no-padding {
+                padding: $col-padding;
+            }
+            &.twelfth, &.twelfth-x11, &.twelfth-x7, &.twelfth-x5, &.eighth, &.eighth-x7, &.eighth-x5, &.eighth-x3, &.sixth, &.sixth-x5, &.fourth, &.fourth-x3, &.third, &.third-x2, &.half {
+                width: 100%;
+            }
+        }
+        &.no-padding-#{$establish} {
+            padding: 0;
+        }
+        &.twelfth {
+            @include column-width(8.333%, $establish);
+        }
+        &.twelfth-x5 {
+            @include column-width(41.666%, $establish);
+        }
+        &.twelfth-x7 {
+            @include column-width(58.333%, $establish);
+        }
+        &.twelfth-x11 {
+            @include column-width(91.666%, $establish);
+        }
+        &.eighth {
+            @include column-width(12.5%, $establish);
+        }
+        &.eighth-x3 {
+            @include column-width(37.5%, $establish);
+        }
+        &.eighth-x5 {
+            @include column-width(62.5%, $establish);
+        }
+        &.eighth-x7 {
+            @include column-width(87.5%, $establish);
+        }
+        &.sixth {
+            @include column-width(16.666%, $establish);
+        }
+        &.sixth-x5 {
+            @include column-width(83.333%, $establish);
+        }
+        &.fourth {
+            @include column-width(25%, $establish);
+        }
+        &.fourth-x3 {
+            @include column-width(75%, $establish);
+        }
+        &.third {
+            @include column-width(33.333%, $establish);
+        }
+        &.third-x2 {
+            @include column-width(66.666%, $establish);
+        }
+        &.half {
+            @include column-width(50%, $establish);
+        }
+        @if ($override) {
+            &.margin-twelfth-#{$override}, &.margin-twelfth-x5-#{$override}, &.margin-twelfth-x7-#{$override}, &.margin-twelfth-x11-#{$override}, &.margin-eighth-#{$override}, &.margin-eighth-x3-#{$override}, &.margin-eighth-x5-#{$override}, &.margin-eighth-x7-#{$override}, &.margin-sixth-#{$override}, &.margin-sixth-x5-#{$override}, &.margin-fourth-#{$override}, &.margin-fourth-x3-#{$override}, &.margin-third-#{$override}, &.margin-third-x2-#{$override}, &.margin-half-#{$override} {
+                margin-left: 0;
+            }
+        } @else {
+            &.margin-twelfth, &.margin-twelfth-x5, &.margin-twelfth-x7, &.margin-twelfth-x11, &.margin-eighth, &.margin-eighth-x3, &.margin-eighth-x5, &.margin-eighth-x7, &.margin-sixth, &.margin-sixth-x5, &.margin-fourth, &.margin-fourth-x3, &.margin-third, &.margin-third-x2, &.margin-half {
+                margin-left: 0;
+            }
+        }
+        &.margin-twelfth {
+            @include column-margin(8.333%, $establish);
+        }
+        &.margin-twelfth-x5 {
+            @include column-margin(41.666%, $establish);
+        }
+        &.margin-twelfth-x7 {
+            @include column-margin(58.333%, $establish);
+        }
+        &.margin-twelfth-x11 {
+            @include column-margin(91.666%, $establish);
+        }
+        &.margin-eighth {
+            @include column-margin(12.5%, $establish);
+        }
+        &.margin-eighth-x3 {
+            @include column-margin(37.5%, $establish);
+        }
+        &.margin-eighth-x5 {
+            @include column-margin(62.5%, $establish);
+        }
+        &.margin-eighth-x7 {
+            @include column-margin(87.5%, $establish);
+        }
+        &.margin-sixth {
+            @include column-margin(16.666%, $establish);
+        }
+        &.margin-sixth-x5 {
+            @include column-margin(83.333%, $establish);
+        }
+        &.margin-fourth {
+            @include column-margin(25%, $establish);
+        }
+        &.margin-fourth-x3 {
+            @include column-margin(75%, $establish);
+        }
+        &.margin-third {
+            @include column-margin(33.333%, $establish);
+        }
+        &.margin-third-x2 {
+            @include column-margin(66.666%, $establish);
+        }
+        &.margin-half {
+            @include column-margin(50%, $establish);
+        }
+        &.float-right {
+            @if ($override) {
+                &.margin-twelfth-#{$override}, &.margin-twelfth-x5-#{$override}, &.margin-twelfth-x7-#{$override}, &.margin-twelfth-x11-#{$override}, &.margin-eighth-#{$override}, &.margin-eighth-x3-#{$override}, &.margin-eighth-x5-#{$override}, &.margin-eighth-x7-#{$override}, &.margin-sixth-#{$override}, &.margin-sixth-x5-#{$override}, &.margin-fourth-#{$override}, &.margin-fourth-x3-#{$override}, &.margin-third-#{$override}, &.margin-third-x2-#{$override}, &.margin-half-#{$override} {
+                    margin-right: 0;
+                }
+            } @else {
+                &.margin-twelfth, &.margin-twelfth-x5, &.margin-twelfth-x7, &.margin-twelfth-x11, &.margin-eighth, &.margin-eighth-x3, &.margin-eighth-x5, &.margin-eighth-x7, &.margin-sixth, &.margin-sixth-x5, &.margin-fourth, &.margin-fourth-x3, &.margin-third, &.margin-third-x2, &.margin-half {
+                    margin-right: 0;
+                }
+            }
+            &.margin-twelfth {
+                @include column-float-right-margin(8.333%, $establish);
+            }
+            &.margin-twelfth-x5 {
+                @include column-float-right-margin(41.666%, $establish);
+            }
+            &.margin-twelfth-x7 {
+                @include column-float-right-margin(58.333%, $establish);
+            }
+            &.margin-twelfth-x11 {
+                @include column-float-right-margin(91.666%, $establish);
+            }
+            &.margin-eighth {
+                @include column-float-right-margin(12.5%, $establish);
+            }
+            &.margin-eighth-x3 {
+                @include column-float-right-margin(37.5%, $establish);
+            }
+            &.margin-eighth-x5 {
+                @include column-float-right-margin(62.5%, $establish);
+            }
+            &.margin-eighth-x7 {
+                @include column-float-right-margin(87.5%, $establish);
+            }
+            &.margin-sixth {
+                @include column-float-right-margin(16.666%, $establish);
+            }
+            &.margin-sixth-x5 {
+                @include column-float-right-margin(83.333%, $establish);
+            }
+            &.margin-fourth {
+                @include column-float-right-margin(25%, $establish);
+            }
+            &.margin-fourth-x3 {
+                @include column-float-right-margin(75%, $establish);
+            }
+            &.margin-third {
+                @include column-float-right-margin(33.333%, $establish);
+            }
+            &.margin-third-x2 {
+                @include column-float-right-margin(66.666%, $establish);
+            }
+            &.margin-half {
+                @include column-float-right-margin(50%, $establish);
+            }
+        }
+    }
+}
