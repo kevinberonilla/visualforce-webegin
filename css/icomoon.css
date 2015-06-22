@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'IcoMoon-Free';
-	src: url('../IcoMoon-Free.ttf?-b7qzp2') format('truetype');
+	src: url('fonts/IcoMoon/IcoMoon-Free.ttf?-b7qzp2') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -20,7 +20,7 @@
 	font-feature-settings: "liga";
 }
 .icon-home:before {
-	content: "\e900";
+    content: "\e900";
 }
 .icon-home2:before {
 	content: "\e901";
@@ -230,7 +230,7 @@
 	content: "\e945";
 }
 .icon-pushpin:before {
-	content: "\e946";
+    content: "\e946";
 }
 .icon-location:before {
 	content: "\e947";
@@ -1492,3 +1492,4 @@
 .icon-IcoMoon:before {
 	content: "\eaea";
 }
+
