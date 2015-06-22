@@ -19,17 +19,17 @@
     }
 }
 @mixin breakpoint-columns($override, $establish) {
-    .col {
+    .column {
         @if ($override) {
             &.no-padding-#{$override} {
-                padding: $col-padding;
+                padding: $column-padding;
             }
             &.twelfth-#{$override}, &.twelfth-x11-#{$override}, &.twelfth-x7-#{$override}, &.twelfth-x5-#{$override}, &.eighth-#{$override}, &.eighth-x7-#{$override}, &.eighth-x5-#{$override}, &.eighth-x3-#{$override}, &.sixth-#{$override}, &.sixth-x5-#{$override}, &.fourth-#{$override}, &.fourth-x3-#{$override}, &.third-#{$override}, &.third-x2-#{$override}, &.half-#{$override} {
                 width: 100%;
             }
         } @else {
             &.no-padding {
-                padding: $col-padding;
+                padding: $column-padding;
             }
             &.twelfth, &.twelfth-x11, &.twelfth-x7, &.twelfth-x5, &.eighth, &.eighth-x7, &.eighth-x5, &.eighth-x3, &.sixth, &.sixth-x5, &.fourth, &.fourth-x3, &.third, &.third-x2, &.half {
                 width: 100%;
