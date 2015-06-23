@@ -1,8 +1,6 @@
-.margin-top {
-    margin-top: $column-spacing;
-}
-.margin-top-x2 {
-    margin-top: $column-spacing * 2;
+.grid {
+    margin-top: -#{$column-spacing};
+    margin-bottom: -#{$column-spacing};
 }
 .row {
     margin-left: -#{$column-spacing};
@@ -170,15 +168,27 @@
         }
     }
 }
+.margin-top {
+    margin-top: $column-spacing;
+}
+.margin-top-x2 {
+    margin-top: $column-spacing * 2;
+}
+.margin-bottom {
+    margin-bottom: $column-spacing;
+}
+.margin-bottom-x2 {
+    margin-bottom: $column-spacing * 2;
+}
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
-    @include breakpoint-margin-top(null, $tablet-landscape-affix);
     @include breakpoint-columns(null, $tablet-landscape-affix);
+    @include breakpoint-margins(null, $tablet-landscape-affix);
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
-    @include breakpoint-margin-top($tablet-landscape-affix, $tablet-portrait-affix);
     @include breakpoint-columns($tablet-landscape-affix, $tablet-portrait-affix);
+    @include breakpoint-margins($tablet-landscape-affix, $tablet-portrait-affix);
 }
 @media only screen and (max-width: $phone-breakpoint) {
-    @include breakpoint-margin-top($tablet-portrait-affix, $phone-affix);
     @include breakpoint-columns($tablet-portrait-affix, $phone-affix);
+    @include breakpoint-margins($tablet-portrait-affix, $phone-affix);
 }

@@ -2,56 +2,6 @@
     transition: $property $duration $function;
     transform: translateZ(0);
 }
-@mixin breakpoint-margins($override, $establish) {
-    .margin-top {
-        @if ($override) {
-            &-#{$override} {
-                margin-top: 0;
-            }
-        } else {
-            margin-top: 0;
-        }
-        &-#{$establish} {
-            margin-top: 20px;
-        }
-    }
-    .margin-top-x2 {
-        @if ($override) {
-            &-#{$override} {
-                margin-top: 0;
-            }
-        } else {
-            margin-top: 0;
-        }
-        &-#{$establish} {
-            margin-top: 20px;
-        }
-    }
-    .margin-bottom {
-        @if ($override) {
-            &-#{$override} {
-                margin-bottom: 0;
-            }
-        } else {
-            margin-bottom: 0;
-        }
-        &-#{$establish} {
-            margin-bottom: 20px;
-        }
-    }
-    .margin-bottom-x2 {
-        @if ($override) {
-            &-#{$override} {
-                margin-bottom: 0;
-            }
-        } else {
-            margin-bottom: 0;
-        }
-        &-#{$establish} {
-            margin-bottom: 20px;
-        }
-    }
-}
 @mixin column-width($width, $affix) {
     &-#{$affix} {
         width: $width;
@@ -242,6 +192,56 @@
             &.margin-half {
                 @include column-float-right-margin(50%, $establish);
             }
+        }
+    }
+}
+@mixin breakpoint-margins($override, $establish) {
+    .margin-top {
+        @if ($override) {
+            &-#{$override} {
+                margin-top: 0;
+            }
+        } @else {
+            margin-top: 0;
+        }
+        &-#{$establish} {
+            margin-top: 20px;
+        }
+    }
+    .margin-top-x2 {
+        @if ($override) {
+            &-#{$override} {
+                margin-top: 0;
+            }
+        } @else {
+            margin-top: 0;
+        }
+        &-#{$establish} {
+            margin-top: 20px;
+        }
+    }
+    .margin-bottom {
+        @if ($override) {
+            &-#{$override} {
+                margin-bottom: 0;
+            }
+        } @else {
+            margin-bottom: 0;
+        }
+        &-#{$establish} {
+            margin-bottom: 20px;
+        }
+    }
+    .margin-bottom-x2 {
+        @if ($override) {
+            &-#{$override} {
+                margin-bottom: 0;
+            }
+        } @else {
+            margin-bottom: 0;
+        }
+        &-#{$establish} {
+            margin-bottom: 20px;
         }
     }
 }
