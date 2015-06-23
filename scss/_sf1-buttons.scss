@@ -1,0 +1,26 @@
+button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: $blue;
+    color: $white;
+    @include color-variants(background-color);
+    &.inverse {
+        background-color: transparent;
+        border: 1px solid $blue;
+        @include color-variants(border-color);
+        @include color-variants(color);
+    }
+}
+.button {
+    @extend button;
+}
+.status {
+    display: inline-block;
+    padding: 1px 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: $blue;
+    color: $white;
+    letter-spacing: 0.25px;
+    margin-left: 5px;
+}

@@ -1,12 +1,18 @@
+.margin-top {
+    margin-top: $column-spacing;
+}
+.margin-top-x2 {
+    margin-top: $column-spacing * 2;
+}
 .row {
-    margin-left: -#{$column-padding};
-    margin-right: -#{$column-padding};
+    margin-left: -#{$column-spacing};
+    margin-right: -#{$column-spacing};
 }
 .column {
     display: block;
     width: 100%;
     float: left;
-    padding: $column-padding;
+    padding: $column-spacing;
     &.no-padding {
         padding: 0;
     }
@@ -165,11 +171,14 @@
     }
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
+    @include breakpoint-margin-top(null, $tablet-landscape-affix);
     @include breakpoint-columns(null, $tablet-landscape-affix);
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
+    @include breakpoint-margin-top($tablet-landscape-affix, $tablet-portrait-affix);
     @include breakpoint-columns($tablet-landscape-affix, $tablet-portrait-affix);
 }
 @media only screen and (max-width: $phone-breakpoint) {
+    @include breakpoint-margin-top($tablet-portrait-affix, $phone-affix);
     @include breakpoint-columns($tablet-portrait-affix, $phone-affix);
 }

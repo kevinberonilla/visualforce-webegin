@@ -1,0 +1,18 @@
+.card {
+    @include animated;
+    border: $card-border;
+    border-radius: 5px;
+    background-color: $white;
+    &.active {
+        border-color: $blue;
+    }
+    > div {
+        padding: $card-padding;
+    }
+    .border-bottom {
+        border-bottom: $card-border;
+    }
+    .grey {
+        background-color: $grey;
+    }
+}

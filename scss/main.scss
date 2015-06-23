@@ -10,10 +10,15 @@ Base Styles
 
 body .scope-container {
     /* ----------------------------------------
-    Column Styles
+    Grid Styles
     ---------------------------------------- */
-    @import 'columns';
-
+    @import 'grid';
+    
+    /* ----------------------------------------
+    Salesforce1 Styles
+    ---------------------------------------- */
+    @import 'sf1-typography', 'sf1-cards', 'sf1-imagery', 'sf1-buttons', 'sf1-forms';
+    
     /* ----------------------------------------
     App Styles
     ---------------------------------------- */

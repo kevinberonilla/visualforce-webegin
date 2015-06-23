@@ -13,12 +13,18 @@ html {
 }
 body {
     @extend html;
+}
+body .scope-container {
+    @extend html;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-}
-body .scope-container {
+    font-family: $font-stack;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: $grey;
+    color: $text-light;
     a {
         @include animated;
         img {
@@ -44,7 +50,7 @@ body .scope-container {
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         .container {
             width: 100%;
-            padding: 0 calc((#{$tablet-landscape-breakpoint} - #{$container-width}) / 2);
+            padding: 0 (($tablet-landscape-breakpoint - $container-width) / 2);
         }
     }
 }

@@ -1,0 +1,48 @@
+h1 {
+    font-size: 24px;
+    font-weight: $bold;
+    color: $white;
+}
+h2 {
+    @extend h1;
+    font-weight: $semibold;
+    color: $text-dark;
+}
+h3 {
+    @extend h2;
+    font-size: 16px;
+    color: $text-light;
+}
+h4 {
+    @extend h3;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+strong {
+    font-weight: $bold;
+}
+small {
+    font-size: 80%;
+    color: $text-light;
+}
+p {
+    + p, + ul, + ol {
+        margin-top: 10px;
+    }
+}
+ul, ol {
+    margin-left: 32px;
+    + p {
+        margin-top: 10px;
+    }
+}
+a, a:visited {
+    color: $blue;
+    text-decoration: none;
+}
+.text-dark {
+    color: $text-dark;
+}
+.text-light {
+    color: $text-light;
+}
