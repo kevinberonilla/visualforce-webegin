@@ -1,194 +1,62 @@
 .grid {
-    margin-top: -#{$column-spacing};
-    margin-bottom: -#{$column-spacing};
+    padding-top: $grid-spacing;
+    padding-bottom: $grid-spacing;
+    &.no-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 .row {
-    margin-left: -#{$column-spacing};
-    margin-right: -#{$column-spacing};
+    @extend .clearfix;
+    margin-left: -#{$grid-spacing};
+    margin-right: -#{$grid-spacing};
 }
 .column {
     display: block;
     width: 100%;
     float: left;
-    padding: $column-spacing;
+    padding: $grid-spacing;
     &.no-padding {
         padding: 0;
     }
-    &.twelfth {
-        width: 8.333%;
+    @each $column in $column-list {
+        &.#{unquote(nth($column, 1))} {
+            width: nth($column, 2);
+        }
     }
-    &.twelfth-x5 {
-        width: 41.666%;
-    }
-    &.twelfth-x7 {
-        width: 58.333%;
-    }
-    &.twelfth-x11 {
-        width: 91.666%;
-    }
-    &.eighth {
-        width: 12.5%;
-    }
-    &.eighth-x3 {
-        width: 37.5%;
-    }
-    &.eighth-x5 {
-        width: 62.5%;
-    }
-    &.eighth-x7 {
-        width: 87.5%;
-    }
-    &.sixth {
-        width: 16.666%;
-    }
-    &.sixth-x5 {
-        width: 83.333%;
-    }
-    &.fourth {
-        width: 25%;
-    }
-    &.fourth-x3 {
-        width: 75%;
-    }
-    &.third {
-        width: 33.333%;
-    }
-    &.third-x2 {
-        width: 66.666%;
-    }
-    &.half {
-        width: 50%;
-    }
-    &.margin-twelfth {
-        margin-left: 8.333%;
-    }
-    &.margin-twelfth-x5 {
-        margin-left: 41.666%;
-    }
-    &.margin-twelfth-x7 {
-        margin-left: 58.333%;
-    }
-    &.margin-twelfth-x11 {
-        margin-left: 91.666%;
-    }
-    &.margin-eighth {
-        margin-left: 12.5%;
-    }
-    &.margin-eighth-x3 {
-        margin-left: 37.5%;
-    }
-    &.margin-eighth-x5 {
-        margin-left: 62.5%;
-    }
-    &.margin-eighth-x7 {
-        margin-left: 87.5%;
-    }
-    &.margin-sixth {
-        margin-left: 16.666%;
-    }
-    &.margin-sixth-x5 {
-        margin-left: 83.333%;
-    }
-    &.margin-fourth {
-        margin-left: 25%;
-    }
-    &.margin-fourth-x3 {
-        margin-left: 75%;
-    }
-    &.margin-third {
-        margin-left: 33.333%;
-    }
-    &.margin-third-x2 {
-        margin-left: 66.666%;
-    }
-    &.margin-half {
-        margin-left: 50%;
+    @each $column in $column-list {
+        &.margin-#{unquote(nth($column, 1))} {
+            margin-left: nth($column, 2);
+        }
     }
     &.float-right {
         float: right;
-        &.margin-twelfth {
-            margin-left: initial;
-            margin-right: 8.333%;
-        }
-        &.margin-twelfth-x5 {
-            margin-left: initial;
-            margin-right: 41.666%;
-        }
-        &.margin-twelfth-x7 {
-            margin-left: initial;
-            margin-right: 58.333%;
-        }
-        &.margin-twelfth-x11 {
-            margin-left: initial;
-            margin-right: 91.666%;
-        }
-        &.margin-eighth {
-            margin-left: initial;
-            margin-right: 12.5%;
-        }
-        &.margin-eighth-x3 {
-            margin-left: initial;
-            margin-right: 37.5%;
-        }
-        &.margin-eighth-x5 {
-            margin-left: initial;
-            margin-right: 62.5%;
-        }
-        &.margin-eighth-x7 {
-            margin-left: initial;
-            margin-right: 87.5%;
-        }
-        &.margin-sixth {
-            margin-left: initial;
-            margin-right: 16.666%;
-        }
-        &.margin-sixth-x5 {
-            margin-left: initial;
-            margin-right: 83.333%;
-        }
-        &.margin-fourth {
-            margin-left: initial;
-            margin-right: 25%;
-        }
-        &.margin-fourth-x3 {
-            margin-left: initial;
-            margin-right: 75%;
-        }
-        &.margin-third {
-            margin-left: initial;
-            margin-right: 33.333%;
-        }
-        &.margin-third-x2 {
-            margin-left: initial;
-            margin-right: 66.666%;
-        }
-        &.margin-half {
-            margin-left: initial;
-            margin-right: 50%;
+        @each $column in $column-list {
+            &.margin-#{unquote(nth($column, 1))} {
+                margin-left: initial;
+                margin-right: nth($column, 2);
+            }
         }
     }
 }
 .margin-top {
-    margin-top: $column-spacing;
+    margin-top: $grid-spacing;
 }
 .margin-top-x2 {
-    margin-top: $column-spacing * 2;
+    margin-top: $grid-spacing * 2;
 }
 .margin-bottom {
-    margin-bottom: $column-spacing;
+    margin-bottom: $grid-spacing;
 }
 .margin-bottom-x2 {
-    margin-bottom: $column-spacing * 2;
+    margin-bottom: $grid-spacing * 2;
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
-    @include breakpoint-columns(null, $tablet-landscape-affix);
-    @include breakpoint-margins(null, $tablet-landscape-affix);
+    @include breakpoint-columns($tablet-landscape-affix);
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
-    @include breakpoint-columns($tablet-landscape-affix, $tablet-portrait-affix);
-    @include breakpoint-margins($tablet-landscape-affix, $tablet-portrait-affix);
+    @include breakpoint-columns($tablet-portrait-affix, $tablet-landscape-affix);
 }
 @media only screen and (max-width: $phone-breakpoint) {
-    @include breakpoint-columns($tablet-portrait-affix, $phone-affix);
-    @include breakpoint-margins($tablet-portrait-affix, $phone-affix);
+    @include breakpoint-columns($phone-affix, $tablet-portrait-affix);
 }

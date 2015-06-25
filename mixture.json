@@ -32,5 +32,12 @@
             "> 5%",
             "ie 9"
         ]
+    },
+    "sass": {
+        "outputStyle": "expanded",
+        "sourceMap": true,
+        "cache": false,
+        "lineNumbers": false,
+        "useLibSass": false
     }
 }

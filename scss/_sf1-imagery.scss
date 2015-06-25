@@ -1,0 +1,13 @@
+.avatar {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: $round-corner-small;
+    margin-right: $type-spacing;
+    + .title {
+        display: inline-block;
+        height: 45px;
+        margin-bottom: $type-spacing;
+        vertical-align: top;
+    }
+}

@@ -13,9 +13,10 @@ html {
 }
 body {
     @extend html;
+    background-color: $background-color;
 }
-body .scope-container {
-    @extend html;
+body .scope {
+    @extend body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-text-size-adjust: 100%;
@@ -23,8 +24,8 @@ body .scope-container {
     font-family: $font-stack;
     font-size: 14px;
     line-height: 20px;
-    background-color: $grey;
-    color: $text-light;
+    font-weight: $regular;
+    color: $text-normal;
     a {
         @include animated;
         img {
@@ -46,6 +47,11 @@ body .scope-container {
     }
     .ellipsis {
         text-overflow: ellipsis;
+    }
+    .vertical-align {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         .container {

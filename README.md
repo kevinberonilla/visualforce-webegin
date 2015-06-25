@@ -7,6 +7,7 @@ My personal web development starting point for Visualforce.
 #### Installed Assets
 * <a href="https://jquery.com/">**jQuery v1.11.3**</a> by jQuery Foundation (Google CDN)
 * <a href="https://jqueryui.com/">**jQuery UI v1.11.4**</a> by jQuery Foundation (Google CDN)
+* <a href="http://www.tinymce.com/">**TinyMCE v4.1**</a> by Ephox (CacheFly CDN)
 
 ---
 

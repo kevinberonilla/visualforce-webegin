@@ -1,18 +1,17 @@
 .card {
-    @include animated;
     border: $card-border;
-    border-radius: 5px;
+    border-radius: $round-corner-small;
     background-color: $white;
-    &.active {
-        border-color: $blue;
-    }
-    > div {
+    > div, > section {
         padding: $card-padding;
+    }
+    .border-top {
+        border-top: $card-border;
     }
     .border-bottom {
         border-bottom: $card-border;
     }
     .grey {
-        background-color: $grey;
+        background-color: $light-grey;
     }
 }

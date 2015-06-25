@@ -1,0 +1,27 @@
+label {
+    display: block;
+    color: $text-light;
+}
+input {
+    @include animated;
+    font-family: $font-stack;
+    border-radius: $round-corner-small;
+    border: $card-border;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 12px;
+    color: $text-normal;
+    background-color: $grey;
+    width: 100%;
+    &:focus {
+        background-color: $white;
+        outline: none;
+    }
+    + * {
+        margin-top: $type-spacing;
+    }
+}
+textarea {
+    @extend input;
+    height: 196px;
+}

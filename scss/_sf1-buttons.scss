@@ -1,26 +1,64 @@
 button {
+    @include animated;
+    opacity: 1;
+    cursor: pointer;
     display: inline-block;
-    border-radius: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 12px;
+    margin-right: $type-spacing;
+    border-radius: $round-corner-small;
+    border: 1px solid $blue;
     background-color: $blue;
     color: $white;
-    @include color-variants(background-color);
+    font-weight: $semibold;
+    text-align: center;
+    @include color-classes(border-color);
+    @include color-classes(background-color);
     &.inverse {
-        background-color: transparent;
+        background-color: $white;
         border: 1px solid $blue;
-        @include color-variants(border-color);
-        @include color-variants(color);
+        @include color-classes(border-color);
+        @include color-classes(color);
+    }
+    &.full-width {
+        width: 100%;
+    }
+    .icon {
+        position: relative;
+        top: 1px;
+        margin-right: $type-spacing / 2;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        opacity: 0.5;
     }
 }
-.button {
+a.button, input[type="submit"] {
     @extend button;
 }
+.corner-buttons {
+    float: right;
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        float: none;
+        .button {
+            width: 100%;
+            margin-bottom: $type-spacing;
+        }
+    }
+}   
 .status {
     display: inline-block;
-    padding: 1px 4px;
-    border-radius: 5px;
-    font-size: 12px;
+    padding: 0 6px;
+    border-radius: $round-corner-small;
+    font-size: 10px;
+    font-weight: $bold;
+    vertical-align: bottom;
     background-color: $blue;
     color: $white;
     letter-spacing: 0.25px;
-    margin-left: 5px;
+    margin-left: $type-spacing / 2;
+    @include color-classes(background-color);
 }

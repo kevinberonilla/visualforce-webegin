@@ -1,0 +1,55 @@
+.mce-panel {
+    border: $card-border;
+    border-radius: $round-corner-small;
+    background-image: none;
+    background-color: $grey;
+}
+.mce-stack-layout-item {
+    border: none;
+}
+.mce-menubtn span {
+    font-family: $font-stack;
+    font-size: 14px;
+    line-height: 22px;
+}
+.mce-menubtn button, .mce-btn button {
+    border-radius: $round-corner-small;
+    padding: 6px 10px;
+    background-color: $white;
+    border-color: transparent;
+}
+.mce-btn {
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+.mce-btn i {
+    text-shadow: none;
+    box-shadow: none;
+}
+.mce-btn-group {
+    padding-left: 2px;
+}
+.mce-btn-group .mce-btn {
+    border: none;
+}
+.mce-menubar {
+    border: $card-border;
+    padding-left: 3px;
+}
+.mce-stack-layout .mce-widget button {
+    margin: 1px 2px;
+}
+.mce-toolbar-grp {
+    background-color: $light-grey;
+}
+.mce-flow-layout-item {
+    margin: 5px 0;
+}
+.mce-menubar .mce-menubtn:hover, .mce-menubar .mce-menubtn.mce-active, .mce-menubar .mce-menubtn:focus {
+    background-color: transparent;
+}
+.mce-container iframe {
+    border-radius: $round-corner-small;
+}
