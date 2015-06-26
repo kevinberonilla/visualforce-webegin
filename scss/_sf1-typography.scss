@@ -41,6 +41,13 @@ ul, ol {
         margin-top: $type-spacing;
     }
 }
+hr {
+    border: none;
+    border-bottom: $card-border;
+    + * {
+        margin-top: $type-spacing;
+    }
+}
 a, a:visited {
     color: $blue;
     text-decoration: none;

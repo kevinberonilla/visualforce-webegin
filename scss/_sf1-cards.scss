@@ -2,8 +2,15 @@
     border: $card-border;
     border-radius: $round-corner-small;
     background-color: $white;
+    overflow: hidden;
     > div, > section {
         padding: $card-padding;
+        &.header {
+            min-height: 76px;
+            h2:not(+ h3) {
+                margin-top: $type-spacing;
+            }
+        }
     }
     .border-top {
         border-top: $card-border;

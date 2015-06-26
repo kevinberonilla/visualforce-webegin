@@ -4,14 +4,14 @@ Sass Modules
 /* ----------------------------------------
 Base Styles
 ---------------------------------------- */
-*, *:before, *:after {
+*, *:before, *:after, body .scope *:before, body .scope *:after, body .scope *, body .scope *:before, body .scope *:after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-:before, :after {
+:before, body .scope :before, :after, body .scope :after, body .scope :before, body .scope :after {
   display: inline-block;
 }
 
@@ -1169,6 +1169,13 @@ body .scope ul, body .scope ol {
 body .scope ul + *, body .scope .scope ul + *, body .scope ul + *:before, body .scope .scope ul + *:before, body .scope ul + *:after, body .scope .scope ul + *:after, body .scope ol + *, body .scope .scope ol + *, body .scope ol + *:before, body .scope .scope ol + *:before, body .scope ol + *:after, body .scope .scope ol + *:after {
   margin-top: 12px;
 }
+body .scope hr {
+  border: none;
+  border-bottom: 1px solid #dfe0e1;
+}
+body .scope hr + *, body .scope .scope hr + *, body .scope hr + *:before, body .scope .scope hr + *:before, body .scope hr + *:after, body .scope .scope hr + *:after {
+  margin-top: 12px;
+}
 body .scope a, body .scope a:visited {
   color: #2a94d6;
   text-decoration: none;
@@ -1183,9 +1190,16 @@ body .scope .card {
   border: 1px solid #dfe0e1;
   border-radius: 5px;
   background-color: #fff;
+  overflow: hidden;
 }
 body .scope .card > div, body .scope .scope .card > div, body .scope .card > section, body .scope .scope .card > section {
   padding: 16px;
+}
+body .scope .card > div.header, body .scope .scope .card > div.header, body .scope .card > section.header, body .scope .scope .card > section.header {
+  min-height: 76px;
+}
+body .scope .card > div.header h2:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > div.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > div.header .scope h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > div.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > div.header .scope h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > div.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > div.header .scope h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > div.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > section.header h2:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > section.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > section.header .scope h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h3:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > section.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > section.header .scope h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h4:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > section.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .card > section.header .scope h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5), body .scope .scope .card > section.header h5:not(+ h3):not(+ body .scope h4):not(+ body .scope h5) {
+  margin-top: 12px;
 }
 body .scope .card .border-top {
   border-top: 1px solid #dfe0e1;
@@ -1196,18 +1210,58 @@ body .scope .card .border-bottom {
 body .scope .card .grey {
   background-color: #f9fafa;
 }
-body .scope .avatar {
+body .scope .avatar, body .scope .icon-container {
   display: inline-block;
   width: 45px;
   height: 45px;
   border-radius: 5px;
   margin-right: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
 }
-body .scope .avatar + .title, body .scope .scope .avatar + .title {
+body .scope .avatar.large, body .scope .large.icon-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+body .scope .avatar + .title, body .scope .scope .avatar + .title, body .scope .icon-container + .title, body .scope .scope .icon-container + .title {
   display: inline-block;
   height: 45px;
   margin-bottom: 12px;
   vertical-align: top;
+}
+body .scope .icon-container.blue {
+  background-color: #2a94d6;
+}
+body .scope .icon-container.light-blue {
+  background-color: #4eb1cb;
+}
+body .scope .icon-container.navy {
+  background-color: #344a5f;
+}
+body .scope .icon-container.grey {
+  background-color: #f0f1f2;
+}
+body .scope .icon-container.light-grey {
+  background-color: #f9fbfc;
+}
+body .scope .icon-container.white {
+  background-color: #fff;
+}
+body .scope .icon-container.red {
+  background-color: #cf5c60;
+}
+body .scope .icon-container.purple {
+  background-color: #717ecd;
+}
+body .scope .icon-container.green {
+  background-color: #4ab471;
+}
+body .scope .icon-container.orange {
+  background-color: #f3ae4e;
+}
+body .scope .icon-container.pink {
+  background-color: #d96383;
 }
 body .scope button, body .scope a.button, body .scope input[type="submit"], body .scope textarea[type="submit"] {
   -webkit-transition: all 250ms ease;
@@ -1469,12 +1523,41 @@ body .scope .accordion.open:after {
 body .scope .accordion + .accordion-content, body .scope .scope .accordion + .accordion-content {
   display: none;
   padding: 16px;
-  border-right: 1px solid #dfe0e1;
-  border-bottom: 1px solid #dfe0e1;
-  border-left: 1px solid #dfe0e1;
+  border: 1px solid #dfe0e1;
+  border-top: none;
 }
 body .scope .accordion + .accordion-content + .accordion {
   border-top: none;
+}
+body .scope .ribbon {
+  display: table;
+  width: 100%;
+  background-color: #2e4052;
+}
+body .scope .ribbon ul {
+  display: table-row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body .scope .ribbon ul li {
+  display: table-cell;
+  text-align: center;
+}
+body .scope .ribbon ul li a, body .scope .ribbon ul li a:visited {
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  opacity: 1;
+}
+body .scope .ribbon ul li a:hover, body .scope .ribbon ul li a:visited:hover {
+  opacity: 0.5;
+}
+body .scope .ribbon ul li .icon {
+  position: relative;
+  top: 2px;
+  margin-right: 6px;
 }
 body .scope label {
   display: block;

@@ -8,6 +8,7 @@ My personal web development starting point for Visualforce.
 * <a href="https://jquery.com/">**jQuery v1.11.3**</a> by jQuery Foundation (Google CDN)
 * <a href="https://jqueryui.com/">**jQuery UI v1.11.4**</a> by jQuery Foundation (Google CDN)
 * <a href="http://www.tinymce.com/">**TinyMCE v4.1**</a> by Ephox (CacheFly CDN)
+* <a href="http://iamceege.github.io/tooltipster/">**Tooltipster v3.3.0**</a> by Caleb Jacob and Louis Ameline
 
 ---
 
