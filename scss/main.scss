@@ -23,9 +23,11 @@ body .scope {
     App Styles
     ---------------------------------------- */
     @import 'app';
+}
 
+body, body .scope { // Elements might dynamically appear outside of scope
     /* ----------------------------------------
     Overrides
     ---------------------------------------- */
-    @import 'tinymce';
+    @import 'tinymce', 'tooltipster', 'jquery-ui';
 }

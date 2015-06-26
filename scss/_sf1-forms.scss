@@ -4,6 +4,7 @@ label {
 }
 input {
     @include animated;
+    display: block;
     font-family: $font-stack;
     border-radius: $round-corner-small;
     border: $card-border;

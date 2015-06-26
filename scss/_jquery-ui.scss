@@ -1,6 +1,50 @@
 .ui-widget {
-    font-family: $font-stack;
+    font-family: $font-stack !important;
     font-size: $font-size;
     line-height: $line-height;
+    font-weight: $regular;
     color: $text-normal;
+}
+.ui-autocomplete {
+    border: none;
+    border-radius: $round-corner-small;
+    box-shadow: $card-shadow;
+    overflow: hidden;
+}
+.ui-menu .ui-menu-item {
+    padding: ($type-spacing / 2) $type-spacing;
+}
+.ui-widget-content .ui-state-default {
+    border: none;
+    background: $grey;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    color: $white;
+    font-weight: $regular;
+    background: $blue;
+    border: none;
+    margin: 0;
+}
+.scope .ui-widget, .ui-widget {
+    color: $text-normal;
+}
+.ui-widget-header {
+    background: $grey;
+    color: $text-normal;
+    border: none;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background-color: $orange;
+    color: $white;
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    opacity: 0.5;
+}
+.ui-datepicker .ui-datepicker-prev.ui-state-hover, .ui-datepicker .ui-datepicker-next.ui-state-hover {
+    background-color: $white;
+}
+.ui-datepicker {
+    border-radius: $round-corner-small;
+    border: $card-border;
+    box-shadow: $card-shadow;
 }

@@ -84,9 +84,6 @@ body .scope {
   /* ----------------------------------------
   App Styles
   ---------------------------------------- */
-  /* ----------------------------------------
-  Overrides
-  ---------------------------------------- */
 }
 body .scope .grid {
   padding-top: 10px;
@@ -1381,6 +1378,9 @@ body .scope button:last-child, body .scope a.button:last-child, body .scope inpu
 body .scope button:hover, body .scope a.button:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover {
   opacity: 0.5;
 }
+body .scope button:focus, body .scope a.button:focus, body .scope input[type="submit"]:focus, body .scope textarea[type="submit"]:focus {
+  outline: none;
+}
 body .scope .corner-buttons {
   float: right;
 }
@@ -1438,6 +1438,44 @@ body .scope .status.orange {
 body .scope .status.pink {
   background-color: #d96383;
 }
+body .scope .accordion {
+  padding: 16px;
+  cursor: pointer;
+  background-color: #f9fafa;
+  color: #525354;
+  font-weight: 700;
+  border: 1px solid #dfe0e1;
+  position: relative;
+}
+body .scope .accordion:after {
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  font-family: 'IcoMoon-Free';
+  content: '\ea41';
+  display: block;
+  font-size: 16px;
+  color: #adb8c2;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+body .scope .accordion.open:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+body .scope .accordion + .accordion-content, body .scope .scope .accordion + .accordion-content {
+  display: none;
+  padding: 16px;
+  border-right: 1px solid #dfe0e1;
+  border-bottom: 1px solid #dfe0e1;
+  border-left: 1px solid #dfe0e1;
+}
+body .scope .accordion + .accordion-content + .accordion {
+  border-top: none;
+}
 body .scope label {
   display: block;
   color: #adb8c2;
@@ -1447,6 +1485,7 @@ body .scope input, body .scope textarea {
   transition: all 250ms ease;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  display: block;
   font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
   border-radius: 5px;
   border: 1px solid #dfe0e1;
@@ -1467,61 +1506,172 @@ body .scope input + *, body .scope .scope input + *, body .scope textarea + *, b
 body .scope textarea {
   height: 190px;
 }
-body .scope .mce-panel {
-  border: 1px solid #dfe0e1;
-  border-radius: 5px;
-  background-image: none;
-  background-color: #f0f1f2;
+
+body, body .scope, body .scope {
+  /* ----------------------------------------
+  Overrides
+  ---------------------------------------- */
 }
-body .scope .mce-stack-layout-item {
+body .mce-tinymce, body .scope .mce-tinymce {
+  border-radius: 5px;
+}
+body .mce-panel, body .scope .mce-panel {
+  border: 1px solid #dfe0e1;
+  background-image: none;
+  background-color: #fff;
+}
+body .mce-menu, body .scope .mce-menu {
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+body .mce-menu-item .mce-text, body .scope .mce-menu-item .mce-text {
+  font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #525354;
+}
+body .mce-ico, body .mce-menubar .mce-menubtn button span, body .mce-menubar .mce-menubtn .scope a.button span, body .scope .mce-menubar .mce-menubtn a.button span, body .mce-menubar .mce-menubtn .scope input[type="submit"] span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .mce-menubar .mce-menubtn .scope textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .scope .mce-ico, body .scope .mce-menubar .mce-menubtn button span, body .scope .mce-menubar .mce-menubtn a.button span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span {
+  color: #525354;
+}
+body .mce-stack-layout-item, body .scope .mce-stack-layout-item {
   border: none;
 }
-body .scope .mce-menubtn span {
+body .mce-stack-layout-item.mce-last, body .scope .mce-stack-layout-item.mce-last {
+  border-radius: 5px;
+}
+body .mce-menubtn span, body .scope .mce-menubtn span {
   font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
   font-size: 14px;
   line-height: 22px;
 }
-body .scope .mce-menubtn button, body .scope .mce-menubtn a.button, body .scope .mce-menubtn input[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .scope .mce-btn button, body .scope .mce-btn a.button, body .scope .mce-btn input[type="submit"], body .scope .mce-btn textarea[type="submit"] {
+body .mce-menubtn button, body .mce-menubtn .scope a.button, body .scope .mce-menubtn a.button, body .mce-menubtn .scope input[type="submit"], body .scope .mce-menubtn input[type="submit"], body .mce-menubtn .scope textarea[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .mce-btn button, body .mce-btn .scope a.button, body .scope .mce-btn a.button, body .mce-btn .scope input[type="submit"], body .scope .mce-btn input[type="submit"], body .mce-btn .scope textarea[type="submit"], body .scope .mce-btn textarea[type="submit"], body .scope .mce-menubtn button, body .scope .mce-menubtn a.button, body .scope .mce-menubtn input[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .scope .mce-btn button, body .scope .mce-btn a.button, body .scope .mce-btn input[type="submit"], body .scope .mce-btn textarea[type="submit"] {
   border-radius: 5px;
   padding: 6px 10px;
   background-color: #fff;
   border-color: transparent;
 }
-body .scope .mce-btn {
+body .mce-btn, body .scope .mce-btn {
   background-image: none;
   text-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: transparent;
 }
-body .scope .mce-btn i {
+body .mce-btn i, body .scope .mce-btn i {
   text-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-body .scope .mce-btn-group {
+body .mce-btn-group, body .scope .mce-btn-group {
   padding-left: 2px;
 }
-body .scope .mce-btn-group .mce-btn {
+body .mce-btn-group .mce-btn, body .scope .mce-btn-group .mce-btn {
   border: none;
 }
-body .scope .mce-menubar {
+body .mce-menubar, body .scope .mce-menubar {
   border: 1px solid #dfe0e1;
   padding-left: 3px;
+  background-color: #f0f1f2;
 }
-body .scope .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget a.button, body .scope .mce-stack-layout .mce-widget input[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"] {
+body .mce-stack-layout .mce-widget button, body .mce-stack-layout .mce-widget .scope a.button, body .scope .mce-stack-layout .mce-widget a.button, body .mce-stack-layout .mce-widget .scope input[type="submit"], body .scope .mce-stack-layout .mce-widget input[type="submit"], body .mce-stack-layout .mce-widget .scope textarea[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .scope .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget a.button, body .scope .mce-stack-layout .mce-widget input[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"] {
   margin: 1px 2px;
 }
-body .scope .mce-toolbar-grp {
+body .mce-toolbar-grp, body .scope .mce-toolbar-grp {
   background-color: #f9fafa;
 }
-body .scope .mce-flow-layout-item {
+body .mce-flow-layout-item, body .scope .mce-flow-layout-item {
   margin: 5px 0;
 }
-body .scope .mce-menubar .mce-menubtn:hover, body .scope .mce-menubar .mce-menubtn.mce-active, body .scope .mce-menubar .mce-menubtn:focus {
+body .mce-menubar .mce-menubtn:hover, body .mce-menubar .mce-menubtn.mce-active, body .mce-menubar .mce-menubtn:focus, body .scope .mce-menubar .mce-menubtn:hover, body .scope .mce-menubar .mce-menubtn.mce-active, body .scope .mce-menubar .mce-menubtn:focus {
   background-color: transparent;
 }
-body .scope .mce-container iframe {
+body .mce-menu-item:hover, body .mce-menu-item.mce-selected, body .mce-menu-item:focus, body .scope .mce-menu-item:hover, body .scope .mce-menu-item.mce-selected, body .scope .mce-menu-item:focus {
+  background-image: none;
+  background-color: #2a94d6;
+}
+body .mce-container iframe, body .scope .mce-container iframe {
   border-radius: 5px;
+}
+body .mce-tooltip, body .scope .mce-tooltip {
+  opacity: 1;
+}
+body .mce-tooltip-inner, body .scope .mce-tooltip-inner {
+  font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #2e4052;
+}
+body .mce-tooltip-arrow, body .scope .mce-tooltip-arrow {
+  border: 5px dashed #2e4052;
+}
+body .tooltipster-default, body .scope .tooltipster-default {
+  border-radius: 5px;
+  border: 1px solid #dfe0e1;
+  background: #2e4052;
+  color: #fff;
+}
+body .tooltipster-default .tooltipster-content, body .scope .tooltipster-default .tooltipster-content {
+  font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px 10px;
+}
+body .tooltipster-arrow, body .scope .tooltipster-arrow {
+  top: -1px;
+}
+body .ui-widget, body .scope .ui-widget {
+  font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif !important;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #525354;
+}
+body .ui-autocomplete, body .scope .ui-autocomplete {
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+body .ui-menu .ui-menu-item, body .scope .ui-menu .ui-menu-item {
+  padding: 6px 12px;
+}
+body .ui-widget-content .ui-state-default, body .scope .ui-widget-content .ui-state-default {
+  border: none;
+  background: #f0f1f2;
+}
+body .ui-state-hover, body .ui-widget-content .ui-state-hover, body .ui-widget-header .ui-state-hover, body .ui-state-focus, body .ui-widget-content .ui-state-focus, body .ui-widget-header .ui-state-focus, body .scope .ui-state-hover, body .scope .ui-widget-content .ui-state-hover, body .scope .ui-widget-header .ui-state-hover, body .scope .ui-state-focus, body .scope .ui-widget-content .ui-state-focus, body .scope .ui-widget-header .ui-state-focus {
+  color: #fff;
+  font-weight: 300;
+  background: #2a94d6;
+  border: none;
+  margin: 0;
+}
+body .scope .ui-widget, body .ui-widget, body .scope .scope .ui-widget, body .scope .ui-widget {
+  color: #525354;
+}
+body .ui-widget-header, body .scope .ui-widget-header {
+  background: #f0f1f2;
+  color: #525354;
+  border: none;
+}
+body .ui-state-highlight, body .ui-widget-content .ui-state-highlight, body .ui-widget-header .ui-state-highlight, body .scope .ui-state-highlight, body .scope .ui-widget-content .ui-state-highlight, body .scope .ui-widget-header .ui-state-highlight {
+  background-color: #f3ae4e;
+  color: #fff;
+}
+body .ui-datepicker .ui-datepicker-prev span, body .ui-datepicker .ui-datepicker-next span, body .scope .ui-datepicker .ui-datepicker-prev span, body .scope .ui-datepicker .ui-datepicker-next span {
+  opacity: 0.5;
+}
+body .ui-datepicker .ui-datepicker-prev.ui-state-hover, body .ui-datepicker .ui-datepicker-next.ui-state-hover, body .scope .ui-datepicker .ui-datepicker-prev.ui-state-hover, body .scope .ui-datepicker .ui-datepicker-next.ui-state-hover {
+  background-color: #fff;
+}
+body .ui-datepicker, body .scope .ui-datepicker {
+  border-radius: 5px;
+  border: 1px solid #dfe0e1;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 

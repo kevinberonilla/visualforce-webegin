@@ -1,11 +1,31 @@
+.mce-tinymce {
+    border-radius: $round-corner-small;
+}
 .mce-panel {
     border: $card-border;
-    border-radius: $round-corner-small;
     background-image: none;
-    background-color: $grey;
+    background-color: $white;
+}
+.mce-menu {
+    border: none;
+    border-radius: $round-corner-small;
+    box-shadow: $card-shadow;
+}
+.mce-menu-item .mce-text {
+    font-family: $font-stack;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $regular;
+    color: $text-normal;
+}
+.mce-ico, .mce-menubar .mce-menubtn button span {
+    color: $text-normal;
 }
 .mce-stack-layout-item {
     border: none;
+}
+.mce-stack-layout-item.mce-last {
+    border-radius: $round-corner-small;
 }
 .mce-menubtn span {
     font-family: $font-stack;
@@ -37,6 +57,7 @@
 .mce-menubar {
     border: $card-border;
     padding-left: 3px;
+    background-color: $grey;
 }
 .mce-stack-layout .mce-widget button {
     margin: 1px 2px;
@@ -50,6 +71,21 @@
 .mce-menubar .mce-menubtn:hover, .mce-menubar .mce-menubtn.mce-active, .mce-menubar .mce-menubtn:focus {
     background-color: transparent;
 }
+.mce-menu-item:hover, .mce-menu-item.mce-selected, .mce-menu-item:focus {
+    background-image: none;
+    background-color: $blue;
+}
 .mce-container iframe {
     border-radius: $round-corner-small;
+}
+.mce-tooltip {
+    opacity: 1;
+}
+.mce-tooltip-inner {
+    font-family: $font-stack;
+    box-shadow: none;
+    background-color: $text-dark;
+}
+.mce-tooltip-arrow {
+    border: 5px dashed $text-dark;
 }

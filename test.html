@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
         <link rel="stylesheet" type="text/css" href="css/icomoon.min.css">
         <link rel="stylesheet" type="text/css" href="css/proximanovasoft.min.css">
+        <link rel="stylesheet" type="text/css" href="css/tooltipster.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.min.css">
     </head>
     <body>
@@ -29,8 +30,8 @@
                         </div>
                         <div class="column float-right half half-md margin-fourth margin-fourth-md">
                             <article class="card">
-                                <section>
-                                    <div class="corner-buttons"><a href="#" class="button inverse red"><span class="icon icomoon icomoon-cancel-circle"></span>Test button</a><a href="#" class="button">Test button</a></div>
+                                <section class="header">
+                                    <div class="corner-buttons"><a href="#" class="button inverse red"><span class="icon icomoon icomoon-cancel-circle"></span>Test button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
                                     <h2><a href="#">Title<span class="status orange">Pending</span></a></h2>
                                     <h3>Subtitle</h3>
                                 </section>
@@ -63,28 +64,36 @@
                     <section class="grey border-bottom">
                         <h4>This is a section header</h4>
                     </section>
-                    <section>
+                    <section class="border-bottom">
                         <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph.</p>
                         <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph.</p>
                         <div class="row">
                             <div class="column half">
                                 <label for="test1">Test Element 1</label>
-                                <input type="text" id="test1"/>
+                                <input type="text" name="test1"/>
                                 <label for="test1">Test Element 1</label>
-                                <input type="text" id="test1"/>
+                                <input type="text" name="test2"/>
                                 <label for="test1">Test Element 1</label>
-                                <input type="text" id="test1"/>
-                                <label for="test1">Test Element 1</label>
-                                <input type="text" id="test1"/>
-                                <label for="test1">Test Element 1</label>
-                                <input type="text" class="autocomplete" id="test1"/>
+                                <input type="text" name="test3"/>
+                                <label for="test1">Date Field</label>
+                                <input type="text" name="date" class="date-picker"/>
+                                <label for="test1">Auto-complete Field</label>
+                                <input type="text" class="auto-complete" id="test1"/>
                             </div>
                             <div class="column half">
                                 <label for="textareatest">Textarea</label>
-                                <textarea class="rich-" id="textareatest"></textarea>
+                                <textarea class="rich-text" id="textareatest"></textarea>
                             </div>
                         </div>
                         <button type="submit" class="full-width margin-top">Submit</button>
+                    </section>
+                    <section>
+                        <div class="accordion">This is an accordion 1</div>
+                        <div class="accordion-content">test 1</div>
+                        <div class="accordion">This is an accordion 2</div>
+                        <div class="accordion-content">test 2</div>
+                        <div class="accordion">This is an accordion 3</div>
+                        <div class="accordion-content">test 3</div>
                     </section>
                 </article>
             </div>
@@ -92,6 +101,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script src="https://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+        <script src="js/jquery.tooltipster.min.js"></script>
         <script src="js/main.min.js"></script>
     </body>
 </html>

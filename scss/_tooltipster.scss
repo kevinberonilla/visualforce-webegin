@@ -1,0 +1,15 @@
+.tooltipster-default {
+    border-radius: $round-corner-small; 
+	border: $card-border;
+	background: $text-dark;
+	color: $white;
+}
+.tooltipster-default .tooltipster-content {
+	font-family: $font-stack;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 8px 10px;
+}
+.tooltipster-arrow {
+    top: -1px;
+}

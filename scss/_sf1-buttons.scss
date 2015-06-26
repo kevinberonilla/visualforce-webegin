@@ -35,6 +35,9 @@ button {
     &:hover {
         opacity: 0.5;
     }
+    &:focus {
+        outline: none;
+    }
 }
 a.button, input[type="submit"] {
     @extend button;
@@ -61,4 +64,39 @@ a.button, input[type="submit"] {
     letter-spacing: 0.25px;
     margin-left: $type-spacing / 2;
     @include color-classes(background-color);
+}
+.accordion {
+    padding: $card-padding;
+    cursor: pointer;
+    background-color: $light-grey;
+    color: $text-normal;
+    font-weight: $semibold;
+    border: $card-border;
+    position: relative;
+    &:after {
+        @include animated;
+        font-family: 'IcoMoon-Free';
+        content: '\ea41';
+        display: block;
+        font-size: 16px;
+        color: $text-light;
+        position: absolute;
+        top: $card-padding;
+        right: $card-padding;
+    }
+    &.open {
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+    + .accordion-content {
+        display: none;
+        padding: $card-padding;
+        border-right: $card-border;
+        border-bottom: $card-border;
+        border-left: $card-border;
+        + .accordion {
+            border-top: none;
+        }
+    }
 }
