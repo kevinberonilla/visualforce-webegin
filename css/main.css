@@ -1221,8 +1221,8 @@ body .scope button, body .scope a.button, body .scope input[type="submit"], body
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  line-height: 22px;
-  padding: 10px 12px;
+  line-height: 20px;
+  padding: 10px 12px 12px;
   margin-right: 12px;
   border-radius: 5px;
   border: 1px solid #2a94d6;
@@ -1372,7 +1372,7 @@ body .scope button.full-width, body .scope a.full-width.button, body .scope inpu
 }
 body .scope button .icon, body .scope a.button .icon, body .scope input[type="submit"] .icon, body .scope textarea[type="submit"] .icon {
   position: relative;
-  top: 1px;
+  top: 2px;
   margin-right: 6px;
 }
 body .scope button:last-child, body .scope a.button:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child {
@@ -1451,7 +1451,7 @@ body .scope input, body .scope textarea {
   border-radius: 5px;
   border: 1px solid #dfe0e1;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 20px;
   padding: 10px 12px;
   color: #525354;
   background-color: #f0f1f2;
@@ -1465,7 +1465,7 @@ body .scope input + *, body .scope .scope input + *, body .scope textarea + *, b
   margin-top: 12px;
 }
 body .scope textarea {
-  height: 196px;
+  height: 190px;
 }
 body .scope .mce-panel {
   border: 1px solid #dfe0e1;

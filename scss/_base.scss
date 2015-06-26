@@ -22,8 +22,8 @@ body .scope {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font-family: $font-stack;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $font-size;
+    line-height: $line-height;
     font-weight: $regular;
     color: $text-normal;
     a {
