@@ -1,5 +1,5 @@
 # visualforce-webegin
-My personal web development starting point for Visualforce.  
+A bare-bones web development starting point with extended styles for Visualforce.  
 ***(Under Construction)***
 
 ---
