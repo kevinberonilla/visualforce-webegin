@@ -1136,42 +1136,6 @@ body .scope .margin-bottom-x2 {
     margin-right: 50%;
   }
 }
-body .scope .hero, body .scope footer, body .scope .scope footer {
-  background-color: #344a5f;
-  text-align: center;
-  color: #fff;
-  padding: 100px 0;
-  position: relative;
-}
-body .scope .hero .container, body .scope footer .container, body .scope .scope footer .container {
-  position: relative;
-  z-index: 9998;
-}
-body .scope .hero h1, body .scope footer h1, body .scope .scope footer h1, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5 {
-  color: #fff;
-  margin: 0 auto;
-  width: 60%;
-}
-body .scope .hero p, body .scope footer p, body .scope .scope footer p {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-body .scope .hero:after, body .scope footer:after, body .scope .scope footer:after {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(rgba(0, 0, 0, 0.1)));
-  background: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
-  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
-}
-body .scope footer {
-  padding: 24px 0;
-}
 body .scope h1, body .scope h2, body .scope h3, body .scope h4, body .scope h5 {
   font-size: 32px;
   line-height: 32px;
@@ -1278,6 +1242,39 @@ body .scope .text-normal {
 body .scope .text-light {
   color: #adb8c2;
 }
+body .scope .hero, body .scope footer, body .scope .scope footer {
+  background-color: #344a5f;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+}
+body .scope .hero .container, body .scope footer .container, body .scope .scope footer .container {
+  position: relative;
+  z-index: 9998;
+}
+body .scope .hero h1, body .scope footer h1, body .scope .scope footer h1, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5 {
+  color: #fff;
+  margin: 0 auto;
+  width: 60%;
+}
+body .scope .hero p, body .scope footer p, body .scope .scope footer p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+body .scope .hero:after, body .scope footer:after, body .scope .scope footer:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(rgba(0, 0, 0, 0.1)));
+  background: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
+}
 body .scope .card, body .scope .modal {
   border: 1px solid #dfe0e1;
   border-radius: 5px;
@@ -1350,6 +1347,9 @@ body .scope #modal-background {
 }
 body .scope #modal-background.visible {
   opacity: 1;
+}
+body .scope footer {
+  padding: 24px 0;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .modal {

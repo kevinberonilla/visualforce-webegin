@@ -17,7 +17,7 @@ body .scope {
     /* ----------------------------------------
     Salesforce1 Styles
     ---------------------------------------- */
-    @import 'sf1-layout', 'sf1-typography', 'sf1-cards', 'sf1-imagery', 'sf1-buttons', 'sf1-forms';
+    @import 'sf1-typography', 'sf1-layout', 'sf1-imagery', 'sf1-interactive', 'sf1-forms';
     
     /* ----------------------------------------
     App Styles
@@ -25,7 +25,7 @@ body .scope {
     @import 'app';
 }
 
-body, body .scope { // Elements might dynamically appear outside of scope
+body, body .scope { // Plugin elements can dynamically appear outside of scope
     /* ----------------------------------------
     Overrides
     ---------------------------------------- */
