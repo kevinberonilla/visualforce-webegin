@@ -44,7 +44,20 @@
     background-color: $white;
 }
 .ui-datepicker {
+    width: 300px;
     border-radius: $round-corner-small;
-    border: $card-border;
+    border: none;
     box-shadow: $card-shadow;
+    padding: 5px;
+}
+.ui-datepicker table {
+    margin-bottom: 0;
+}
+.ui-datepicker td {
+    min-width: 40px;
+}
+.ui-datepicker td a {
+    min-height: 40px;
+    line-height: 35px;
+    text-align: center;
 }

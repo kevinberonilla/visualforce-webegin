@@ -22,56 +22,56 @@
     .column {
         @if ($override) {
             @each $column in $column-list {
-                &.#{unquote(nth($column, 1))}-#{$override} {
+                &.#{nth($column, 1)}-#{$override} {
                     width: 100%;
                 }
             }
         } @else {
             @each $column in $column-list {
-                &.#{unquote(nth($column, 1))} {
+                &.#{nth($column, 1)} {
                     width: 100%;
                 }
             }
         }
         @each $column in $column-list {
-            &.#{unquote(nth($column, 1))} {
+            &.#{nth($column, 1)} {
                 @include column-width(nth($column, 2), $establish);
             }
         }
         @if ($override) {
             @each $column in $column-list {
-                &.margin-#{unquote(nth($column, 1))}-#{$override} {
+                &.margin-#{nth($column, 1)}-#{$override} {
                     margin-left: 0;
                 }
             }
         } @else {
             @each $column in $column-list {
-                &.margin-#{unquote(nth($column, 1))} {
+                &.margin-#{nth($column, 1)} {
                     margin-left: 0;
                 }
             }
         }
         @each $column in $column-list {
-            &.margin-#{unquote(nth($column, 1))} {
+            &.margin-#{nth($column, 1)} {
                 @include column-margin(nth($column, 2), $establish);
             }
         }
         &.float-right {
             @if ($override) {
                 @each $column in $column-list {
-                    &.margin-#{unquote(nth($column, 1))}-#{$override} {
+                    &.margin-#{nth($column, 1)}-#{$override} {
                         margin-right: 0;
                     }
                 }
             } @else {
                 @each $column in $column-list {
-                    &.margin-#{unquote(nth($column, 1))} {
+                    &.margin-#{nth($column, 1)} {
                         margin-right: 0;
                     }
                 }
             }
             @each $column in $column-list {
-                &.margin-#{unquote(nth($column, 1))} {
+                &.margin-#{nth($column, 1)} {
                     @include column-float-right-margin(nth($column, 2), $establish);
                 }
             }
@@ -80,7 +80,7 @@
 }
 @mixin color-classes($property) {
     @each $color in $color-list {
-        &.#{unquote(nth($color, 1))} {
+        &.#{nth($color, 1)} {
             #{$property}: nth($color, 2);
         }
     }

@@ -21,4 +21,16 @@
 .icon-container {
     @extend .avatar;
     @include color-classes(background-color);
+    text-align: center;
+    .icon {
+        display: block;
+        font-size: 26px;
+        padding: 10px;
+    }
+    &.large {
+        .icon {
+            font-size: 60px;
+            padding: 20px;
+        }
+    }
 }

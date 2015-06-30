@@ -11,6 +11,57 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
+Modal Functions
+---------------------------------------- */
+$(document).ready(function() {
+    var bodyTag = $('body'),
+        openModal = $('.open-modal'),
+        modalWindow = $('.modal'),
+        closeModal = $('.close-modal');
+    
+    if (openModal.length > 0) { // Add modal background if modal links are present
+        $('.scope').append('<div id="modal-background"></div>');
+        
+        var modalBackground = $('#modal-background');
+    }
+    
+    function closeModals() {
+        bodyTag.removeClass('disable-scroll');
+        modalBackground.removeClass('visible');
+        modalWindow.removeClass('visible');
+        setTimeout(function() {
+            modalBackground.hide();
+            modalWindow.hide();
+        }, 250);
+    }
+    
+    openModal.click(function(e) {
+        e.preventDefault();
+        
+        var targetId = $(this).data('target-id');
+        
+        bodyTag.addClass('disable-scroll');
+        modalBackground.show();
+        $('#' + targetId).show();
+        setTimeout(function() { // Ensure elements are displayed before adding classes
+            modalBackground.addClass('visible');
+            $('#' + targetId).addClass('visible');
+        }, 25);
+    });
+    
+    closeModal.click(function(e) {
+        e.preventDefault();
+        closeModals();
+    });
+    
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) closeModals(); // Esc
+    });
+    
+    modalBackground.click(closeModals);
+});
+
+/* ----------------------------------------
 TinyMCE Initialize
 ---------------------------------------- */
 $(document).ready(function() {
@@ -39,32 +90,12 @@ $(document).ready(function() {
 jQuery UI Autocomplete Initialize
 ---------------------------------------- */
 $(document).ready(function() {
-    var choices = [
-        'ActionScript',
-        'AppleScript',
-        'Asp',
-        'BASIC',
-        'C',
-        'C++',
-        'Clojure',
-        'COBOL',
-        'ColdFusion',
-        'Erlang',
-        'Fortran',
-        'Groovy',
-        'Haskell',
-        'Java',
-        'JavaScript',
-        'Lisp',
-        'Perl',
-        'PHP',
-        'Python',
-        'Ruby',
-        'Scala',
-        'Scheme'
-    ];
-    $('.auto-complete').autocomplete({
-        source: choices
+    $('.autocomplete').each(function() { // Set list data for each
+        var autocompleteList = eval($(this).data('list')); // Use eval() to interpolate
+        
+        $(this).autocomplete({
+            source: autocompleteList
+        });
     });
 });
 

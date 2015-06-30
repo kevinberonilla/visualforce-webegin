@@ -13,13 +13,19 @@
     </head>
     <body>
         <div class="scope">
-            <div></div>
+            <div class="hero">
+                <div class="container">
+                    <div class="icon-container large purple"><span class="icon icomoon icomoon-user-plus"></span></div>
+                    <h1>This is a Hero Title</h1>
+                    <p>This is a test paragraph in the hero region. This is a test paragraph in the hero region. This is a test paragraph in the hero region. This is a test paragraph in the hero region.</p>
+                </div>
+            </div>
             <div class="container">
                 <div class="grid">
                     <div class="row">
                         <div class="column float-right fourth fourth-md">
                             <article class="card">
-                                <section class="header">
+                                <section>
                                     <h2><a href="#">Title</a></h2>
                                 </section>
                                 <section class="border-top">
@@ -35,10 +41,10 @@
                                 </section>
                             </article>
                         </div>
-                        <div class="column float-right half half-md margin-fourth margin-fourth-md">
+                        <div class="column float-right fourth-x3 fourth-x3-md">
                             <article class="card">
-                                <section class="header">
-                                    <div class="corner-buttons"><a href="#" class="button inverse red"><span class="icon icomoon icomoon-cancel-circle"></span>Test button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
+                                <section class="clearfix">
+                                    <div class="corner-buttons"><a href="#" class="button inverse red open-modal" data-target-id="modal-1"><span class="icon icomoon icomoon-cancel-circle"></span>Modal button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
                                     <h2><a href="#">Title<span class="status orange">Pending</span></a></h2>
                                     <h3>Subtitle</h3>
                                 </section>
@@ -69,7 +75,11 @@
                                         <li>Test 4</li>
                                     </ul>
                                     <p>Test paragraph.</p>
-                                    <p><a href="#" class="button inverse red"><span class="icon icomoon icomoon-cancel-circle"></span>Test button</a><a href="#" class="button">Test button</a></p>
+                                    <ul class="button-group margin-bottom clearfix">
+                                        <li><a class="orange" href="#">Test button 1</a></li>
+                                        <li><a class="orange" href="#">Test button 2</a></li>
+                                        <li><a class="orange" href="#">Test button 3</a></li>
+                                    </ul>
                                 </section>
                             </article>
                         </div>
@@ -96,8 +106,8 @@
                                 <input type="text" name="test3"/>
                                 <label for="test1">Date Field</label>
                                 <input type="text" name="date" class="date-picker"/>
-                                <label for="test1">Auto-complete Field</label>
-                                <input type="text" class="auto-complete" id="test1"/>
+                                <label for="autocomplete1">Autocomplete Field</label>
+                                <input type="text" class="autocomplete" id="autocomplete1" data-list="languages"/>
                             </div>
                             <div class="column half">
                                 <label for="textareatest">Textarea</label>
@@ -116,7 +126,49 @@
                     </section>
                 </article>
             </div>
+            <div id="modal-1" class="modal">
+                <section>
+                    <a href="#" class="close-modal text-light"><span class="icon no-margin icomoon icomoon-cross grey"></span></a>
+                    <h2>Test</h2>
+                </section>
+                <section class="border-top">
+                    <p>Test paragraph.</p>
+                    <p>Test paragraph.</p>
+                    <p>Test paragraph.</p>
+                </section>
+            </div>
+            <footer>
+                <div class="container">
+                    &copy; 2015 Appiphony.
+                </div>
+            </footer>
         </div>
+        <script>
+            var languages = [
+                'ActionScript',
+                'AppleScript',
+                'Asp',
+                'BASIC',
+                'C',
+                'C++',
+                'Clojure',
+                'COBOL',
+                'ColdFusion',
+                'Erlang',
+                'Fortran',
+                'Groovy',
+                'Haskell',
+                'Java',
+                'JavaScript',
+                'Lisp',
+                'Perl',
+                'PHP',
+                'Python',
+                'Ruby',
+                'Scala',
+                'Scheme'
+            ];
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script src="https://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
