@@ -17,7 +17,7 @@ body .scope {
     /* ----------------------------------------
     Salesforce1 Styles
     ---------------------------------------- */
-    @import 'sf1-typography', 'sf1-layout', 'sf1-imagery', 'sf1-interactive', 'sf1-forms';
+    @import 'salesforce1/typography', 'salesforce1/layout', 'salesforce1/imagery', 'salesforce1/interactive', 'salesforce1/forms';
     
     /* ----------------------------------------
     App Styles
@@ -29,5 +29,5 @@ body, body .scope { // Plugin elements can dynamically appear outside of scope
     /* ----------------------------------------
     Overrides
     ---------------------------------------- */
-    @import 'tinymce', 'tooltipster', 'jquery-ui';
+    @import 'overrides/tinymce', 'overrides/tooltipster', 'overrides/jquery-ui';
 }

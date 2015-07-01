@@ -5,9 +5,10 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Page Title | Site Title</title>
-        <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/icomoon.min.css">
         <link rel="stylesheet" type="text/css" href="css/proximanovasoft.min.css">
+        <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
         <link rel="stylesheet" type="text/css" href="css/tooltipster.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.min.css">
     </head>
@@ -15,7 +16,7 @@
         <div class="scope">
             <div class="hero">
                 <div class="container">
-                    <div class="icon-container large purple"><span class="icon icomoon icomoon-user-plus"></span></div>
+                    <div class="icon-container large purple"><span class="icon im im-user-plus"></span></div>
                     <h1>This is a Hero Title</h1>
                     <p>This is a test paragraph in the hero region. This is a test paragraph in the hero region. This is a test paragraph in the hero region. This is a test paragraph in the hero region.</p>
                 </div>
@@ -26,17 +27,20 @@
                         <div class="column float-right fourth fourth-md">
                             <article class="card">
                                 <section>
-                                    <h2><a href="#">Title</a></h2>
+                                    <div class="corner-links"><h3><a href="#" class="text-light">Next <span class="icon margin-left fa fa-chevron-right"></span></a></h3></div>
+                                    <h3><a href="#" class="open-alert" data-target-id="alert1">Alert Link</a></h3>
                                 </section>
                                 <section class="border-top">
-                                    <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph.</p>
+                                    <div id="alert1" class="alert red dismissible"><span class="icon fa fa-cog"></span>This is an alert.</div>
+                                    <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test <code>&lt;test&gt;</code> paragraph.</p>
+                                    <p><pre>test 1 test 2 test 3</pre></p>
                                     <p>Test paragraph.<span class="status green">Approved</span></p>
                                 </section>
                                 <section class="ribbon">
                                     <ul>
-                                        <li><a href="#"><span class="icon icomoon icomoon-phone"></span></a></li>
-                                        <li><a href="#"><span class="icon icomoon icomoon-bubble"></span></a></li>
-                                        <li><a href="#"><span class="icon icomoon icomoon-user-plus"></span></a></li>
+                                        <li><a href="#"><span class="icon im im-phone"></span></a></li>
+                                        <li><a href="#"><span class="icon im im-bubble"></span></a></li>
+                                        <li><a href="#"><span class="icon im im-user-plus"></span></a></li>
                                     </ul>
                                 </section>
                             </article>
@@ -44,9 +48,9 @@
                         <div class="column float-right fourth-x3 fourth-x3-md">
                             <article class="card">
                                 <section class="clearfix">
-                                    <div class="corner-buttons"><a href="#" class="button inverse red open-modal" data-target-id="modal-1"><span class="icon icomoon icomoon-cancel-circle"></span>Modal button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
-                                    <h2><a href="#">Title<span class="status orange">Pending</span></a></h2>
-                                    <h3>Subtitle</h3>
+                                    <div class="corner-links"><a href="#" class="button inverse red open-modal" data-target-id="modal-1"><span class="icon im im-cancel-circle"></span>Modal button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
+                                    <h2 class="margin-top"><a href="#">Title<span class="status orange">Pending</span></a></h2>
+                                    <!--<h3>Subtitle</h3>-->
                                 </section>
                                 <section class="border-top">
                                     <div>
@@ -100,14 +104,25 @@
                             <div class="column half">
                                 <label for="test1">Test Element 1</label>
                                 <input type="text" name="test1"/>
-                                <label for="test1">Test Element 1</label>
+                                <label for="test2">Test Element 2</label>
                                 <input type="text" name="test2"/>
-                                <label for="test1">Test Element 1</label>
-                                <input type="text" name="test3"/>
+                                <label for="select1">Test Select</label>
+                                <div class="select-container">
+                                    <select id="select1">
+                                        <option>Test 1</option>
+                                        <option>Test 2</option>
+                                        <option>Test 3</option>
+                                        <option>Test 4</option>
+                                    </select>
+                                </div>
                                 <label for="test1">Date Field</label>
-                                <input type="text" name="date" class="date-picker"/>
+                                <div class="date-picker-container">
+                                    <input type="text" name="date" class="date-picker"/>
+                                </div>
                                 <label for="autocomplete1">Autocomplete Field</label>
-                                <input type="text" class="autocomplete" id="autocomplete1" data-list="languages"/>
+                                <div class="autocomplete-container">
+                                    <input type="text" class="autocomplete" id="autocomplete1" data-list="languages"/>
+                                </div>
                             </div>
                             <div class="column half">
                                 <label for="textareatest">Textarea</label>
@@ -128,7 +143,7 @@
             </div>
             <div id="modal-1" class="modal">
                 <section>
-                    <a href="#" class="close-modal text-light"><span class="icon no-margin icomoon icomoon-cross grey"></span></a>
+                    <a href="#" class="close-modal text-light"><span class="icon no-margin im im-cross grey"></span></a>
                     <h2>Test</h2>
                 </section>
                 <section class="border-top">

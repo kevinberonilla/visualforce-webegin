@@ -98,6 +98,9 @@
 footer {
     @extend .hero;
     padding: ($type-spacing * 2) 0;
+    &:after {
+        display: none;
+    }
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
     .modal {

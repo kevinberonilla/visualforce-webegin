@@ -11,6 +11,28 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
+Alert Functions
+---------------------------------------- */
+$(document).ready(function() {
+    var alertElement = $('.alert'),
+        openAlert = $('.open-alert'),
+        closeAlert = $('.alert.dismissible').after();
+    
+    closeAlert.click(function() {
+        $(this).stop().slideUp(250);
+    });
+    
+    openAlert.click(function(e) {
+        e.preventDefault();
+        
+        var targetId = $(this).data('target-id'),
+            targetAlert = $('#' + targetId);
+        
+        targetAlert.stop().slideDown(250);
+    });
+});
+
+/* ----------------------------------------
 Modal Functions
 ---------------------------------------- */
 $(document).ready(function() {
@@ -38,11 +60,12 @@ $(document).ready(function() {
     openModal.click(function(e) {
         e.preventDefault();
         
-        var targetId = $(this).data('target-id');
+        var targetId = $(this).data('target-id'),
+            targetModal = $('#' + targetId);
         
         bodyTag.addClass('disable-scroll');
         modalBackground.show();
-        $('#' + targetId).show();
+        targetModal.show();
         setTimeout(function() { // Ensure elements are displayed before adding classes
             modalBackground.addClass('visible');
             $('#' + targetId).addClass('visible');
@@ -69,7 +92,7 @@ $(document).ready(function() {
         selector: 'textarea.rich-text',
         statusbar: false,
         resize: true,
-        height: 190
+        height: 192
     });
 });
 
@@ -100,7 +123,7 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
-jQuery UI Date Picker
+jQuery UI Date Picker Initialize
 ---------------------------------------- */
 $(document).ready(function() {
     $('.date-picker').datepicker({

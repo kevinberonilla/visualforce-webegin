@@ -60,6 +60,19 @@ a, a:visited {
     text-decoration: none;
     @include color-classes(color);
 }
+code {
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: $round-corner-small;
+    background-color: rgba($text-normal, 0.1);
+    font-size: 12px;
+    line-height: 20px;
+}
+pre {
+    @extend code;
+    display: block;
+    padding: $card-padding / 2;
+}
 .text-dark {
     color: $text-dark;
 }
@@ -68,4 +81,19 @@ a, a:visited {
 }
 .text-light {
     color: $text-light;
+}
+
+.icon {
+    margin-right: $type-spacing / 2;
+    &.im { // IcoMoon
+        position: relative;
+        top: 2px;
+    }
+    &.no-margin {
+        margin-right: 0;
+    }
+    &.margin-left {
+        margin-right: 0;
+        margin-left: $type-spacing / 2;
+    }
 }

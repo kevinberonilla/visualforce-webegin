@@ -85,3 +85,10 @@
         }
     }
 }
+@mixin background-color-classes($alpha: 1) {
+    @each $color in $color-list {
+        &.#{nth($color, 1)} {
+            background-color: rgba(nth($color, 2), $alpha);
+        }
+    }
+}

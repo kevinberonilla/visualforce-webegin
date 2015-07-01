@@ -1233,6 +1233,18 @@ body .scope a.orange, body .scope a:visited.orange {
 body .scope a.pink, body .scope a:visited.pink {
   color: #d96383;
 }
+body .scope code, body .scope pre {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 5px;
+  background-color: rgba(82, 83, 84, 0.1);
+  font-size: 12px;
+  line-height: 20px;
+}
+body .scope pre {
+  display: block;
+  padding: 8px;
+}
 body .scope .text-dark {
   color: #2e4052;
 }
@@ -1241,6 +1253,20 @@ body .scope .text-normal {
 }
 body .scope .text-light {
   color: #adb8c2;
+}
+body .scope .icon {
+  margin-right: 6px;
+}
+body .scope .icon.im {
+  position: relative;
+  top: 2px;
+}
+body .scope .icon.no-margin {
+  margin-right: 0;
+}
+body .scope .icon.margin-left {
+  margin-right: 0;
+  margin-left: 6px;
 }
 body .scope .hero, body .scope footer, body .scope .scope footer {
   background-color: #344a5f;
@@ -1351,6 +1377,9 @@ body .scope #modal-background.visible {
 body .scope footer {
   padding: 24px 0;
 }
+body .scope footer:after {
+  display: none;
+}
 @media only screen and (max-width: 1024px) {
   body .scope .modal {
     width: 80%;
@@ -1425,12 +1454,13 @@ body .scope .icon-container .icon {
   display: block;
   font-size: 26px;
   padding: 10px;
+  margin-right: 0;
 }
 body .scope .icon-container.large .icon {
   font-size: 60px;
   padding: 20px;
 }
-body .scope button, body .scope a.button, body .scope .button-group li a, body .scope .button-group li a:visited, body .scope input[type="submit"], body .scope textarea[type="submit"] {
+body .scope button, body .scope a.button, body .scope .button-group li a, body .scope .button-group li a:visited, body .scope input[type="submit"], body .scope textarea[type="submit"], body .scope select[type="submit"] {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   -webkit-transform: translateZ(0);
@@ -1443,212 +1473,204 @@ body .scope button, body .scope a.button, body .scope .button-group li a, body .
   padding: 10px 12px 12px;
   margin-right: 12px;
   border-radius: 5px;
-  border: 1px solid #2a94d6;
+  border: 1px solid transparent;
   background-color: #2a94d6;
   color: #fff;
   font-weight: 700;
   text-align: center;
 }
-body .scope button.text-dark, body .scope a.text-dark.button, body .scope .button-group li a.text-dark, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"] {
+body .scope button.text-dark, body .scope a.text-dark.button, body .scope .button-group li a.text-dark, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"] {
   border-color: #2e4052;
 }
-body .scope button.text-normal, body .scope a.text-normal.button, body .scope .button-group li a.text-normal, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"] {
+body .scope button.text-normal, body .scope a.text-normal.button, body .scope .button-group li a.text-normal, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"] {
   border-color: #525354;
 }
-body .scope button.text-light, body .scope a.text-light.button, body .scope .button-group li a.text-light, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"] {
+body .scope button.text-light, body .scope a.text-light.button, body .scope .button-group li a.text-light, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"] {
   border-color: #adb8c2;
 }
-body .scope button.blue, body .scope a.blue.button, body .scope .button-group li a.blue, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"] {
+body .scope button.blue, body .scope a.blue.button, body .scope .button-group li a.blue, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"] {
   border-color: #2a94d6;
 }
-body .scope button.light-blue, body .scope a.light-blue.button, body .scope .button-group li a.light-blue, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"] {
+body .scope button.light-blue, body .scope a.light-blue.button, body .scope .button-group li a.light-blue, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"] {
   border-color: #4eb1cb;
 }
-body .scope button.navy, body .scope a.navy.button, body .scope .button-group li a.navy, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"] {
+body .scope button.navy, body .scope a.navy.button, body .scope .button-group li a.navy, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"] {
   border-color: #344a5f;
 }
-body .scope button.grey, body .scope a.grey.button, body .scope .button-group li a.grey, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"] {
+body .scope button.grey, body .scope a.grey.button, body .scope .button-group li a.grey, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"] {
   border-color: #f0f1f2;
 }
-body .scope button.light-grey, body .scope a.light-grey.button, body .scope .button-group li a.light-grey, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"] {
+body .scope button.light-grey, body .scope a.light-grey.button, body .scope .button-group li a.light-grey, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"] {
   border-color: #f9fbfc;
 }
-body .scope button.white, body .scope a.white.button, body .scope .button-group li a.white, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"] {
+body .scope button.white, body .scope a.white.button, body .scope .button-group li a.white, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"] {
   border-color: #fff;
 }
-body .scope button.red, body .scope a.red.button, body .scope .button-group li a.red, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"] {
+body .scope button.red, body .scope a.red.button, body .scope .button-group li a.red, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"] {
   border-color: #cf5c60;
 }
-body .scope button.purple, body .scope a.purple.button, body .scope .button-group li a.purple, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"] {
+body .scope button.purple, body .scope a.purple.button, body .scope .button-group li a.purple, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"], body .scope select.purple[type="submit"] {
   border-color: #717ecd;
 }
-body .scope button.green, body .scope a.green.button, body .scope .button-group li a.green, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"] {
+body .scope button.green, body .scope a.green.button, body .scope .button-group li a.green, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"], body .scope select.green[type="submit"] {
   border-color: #4ab471;
 }
-body .scope button.orange, body .scope a.orange.button, body .scope .button-group li a.orange, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"] {
+body .scope button.orange, body .scope a.orange.button, body .scope .button-group li a.orange, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"], body .scope select.orange[type="submit"] {
   border-color: #f3ae4e;
 }
-body .scope button.pink, body .scope a.pink.button, body .scope .button-group li a.pink, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"] {
+body .scope button.pink, body .scope a.pink.button, body .scope .button-group li a.pink, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"], body .scope select.pink[type="submit"] {
   border-color: #d96383;
 }
-body .scope button.text-dark, body .scope a.text-dark.button, body .scope .button-group li a.text-dark, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"] {
+body .scope button.text-dark, body .scope a.text-dark.button, body .scope .button-group li a.text-dark, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"] {
   background-color: #2e4052;
 }
-body .scope button.text-normal, body .scope a.text-normal.button, body .scope .button-group li a.text-normal, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"] {
+body .scope button.text-normal, body .scope a.text-normal.button, body .scope .button-group li a.text-normal, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"] {
   background-color: #525354;
 }
-body .scope button.text-light, body .scope a.text-light.button, body .scope .button-group li a.text-light, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"] {
+body .scope button.text-light, body .scope a.text-light.button, body .scope .button-group li a.text-light, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"] {
   background-color: #adb8c2;
 }
-body .scope button.blue, body .scope a.blue.button, body .scope .button-group li a.blue, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"] {
+body .scope button.blue, body .scope a.blue.button, body .scope .button-group li a.blue, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"] {
   background-color: #2a94d6;
 }
-body .scope button.light-blue, body .scope a.light-blue.button, body .scope .button-group li a.light-blue, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"] {
+body .scope button.light-blue, body .scope a.light-blue.button, body .scope .button-group li a.light-blue, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"] {
   background-color: #4eb1cb;
 }
-body .scope button.navy, body .scope a.navy.button, body .scope .button-group li a.navy, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"] {
+body .scope button.navy, body .scope a.navy.button, body .scope .button-group li a.navy, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"] {
   background-color: #344a5f;
 }
-body .scope button.grey, body .scope a.grey.button, body .scope .button-group li a.grey, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"] {
+body .scope button.grey, body .scope a.grey.button, body .scope .button-group li a.grey, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"] {
   background-color: #f0f1f2;
 }
-body .scope button.light-grey, body .scope a.light-grey.button, body .scope .button-group li a.light-grey, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"] {
+body .scope button.light-grey, body .scope a.light-grey.button, body .scope .button-group li a.light-grey, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"] {
   background-color: #f9fbfc;
 }
-body .scope button.white, body .scope a.white.button, body .scope .button-group li a.white, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"] {
+body .scope button.white, body .scope a.white.button, body .scope .button-group li a.white, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"] {
   background-color: #fff;
 }
-body .scope button.red, body .scope a.red.button, body .scope .button-group li a.red, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"] {
+body .scope button.red, body .scope a.red.button, body .scope .button-group li a.red, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"] {
   background-color: #cf5c60;
 }
-body .scope button.purple, body .scope a.purple.button, body .scope .button-group li a.purple, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"] {
+body .scope button.purple, body .scope a.purple.button, body .scope .button-group li a.purple, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"], body .scope select.purple[type="submit"] {
   background-color: #717ecd;
 }
-body .scope button.green, body .scope a.green.button, body .scope .button-group li a.green, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"] {
+body .scope button.green, body .scope a.green.button, body .scope .button-group li a.green, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"], body .scope select.green[type="submit"] {
   background-color: #4ab471;
 }
-body .scope button.orange, body .scope a.orange.button, body .scope .button-group li a.orange, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"] {
+body .scope button.orange, body .scope a.orange.button, body .scope .button-group li a.orange, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"], body .scope select.orange[type="submit"] {
   background-color: #f3ae4e;
 }
-body .scope button.pink, body .scope a.pink.button, body .scope .button-group li a.pink, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"] {
+body .scope button.pink, body .scope a.pink.button, body .scope .button-group li a.pink, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"], body .scope select.pink[type="submit"] {
   background-color: #d96383;
 }
-body .scope button.inverse, body .scope a.inverse.button, body .scope .button-group li a.inverse, body .scope input.inverse[type="submit"], body .scope textarea.inverse[type="submit"] {
+body .scope button.inverse, body .scope a.inverse.button, body .scope .button-group li a.inverse, body .scope input.inverse[type="submit"], body .scope textarea.inverse[type="submit"], body .scope select.inverse[type="submit"] {
   background-color: transparent;
   border: 1px solid #2a94d6;
 }
-body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope .button-group li a.inverse.text-dark, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"] {
+body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope .button-group li a.inverse.text-dark, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"] {
   border-color: #2e4052;
 }
-body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope .button-group li a.inverse.text-normal, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"] {
+body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope .button-group li a.inverse.text-normal, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"] {
   border-color: #525354;
 }
-body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope .button-group li a.inverse.text-light, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"] {
+body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope .button-group li a.inverse.text-light, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"] {
   border-color: #adb8c2;
 }
-body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope .button-group li a.inverse.blue, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"] {
+body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope .button-group li a.inverse.blue, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"] {
   border-color: #2a94d6;
 }
-body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope .button-group li a.inverse.light-blue, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"] {
+body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope .button-group li a.inverse.light-blue, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"] {
   border-color: #4eb1cb;
 }
-body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope .button-group li a.inverse.navy, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"] {
+body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope .button-group li a.inverse.navy, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"] {
   border-color: #344a5f;
 }
-body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope .button-group li a.inverse.grey, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"] {
+body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope .button-group li a.inverse.grey, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"] {
   border-color: #f0f1f2;
 }
-body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope .button-group li a.inverse.light-grey, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"] {
+body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope .button-group li a.inverse.light-grey, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"] {
   border-color: #f9fbfc;
 }
-body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope .button-group li a.inverse.white, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"] {
+body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope .button-group li a.inverse.white, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"] {
   border-color: #fff;
 }
-body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope .button-group li a.inverse.red, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"] {
+body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope .button-group li a.inverse.red, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"] {
   border-color: #cf5c60;
 }
-body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope .button-group li a.inverse.purple, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"] {
+body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope .button-group li a.inverse.purple, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"], body .scope select.inverse.purple[type="submit"] {
   border-color: #717ecd;
 }
-body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope .button-group li a.inverse.green, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"] {
+body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope .button-group li a.inverse.green, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"], body .scope select.inverse.green[type="submit"] {
   border-color: #4ab471;
 }
-body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope .button-group li a.inverse.orange, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"] {
+body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope .button-group li a.inverse.orange, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"], body .scope select.inverse.orange[type="submit"] {
   border-color: #f3ae4e;
 }
-body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope .button-group li a.inverse.pink, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"] {
+body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope .button-group li a.inverse.pink, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"], body .scope select.inverse.pink[type="submit"] {
   border-color: #d96383;
 }
-body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope .button-group li a.inverse.text-dark, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"] {
+body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope .button-group li a.inverse.text-dark, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"] {
   color: #2e4052;
 }
-body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope .button-group li a.inverse.text-normal, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"] {
+body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope .button-group li a.inverse.text-normal, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"] {
   color: #525354;
 }
-body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope .button-group li a.inverse.text-light, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"] {
+body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope .button-group li a.inverse.text-light, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"] {
   color: #adb8c2;
 }
-body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope .button-group li a.inverse.blue, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"] {
+body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope .button-group li a.inverse.blue, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"] {
   color: #2a94d6;
 }
-body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope .button-group li a.inverse.light-blue, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"] {
+body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope .button-group li a.inverse.light-blue, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"] {
   color: #4eb1cb;
 }
-body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope .button-group li a.inverse.navy, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"] {
+body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope .button-group li a.inverse.navy, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"] {
   color: #344a5f;
 }
-body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope .button-group li a.inverse.grey, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"] {
+body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope .button-group li a.inverse.grey, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"] {
   color: #f0f1f2;
 }
-body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope .button-group li a.inverse.light-grey, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"] {
+body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope .button-group li a.inverse.light-grey, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"] {
   color: #f9fbfc;
 }
-body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope .button-group li a.inverse.white, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"] {
+body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope .button-group li a.inverse.white, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"] {
   color: #fff;
 }
-body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope .button-group li a.inverse.red, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"] {
+body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope .button-group li a.inverse.red, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"] {
   color: #cf5c60;
 }
-body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope .button-group li a.inverse.purple, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"] {
+body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope .button-group li a.inverse.purple, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"], body .scope select.inverse.purple[type="submit"] {
   color: #717ecd;
 }
-body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope .button-group li a.inverse.green, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"] {
+body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope .button-group li a.inverse.green, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"], body .scope select.inverse.green[type="submit"] {
   color: #4ab471;
 }
-body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope .button-group li a.inverse.orange, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"] {
+body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope .button-group li a.inverse.orange, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"], body .scope select.inverse.orange[type="submit"] {
   color: #f3ae4e;
 }
-body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope .button-group li a.inverse.pink, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"] {
+body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope .button-group li a.inverse.pink, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"], body .scope select.inverse.pink[type="submit"] {
   color: #d96383;
 }
-body .scope button.full-width, body .scope a.full-width.button, body .scope .button-group li a.full-width, body .scope input.full-width[type="submit"], body .scope textarea.full-width[type="submit"] {
+body .scope button.full-width, body .scope a.full-width.button, body .scope .button-group li a.full-width, body .scope input.full-width[type="submit"], body .scope textarea.full-width[type="submit"], body .scope select.full-width[type="submit"] {
   width: 100%;
 }
-body .scope button .icon, body .scope a.button .icon, body .scope .button-group li a .icon, body .scope input[type="submit"] .icon, body .scope textarea[type="submit"] .icon {
-  position: relative;
-  top: 2px;
-  margin-right: 6px;
-}
-body .scope button .icon.no-margin, body .scope a.button .icon.no-margin, body .scope .button-group li a .icon.no-margin, body .scope input[type="submit"] .icon.no-margin, body .scope textarea[type="submit"] .icon.no-margin {
+body .scope button:last-child, body .scope a.button:last-child, body .scope .button-group li a:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child, body .scope select[type="submit"]:last-child {
   margin-right: 0;
 }
-body .scope button:last-child, body .scope a.button:last-child, body .scope .button-group li a:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child {
-  margin-right: 0;
-}
-body .scope button:hover, body .scope a.button:hover, body .scope .button-group li a:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover {
+body .scope button:hover, body .scope a.button:hover, body .scope .button-group li a:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover, body .scope select[type="submit"]:hover {
   opacity: 0.5;
 }
-body .scope button:focus, body .scope a.button:focus, body .scope .button-group li a:focus, body .scope input[type="submit"]:focus, body .scope textarea[type="submit"]:focus {
+body .scope button:focus, body .scope a.button:focus, body .scope .button-group li a:focus, body .scope input[type="submit"]:focus, body .scope textarea[type="submit"]:focus, body .scope select[type="submit"]:focus {
   outline: none;
 }
-body .scope .corner-buttons {
+body .scope .corner-links {
   float: right;
 }
 @media only screen and (max-width: 1024px) {
-  body .scope .corner-buttons {
+  body .scope .corner-links {
     float: none;
   }
-  body .scope .corner-buttons .button {
+  body .scope .corner-links .button {
     width: 100%;
     margin-bottom: 12px;
   }
@@ -1709,6 +1731,7 @@ body .scope .status.pink {
 }
 body .scope .accordion {
   padding: 16px;
+  padding-right: 46px;
   cursor: pointer;
   background-color: #f9fafa;
   color: #525354;
@@ -1721,14 +1744,14 @@ body .scope .accordion:after {
   transition: all 250ms ease;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  font-family: 'IcoMoon-Free';
-  content: '\ea41';
+  font-family: 'FontAwesome';
+  content: '\f0d7';
   display: block;
   font-size: 16px;
   color: #adb8c2;
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 20px;
 }
 body .scope .accordion.open:after {
   -webkit-transform: rotate(180deg);
@@ -1793,10 +1816,166 @@ body .scope .ribbon ul li a, body .scope .ribbon ul li a:visited {
 body .scope .ribbon ul li a:hover, body .scope .ribbon ul li a:visited:hover {
   opacity: 0.5;
 }
-body .scope .ribbon ul li .icon {
+body .scope .alert {
+  border: 1px solid #2a94d6;
+  background-color: rgba(42, 148, 214, 0.1);
+  padding: 16px;
+  color: #2a94d6;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+body .scope .alert.text-dark {
+  border-color: #2e4052;
+}
+body .scope .alert.text-normal {
+  border-color: #525354;
+}
+body .scope .alert.text-light {
+  border-color: #adb8c2;
+}
+body .scope .alert.blue {
+  border-color: #2a94d6;
+}
+body .scope .alert.light-blue {
+  border-color: #4eb1cb;
+}
+body .scope .alert.navy {
+  border-color: #344a5f;
+}
+body .scope .alert.grey {
+  border-color: #f0f1f2;
+}
+body .scope .alert.light-grey {
+  border-color: #f9fbfc;
+}
+body .scope .alert.white {
+  border-color: #fff;
+}
+body .scope .alert.red {
+  border-color: #cf5c60;
+}
+body .scope .alert.purple {
+  border-color: #717ecd;
+}
+body .scope .alert.green {
+  border-color: #4ab471;
+}
+body .scope .alert.orange {
+  border-color: #f3ae4e;
+}
+body .scope .alert.pink {
+  border-color: #d96383;
+}
+body .scope .alert.text-dark {
+  color: #2e4052;
+}
+body .scope .alert.text-normal {
+  color: #525354;
+}
+body .scope .alert.text-light {
+  color: #adb8c2;
+}
+body .scope .alert.blue {
+  color: #2a94d6;
+}
+body .scope .alert.light-blue {
+  color: #4eb1cb;
+}
+body .scope .alert.navy {
+  color: #344a5f;
+}
+body .scope .alert.grey {
+  color: #f0f1f2;
+}
+body .scope .alert.light-grey {
+  color: #f9fbfc;
+}
+body .scope .alert.white {
+  color: #fff;
+}
+body .scope .alert.red {
+  color: #cf5c60;
+}
+body .scope .alert.purple {
+  color: #717ecd;
+}
+body .scope .alert.green {
+  color: #4ab471;
+}
+body .scope .alert.orange {
+  color: #f3ae4e;
+}
+body .scope .alert.pink {
+  color: #d96383;
+}
+body .scope .alert.text-dark {
+  background-color: rgba(46, 64, 82, 0.1);
+}
+body .scope .alert.text-normal {
+  background-color: rgba(82, 83, 84, 0.1);
+}
+body .scope .alert.text-light {
+  background-color: rgba(173, 184, 194, 0.1);
+}
+body .scope .alert.blue {
+  background-color: rgba(42, 148, 214, 0.1);
+}
+body .scope .alert.light-blue {
+  background-color: rgba(78, 177, 203, 0.1);
+}
+body .scope .alert.navy {
+  background-color: rgba(52, 74, 95, 0.1);
+}
+body .scope .alert.grey {
+  background-color: rgba(240, 241, 242, 0.1);
+}
+body .scope .alert.light-grey {
+  background-color: rgba(249, 251, 252, 0.1);
+}
+body .scope .alert.white {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body .scope .alert.red {
+  background-color: rgba(207, 92, 96, 0.1);
+}
+body .scope .alert.purple {
+  background-color: rgba(113, 126, 205, 0.1);
+}
+body .scope .alert.green {
+  background-color: rgba(74, 180, 113, 0.1);
+}
+body .scope .alert.orange {
+  background-color: rgba(243, 174, 78, 0.1);
+}
+body .scope .alert.pink {
+  background-color: rgba(217, 99, 131, 0.1);
+}
+body .scope .alert.dismissible {
+  padding-right: 46px;
   position: relative;
-  top: 2px;
-  margin-right: 6px;
+}
+body .scope .alert.dismissible:after {
+  font-family: IcoMoon-Free;
+  content: '\ea0f';
+  display: block;
+  font-size: 10px;
+  padding: 16px 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+body .scope .alert.small {
+  padding: 8px;
+}
+body .scope .alert.small.dismissible {
+  padding-right: 30px;
+}
+body .scope .alert.small.dismissible:after {
+  padding: 8px 10px;
+}
+body .scope .alert.hidden {
+  display: none;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .button-group li {
@@ -1823,7 +2002,7 @@ body .scope label {
   display: block;
   color: #adb8c2;
 }
-body .scope input, body .scope textarea {
+body .scope input, body .scope textarea, body .scope select {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   -webkit-transform: translateZ(0);
@@ -1839,15 +2018,49 @@ body .scope input, body .scope textarea {
   background-color: #f0f1f2;
   width: 100%;
 }
-body .scope input:focus, body .scope textarea:focus {
+body .scope input:focus, body .scope textarea:focus, body .scope select:focus {
   background-color: #fff;
   outline: none;
 }
-body .scope input + *, body .scope .scope input + *, body .scope textarea + *, body .scope .scope textarea + *, body .scope input + *:before, body .scope .scope input + *:before, body .scope textarea + *:before, body .scope .scope textarea + *:before, body .scope input + *:after, body .scope .scope input + *:after, body .scope textarea + *:after, body .scope .scope textarea + *:after {
+body .scope input + *, body .scope .scope input + *, body .scope textarea + *, body .scope .scope textarea + *, body .scope select + *, body .scope .scope select + *, body .scope input + *:before, body .scope .scope input + *:before, body .scope textarea + *:before, body .scope .scope textarea + *:before, body .scope select + *:before, body .scope .scope select + *:before, body .scope input + *:after, body .scope .scope input + *:after, body .scope textarea + *:after, body .scope .scope textarea + *:after, body .scope select + *:after, body .scope .scope select + *:after {
   margin-top: 12px;
 }
 body .scope textarea {
   height: 190px;
+}
+body .scope select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  height: 42px;
+  text-overflow: '';
+}
+body .scope select::-ms-expand {
+  display: none;
+}
+body .scope .select-container, body .scope .autocomplete-container, body .scope .date-picker-container {
+  position: relative;
+  color: #adb8c2;
+}
+body .scope .select-container:after, body .scope .autocomplete-container:after, body .scope .date-picker-container:after {
+  font-family: 'FontAwesome';
+  content: '\f0d7';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 16px;
+  pointer-events: none;
+}
+body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .date-picker-container + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .date-picker-container + *:after, body .scope .scope .date-picker-container + *:after {
+  margin-top: 12px;
+}
+body .scope .autocomplete-container:after {
+  content: '\f141 ';
+}
+body .scope .date-picker-container:after {
+  font-family: IcoMoon-Free;
+  content: '\e953';
 }
 
 body, body .scope, body .scope {
@@ -1876,7 +2089,7 @@ body .mce-menu-item .mce-text, body .scope .mce-menu-item .mce-text {
   font-weight: 300;
   color: #525354;
 }
-body .mce-ico, body .mce-menubar .mce-menubtn button span, body .mce-menubar .mce-menubtn .scope a.button span, body .scope .mce-menubar .mce-menubtn a.button span, body .mce-menubar .mce-menubtn .scope .button-group li a span, body .scope .mce-menubar .mce-menubtn .button-group li a span, body .scope .button-group li .mce-menubar .mce-menubtn a span, body .mce-menubar .mce-menubtn .scope input[type="submit"] span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .mce-menubar .mce-menubtn .scope textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .scope .mce-ico, body .scope .mce-menubar .mce-menubtn button span, body .scope .mce-menubar .mce-menubtn a.button span, body .scope .mce-menubar .mce-menubtn .button-group li a span, body .scope .button-group li .mce-menubar .mce-menubtn a span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span {
+body .mce-ico, body .mce-menubar .mce-menubtn button span, body .mce-menubar .mce-menubtn .scope a.button span, body .scope .mce-menubar .mce-menubtn a.button span, body .mce-menubar .mce-menubtn .scope .button-group li a span, body .scope .mce-menubar .mce-menubtn .button-group li a span, body .scope .button-group li .mce-menubar .mce-menubtn a span, body .mce-menubar .mce-menubtn .scope input[type="submit"] span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .mce-menubar .mce-menubtn .scope textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .mce-menubar .mce-menubtn .scope select[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span, body .scope .mce-ico, body .scope .mce-menubar .mce-menubtn button span, body .scope .mce-menubar .mce-menubtn a.button span, body .scope .mce-menubar .mce-menubtn .button-group li a span, body .scope .button-group li .mce-menubar .mce-menubtn a span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span {
   color: #525354;
 }
 body .mce-stack-layout-item, body .scope .mce-stack-layout-item {
@@ -1890,7 +2103,7 @@ body .mce-menubtn span, body .scope .mce-menubtn span {
   font-size: 14px;
   line-height: 22px;
 }
-body .mce-menubtn button, body .mce-menubtn .scope a.button, body .scope .mce-menubtn a.button, body .mce-menubtn .scope .button-group li a, body .scope .mce-menubtn .button-group li a, body .scope .button-group li .mce-menubtn a, body .mce-menubtn .scope input[type="submit"], body .scope .mce-menubtn input[type="submit"], body .mce-menubtn .scope textarea[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .mce-btn button, body .mce-btn .scope a.button, body .scope .mce-btn a.button, body .mce-btn .scope .button-group li a, body .scope .mce-btn .button-group li a, body .scope .button-group li .mce-btn a, body .mce-btn .scope input[type="submit"], body .scope .mce-btn input[type="submit"], body .mce-btn .scope textarea[type="submit"], body .scope .mce-btn textarea[type="submit"], body .scope .mce-menubtn button, body .scope .mce-menubtn a.button, body .scope .mce-menubtn .button-group li a, body .scope .button-group li .mce-menubtn a, body .scope .mce-menubtn input[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .scope .mce-btn button, body .scope .mce-btn a.button, body .scope .mce-btn .button-group li a, body .scope .button-group li .mce-btn a, body .scope .mce-btn input[type="submit"], body .scope .mce-btn textarea[type="submit"] {
+body .mce-menubtn button, body .mce-menubtn .scope a.button, body .scope .mce-menubtn a.button, body .mce-menubtn .scope .button-group li a, body .scope .mce-menubtn .button-group li a, body .scope .button-group li .mce-menubtn a, body .mce-menubtn .scope input[type="submit"], body .scope .mce-menubtn input[type="submit"], body .mce-menubtn .scope textarea[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .mce-menubtn .scope select[type="submit"], body .scope .mce-menubtn select[type="submit"], body .mce-btn button, body .mce-btn .scope a.button, body .scope .mce-btn a.button, body .mce-btn .scope .button-group li a, body .scope .mce-btn .button-group li a, body .scope .button-group li .mce-btn a, body .mce-btn .scope input[type="submit"], body .scope .mce-btn input[type="submit"], body .mce-btn .scope textarea[type="submit"], body .scope .mce-btn textarea[type="submit"], body .mce-btn .scope select[type="submit"], body .scope .mce-btn select[type="submit"], body .scope .mce-menubtn button, body .scope .mce-menubtn a.button, body .scope .mce-menubtn .button-group li a, body .scope .button-group li .mce-menubtn a, body .scope .mce-menubtn input[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .scope .mce-menubtn select[type="submit"], body .scope .mce-btn button, body .scope .mce-btn a.button, body .scope .mce-btn .button-group li a, body .scope .button-group li .mce-btn a, body .scope .mce-btn input[type="submit"], body .scope .mce-btn textarea[type="submit"], body .scope .mce-btn select[type="submit"] {
   border-radius: 5px;
   padding: 6px 10px;
   background-color: #fff;
@@ -1919,7 +2132,7 @@ body .mce-menubar, body .scope .mce-menubar {
   padding-left: 3px;
   background-color: #f0f1f2;
 }
-body .mce-stack-layout .mce-widget button, body .mce-stack-layout .mce-widget .scope a.button, body .scope .mce-stack-layout .mce-widget a.button, body .mce-stack-layout .mce-widget .scope .button-group li a, body .scope .mce-stack-layout .mce-widget .button-group li a, body .scope .button-group li .mce-stack-layout .mce-widget a, body .mce-stack-layout .mce-widget .scope input[type="submit"], body .scope .mce-stack-layout .mce-widget input[type="submit"], body .mce-stack-layout .mce-widget .scope textarea[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .scope .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget a.button, body .scope .mce-stack-layout .mce-widget .button-group li a, body .scope .button-group li .mce-stack-layout .mce-widget a, body .scope .mce-stack-layout .mce-widget input[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"] {
+body .mce-stack-layout .mce-widget button, body .mce-stack-layout .mce-widget .scope a.button, body .scope .mce-stack-layout .mce-widget a.button, body .mce-stack-layout .mce-widget .scope .button-group li a, body .scope .mce-stack-layout .mce-widget .button-group li a, body .scope .button-group li .mce-stack-layout .mce-widget a, body .mce-stack-layout .mce-widget .scope input[type="submit"], body .scope .mce-stack-layout .mce-widget input[type="submit"], body .mce-stack-layout .mce-widget .scope textarea[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .mce-stack-layout .mce-widget .scope select[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"], body .scope .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget a.button, body .scope .mce-stack-layout .mce-widget .button-group li a, body .scope .button-group li .mce-stack-layout .mce-widget a, body .scope .mce-stack-layout .mce-widget input[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"] {
   margin: 1px 2px;
 }
 body .mce-toolbar-grp, body .scope .mce-toolbar-grp {
@@ -1953,6 +2166,7 @@ body .mce-tooltip-arrow, body .scope .mce-tooltip-arrow {
 body .tooltipster-default, body .scope .tooltipster-default {
   border-radius: 5px;
   border: 1px solid #dfe0e1;
+  border-color: transparent;
   background: #2e4052;
   color: #fff;
 }
