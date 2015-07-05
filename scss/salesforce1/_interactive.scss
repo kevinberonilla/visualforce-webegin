@@ -15,6 +15,11 @@ button {
     text-align: center;
     @include color-classes(border-color);
     @include color-classes(background-color);
+    &.small {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 6px 10px;
+    }
     &.inverse {
         background-color: transparent;
         border: 1px solid $blue;
@@ -33,6 +38,10 @@ button {
     &:focus {
         outline: none;
     }
+    &.test {
+        background-color: rgba(#777, 0.5);
+        background-color: transparentize(#777, 0.5);
+    }
 }
 a.button, input[type="submit"] {
     @extend button;
@@ -46,19 +55,6 @@ a.button, input[type="submit"] {
             margin-bottom: $type-spacing;
         }
     }
-}   
-.status {
-    display: inline-block;
-    padding: 0 6px;
-    border-radius: $round-corner-small;
-    font-size: 10px;
-    font-weight: $bold;
-    vertical-align: bottom;
-    background-color: $blue;
-    color: $white;
-    letter-spacing: 0.25px;
-    margin-left: $type-spacing / 2;
-    @include color-classes(background-color);
 }
 .accordion {
     padding: $card-padding;
@@ -116,9 +112,32 @@ a.button, input[type="submit"] {
             }
         }
         a, a:visited {
-            @extend a.button;
+            @extend button;
             margin-right: 0;
             border-radius: 0;
+        }
+    }
+}
+.paginate-links {
+    @extend .button-group;
+    li {
+        margin-left: -1px;
+        a, a:visited {
+            @extend button;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: $bold;
+            padding: 6px 12px;
+            color: $blue;
+            background-color: $white;
+            border: $card-border;
+            &.current {
+                color: $white;
+                background-color: $blue;
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 }

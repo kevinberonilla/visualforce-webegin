@@ -5,10 +5,11 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Page Title | Site Title</title>
+        <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/icomoon.min.css">
         <link rel="stylesheet" type="text/css" href="css/proximanovasoft.min.css">
-        <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.tagit.min.css">
         <link rel="stylesheet" type="text/css" href="css/tooltipster.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.min.css">
     </head>
@@ -27,11 +28,11 @@
                         <div class="column float-right fourth fourth-md">
                             <article class="card">
                                 <section>
-                                    <div class="corner-links"><h3><a href="#" class="text-light">Next <span class="icon margin-left fa fa-chevron-right"></span></a></h3></div>
+                                    <div class="float-right"><h3><a href="#" class="text-light">Next <span class="icon margin-left fa fa-chevron-right"></span></a></h3></div>
                                     <h3><a href="#" class="open-alert" data-target-id="alert1">Alert Link</a></h3>
                                 </section>
                                 <section class="border-top">
-                                    <div id="alert1" class="alert red dismissible"><span class="icon fa fa-cog"></span>This is an alert.</div>
+                                    <div id="alert1" class="alert red dismissible"><span class="icon margin-right fa fa-cog"></span>This is an alert.</div>
                                     <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test <code>&lt;test&gt;</code> paragraph.</p>
                                     <p><pre>test 1 test 2 test 3</pre></p>
                                     <p>Test paragraph.<span class="status green">Approved</span></p>
@@ -48,7 +49,7 @@
                         <div class="column float-right fourth-x3 fourth-x3-md">
                             <article class="card">
                                 <section class="clearfix">
-                                    <div class="corner-links"><a href="#" class="button inverse red open-modal" data-target-id="modal-1"><span class="icon im im-cancel-circle"></span>Modal button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
+                                    <div class="corner-links"><a href="#" class="button inverse red open-modal" data-target-id="modal-1"><span class="icon margin-right im im-cancel-circle"></span>Modal button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
                                     <h2 class="margin-top"><a href="#">Title<span class="status orange">Pending</span></a></h2>
                                     <!--<h3>Subtitle</h3>-->
                                 </section>
@@ -79,34 +80,49 @@
                                         <li>Test 4</li>
                                     </ul>
                                     <p>Test paragraph.</p>
-                                    <ul class="button-group margin-bottom clearfix">
+                                    <ul class="button-group clearfix">
                                         <li><a class="orange" href="#">Test button 1</a></li>
                                         <li><a class="orange" href="#">Test button 2</a></li>
                                         <li><a class="orange" href="#">Test button 3</a></li>
+                                    </ul>
+                                    <ul class="paginate-links margin-bottom clearfix">
+                                        <li><a href="#"><span class="icon fa fa-chevron-left"></span></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#" accesskey=""class="current">3</a></li>
+                                        <li><a href="#"><span class="icon fa fa-chevron-right"></span></a></li>
                                     </ul>
                                 </section>
                             </article>
                         </div>
                     </div>
                 </div>
-                <article class="card margin-bottom-x2">
+                <article class="card reveal margin-bottom-x2">
                     <section class="border-bottom">
                         <h2>Test</h2>
                     </section>
                     <section class="grey border-bottom">
                         <h4>This is a section header</h4>
                     </section>
-                    <section class="border-bottom">
+                    <section>
                         <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph.</p>
                         <hr/>
                         <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph.</p>
                         <div class="row">
+                            <div class="column">
+                                <label>Radio Buttons</label>
+                                <input type="radio" name="version" value="version-one" id="version-one"><label for="version-one">Version One</label><input type="radio" name="version" value="version-two" id="version-two"><label for="version-two">Version Two</label><input type="radio" disabled name="version" value="version-three" id="version-three"><label for="version-three">Version Three</label>
+                            </div>
+                            <div class="column">
+                                <label>Checkboxes</label>
+                                <input type="checkbox" name="checkbox-one" value="checkbox-one" id="checkbox-one"><label for="checkbox-one">Version One</label><input type="checkbox" name="checkbox-two" value="checkbox-two" id="checkbox-two"><label for="checkbox-two">Version Two</label>
+                            </div>
                             <div class="column half">
                                 <label for="test1">Test Element 1</label>
                                 <input type="text" name="test1"/>
-                                <label for="test2">Test Element 2</label>
-                                <input type="text" name="test2"/>
-                                <label for="select1">Test Select</label>
+                                <label for="test2">Tags</label>
+                                <ul class="tags"></ul>
+                                <label for="select1">Drop-down</label>
                                 <div class="select-container">
                                     <select id="select1">
                                         <option>Test 1</option>
@@ -131,7 +147,15 @@
                         </div>
                         <button type="submit" class="full-width margin-top">Submit</button>
                     </section>
-                    <section>
+                </article>
+                <article class="card reveal margin-bottom-x2">
+                    <section class="border-bottom">
+                        <h2>Test</h2>
+                    </section>
+                    <section class="grey border-bottom">
+                        <h4>This is a section header</h4>
+                    </section>
+                    <section class="border-bottom">
                         <div class="accordion">This is an accordion 1</div>
                         <div class="accordion-content">test 1</div>
                         <div class="accordion">This is an accordion 2</div>
@@ -139,11 +163,18 @@
                         <div class="accordion">This is an accordion 3</div>
                         <div class="accordion-content">test 3</div>
                     </section>
+                    <section>
+                        <div class="progress-bar">
+                            <div class="progress tooltip visible" data-percentage="50" title="50%"></div>
+                            <div class="progress red" data-percentage="10"></div>
+                            <div class="progress orange" data-percentage="30"></div>
+                        </div>
+                    </section>
                 </article>
             </div>
             <div id="modal-1" class="modal">
                 <section>
-                    <a href="#" class="close-modal text-light"><span class="icon no-margin im im-cross grey"></span></a>
+                    <a href="#" class="close-modal text-light"><span class="icon im im-cross grey"></span></a>
                     <h2>Test</h2>
                 </section>
                 <section class="border-top">
@@ -187,6 +218,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script src="https://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+        <script src="js/tag-it.min.js"></script>
         <script src="js/jquery.tooltipster.min.js"></script>
         <script src="js/main.min.js"></script>
     </body>

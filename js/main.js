@@ -6,7 +6,8 @@ $(document).ready(function() {
     
     accordion.click(function() {
         $(this).toggleClass('open');
-        $('+ .accordion-content', this).stop().slideToggle(250);
+        $('+ .accordion-content', this).stop()
+            .slideToggle(250);
     });
 });
 
@@ -19,7 +20,8 @@ $(document).ready(function() {
         closeAlert = $('.alert.dismissible').after();
     
     closeAlert.click(function() {
-        $(this).stop().slideUp(250);
+        $(this).stop()
+            .slideUp(250);
     });
     
     openAlert.click(function(e) {
@@ -28,8 +30,56 @@ $(document).ready(function() {
         var targetId = $(this).data('target-id'),
             targetAlert = $('#' + targetId);
         
-        targetAlert.stop().slideDown(250);
+        targetAlert.stop()
+            .slideDown(250);
     });
+});
+
+/* ----------------------------------------
+Progress Functions
+---------------------------------------- */
+$(document).ready(function() {
+    
+    $('.progress').each(function() {
+        var progressPercentage = $(this).data('percentage');
+        
+        $(this).css('width', progressPercentage + '%');
+    });
+});
+
+/* ----------------------------------------
+Reveal Functions
+---------------------------------------- */
+$(document).ready(function() {
+    var revealElement = $('.reveal'),
+        revealLength = revealElement.length,
+        revealCount = 0;
+    
+    if (revealLength > 0) {
+        var windowHeight = $(window).height(),
+            positionTrigger = windowHeight * 0.8;
+        
+        $(window).resize(function() { // Reset if window is resized
+            windowHeight = $(window).height();
+            positionTrigger = windowHeight * 0.8;
+        });
+        
+        function reveal() {
+            revealElement.each(function() {
+                if (!$(this).hasClass('visible') && $(window).scrollTop() + positionTrigger >= $(this).offset().top) {
+                    $(this).addClass('visible');
+                    revealCount++;
+                }
+            });
+            if (revealCount >= revealLength) { // Unbind if all elements have been revealed
+                $(window).unbind('scroll');
+            }
+        }
+        
+        reveal(); // Show visisble elements on load
+        
+        $(window).scroll(reveal);
+    }
 });
 
 /* ----------------------------------------
@@ -93,6 +143,16 @@ $(document).ready(function() {
         statusbar: false,
         resize: true,
         height: 192
+    });
+});
+
+/* ----------------------------------------
+Tag-it Initialize
+---------------------------------------- */
+$(document).ready(function() {
+    $('.tags').tagit({
+        allowSpaces: true,
+        
     });
 });
 

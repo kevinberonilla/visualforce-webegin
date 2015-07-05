@@ -18,13 +18,15 @@ input {
         background-color: $white;
         outline: none;
     }
-    + * {
-        margin-top: $type-spacing;
-    }
+    @include type-margin;
 }
 textarea {
     @extend input;
     height: 190px;
+    resize: none;
+    &.resizable {
+        resize: both;
+    }
 }
 select {
     -webkit-appearance: none;
@@ -37,27 +39,88 @@ select {
 select::-ms-expand {
     display: none;
 }
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: $type-spacing / 2;
+    border-radius: 22px;
+    border: $card-border;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    vertical-align: bottom;
+    background-color: $white;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    + label {
+        color: $text-normal;
+        display: inline-block;
+        margin-top: 0;
+        margin-right: $type-spacing;
+    }
+    &:checked {
+        background-color: $blue;
+        &:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: $white;
+            border-radius: 10px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    }
+    &:disabled {
+        background-color: $grey;
+        border-color: $grey;
+    }
+}
+input[type="checkbox"] {
+    @extend input[type="radio"];
+    border-radius: $round-corner-small;
+    &:checked {
+        &:after {
+            height: 8px;
+            width: 14px;
+            background-color: transparent;
+            border-radius: 0;
+            border-bottom: 4px solid $white;
+            border-left: 4px solid $white;
+            transform: rotate(-45deg);
+            top: 4px;
+            right: 3px;
+        }
+    }
+}
 .select-container {
     position: relative;
-    color: $text-light;
     &:after {
         font-family: 'FontAwesome';
         content: '\f0d7';
+        color: $text-light;
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 2px;
         padding: 12px 16px;
         pointer-events: none;
     }
-    + * {
-        margin-top: $type-spacing;
-    }
+    @include type-margin;
 }
 .autocomplete-container {
     @extend .select-container;
     &:after {
-        content: '\f141 ';
+        content: '\f141';
+    }
+}
+.tags {
+    @extend .select-container;
+    &:after {
+        content: '\f02b';
+        right: -2px;
     }
 }
 .date-picker-container {
@@ -65,5 +128,6 @@ select::-ms-expand {
     &:after {
         font-family: IcoMoon-Free;
         content: '\e953';
+        right: -1px;
     }
 }

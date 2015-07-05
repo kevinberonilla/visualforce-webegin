@@ -38,22 +38,16 @@ small {
     color: $text-light;
 }
 p {
-    + *{
-        margin-top: $type-spacing;
-    }
+    @include type-margin;
 }
 ul, ol {
     margin-left: 32px;
-    + * {
-        margin-top: $type-spacing;
-    }
+    @include type-margin;
 }
 hr {
     border: none;
     border-bottom: $card-border;
-    + * {
-        margin-top: $type-spacing;
-    }
+    @include type-margin;
 }
 a, a:visited {
     color: $blue;
@@ -84,16 +78,14 @@ pre {
 }
 
 .icon {
-    margin-right: $type-spacing / 2;
     &.im { // IcoMoon
         position: relative;
         top: 2px;
     }
-    &.no-margin {
-        margin-right: 0;
+    &.margin-right {
+        margin-right: $type-spacing / 2;
     }
     &.margin-left {
-        margin-right: 0;
         margin-left: $type-spacing / 2;
     }
 }

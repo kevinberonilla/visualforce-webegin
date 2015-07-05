@@ -29,5 +29,5 @@ body, body .scope { // Plugin elements can dynamically appear outside of scope
     /* ----------------------------------------
     Overrides
     ---------------------------------------- */
-    @import 'overrides/tinymce', 'overrides/tooltipster', 'overrides/jquery-ui';
+    @import 'overrides/tinymce', 'overrides/tag-it', 'overrides/tooltipster', 'overrides/jquery-ui';
 }

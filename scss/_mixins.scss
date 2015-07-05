@@ -1,6 +1,10 @@
 @mixin animated($property: all, $duration: 250ms, $function: ease) {
     transition: $property $duration $function;
-    transform: translateZ(0);
+}
+@mixin type-margin {
+    + * {
+        margin-top: $type-spacing;
+    }
 }
 @mixin column-width($width, $affix) {
     &-#{$affix} {

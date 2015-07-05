@@ -57,6 +57,12 @@ body .scope {
         top: 50%;
         transform: translateY(-50%);
     }
+    .float-left {
+        float: left;
+    }
+    .float-right {
+        float: right;
+    }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         .container {
             width: 100%;

@@ -1,0 +1,34 @@
+ul.tagit {
+    @extend input;
+    transition: none;
+    background: initial;
+    background-color: $grey;
+    margin-left: 0;
+    padding: 8px 8px;
+}
+ul.tagit li {
+    margin: 0 ($type-spacing / 2) 0 0;
+}
+ul.tagit li.tagit-choice {
+    font-size: 12px;
+}
+ul.tagit li.tagit-choice-editable {
+    border-radius: $round-corner-small;
+    background-color: $white;
+    padding: 2px 20px 2px 6px;
+}
+ul.tagit li.tagit-new {
+    padding: 0;
+}
+ul.tagit input[type="text"] {
+    line-height: 24px;
+    padding-left: 6px;
+    background: initial;    
+    background-color: $grey;
+    &:focus {
+        background-color: $white;
+    }
+}
+.ui-state-default .ui-icon {
+    margin-right: 2px;
+}

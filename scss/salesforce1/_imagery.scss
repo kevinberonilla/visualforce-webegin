@@ -22,16 +22,56 @@
     @extend .avatar;
     @include color-classes(background-color);
     text-align: center;
+    font-size: 26px;
     .icon {
         display: block;
-        font-size: 26px;
         padding: 10px;
         margin-right: 0;
     }
     &.large {
+        font-size: 60px;
         .icon {
-            font-size: 60px;
             padding: 20px;
         }
     }
+}
+.progress-bar {
+    @extend .clearfix;
+    border: $card-border;
+    border-radius: 20px;
+    height: 20px;
+    padding: 4px;
+    overflow: hidden;
+    background-color: transparent;
+    .progress {
+        @include animated;
+        display: block;
+        float: left;
+        border-radius: 10px;
+        height: 10px;
+        background-color: $blue;
+        @include color-classes('background-color');
+        &:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    @include type-margin;
+}
+.status {
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: $round-corner-small;
+    font-size: 10px;
+    font-weight: $bold;
+    vertical-align: bottom;
+    background-color: $blue;
+    color: $white;
+    letter-spacing: 0.25px;
+    margin-left: $type-spacing / 2;
+    @include color-classes(background-color);
 }
