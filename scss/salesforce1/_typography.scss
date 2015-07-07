@@ -76,7 +76,6 @@ pre {
 .text-light {
     color: $text-light;
 }
-
 .icon {
     &.im { // IcoMoon
         position: relative;
@@ -87,5 +86,22 @@ pre {
     }
     &.margin-left {
         margin-left: $type-spacing / 2;
+    }
+}
+.status {
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: $round-corner-small;
+    font-size: 10px;
+    font-weight: $bold;
+    vertical-align: bottom;
+    background-color: $blue;
+    color: $white;
+    letter-spacing: 0.25px;
+    margin-left: $type-spacing / 2;
+    @include color-classes(background-color);
+    a, a:visited {
+        text-decoration: underline;
+        color: $white;
     }
 }

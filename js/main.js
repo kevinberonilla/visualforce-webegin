@@ -5,9 +5,13 @@ $(document).ready(function() {
    var accordion = $('.accordion');
     
     accordion.click(function() {
-        $(this).toggleClass('open');
-        $('+ .accordion-content', this).stop()
-            .slideToggle(250);
+        if ($('+ .accordion-content', this).length > 0) {
+            $(this).toggleClass('open');
+            $('+ .accordion-content', this).stop()
+                .slideToggle(250);
+        } else {
+            console.error('No immediate sibling with the "accordion-content" class exists.');
+        }
     });
 });
 
@@ -65,6 +69,7 @@ $(document).ready(function() {
         });
         
         function reveal() {
+            console.log('scroll');
             revealElement.each(function() {
                 if (!$(this).hasClass('visible') && $(window).scrollTop() + positionTrigger >= $(this).offset().top) {
                     $(this).addClass('visible');

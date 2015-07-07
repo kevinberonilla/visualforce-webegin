@@ -55,8 +55,6 @@ ul.tagit input[type="text"] {
     -moz-box-sizing:    border-box;
     -webkit-box-sizing: border-box;
     box-sizing:         border-box;
-
-    -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 
@@ -67,3 +65,5 @@ ul.tagit input[type="text"] {
     background-color: inherit;
     outline: none;
 }
+
+

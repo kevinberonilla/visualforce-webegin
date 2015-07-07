@@ -1178,11 +1178,17 @@ body .scope small {
 body .scope p + *, body .scope .scope p + *, body .scope p + *:before, body .scope .scope p + *:before, body .scope p + *:after, body .scope .scope p + *:after {
   margin-top: 12px;
 }
+body .scope p + :after, body .scope .scope p + :after {
+  margin: 0;
+}
 body .scope ul, body .scope ol {
   margin-left: 32px;
 }
 body .scope ul + *, body .scope .scope ul + *, body .scope ul + *:before, body .scope .scope ul + *:before, body .scope ul + *:after, body .scope .scope ul + *:after, body .scope ol + *, body .scope .scope ol + *, body .scope ol + *:before, body .scope .scope ol + *:before, body .scope ol + *:after, body .scope .scope ol + *:after {
   margin-top: 12px;
+}
+body .scope ul + :after, body .scope .scope ul + :after, body .scope ol + :after, body .scope .scope ol + :after {
+  margin: 0;
 }
 body .scope hr {
   border: none;
@@ -1190,6 +1196,9 @@ body .scope hr {
 }
 body .scope hr + *, body .scope .scope hr + *, body .scope hr + *:before, body .scope .scope hr + *:before, body .scope hr + *:after, body .scope .scope hr + *:after {
   margin-top: 12px;
+}
+body .scope hr + :after, body .scope .scope hr + :after {
+  margin: 0;
 }
 body .scope a, body .scope a:visited {
   color: #2a94d6;
@@ -1268,6 +1277,64 @@ body .scope .icon.margin-right {
 body .scope .icon.margin-left {
   margin-left: 6px;
 }
+body .scope .status {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 900;
+  vertical-align: bottom;
+  background-color: #2a94d6;
+  color: #fff;
+  letter-spacing: 0.25px;
+  margin-left: 6px;
+}
+body .scope .status.text-dark {
+  background-color: #2e4052;
+}
+body .scope .status.text-normal {
+  background-color: #525354;
+}
+body .scope .status.text-light {
+  background-color: #adb8c2;
+}
+body .scope .status.blue {
+  background-color: #2a94d6;
+}
+body .scope .status.light-blue {
+  background-color: #4eb1cb;
+}
+body .scope .status.navy {
+  background-color: #344a5f;
+}
+body .scope .status.grey {
+  background-color: #f0f1f2;
+}
+body .scope .status.light-grey {
+  background-color: #f9fbfc;
+}
+body .scope .status.white {
+  background-color: #fff;
+}
+body .scope .status.red {
+  background-color: #cf5c60;
+}
+body .scope .status.purple {
+  background-color: #717ecd;
+}
+body .scope .status.green {
+  background-color: #4ab471;
+}
+body .scope .status.orange {
+  background-color: #f3ae4e;
+}
+body .scope .status.pink {
+  background-color: #d96383;
+}
+body .scope .status a, body .scope .status a:visited {
+  text-decoration: underline;
+  color: #fff;
+}
 body .scope .hero, body .scope footer, body .scope .scope footer {
   background-color: #344a5f;
   text-align: center;
@@ -1325,6 +1392,30 @@ body .scope .card .border-bottom, body .scope .modal .border-bottom {
 body .scope .card .grey, body .scope .modal .grey {
   background-color: #f9fafa;
 }
+body .scope ul.card, body .scope ul.modal {
+  margin-left: 0;
+}
+body .scope ul.card li, body .scope ul.modal li {
+  padding: 16px;
+  border-top: 1px solid #dfe0e1;
+}
+body .scope ul.card li a, body .scope ul.modal li a, body .scope ul.card li a:visited, body .scope ul.modal li a:visited {
+  font-weight: 700;
+  display: block;
+  position: relative;
+}
+body .scope ul.card li a:after, body .scope ul.modal li a:after, body .scope ul.card li a:visited:after, body .scope ul.modal li a:visited:after {
+  font-family: 'FontAwesome';
+  content: '\f054';
+  color: #adb8c2;
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+body .scope ul.card li:first-child, body .scope ul.modal li:first-child {
+  border-top: none;
+}
 body .scope .reveal {
   -webkit-transition: all 750ms ease;
   transition: all 750ms ease;
@@ -1380,6 +1471,66 @@ body .scope #modal-background {
 }
 body .scope #modal-background.visible {
   opacity: 1;
+}
+body .scope table {
+  width: 100%;
+  text-align: center;
+}
+body .scope table td {
+  padding: 16px;
+  white-space: nowrap;
+}
+body .scope table thead {
+  background-color: #2a94d6;
+  color: #fff;
+}
+body .scope table thead.text-dark {
+  background-color: #2e4052;
+}
+body .scope table thead.text-normal {
+  background-color: #525354;
+}
+body .scope table thead.text-light {
+  background-color: #adb8c2;
+}
+body .scope table thead.blue {
+  background-color: #2a94d6;
+}
+body .scope table thead.light-blue {
+  background-color: #4eb1cb;
+}
+body .scope table thead.navy {
+  background-color: #344a5f;
+}
+body .scope table thead.grey {
+  background-color: #f0f1f2;
+}
+body .scope table thead.light-grey {
+  background-color: #f9fbfc;
+}
+body .scope table thead.white {
+  background-color: #fff;
+}
+body .scope table thead.red {
+  background-color: #cf5c60;
+}
+body .scope table thead.purple {
+  background-color: #717ecd;
+}
+body .scope table thead.green {
+  background-color: #4ab471;
+}
+body .scope table thead.orange {
+  background-color: #f3ae4e;
+}
+body .scope table thead.pink {
+  background-color: #d96383;
+}
+body .scope table tbody tr:nth-child(even) {
+  background-color: #f0f1f2;
+}
+body .scope .table-container {
+  overflow: auto;
 }
 body .scope footer {
   padding: 24px 0;
@@ -1471,8 +1622,8 @@ body .scope .icon-container.large .icon {
 }
 body .scope .progress-bar {
   border: 1px solid #dfe0e1;
-  border-radius: 20px;
-  height: 20px;
+  border-radius: 8px;
+  height: 40px;
   padding: 4px;
   overflow: hidden;
   background-color: transparent;
@@ -1482,9 +1633,13 @@ body .scope .progress-bar .progress {
   transition: all 250ms ease;
   display: block;
   float: left;
-  border-radius: 10px;
-  height: 10px;
+  height: 30px;
+  border-radius: 5px;
   background-color: #2a94d6;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
 }
 body .scope .progress-bar .progress.text-dark {
   background-color: #2e4052;
@@ -1536,62 +1691,27 @@ body .scope .progress-bar .progress:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+body .scope .progress-bar.small {
+  border-radius: 20px;
+  height: 20px;
+}
+body .scope .progress-bar.small .progress {
+  height: 10px;
+  border-radius: 10px;
+}
+body .scope .progress-bar.small .progress:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body .scope .progress-bar.small .progress:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 body .scope .progress-bar + *, body .scope .scope .progress-bar + *, body .scope .progress-bar + *:before, body .scope .scope .progress-bar + *:before, body .scope .progress-bar + *:after, body .scope .scope .progress-bar + *:after {
   margin-top: 12px;
 }
-body .scope .status {
-  display: inline-block;
-  padding: 0 6px;
-  border-radius: 5px;
-  font-size: 10px;
-  font-weight: 900;
-  vertical-align: bottom;
-  background-color: #2a94d6;
-  color: #fff;
-  letter-spacing: 0.25px;
-  margin-left: 6px;
-}
-body .scope .status.text-dark {
-  background-color: #2e4052;
-}
-body .scope .status.text-normal {
-  background-color: #525354;
-}
-body .scope .status.text-light {
-  background-color: #adb8c2;
-}
-body .scope .status.blue {
-  background-color: #2a94d6;
-}
-body .scope .status.light-blue {
-  background-color: #4eb1cb;
-}
-body .scope .status.navy {
-  background-color: #344a5f;
-}
-body .scope .status.grey {
-  background-color: #f0f1f2;
-}
-body .scope .status.light-grey {
-  background-color: #f9fbfc;
-}
-body .scope .status.white {
-  background-color: #fff;
-}
-body .scope .status.red {
-  background-color: #cf5c60;
-}
-body .scope .status.purple {
-  background-color: #717ecd;
-}
-body .scope .status.green {
-  background-color: #4ab471;
-}
-body .scope .status.orange {
-  background-color: #f3ae4e;
-}
-body .scope .status.pink {
-  background-color: #d96383;
+body .scope .progress-bar + :after, body .scope .scope .progress-bar + :after {
+  margin: 0;
 }
 body .scope button, body .scope a.button, body .scope input[type="submit"], body .scope textarea[type="submit"], body .scope select[type="submit"], body .scope ul[type="submit"].tagit, body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
   -webkit-transition: all 250ms ease;
@@ -2053,6 +2173,11 @@ body .scope .alert.orange {
 body .scope .alert.pink {
   background-color: rgba(217, 99, 131, 0.1);
 }
+body .scope .alert a, body .scope .alert a:visited {
+  color: inherit;
+  font-weight: 900;
+  text-decoration: underline;
+}
 body .scope .alert.dismissible {
   padding-right: 46px;
   position: relative;
@@ -2100,6 +2225,25 @@ body .scope .alert.hidden {
     display: block;
     width: 100%;
   }
+  body .scope .paginate-links li {
+    float: left;
+    width: auto;
+    margin-left: -1px;
+    margin-top: 0;
+  }
+  body .scope .paginate-links li:first-child a, body .scope .paginate-links li:first-child a:visited {
+    margin-top: 0;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+  }
+  body .scope .paginate-links li:last-child a, body .scope .paginate-links li:last-child a:visited {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  body .scope .paginate-links li a, body .scope .paginate-links li a:visited {
+    display: block;
+    width: 100%;
+  }
 }
 body .scope label {
   display: block;
@@ -2125,6 +2269,9 @@ body .scope input:focus, body .scope textarea:focus, body .scope select:focus, b
 }
 body .scope input + *, body .scope .scope input + *, body .scope textarea + *, body .scope .scope textarea + *, body .scope select + *, body .scope .scope select + *, body .scope ul.tagit + *, body .scope .scope ul.tagit + *, body .scope input + *:before, body .scope .scope input + *:before, body .scope textarea + *:before, body .scope .scope textarea + *:before, body .scope select + *:before, body .scope .scope select + *:before, body .scope ul.tagit + *:before, body .scope .scope ul.tagit + *:before, body .scope input + *:after, body .scope .scope input + *:after, body .scope textarea + *:after, body .scope .scope textarea + *:after, body .scope select + *:after, body .scope .scope select + *:after, body .scope ul.tagit + *:after, body .scope .scope ul.tagit + *:after {
   margin-top: 12px;
+}
+body .scope input + :after, body .scope .scope input + :after, body .scope textarea + :after, body .scope .scope textarea + :after, body .scope select + :after, body .scope .scope select + :after, body .scope ul.tagit + :after, body .scope .scope ul.tagit + :after {
+  margin: 0;
 }
 body .scope textarea {
   height: 190px;
@@ -2214,6 +2361,9 @@ body .scope .select-container:after, body .scope .autocomplete-container:after, 
 }
 body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .tags + *, body .scope .scope .tags + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .tags + *:before, body .scope .scope .tags + *:before, body .scope .date-picker-container + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .tags + *:after, body .scope .scope .tags + *:after, body .scope .date-picker-container + *:after, body .scope .scope .date-picker-container + *:after {
   margin-top: 12px;
+}
+body .scope .select-container + :after, body .scope .scope .select-container + :after, body .scope .autocomplete-container + :after, body .scope .scope .autocomplete-container + :after, body .scope .tags + :after, body .scope .scope .tags + :after, body .scope .date-picker-container + :after, body .scope .scope .date-picker-container + :after {
+  margin: 0;
 }
 body .scope .autocomplete-container:after {
   content: '\f141';

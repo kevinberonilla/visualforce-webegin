@@ -53,6 +53,30 @@
         background-color: $light-grey;
     }
 }
+ul.card {
+    margin-left: 0;
+    li {
+        padding: $card-padding;
+        border-top: $card-border;
+        a, a:visited {
+            font-weight: $semibold;
+            display: block;
+            position: relative;
+            &:after {
+                font-family: 'FontAwesome';
+                content: '\f054';
+                color: $text-light;
+                display: inline-block;
+                position: absolute;
+                top: 1px;
+                right: 0;
+            }
+        }
+        &:first-child {
+            border-top: none;
+        }
+    }
+}
 .reveal {
     @include animated(all, 750ms);
     opacity: 0;
@@ -104,6 +128,27 @@
     &.visible {
         opacity: 1;
     }
+}
+table {
+    width: 100%;
+    text-align: center;
+    td {
+        padding: $card-padding;
+        white-space: nowrap;
+    }
+    thead {
+        background-color: $blue;
+        color: $white;
+        @include color-classes(background-color);
+    }
+    tbody {
+        tr:nth-child(even) {
+            background-color: $grey;
+        }
+    }
+}
+.table-container {
+    overflow: auto;
 }
 footer {
     @extend .hero;

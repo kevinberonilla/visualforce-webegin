@@ -176,6 +176,11 @@ a.button, input[type="submit"] {
     @include color-classes(border-color);
     @include color-classes(color);
     @include background-color-classes(0.1);
+    a, a:visited {
+        color: inherit;
+        font-weight: $bold;
+        text-decoration: underline;
+    }
     &.dismissible {
         padding-right: 46px;
         position: relative;
@@ -222,6 +227,31 @@ a.button, input[type="submit"] {
                 a, a:visited {
                     border-top-right-radius: 0;
                     border-bottom-left-radius: $round-corner-small;
+                }
+            }
+            a, a:visited {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    .paginate-links {
+        li {
+            float: left;
+            width: auto;
+            margin-left: -1px;
+            margin-top: 0;
+            &:first-child {
+                a, a:visited {
+                    margin-top: 0;
+                    border-bottom-left-radius: $round-corner-small;
+                    border-top-right-radius: 0;
+                }
+            }
+            &:last-child {
+                a, a:visited {
+                    border-top-right-radius: $round-corner-small;
+                    border-bottom-left-radius: 0;
                 }
             }
             a, a:visited {

@@ -4,6 +4,9 @@
 @mixin type-margin {
     + * {
         margin-top: $type-spacing;
+        &:after {
+            margin: 0;
+        }
     }
 }
 @mixin column-width($width, $affix) {

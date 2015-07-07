@@ -32,10 +32,10 @@
                                     <h3><a href="#" class="open-alert" data-target-id="alert1">Alert Link</a></h3>
                                 </section>
                                 <section class="border-top">
-                                    <div id="alert1" class="alert red dismissible"><span class="icon margin-right fa fa-cog"></span>This is an alert.</div>
+                                    <div id="alert1" class="alert red dismissible"><span class="icon margin-right fa fa-cog"></span>This is an alert with a <a href="#">link</a>.</div>
                                     <p>Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test <code>&lt;test&gt;</code> paragraph.</p>
                                     <p><pre>test 1 test 2 test 3</pre></p>
-                                    <p>Test paragraph.<span class="status green">Approved</span></p>
+                                    <p>Test paragraph.<span class="status green">Approved | <a href="#">Edit</a></span></p>
                                 </section>
                                 <section class="ribbon">
                                     <ul>
@@ -50,7 +50,7 @@
                             <article class="card">
                                 <section class="clearfix">
                                     <div class="corner-links"><a href="#" class="button inverse red open-modal" data-target-id="modal-1"><span class="icon margin-right im im-cancel-circle"></span>Modal button</a><a href="#" class="button tooltip" title="Tooltip Content">Tooltip button</a></div>
-                                    <h2 class="margin-top"><a href="#">Title<span class="status orange">Pending</span></a></h2>
+                                    <h2 class="margin-top"><a href="#">Title<span class="status orange">Pending <span class="fa fa-arrow-up"></span></span></a></h2>
                                     <!--<h3>Subtitle</h3>-->
                                 </section>
                                 <section class="border-top">
@@ -165,10 +165,55 @@
                     </section>
                     <section>
                         <div class="progress-bar">
-                            <div class="progress tooltip visible" data-percentage="50" title="50%"></div>
-                            <div class="progress red" data-percentage="10"></div>
-                            <div class="progress orange" data-percentage="30"></div>
+                            <div class="progress" data-percentage="50">50%</div>
+                            <div class="progress red" data-percentage="20">20%</div>
+                            <div class="progress orange" data-percentage="20">20%</div>
                         </div>
+                        <div class="progress-bar small">
+                            <div class="progress navy tooltip" data-percentage="30" title="70%"></div>
+                            <div class="progress green tooltip" data-percentage="20" title="20%"></div>
+                        </div>
+                    </section>
+                </article>
+                <article class="card margin-bottom-x2">
+                    <section class="border-bottom">
+                        <h3>Tables</h3>
+                    </section>
+                    <section>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Header Column 1</td>
+                                        <td>Header Column 2</td>
+                                        <td>Header Column 3</td>
+                                        <td>Header Column 4</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Row 1 Column 1</td>
+                                        <td>Row 1 Column 2</td>
+                                        <td>Row 1 Column 3</td>
+                                        <td>Row 1 Column 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 2 Column 1</td>
+                                        <td>Row 2 Column 2</td>
+                                        <td>Row 2 Column 3</td>
+                                        <td>Row 2 Column 4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section>
+                        <ul class="card">
+                            <li>Line 1</li>
+                            <li>Line 2</li>
+                            <li><a href="#">Line 3</a></li>
+                            <li>Line 4</li>
+                        </ul>
                     </section>
                 </article>
             </div>
