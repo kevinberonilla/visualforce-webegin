@@ -38,8 +38,22 @@
         padding: $card-padding;
         &.has-buttons {
             min-height: 76px;
-            h2.margin-top {
-                margin-top: $type-spacing;
+            h2 {
+                margin-top: $type-spacing - 2;
+                @media only screen and (max-width: $tablet-landscape-breakpoint) {
+                    margin-top: 0;
+                }
+                &.has-subheader {
+                    margin-top: 0;
+                    + h3 {
+                        margin-top: 0;
+                    }
+                }
+            }
+            &.mobile-header {
+                @media only screen and (max-width: $tablet-landscape-breakpoint) {
+                    min-height: 62px;
+                }
             }
         }
     }
@@ -52,6 +66,18 @@
     .grey {
         background-color: $light-grey;
     }
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        &.fullscreen {
+            border-radius: 0;
+            margin-top: 0;
+            margin-right: -($tablet-landscape-breakpoint - $container-width) / 2;
+            margin-bottom: 0;
+            margin-left: -($tablet-landscape-breakpoint - $container-width) / 2;
+            + .fullscreen {
+                border-top: none;
+            }
+        }
+    }
 }
 ul.card {
     margin-left: 0;
@@ -62,6 +88,8 @@ ul.card {
             font-weight: $semibold;
             display: block;
             position: relative;
+            padding: $card-padding;
+            margin: -$card-padding;
             &:after {
                 font-family: 'FontAwesome';
                 content: '\f054';
@@ -70,10 +98,62 @@ ul.card {
                 position: absolute;
                 top: 1px;
                 right: 0;
+                padding: $card-padding;
+            }
+            &:hover {
+                color: $white;
+                background-color: $blue;
             }
         }
         &:first-child {
             border-top: none;
+        }
+    }
+}
+.corner-buttons {
+    float: right;
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        float: none;
+        button {
+            width: 100%;
+            margin-bottom: $type-spacing;
+        }
+    }
+}
+.mobile-header {
+    position: relative;
+    .corner-buttons {
+        @extend .clearfix;
+    }
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        .corner-buttons {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            button {
+                display: inline-block;
+                width: auto;
+                margin: $card-padding;
+                font-size: 13px;
+                padding: 4px 10px;
+                background-color: $grey;
+                color: $text-normal;
+                &.mobile-left {
+                    float: left;
+                }
+                &.mobile-right {
+                    float: right;
+                }
+            }
+        }
+        h2 {
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            &.margin-top {
+                margin-top: 0;
+            }
         }
     }
 }
@@ -112,6 +192,9 @@ ul.card {
         &:focus {
             outline: none;
         }
+    }
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        width: 80%;
     }
 }
 #modal-background {
@@ -155,10 +238,5 @@ footer {
     padding: ($type-spacing * 2) 0;
     &:after {
         display: none;
-    }
-}
-@media only screen and (max-width: $tablet-landscape-breakpoint) {
-    .modal {
-        width: 80%;
     }
 }

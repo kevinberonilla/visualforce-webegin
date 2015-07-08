@@ -16,6 +16,22 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
+Dropdown Button Functions
+---------------------------------------- */
+$(document).ready(function() {
+    var dropdown = $('.dropdown');
+    
+    dropdown.each(function() { // Set options width to match button on load
+        var buttonWidth = $(this).outerWidth();
+         $('+ .dropdown-options', this).css('min-width', buttonWidth + 'px');
+    });
+    
+    dropdown.after().click(function() {
+        $('+ .dropdown-options', this).show();
+    });
+});
+
+/* ----------------------------------------
 Alert Functions
 ---------------------------------------- */
 $(document).ready(function() {
@@ -69,7 +85,6 @@ $(document).ready(function() {
         });
         
         function reveal() {
-            console.log('scroll');
             revealElement.each(function() {
                 if (!$(this).hasClass('visible') && $(window).scrollTop() + positionTrigger >= $(this).offset().top) {
                     $(this).addClass('visible');

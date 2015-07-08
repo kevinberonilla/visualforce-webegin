@@ -1,4 +1,4 @@
-*, body .scope * { // Control Salesforce1 containers overrides
+*, body .scope * { // Control Salesforce1 overrides
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
         -webkit-overflow-scrolling: none;
     }
 }
-body .scope { // Control Salesforce1 container overrides
+body .scope { // Control Salesforce1 overrides
     @extend body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -43,6 +43,10 @@ body .scope { // Control Salesforce1 container overrides
     .container {
         width: $container-width;
         margin: 0 auto;
+        @media only screen and (max-width: $tablet-landscape-breakpoint) {
+            width: 100%;
+            padding: 0 (($tablet-landscape-breakpoint - $container-width) / 2);
+        }
     }
     .clearfix:after {
         content: '';
@@ -62,11 +66,5 @@ body .scope { // Control Salesforce1 container overrides
     }
     .float-right {
         float: right;
-    }
-    @media only screen and (max-width: $tablet-landscape-breakpoint) {
-        .container {
-            width: 100%;
-            padding: 0 (($tablet-landscape-breakpoint - $container-width) / 2);
-        }
     }
 }

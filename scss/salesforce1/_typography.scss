@@ -66,6 +66,7 @@ pre {
     @extend code;
     display: block;
     padding: $card-padding / 2;
+    overflow: auto;
 }
 .text-dark {
     color: $text-dark;

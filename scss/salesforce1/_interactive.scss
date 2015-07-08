@@ -3,6 +3,7 @@ button {
     opacity: 1;
     cursor: pointer;
     display: inline-block;
+    font-family: $font-stack;
     font-size: $font-size;
     line-height: $line-height;
     padding: 10px 12px 12px;
@@ -23,6 +24,7 @@ button {
     &.inverse {
         background-color: transparent;
         border: 1px solid $blue;
+        color: $blue;
         @include color-classes(border-color);
         @include color-classes(color);
     }
@@ -38,23 +40,45 @@ button {
     &:focus {
         outline: none;
     }
-    &.test {
-        background-color: rgba(#777, 0.5);
-        background-color: transparentize(#777, 0.5);
+    &.dropdown {
+        padding-right: 34px;
+        position: relative;
+        &:after {
+            font-family: FontAwesome;
+            content: '\f0d7';
+            display: block;
+            padding: 11px 14px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+.dropdown-options {
+    border-radius: $round-corner-small;
+    box-shadow: $card-shadow;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 4px;
+    background-color: $white;
+    display: none;
+    position: absolute;
+    z-index: 9998;
+    overflow: hidden;
+    li {
+        a, a:visited {
+            display: block;
+            padding: ($card-padding / 2) $card-padding;
+            color: $text-normal;
+            &:hover {
+                color: $white;
+                background-color: $blue;
+            }
+        }
     }
 }
 a.button, input[type="submit"] {
     @extend button;
-}
-.corner-links {
-    float: right;
-    @media only screen and (max-width: $tablet-landscape-breakpoint) {
-        float: none;
-        .button {
-            width: 100%;
-            margin-bottom: $type-spacing;
-        }
-    }
 }
 .accordion {
     padding: $card-padding;
@@ -98,6 +122,11 @@ a.button, input[type="submit"] {
         display: block;
         float: left;
         margin-left: 2px;
+        a, a:visited {
+            @extend button;
+            margin-right: 0;
+            border-radius: 0;
+        }
         &:first-child {
             margin-left: 0;
             a, a:visited {
@@ -111,10 +140,28 @@ a.button, input[type="submit"] {
                 border-bottom-right-radius: $round-corner-small;
             }
         }
-        a, a:visited {
-            @extend button;
-            margin-right: 0;
-            border-radius: 0;
+        @media only screen and (max-width: $tablet-landscape-breakpoint) {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 2px;
+            a, a:visited {
+                display: block;
+                width: 100%;
+            }
+            &:first-child {
+                a, a:visited {
+                    margin-top: 0;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: $round-corner-small;
+                }
+            }
+            &:last-child {
+                a, a:visited {
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: $round-corner-small;
+                }
+            }
         }
     }
 }
@@ -137,6 +184,29 @@ a.button, input[type="submit"] {
                 &:hover {
                     opacity: 1;
                 }
+            }
+        }
+        @media only screen and (max-width: $tablet-landscape-breakpoint) {
+            float: left;
+            width: auto;
+            margin-left: -1px;
+            margin-top: 0;
+            &:first-child {
+                a, a:visited {
+                    margin-top: 0;
+                    border-bottom-left-radius: $round-corner-small;
+                    border-top-right-radius: 0;
+                }
+            }
+            &:last-child {
+                a, a:visited {
+                    border-top-right-radius: $round-corner-small;
+                    border-bottom-left-radius: 0;
+                }
+            }
+            a, a:visited {
+                display: block;
+                width: 100%;
             }
         }
     }
@@ -207,57 +277,5 @@ a.button, input[type="submit"] {
     }
     &.hidden {
         display: none;
-    }
-}
-@media only screen and (max-width: $tablet-landscape-breakpoint) {
-    .button-group {
-        li {
-            float: none;
-            width: 100%;
-            margin-left: 0;
-            margin-top: 2px;
-            &:first-child {
-                a, a:visited {
-                    margin-top: 0;
-                    border-bottom-left-radius: 0;
-                    border-top-right-radius: $round-corner-small;
-                }
-            }
-            &:last-child {
-                a, a:visited {
-                    border-top-right-radius: 0;
-                    border-bottom-left-radius: $round-corner-small;
-                }
-            }
-            a, a:visited {
-                display: block;
-                width: 100%;
-            }
-        }
-    }
-    .paginate-links {
-        li {
-            float: left;
-            width: auto;
-            margin-left: -1px;
-            margin-top: 0;
-            &:first-child {
-                a, a:visited {
-                    margin-top: 0;
-                    border-bottom-left-radius: $round-corner-small;
-                    border-top-right-radius: 0;
-                }
-            }
-            &:last-child {
-                a, a:visited {
-                    border-top-right-radius: $round-corner-small;
-                    border-bottom-left-radius: 0;
-                }
-            }
-            a, a:visited {
-                display: block;
-                width: 100%;
-            }
-        }
     }
 }

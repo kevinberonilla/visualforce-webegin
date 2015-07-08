@@ -54,7 +54,13 @@ body .scope .container {
   width: 984px;
   margin: 0 auto;
 }
-body .scope .clearfix:after, body .scope .row:after, body .scope .progress-bar:after {
+@media only screen and (max-width: 1024px) {
+  body .scope .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+body .scope .clearfix:after, body .scope .row:after, body .scope .mobile-header .corner-buttons:after, body .scope .progress-bar:after {
   content: '';
   display: table;
   clear: both;
@@ -74,12 +80,6 @@ body .scope .float-left {
 }
 body .scope .float-right {
   float: right;
-}
-@media only screen and (max-width: 1024px) {
-  body .scope .container {
-    width: 100%;
-    padding: 0 20px;
-  }
 }
 
 body .scope {
@@ -1257,6 +1257,7 @@ body .scope code, body .scope pre {
 body .scope pre {
   display: block;
   padding: 8px;
+  overflow: auto;
 }
 body .scope .text-dark {
   color: #2e4052;
@@ -1380,8 +1381,24 @@ body .scope .card > div, body .scope .scope .card > div, body .scope .modal > di
 body .scope .card > div.has-buttons, body .scope .scope .card > div.has-buttons, body .scope .modal > div.has-buttons, body .scope .scope .modal > div.has-buttons, body .scope .card > section.has-buttons, body .scope .scope .card > section.has-buttons, body .scope .modal > section.has-buttons, body .scope .scope .modal > section.has-buttons {
   min-height: 76px;
 }
-body .scope .card > div.has-buttons h2.margin-top, body .scope .modal > div.has-buttons h2.margin-top, body .scope .card > div.has-buttons h3.margin-top, body .scope .modal > div.has-buttons h3.margin-top, body .scope .card > div.has-buttons h4.margin-top, body .scope .modal > div.has-buttons h4.margin-top, body .scope .card > div.has-buttons h5.margin-top, body .scope .modal > div.has-buttons h5.margin-top, body .scope .card > section.has-buttons h2.margin-top, body .scope .modal > section.has-buttons h2.margin-top, body .scope .card > section.has-buttons h3.margin-top, body .scope .modal > section.has-buttons h3.margin-top, body .scope .card > section.has-buttons h4.margin-top, body .scope .modal > section.has-buttons h4.margin-top, body .scope .card > section.has-buttons h5.margin-top, body .scope .modal > section.has-buttons h5.margin-top {
-  margin-top: 12px;
+body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > div.has-buttons h3, body .scope .modal > div.has-buttons h3, body .scope .card > div.has-buttons h4, body .scope .modal > div.has-buttons h4, body .scope .card > div.has-buttons h5, body .scope .modal > div.has-buttons h5, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2, body .scope .card > section.has-buttons h3, body .scope .modal > section.has-buttons h3, body .scope .card > section.has-buttons h4, body .scope .modal > section.has-buttons h4, body .scope .card > section.has-buttons h5, body .scope .modal > section.has-buttons h5 {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > div.has-buttons h3, body .scope .modal > div.has-buttons h3, body .scope .card > div.has-buttons h4, body .scope .modal > div.has-buttons h4, body .scope .card > div.has-buttons h5, body .scope .modal > div.has-buttons h5, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2, body .scope .card > section.has-buttons h3, body .scope .modal > section.has-buttons h3, body .scope .card > section.has-buttons h4, body .scope .modal > section.has-buttons h4, body .scope .card > section.has-buttons h5, body .scope .modal > section.has-buttons h5 {
+    margin-top: 0;
+  }
+}
+body .scope .card > div.has-buttons h2.has-subheader, body .scope .modal > div.has-buttons h2.has-subheader, body .scope .card > div.has-buttons h3.has-subheader, body .scope .modal > div.has-buttons h3.has-subheader, body .scope .card > div.has-buttons h4.has-subheader, body .scope .modal > div.has-buttons h4.has-subheader, body .scope .card > div.has-buttons h5.has-subheader, body .scope .modal > div.has-buttons h5.has-subheader, body .scope .card > section.has-buttons h2.has-subheader, body .scope .modal > section.has-buttons h2.has-subheader, body .scope .card > section.has-buttons h3.has-subheader, body .scope .modal > section.has-buttons h3.has-subheader, body .scope .card > section.has-buttons h4.has-subheader, body .scope .modal > section.has-buttons h4.has-subheader, body .scope .card > section.has-buttons h5.has-subheader, body .scope .modal > section.has-buttons h5.has-subheader {
+  margin-top: 0;
+}
+body .scope .card > div.has-buttons h2.has-subheader + h3, body .scope .modal > div.has-buttons h2.has-subheader + h3, body .scope .card > div.has-buttons h3.has-subheader + h3, body .scope .modal > div.has-buttons h3.has-subheader + h3, body .scope .card > div.has-buttons h4.has-subheader + h3, body .scope .modal > div.has-buttons h4.has-subheader + h3, body .scope .card > div.has-buttons h5.has-subheader + h3, body .scope .modal > div.has-buttons h5.has-subheader + h3, body .scope .card > div.has-buttons h2.has-subheader + h4, body .scope .modal > div.has-buttons h2.has-subheader + h4, body .scope .card > div.has-buttons h3.has-subheader + h4, body .scope .modal > div.has-buttons h3.has-subheader + h4, body .scope .card > div.has-buttons h4.has-subheader + h4, body .scope .modal > div.has-buttons h4.has-subheader + h4, body .scope .card > div.has-buttons h5.has-subheader + h4, body .scope .modal > div.has-buttons h5.has-subheader + h4, body .scope .card > div.has-buttons h2.has-subheader + h5, body .scope .modal > div.has-buttons h2.has-subheader + h5, body .scope .card > div.has-buttons h3.has-subheader + h5, body .scope .modal > div.has-buttons h3.has-subheader + h5, body .scope .card > div.has-buttons h4.has-subheader + h5, body .scope .modal > div.has-buttons h4.has-subheader + h5, body .scope .card > div.has-buttons h5.has-subheader + h5, body .scope .modal > div.has-buttons h5.has-subheader + h5, body .scope .card > section.has-buttons h2.has-subheader + h3, body .scope .modal > section.has-buttons h2.has-subheader + h3, body .scope .card > section.has-buttons h3.has-subheader + h3, body .scope .modal > section.has-buttons h3.has-subheader + h3, body .scope .card > section.has-buttons h4.has-subheader + h3, body .scope .modal > section.has-buttons h4.has-subheader + h3, body .scope .card > section.has-buttons h5.has-subheader + h3, body .scope .modal > section.has-buttons h5.has-subheader + h3, body .scope .card > section.has-buttons h2.has-subheader + h4, body .scope .modal > section.has-buttons h2.has-subheader + h4, body .scope .card > section.has-buttons h3.has-subheader + h4, body .scope .modal > section.has-buttons h3.has-subheader + h4, body .scope .card > section.has-buttons h4.has-subheader + h4, body .scope .modal > section.has-buttons h4.has-subheader + h4, body .scope .card > section.has-buttons h5.has-subheader + h4, body .scope .modal > section.has-buttons h5.has-subheader + h4, body .scope .card > section.has-buttons h2.has-subheader + h5, body .scope .modal > section.has-buttons h2.has-subheader + h5, body .scope .card > section.has-buttons h3.has-subheader + h5, body .scope .modal > section.has-buttons h3.has-subheader + h5, body .scope .card > section.has-buttons h4.has-subheader + h5, body .scope .modal > section.has-buttons h4.has-subheader + h5, body .scope .card > section.has-buttons h5.has-subheader + h5, body .scope .modal > section.has-buttons h5.has-subheader + h5 {
+  margin-top: 0;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .card > div.has-buttons.mobile-header, body .scope .scope .card > div.has-buttons.mobile-header, body .scope .modal > div.has-buttons.mobile-header, body .scope .scope .modal > div.has-buttons.mobile-header, body .scope .card > section.has-buttons.mobile-header, body .scope .scope .card > section.has-buttons.mobile-header, body .scope .modal > section.has-buttons.mobile-header, body .scope .scope .modal > section.has-buttons.mobile-header {
+    min-height: 62px;
+  }
 }
 body .scope .card .border-top, body .scope .modal .border-top {
   border-top: 1px solid #dfe0e1;
@@ -1391,6 +1408,18 @@ body .scope .card .border-bottom, body .scope .modal .border-bottom {
 }
 body .scope .card .grey, body .scope .modal .grey {
   background-color: #f9fafa;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .card.fullscreen, body .scope .fullscreen.modal {
+    border-radius: 0;
+    margin-top: 0;
+    margin-right: -20px;
+    margin-bottom: 0;
+    margin-left: -20px;
+  }
+  body .scope .card.fullscreen + .fullscreen, body .scope .scope .card.fullscreen + .fullscreen, body .scope .fullscreen.modal + .fullscreen, body .scope .scope .fullscreen.modal + .fullscreen {
+    border-top: none;
+  }
 }
 body .scope ul.card, body .scope ul.modal {
   margin-left: 0;
@@ -1403,6 +1432,8 @@ body .scope ul.card li a, body .scope ul.modal li a, body .scope ul.card li a:vi
   font-weight: 700;
   display: block;
   position: relative;
+  padding: 16px;
+  margin: -16px;
 }
 body .scope ul.card li a:after, body .scope ul.modal li a:after, body .scope ul.card li a:visited:after, body .scope ul.modal li a:visited:after {
   font-family: 'FontAwesome';
@@ -1412,9 +1443,60 @@ body .scope ul.card li a:after, body .scope ul.modal li a:after, body .scope ul.
   position: absolute;
   top: 1px;
   right: 0;
+  padding: 16px;
+}
+body .scope ul.card li a:hover, body .scope ul.modal li a:hover, body .scope ul.card li a:visited:hover, body .scope ul.modal li a:visited:hover {
+  color: #fff;
+  background-color: #2a94d6;
 }
 body .scope ul.card li:first-child, body .scope ul.modal li:first-child {
   border-top: none;
+}
+body .scope .corner-buttons {
+  float: right;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .corner-buttons {
+    float: none;
+  }
+  body .scope .corner-buttons button, body .scope .corner-buttons a.button, body .scope .corner-buttons input[type="submit"], body .scope .corner-buttons textarea[type="submit"], body .scope .corner-buttons select[type="submit"], body .scope .corner-buttons ul[type="submit"].tagit, body .scope .corner-buttons .button-group li a, body .scope .button-group li .corner-buttons a, body .scope .corner-buttons .paginate-links li a, body .scope .paginate-links li .corner-buttons a {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+body .scope .mobile-header {
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .mobile-header .corner-buttons {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body .scope .mobile-header .corner-buttons button, body .scope .mobile-header .corner-buttons a.button, body .scope .mobile-header .corner-buttons input[type="submit"], body .scope .mobile-header .corner-buttons textarea[type="submit"], body .scope .mobile-header .corner-buttons select[type="submit"], body .scope .mobile-header .corner-buttons ul[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a, body .scope .button-group li .mobile-header .corner-buttons a, body .scope .mobile-header .corner-buttons .paginate-links li a, body .scope .paginate-links li .mobile-header .corner-buttons a {
+    display: inline-block;
+    width: auto;
+    margin: 16px;
+    font-size: 13px;
+    padding: 4px 10px;
+    background-color: #f0f1f2;
+    color: #525354;
+  }
+  body .scope .mobile-header .corner-buttons button.mobile-left, body .scope .mobile-header .corner-buttons a.mobile-left.button, body .scope .mobile-header .corner-buttons input.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons textarea.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons select.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons ul.mobile-left[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a.mobile-left, body .scope .button-group li .mobile-header .corner-buttons a.mobile-left, body .scope .mobile-header .corner-buttons .paginate-links li a.mobile-left, body .scope .paginate-links li .mobile-header .corner-buttons a.mobile-left {
+    float: left;
+  }
+  body .scope .mobile-header .corner-buttons button.mobile-right, body .scope .mobile-header .corner-buttons a.mobile-right.button, body .scope .mobile-header .corner-buttons input.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons textarea.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons select.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons ul.mobile-right[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a.mobile-right, body .scope .button-group li .mobile-header .corner-buttons a.mobile-right, body .scope .mobile-header .corner-buttons .paginate-links li a.mobile-right, body .scope .paginate-links li .mobile-header .corner-buttons a.mobile-right {
+    float: right;
+  }
+  body .scope .mobile-header h2, body .scope .mobile-header h3, body .scope .mobile-header h4, body .scope .mobile-header h5 {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+  body .scope .mobile-header h2.margin-top, body .scope .mobile-header h3.margin-top, body .scope .mobile-header h4.margin-top, body .scope .mobile-header h5.margin-top {
+    margin-top: 0;
+  }
 }
 body .scope .reveal {
   -webkit-transition: all 750ms ease;
@@ -1455,6 +1537,11 @@ body .scope .modal .close-modal {
 }
 body .scope .modal .close-modal:focus {
   outline: none;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .modal {
+    width: 80%;
+  }
 }
 body .scope #modal-background {
   -webkit-transition: all 250ms ease;
@@ -1537,11 +1624,6 @@ body .scope footer {
 }
 body .scope footer:after {
   display: none;
-}
-@media only screen and (max-width: 1024px) {
-  body .scope .modal {
-    width: 80%;
-  }
 }
 body .scope .avatar, body .scope .icon-container {
   display: inline-block;
@@ -1719,6 +1801,7 @@ body .scope button, body .scope a.button, body .scope input[type="submit"], body
   opacity: 1;
   cursor: pointer;
   display: inline-block;
+  font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   padding: 10px 12px 12px;
@@ -1822,6 +1905,7 @@ body .scope button.small, body .scope a.small.button, body .scope input.small[ty
 body .scope button.inverse, body .scope a.inverse.button, body .scope input.inverse[type="submit"], body .scope textarea.inverse[type="submit"], body .scope select.inverse[type="submit"], body .scope ul.inverse[type="submit"].tagit, body .scope .button-group li a.inverse, body .scope .paginate-links li a.inverse {
   background-color: transparent;
   border: 1px solid #2a94d6;
+  color: #2a94d6;
 }
 body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"], body .scope ul.inverse.text-dark[type="submit"].tagit, body .scope .button-group li a.inverse.text-dark, body .scope .paginate-links li a.inverse.text-dark {
   border-color: #2e4052;
@@ -1919,21 +2003,40 @@ body .scope button:hover, body .scope a.button:hover, body .scope input[type="su
 body .scope button:focus, body .scope a.button:focus, body .scope input[type="submit"]:focus, body .scope textarea[type="submit"]:focus, body .scope select[type="submit"]:focus, body .scope ul[type="submit"].tagit:focus, body .scope .button-group li a:focus, body .scope .paginate-links li a:focus {
   outline: none;
 }
-body .scope button.test, body .scope a.test.button, body .scope input.test[type="submit"], body .scope textarea.test[type="submit"], body .scope select.test[type="submit"], body .scope ul.test[type="submit"].tagit, body .scope .button-group li a.test, body .scope .paginate-links li a.test {
-  background-color: rgba(119, 119, 119, 0.5);
-  background-color: rgba(119, 119, 119, 0.5);
+body .scope button.dropdown, body .scope a.dropdown.button, body .scope input.dropdown[type="submit"], body .scope textarea.dropdown[type="submit"], body .scope select.dropdown[type="submit"], body .scope ul.dropdown[type="submit"].tagit, body .scope .button-group li a.dropdown, body .scope .paginate-links li a.dropdown {
+  padding-right: 34px;
+  position: relative;
 }
-body .scope .corner-links {
-  float: right;
+body .scope button.dropdown:after, body .scope a.dropdown.button:after, body .scope input.dropdown[type="submit"]:after, body .scope textarea.dropdown[type="submit"]:after, body .scope select.dropdown[type="submit"]:after, body .scope ul.dropdown[type="submit"].tagit:after, body .scope .button-group li a.dropdown:after, body .scope .paginate-links li a.dropdown:after {
+  font-family: FontAwesome;
+  content: '\f0d7';
+  display: block;
+  padding: 11px 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-@media only screen and (max-width: 1024px) {
-  body .scope .corner-links {
-    float: none;
-  }
-  body .scope .corner-links .button {
-    width: 100%;
-    margin-bottom: 12px;
-  }
+body .scope .dropdown-options {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin-left: 0;
+  margin-top: 4px;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  z-index: 9998;
+  overflow: hidden;
+}
+body .scope .dropdown-options li a, body .scope .dropdown-options li a:visited {
+  display: block;
+  padding: 8px 16px;
+  color: #525354;
+}
+body .scope .dropdown-options li a:hover, body .scope .dropdown-options li a:visited:hover {
+  color: #fff;
+  background-color: #2a94d6;
 }
 body .scope .accordion {
   padding: 16px;
@@ -1980,6 +2083,10 @@ body .scope .button-group li, body .scope .paginate-links li {
   float: left;
   margin-left: 2px;
 }
+body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
+  margin-right: 0;
+  border-radius: 0;
+}
 body .scope .button-group li:first-child, body .scope .paginate-links li:first-child {
   margin-left: 0;
 }
@@ -1991,9 +2098,26 @@ body .scope .button-group li:last-child a, body .scope .paginate-links li:last-c
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
-  margin-right: 0;
-  border-radius: 0;
+@media only screen and (max-width: 1024px) {
+  body .scope .button-group li, body .scope .paginate-links li {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2px;
+  }
+  body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
+    display: block;
+    width: 100%;
+  }
+  body .scope .button-group li:first-child a, body .scope .paginate-links li:first-child a, body .scope .button-group li:first-child a:visited, body .scope .paginate-links li:first-child a:visited {
+    margin-top: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
+  body .scope .button-group li:last-child a, body .scope .paginate-links li:last-child a, body .scope .button-group li:last-child a:visited, body .scope .paginate-links li:last-child a:visited {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
 }
 body .scope .paginate-links li {
   margin-left: -1px;
@@ -2013,6 +2137,27 @@ body .scope .paginate-links li a.current, body .scope .paginate-links li a:visit
 }
 body .scope .paginate-links li a.current:hover, body .scope .paginate-links li a:visited.current:hover {
   opacity: 1;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .paginate-links li {
+    float: left;
+    width: auto;
+    margin-left: -1px;
+    margin-top: 0;
+  }
+  body .scope .paginate-links li:first-child a, body .scope .paginate-links li:first-child a:visited {
+    margin-top: 0;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+  }
+  body .scope .paginate-links li:last-child a, body .scope .paginate-links li:last-child a:visited {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  body .scope .paginate-links li a, body .scope .paginate-links li a:visited {
+    display: block;
+    width: 100%;
+  }
 }
 body .scope .ribbon {
   display: table;
@@ -2204,46 +2349,6 @@ body .scope .alert.small.dismissible:after {
 }
 body .scope .alert.hidden {
   display: none;
-}
-@media only screen and (max-width: 1024px) {
-  body .scope .button-group li, body .scope .paginate-links li {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-    margin-top: 2px;
-  }
-  body .scope .button-group li:first-child a, body .scope .paginate-links li:first-child a, body .scope .button-group li:first-child a:visited, body .scope .paginate-links li:first-child a:visited {
-    margin-top: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 5px;
-  }
-  body .scope .button-group li:last-child a, body .scope .paginate-links li:last-child a, body .scope .button-group li:last-child a:visited, body .scope .paginate-links li:last-child a:visited {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 5px;
-  }
-  body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
-    display: block;
-    width: 100%;
-  }
-  body .scope .paginate-links li {
-    float: left;
-    width: auto;
-    margin-left: -1px;
-    margin-top: 0;
-  }
-  body .scope .paginate-links li:first-child a, body .scope .paginate-links li:first-child a:visited {
-    margin-top: 0;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 0;
-  }
-  body .scope .paginate-links li:last-child a, body .scope .paginate-links li:last-child a:visited {
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0;
-  }
-  body .scope .paginate-links li a, body .scope .paginate-links li a:visited {
-    display: block;
-    width: 100%;
-  }
 }
 body .scope label {
   display: block;
