@@ -43,7 +43,7 @@
                 @media only screen and (max-width: $tablet-landscape-breakpoint) {
                     margin-top: 0;
                 }
-                &.has-subheader {
+                &.has-subhead {
                     margin-top: 0;
                     + h3 {
                         margin-top: 0;
@@ -52,7 +52,7 @@
             }
             &.mobile-header {
                 @media only screen and (max-width: $tablet-landscape-breakpoint) {
-                    min-height: 62px;
+                    min-height: 66px;
                 }
             }
         }
@@ -136,9 +136,10 @@ ul.card {
                 width: auto;
                 margin: $card-padding;
                 font-size: 13px;
-                padding: 4px 10px;
-                background-color: $grey;
-                color: $text-normal;
+                padding: 6px 12px;
+                background-color: $grey !important;
+                color: $text-normal !important;
+                border-color: transparent !important;
                 &.mobile-left {
                     float: left;
                 }
@@ -148,12 +149,9 @@ ul.card {
             }
         }
         h2 {
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 20px;
+            line-height: 30px;
             text-align: center;
-            &.margin-top {
-                margin-top: 0;
-            }
         }
     }
 }

@@ -1140,33 +1140,39 @@ body .scope .margin-bottom-x2 {
     margin-right: 50%;
   }
 }
-body .scope h1, body .scope h2, body .scope h3, body .scope h4, body .scope h5 {
+body .scope h1, body .scope h2 {
   font-size: 32px;
   line-height: 32px;
   font-weight: 900;
   color: #2e4052;
   padding-top: 2px;
-  margin-bottom: 12px;
 }
-body .scope h1 + p, body .scope .scope h1 + p, body .scope h2 + p, body .scope .scope h2 + p, body .scope h3 + p, body .scope .scope h3 + p, body .scope h4 + p, body .scope .scope h4 + p, body .scope h5 + p, body .scope .scope h5 + p {
+body .scope h1 + *, body .scope .scope h1 + *, body .scope h2 + *, body .scope .scope h2 + *, body .scope h1 + *:before, body .scope .scope h1 + *:before, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h1 + *:after, body .scope .scope h1 + *:after, body .scope h2 + *:after, body .scope .scope h2 + *:after {
   margin-top: 12px;
 }
-body .scope h2, body .scope h3, body .scope h4, body .scope h5 {
+body .scope h2 {
   font-size: 24px;
   line-height: inherit;
   font-weight: 700;
-  margin-bottom: 0;
 }
-body .scope h3, body .scope h4, body .scope h5 {
+body .scope h3 {
   font-size: 16px;
+  line-height: inherit;
+  font-weight: 700;
   color: #adb8c2;
 }
-body .scope h4, body .scope h5 {
+body .scope h4 {
   font-size: 13px;
+  line-height: inherit;
+  font-weight: 700;
+  color: #adb8c2;
   text-transform: uppercase;
 }
 body .scope h5 {
-  text-transform: none;
+  font-size: 13px;
+  line-height: inherit;
+  font-weight: 700;
+  color: #adb8c2;
 }
 body .scope strong {
   font-weight: 900;
@@ -1347,7 +1353,7 @@ body .scope .hero .container, body .scope footer .container, body .scope .scope 
   position: relative;
   z-index: 9998;
 }
-body .scope .hero h1, body .scope footer h1, body .scope .scope footer h1, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5 {
+body .scope .hero h1, body .scope footer h1, body .scope .scope footer h1, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope footer h5, body .scope .scope footer h5 {
   color: #fff;
   margin: 0 auto;
   width: 60%;
@@ -1381,23 +1387,23 @@ body .scope .card > div, body .scope .scope .card > div, body .scope .modal > di
 body .scope .card > div.has-buttons, body .scope .scope .card > div.has-buttons, body .scope .modal > div.has-buttons, body .scope .scope .modal > div.has-buttons, body .scope .card > section.has-buttons, body .scope .scope .card > section.has-buttons, body .scope .modal > section.has-buttons, body .scope .scope .modal > section.has-buttons {
   min-height: 76px;
 }
-body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > div.has-buttons h3, body .scope .modal > div.has-buttons h3, body .scope .card > div.has-buttons h4, body .scope .modal > div.has-buttons h4, body .scope .card > div.has-buttons h5, body .scope .modal > div.has-buttons h5, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2, body .scope .card > section.has-buttons h3, body .scope .modal > section.has-buttons h3, body .scope .card > section.has-buttons h4, body .scope .modal > section.has-buttons h4, body .scope .card > section.has-buttons h5, body .scope .modal > section.has-buttons h5 {
+body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2 {
   margin-top: 10px;
 }
 @media only screen and (max-width: 1024px) {
-  body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > div.has-buttons h3, body .scope .modal > div.has-buttons h3, body .scope .card > div.has-buttons h4, body .scope .modal > div.has-buttons h4, body .scope .card > div.has-buttons h5, body .scope .modal > div.has-buttons h5, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2, body .scope .card > section.has-buttons h3, body .scope .modal > section.has-buttons h3, body .scope .card > section.has-buttons h4, body .scope .modal > section.has-buttons h4, body .scope .card > section.has-buttons h5, body .scope .modal > section.has-buttons h5 {
+  body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2 {
     margin-top: 0;
   }
 }
-body .scope .card > div.has-buttons h2.has-subheader, body .scope .modal > div.has-buttons h2.has-subheader, body .scope .card > div.has-buttons h3.has-subheader, body .scope .modal > div.has-buttons h3.has-subheader, body .scope .card > div.has-buttons h4.has-subheader, body .scope .modal > div.has-buttons h4.has-subheader, body .scope .card > div.has-buttons h5.has-subheader, body .scope .modal > div.has-buttons h5.has-subheader, body .scope .card > section.has-buttons h2.has-subheader, body .scope .modal > section.has-buttons h2.has-subheader, body .scope .card > section.has-buttons h3.has-subheader, body .scope .modal > section.has-buttons h3.has-subheader, body .scope .card > section.has-buttons h4.has-subheader, body .scope .modal > section.has-buttons h4.has-subheader, body .scope .card > section.has-buttons h5.has-subheader, body .scope .modal > section.has-buttons h5.has-subheader {
+body .scope .card > div.has-buttons h2.has-subhead, body .scope .modal > div.has-buttons h2.has-subhead, body .scope .card > section.has-buttons h2.has-subhead, body .scope .modal > section.has-buttons h2.has-subhead {
   margin-top: 0;
 }
-body .scope .card > div.has-buttons h2.has-subheader + h3, body .scope .modal > div.has-buttons h2.has-subheader + h3, body .scope .card > div.has-buttons h3.has-subheader + h3, body .scope .modal > div.has-buttons h3.has-subheader + h3, body .scope .card > div.has-buttons h4.has-subheader + h3, body .scope .modal > div.has-buttons h4.has-subheader + h3, body .scope .card > div.has-buttons h5.has-subheader + h3, body .scope .modal > div.has-buttons h5.has-subheader + h3, body .scope .card > div.has-buttons h2.has-subheader + h4, body .scope .modal > div.has-buttons h2.has-subheader + h4, body .scope .card > div.has-buttons h3.has-subheader + h4, body .scope .modal > div.has-buttons h3.has-subheader + h4, body .scope .card > div.has-buttons h4.has-subheader + h4, body .scope .modal > div.has-buttons h4.has-subheader + h4, body .scope .card > div.has-buttons h5.has-subheader + h4, body .scope .modal > div.has-buttons h5.has-subheader + h4, body .scope .card > div.has-buttons h2.has-subheader + h5, body .scope .modal > div.has-buttons h2.has-subheader + h5, body .scope .card > div.has-buttons h3.has-subheader + h5, body .scope .modal > div.has-buttons h3.has-subheader + h5, body .scope .card > div.has-buttons h4.has-subheader + h5, body .scope .modal > div.has-buttons h4.has-subheader + h5, body .scope .card > div.has-buttons h5.has-subheader + h5, body .scope .modal > div.has-buttons h5.has-subheader + h5, body .scope .card > section.has-buttons h2.has-subheader + h3, body .scope .modal > section.has-buttons h2.has-subheader + h3, body .scope .card > section.has-buttons h3.has-subheader + h3, body .scope .modal > section.has-buttons h3.has-subheader + h3, body .scope .card > section.has-buttons h4.has-subheader + h3, body .scope .modal > section.has-buttons h4.has-subheader + h3, body .scope .card > section.has-buttons h5.has-subheader + h3, body .scope .modal > section.has-buttons h5.has-subheader + h3, body .scope .card > section.has-buttons h2.has-subheader + h4, body .scope .modal > section.has-buttons h2.has-subheader + h4, body .scope .card > section.has-buttons h3.has-subheader + h4, body .scope .modal > section.has-buttons h3.has-subheader + h4, body .scope .card > section.has-buttons h4.has-subheader + h4, body .scope .modal > section.has-buttons h4.has-subheader + h4, body .scope .card > section.has-buttons h5.has-subheader + h4, body .scope .modal > section.has-buttons h5.has-subheader + h4, body .scope .card > section.has-buttons h2.has-subheader + h5, body .scope .modal > section.has-buttons h2.has-subheader + h5, body .scope .card > section.has-buttons h3.has-subheader + h5, body .scope .modal > section.has-buttons h3.has-subheader + h5, body .scope .card > section.has-buttons h4.has-subheader + h5, body .scope .modal > section.has-buttons h4.has-subheader + h5, body .scope .card > section.has-buttons h5.has-subheader + h5, body .scope .modal > section.has-buttons h5.has-subheader + h5 {
+body .scope .card > div.has-buttons h2.has-subhead + h3, body .scope .modal > div.has-buttons h2.has-subhead + h3, body .scope .card > section.has-buttons h2.has-subhead + h3, body .scope .modal > section.has-buttons h2.has-subhead + h3 {
   margin-top: 0;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .card > div.has-buttons.mobile-header, body .scope .scope .card > div.has-buttons.mobile-header, body .scope .modal > div.has-buttons.mobile-header, body .scope .scope .modal > div.has-buttons.mobile-header, body .scope .card > section.has-buttons.mobile-header, body .scope .scope .card > section.has-buttons.mobile-header, body .scope .modal > section.has-buttons.mobile-header, body .scope .scope .modal > section.has-buttons.mobile-header {
-    min-height: 62px;
+    min-height: 66px;
   }
 }
 body .scope .card .border-top, body .scope .modal .border-top {
@@ -1479,9 +1485,10 @@ body .scope .mobile-header {
     width: auto;
     margin: 16px;
     font-size: 13px;
-    padding: 4px 10px;
-    background-color: #f0f1f2;
-    color: #525354;
+    padding: 6px 12px;
+    background-color: #f0f1f2 !important;
+    color: #525354 !important;
+    border-color: transparent !important;
   }
   body .scope .mobile-header .corner-buttons button.mobile-left, body .scope .mobile-header .corner-buttons a.mobile-left.button, body .scope .mobile-header .corner-buttons input.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons textarea.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons select.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons ul.mobile-left[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a.mobile-left, body .scope .button-group li .mobile-header .corner-buttons a.mobile-left, body .scope .mobile-header .corner-buttons .paginate-links li a.mobile-left, body .scope .paginate-links li .mobile-header .corner-buttons a.mobile-left {
     float: left;
@@ -1489,13 +1496,10 @@ body .scope .mobile-header {
   body .scope .mobile-header .corner-buttons button.mobile-right, body .scope .mobile-header .corner-buttons a.mobile-right.button, body .scope .mobile-header .corner-buttons input.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons textarea.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons select.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons ul.mobile-right[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a.mobile-right, body .scope .button-group li .mobile-header .corner-buttons a.mobile-right, body .scope .mobile-header .corner-buttons .paginate-links li a.mobile-right, body .scope .paginate-links li .mobile-header .corner-buttons a.mobile-right {
     float: right;
   }
-  body .scope .mobile-header h2, body .scope .mobile-header h3, body .scope .mobile-header h4, body .scope .mobile-header h5 {
-    font-size: 18px;
-    line-height: 26px;
+  body .scope .mobile-header h2 {
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
-  }
-  body .scope .mobile-header h2.margin-top, body .scope .mobile-header h3.margin-top, body .scope .mobile-header h4.margin-top, body .scope .mobile-header h5.margin-top {
-    margin-top: 0;
   }
 }
 body .scope .reveal {
