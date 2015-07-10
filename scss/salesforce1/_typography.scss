@@ -4,34 +4,45 @@ h1 {
     font-weight: $bold;
     color: $text-dark;
     padding-top: 2px;
-    + * {
-        margin-top: $type-spacing;
-    }
+    @include type-margin;
 }
 h2 {
     @extend h1;
     font-size: 24px;
     line-height: inherit;
     font-weight: $semibold;
+    @include type-margin;
+    &.has-subhead {
+        + h3, + h4, + h5 {
+            margin-top: 0;
+        }
+    }
 }
 h3 {
     font-size: 16px;
     line-height: inherit;
     font-weight: $semibold;
     color: $text-light;
+    @include type-margin;
+    &.has-subhead {
+        + h4, + h5 {
+            margin-top: 0;
+        }
+    }
 }
 h4 {
     font-size: 13px;
     line-height: inherit;
     font-weight: $semibold;
     color: $text-light;
-    text-transform: uppercase;
+    @include type-margin;
 }
 h5 {
-    font-size: 13px;
+    font-size: 12px;
     line-height: inherit;
     font-weight: $semibold;
-    color: $text-light;
+    color: $text-normal;
+    @include type-margin;
 }
 strong {
     font-weight: $bold;
@@ -79,6 +90,9 @@ pre {
 }
 .text-light {
     color: $text-light;
+}
+.caps {
+    text-transform: uppercase;
 }
 .icon {
     &.im { // IcoMoon

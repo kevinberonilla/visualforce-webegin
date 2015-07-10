@@ -1148,12 +1148,24 @@ body .scope h1, body .scope h2 {
   padding-top: 2px;
 }
 body .scope h1 + *, body .scope .scope h1 + *, body .scope h2 + *, body .scope .scope h2 + *, body .scope h1 + *:before, body .scope .scope h1 + *:before, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h1 + *:after, body .scope .scope h1 + *:after, body .scope h2 + *:after, body .scope .scope h2 + *:after {
-  margin-top: 12px;
+  margin-top: 14px;
+}
+body .scope h1 + :after, body .scope .scope h1 + :after, body .scope h2 + :after, body .scope .scope h2 + :after {
+  margin: 0;
 }
 body .scope h2 {
   font-size: 24px;
   line-height: inherit;
   font-weight: 700;
+}
+body .scope h2 + *, body .scope .scope h2 + *, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h2 + *:after, body .scope .scope h2 + *:after {
+  margin-top: 14px;
+}
+body .scope h2 + :after, body .scope .scope h2 + :after {
+  margin: 0;
+}
+body .scope h2.has-subhead + h3, body .scope .scope h2.has-subhead + h3, body .scope h2.has-subhead + h4, body .scope .scope h2.has-subhead + h4, body .scope h2.has-subhead + h5, body .scope .scope h2.has-subhead + h5 {
+  margin-top: 0;
 }
 body .scope h3 {
   font-size: 16px;
@@ -1161,18 +1173,38 @@ body .scope h3 {
   font-weight: 700;
   color: #adb8c2;
 }
+body .scope h3 + *, body .scope .scope h3 + *, body .scope h3 + *:before, body .scope .scope h3 + *:before, body .scope h3 + *:after, body .scope .scope h3 + *:after {
+  margin-top: 14px;
+}
+body .scope h3 + :after, body .scope .scope h3 + :after {
+  margin: 0;
+}
+body .scope h3.has-subhead + h4, body .scope .scope h3.has-subhead + h4, body .scope h3.has-subhead + h5, body .scope .scope h3.has-subhead + h5 {
+  margin-top: 0;
+}
 body .scope h4 {
   font-size: 13px;
   line-height: inherit;
   font-weight: 700;
   color: #adb8c2;
-  text-transform: uppercase;
+}
+body .scope h4 + *, body .scope .scope h4 + *, body .scope h4 + *:before, body .scope .scope h4 + *:before, body .scope h4 + *:after, body .scope .scope h4 + *:after {
+  margin-top: 14px;
+}
+body .scope h4 + :after, body .scope .scope h4 + :after {
+  margin: 0;
 }
 body .scope h5 {
-  font-size: 13px;
+  font-size: 12px;
   line-height: inherit;
   font-weight: 700;
-  color: #adb8c2;
+  color: #525354;
+}
+body .scope h5 + *, body .scope .scope h5 + *, body .scope h5 + *:before, body .scope .scope h5 + *:before, body .scope h5 + *:after, body .scope .scope h5 + *:after {
+  margin-top: 14px;
+}
+body .scope h5 + :after, body .scope .scope h5 + :after {
+  margin: 0;
 }
 body .scope strong {
   font-weight: 900;
@@ -1182,7 +1214,7 @@ body .scope small {
   color: #adb8c2;
 }
 body .scope p + *, body .scope .scope p + *, body .scope p + *:before, body .scope .scope p + *:before, body .scope p + *:after, body .scope .scope p + *:after {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 body .scope p + :after, body .scope .scope p + :after {
   margin: 0;
@@ -1191,7 +1223,7 @@ body .scope ul, body .scope ol {
   margin-left: 32px;
 }
 body .scope ul + *, body .scope .scope ul + *, body .scope ul + *:before, body .scope .scope ul + *:before, body .scope ul + *:after, body .scope .scope ul + *:after, body .scope ol + *, body .scope .scope ol + *, body .scope ol + *:before, body .scope .scope ol + *:before, body .scope ol + *:after, body .scope .scope ol + *:after {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 body .scope ul + :after, body .scope .scope ul + :after, body .scope ol + :after, body .scope .scope ol + :after {
   margin: 0;
@@ -1201,7 +1233,7 @@ body .scope hr {
   border-bottom: 1px solid #dfe0e1;
 }
 body .scope hr + *, body .scope .scope hr + *, body .scope hr + *:before, body .scope .scope hr + *:before, body .scope hr + *:after, body .scope .scope hr + *:after {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 body .scope hr + :after, body .scope .scope hr + :after {
   margin: 0;
@@ -1274,15 +1306,18 @@ body .scope .text-normal {
 body .scope .text-light {
   color: #adb8c2;
 }
+body .scope .caps {
+  text-transform: uppercase;
+}
 body .scope .icon.im {
   position: relative;
   top: 2px;
 }
 body .scope .icon.margin-right {
-  margin-right: 6px;
+  margin-right: 7px;
 }
 body .scope .icon.margin-left {
-  margin-left: 6px;
+  margin-left: 7px;
 }
 body .scope .status {
   display: inline-block;
@@ -1294,7 +1329,7 @@ body .scope .status {
   background-color: #2a94d6;
   color: #fff;
   letter-spacing: 0.25px;
-  margin-left: 6px;
+  margin-left: 7px;
 }
 body .scope .status.text-dark {
   background-color: #2e4052;
@@ -1388,7 +1423,7 @@ body .scope .card > div.has-buttons, body .scope .scope .card > div.has-buttons,
   min-height: 76px;
 }
 body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2 {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2 {
@@ -1396,7 +1431,7 @@ body .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2,
   }
 }
 body .scope .card > div.has-buttons h2.has-subhead, body .scope .modal > div.has-buttons h2.has-subhead, body .scope .card > section.has-buttons h2.has-subhead, body .scope .modal > section.has-buttons h2.has-subhead {
-  margin-top: 0;
+  margin-top: 1px;
 }
 body .scope .card > div.has-buttons h2.has-subhead + h3, body .scope .modal > div.has-buttons h2.has-subhead + h3, body .scope .card > section.has-buttons h2.has-subhead + h3, body .scope .modal > section.has-buttons h2.has-subhead + h3 {
   margin-top: 0;
@@ -1467,11 +1502,18 @@ body .scope .corner-buttons {
   }
   body .scope .corner-buttons button, body .scope .corner-buttons a.button, body .scope .corner-buttons input[type="submit"], body .scope .corner-buttons textarea[type="submit"], body .scope .corner-buttons select[type="submit"], body .scope .corner-buttons ul[type="submit"].tagit, body .scope .corner-buttons .button-group li a, body .scope .button-group li .corner-buttons a, body .scope .corner-buttons .paginate-links li a, body .scope .paginate-links li .corner-buttons a {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 }
 body .scope .mobile-header {
   position: relative;
+}
+body .scope .mobile-header .corner-buttons .mobile-group-left, body .scope .mobile-header .corner-buttons .mobile-group-right {
+  display: inline-block;
+  margin-right: 14px;
+}
+body .scope .mobile-header .corner-buttons .mobile-group-left:last-child, body .scope .mobile-header .corner-buttons .mobile-group-right:last-child {
+  margin-right: 0;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .mobile-header .corner-buttons {
@@ -1484,21 +1526,30 @@ body .scope .mobile-header {
     display: inline-block;
     width: auto;
     margin: 16px;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 21px;
     padding: 6px 12px;
     background-color: #f0f1f2 !important;
     color: #525354 !important;
     border-color: transparent !important;
   }
-  body .scope .mobile-header .corner-buttons button.mobile-left, body .scope .mobile-header .corner-buttons a.mobile-left.button, body .scope .mobile-header .corner-buttons input.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons textarea.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons select.mobile-left[type="submit"], body .scope .mobile-header .corner-buttons ul.mobile-left[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a.mobile-left, body .scope .button-group li .mobile-header .corner-buttons a.mobile-left, body .scope .mobile-header .corner-buttons .paginate-links li a.mobile-left, body .scope .paginate-links li .mobile-header .corner-buttons a.mobile-left {
+  body .scope .mobile-header .corner-buttons .mobile-group-left {
     float: left;
   }
-  body .scope .mobile-header .corner-buttons button.mobile-right, body .scope .mobile-header .corner-buttons a.mobile-right.button, body .scope .mobile-header .corner-buttons input.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons textarea.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons select.mobile-right[type="submit"], body .scope .mobile-header .corner-buttons ul.mobile-right[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a.mobile-right, body .scope .button-group li .mobile-header .corner-buttons a.mobile-right, body .scope .mobile-header .corner-buttons .paginate-links li a.mobile-right, body .scope .paginate-links li .mobile-header .corner-buttons a.mobile-right {
+  body .scope .mobile-header .corner-buttons .mobile-group-right {
     float: right;
   }
   body .scope .mobile-header h2 {
     font-size: 20px;
     line-height: 30px;
+    text-align: center;
+  }
+  body .scope .mobile-header h2.has-subhead {
+    line-height: 16px;
+  }
+  body .scope .mobile-header h3 {
+    font-size: 14px;
+    line-height: 14px;
     text-align: center;
   }
 }
@@ -1529,18 +1580,19 @@ body .scope .modal {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-body .scope .modal.visible {
-  opacity: 1;
-  margin-top: -100px;
-}
 body .scope .modal .close-modal {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 20px 20px 14px;
+  padding: 18px;
+  cursor: pointer;
 }
 body .scope .modal .close-modal:focus {
   outline: none;
+}
+body .scope .modal.visible {
+  opacity: 1;
+  margin-top: -100px;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .modal {
@@ -1624,7 +1676,7 @@ body .scope .table-container {
   overflow: auto;
 }
 body .scope footer {
-  padding: 24px 0;
+  padding: 28px 0;
 }
 body .scope footer:after {
   display: none;
@@ -1634,9 +1686,9 @@ body .scope .avatar, body .scope .icon-container {
   width: 45px;
   height: 45px;
   border-radius: 5px;
-  margin-right: 12px;
+  margin-right: 14px;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 body .scope .avatar.large, body .scope .large.icon-container {
   width: 100px;
@@ -1646,7 +1698,7 @@ body .scope .avatar.large, body .scope .large.icon-container {
 body .scope .avatar + .title, body .scope .scope .avatar + .title, body .scope .icon-container + .title, body .scope .scope .icon-container + .title {
   display: inline-block;
   height: 45px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   vertical-align: top;
 }
 body .scope .icon-container {
@@ -1794,7 +1846,7 @@ body .scope .progress-bar.small .progress:not(:last-child) {
   border-bottom-right-radius: 0;
 }
 body .scope .progress-bar + *, body .scope .scope .progress-bar + *, body .scope .progress-bar + *:before, body .scope .scope .progress-bar + *:before, body .scope .progress-bar + *:after, body .scope .scope .progress-bar + *:after {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 body .scope .progress-bar + :after, body .scope .scope .progress-bar + :after {
   margin: 0;
@@ -1809,7 +1861,7 @@ body .scope button, body .scope a.button, body .scope input[type="submit"], body
   font-size: 14px;
   line-height: 20px;
   padding: 10px 12px 12px;
-  margin-right: 12px;
+  margin-right: 14px;
   border-radius: 5px;
   border: 1px solid transparent;
   background-color: #2a94d6;
@@ -2194,7 +2246,7 @@ body .scope .alert {
   padding: 16px;
   color: #2a94d6;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 body .scope .alert.text-dark {
   border-color: #2e4052;
@@ -2331,16 +2383,18 @@ body .scope .alert.dismissible {
   padding-right: 46px;
   position: relative;
 }
-body .scope .alert.dismissible:after {
-  font-family: IcoMoon-Free;
-  content: '\ea0f';
-  display: block;
+body .scope .alert.dismissible .close-alert {
   font-size: 10px;
   padding: 16px 18px;
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
+}
+body .scope .alert.dismissible .close-alert:after {
+  font-family: IcoMoon-Free;
+  content: '\ea0f';
+  display: block;
 }
 body .scope .alert.small {
   padding: 8px;
@@ -2377,7 +2431,7 @@ body .scope input:focus, body .scope textarea:focus, body .scope select:focus, b
   outline: none;
 }
 body .scope input + *, body .scope .scope input + *, body .scope textarea + *, body .scope .scope textarea + *, body .scope select + *, body .scope .scope select + *, body .scope ul.tagit + *, body .scope .scope ul.tagit + *, body .scope input + *:before, body .scope .scope input + *:before, body .scope textarea + *:before, body .scope .scope textarea + *:before, body .scope select + *:before, body .scope .scope select + *:before, body .scope ul.tagit + *:before, body .scope .scope ul.tagit + *:before, body .scope input + *:after, body .scope .scope input + *:after, body .scope textarea + *:after, body .scope .scope textarea + *:after, body .scope select + *:after, body .scope .scope select + *:after, body .scope ul.tagit + *:after, body .scope .scope ul.tagit + *:after {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 body .scope input + :after, body .scope .scope input + :after, body .scope textarea + :after, body .scope .scope textarea + :after, body .scope select + :after, body .scope .scope select + :after, body .scope ul.tagit + :after, body .scope .scope ul.tagit + :after {
   margin: 0;
@@ -2402,7 +2456,7 @@ body .scope select::-ms-expand {
 body .scope input[type="radio"], body .scope textarea[type="radio"], body .scope select[type="radio"], body .scope input[type="checkbox"], body .scope textarea[type="checkbox"], body .scope select[type="checkbox"], body .scope ul[type="checkbox"].tagit, body .scope ul[type="radio"].tagit {
   display: inline-block;
   width: auto;
-  margin-right: 6px;
+  margin-right: 7px;
   border-radius: 22px;
   border: 1px solid #dfe0e1;
   width: 22px;
@@ -2418,7 +2472,7 @@ body .scope input[type="radio"] + label, body .scope .scope input[type="radio"] 
   color: #525354;
   display: inline-block;
   margin-top: 0;
-  margin-right: 12px;
+  margin-right: 14px;
 }
 body .scope input[type="radio"]:checked, body .scope textarea[type="radio"]:checked, body .scope select[type="radio"]:checked, body .scope input[type="checkbox"]:checked, body .scope textarea[type="checkbox"]:checked, body .scope select[type="checkbox"]:checked, body .scope ul[type="checkbox"].tagit:checked, body .scope ul[type="radio"].tagit:checked {
   background-color: #2a94d6;
@@ -2469,7 +2523,7 @@ body .scope .select-container:after, body .scope .autocomplete-container:after, 
   pointer-events: none;
 }
 body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .tags + *, body .scope .scope .tags + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .tags + *:before, body .scope .scope .tags + *:before, body .scope .date-picker-container + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .tags + *:after, body .scope .scope .tags + *:after, body .scope .date-picker-container + *:after, body .scope .scope .date-picker-container + *:after {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 body .scope .select-container + :after, body .scope .scope .select-container + :after, body .scope .autocomplete-container + :after, body .scope .scope .autocomplete-container + :after, body .scope .tags + :after, body .scope .scope .tags + :after, body .scope .date-picker-container + :after, body .scope .scope .date-picker-container + :after {
   margin: 0;
@@ -2596,7 +2650,7 @@ body ul.tagit, body .scope ul.tagit {
   padding: 8px 8px;
 }
 body ul.tagit li, body .scope ul.tagit li {
-  margin: 0 6px 0 0;
+  margin: 0 7px 0 0;
 }
 body ul.tagit li.tagit-choice, body .scope ul.tagit li.tagit-choice {
   font-size: 12px;
@@ -2652,7 +2706,7 @@ body .ui-autocomplete, body .scope .ui-autocomplete {
   overflow: hidden;
 }
 body .ui-menu .ui-menu-item, body .scope .ui-menu .ui-menu-item {
-  padding: 6px 12px;
+  padding: 7px 14px;
 }
 body .ui-widget-content .ui-state-default, body .scope .ui-widget-content .ui-state-default {
   border: none;

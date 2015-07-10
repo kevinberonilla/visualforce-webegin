@@ -44,7 +44,7 @@
                     margin-top: 0;
                 }
                 &.has-subhead {
-                    margin-top: 0;
+                    margin-top: 1px;
                     + h3 {
                         margin-top: 0;
                     }
@@ -124,6 +124,13 @@ ul.card {
     position: relative;
     .corner-buttons {
         @extend .clearfix;
+        .mobile-group-left, .mobile-group-right {
+            display: inline-block;
+            margin-right: $type-spacing;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         .corner-buttons {
@@ -135,22 +142,31 @@ ul.card {
                 display: inline-block;
                 width: auto;
                 margin: $card-padding;
-                font-size: 13px;
+                font-size: 12px;
+                line-height: 21px;
                 padding: 6px 12px;
                 background-color: $grey !important;
                 color: $text-normal !important;
                 border-color: transparent !important;
-                &.mobile-left {
-                    float: left;
-                }
-                &.mobile-right {
-                    float: right;
-                }
+            }
+            .mobile-group-left {
+                float: left;
+            }
+            .mobile-group-right {
+                float: right;
             }
         }
         h2 {
             font-size: 20px;
             line-height: 30px;
+            text-align: center;
+            &.has-subhead {
+                line-height: 16px;
+            }
+        }
+        h3 {
+            font-size: 14px;
+            line-height: 14px;
             text-align: center;
         }
     }
@@ -178,18 +194,19 @@ ul.card {
     transform: translateX(-50%);
     z-index: 9999;
     box-shadow: $card-shadow;
-    &.visible {
-        opacity: 1;
-        margin-top: -100px;
-    }
     .close-modal {
         position: absolute;
         top: 0;
         right: 0;
-        padding: 20px 20px 14px;
+        padding: 18px;
+        cursor: pointer;
         &:focus {
             outline: none;
         }
+    }
+    &.visible {
+        opacity: 1;
+        margin-top: -100px;
     }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         width: 80%;

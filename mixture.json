@@ -8,11 +8,10 @@
     "followLeader": false,
     "lintScripts": false,
     "modelSource": null,
-    "preprocessorLocations": [
-        "/"
-    ],
-    "preprocessorScriptOutput": "js",
+    "preprocessorLocations": ["scss", "css", "js"],
     "preprocessorStyleOutput": "css",
+    "preprocessorScriptOutput": "js",
+    "ignoreDir": ["node_modules"],
     "projectDescription": "Visualforce Development Starting Point",
     "projectName": "visualforce-webegin",
     "publishedId": null,

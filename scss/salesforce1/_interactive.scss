@@ -254,16 +254,18 @@ a.button, input[type="submit"] {
     &.dismissible {
         padding-right: 46px;
         position: relative;
-        &:after {
-            font-family: IcoMoon-Free;
-            content: '\ea0f';
-            display: block;
+        .close-alert {
             font-size: 10px;
             padding: 16px 18px;
             position: absolute;
             top: 0;
             right: 0;
             cursor: pointer;
+            &:after {
+                font-family: IcoMoon-Free;
+                content: '\ea0f';
+                display: block;
+            }
         }
     }
     &.small {

@@ -4,7 +4,9 @@ Accordion Functions
 $(document).ready(function() {
    var accordion = $('.accordion');
     
-    accordion.click(function() {
+    accordion.click(function(e) {
+        e.preventDefault();
+        
         if ($('+ .accordion-content', this).length > 0) {
             $(this).toggleClass('open');
             $('+ .accordion-content', this).stop()
@@ -19,15 +21,26 @@ $(document).ready(function() {
 Dropdown Button Functions
 ---------------------------------------- */
 $(document).ready(function() {
-    var dropdown = $('.dropdown');
+    var dropdown = $('.dropdown'),
+        dropdownOptions = $('.dropdown-options');
     
     dropdown.each(function() { // Set options width to match button on load
         var buttonWidth = $(this).outerWidth();
          $('+ .dropdown-options', this).css('min-width', buttonWidth + 'px');
     });
     
-    dropdown.after().click(function() {
-        $('+ .dropdown-options', this).show();
+    $(document).click(function() {
+        dropdownOptions.hide();
+    });
+    
+    dropdown.click(function(e) {
+        e.stopPropagation(); // Don't alert document of this click
+        
+        if ($('+ .dropdown-options', this).length > 0) {
+            $('+ .dropdown-options', this).show();
+        } else {
+            console.error('No immediate sibling with the "dropdown-options" class exists.');
+        }
     });
 });
 
@@ -36,19 +49,20 @@ Alert Functions
 ---------------------------------------- */
 $(document).ready(function() {
     var alertElement = $('.alert'),
-        openAlert = $('.open-alert'),
-        closeAlert = $('.alert.dismissible').after();
+        openAlertLink = $('.open-alert'),
+        closeAlertLink = $('.close-alert');
     
-    closeAlert.click(function() {
-        $(this).stop()
+    closeAlertLink.click(function() {
+        $(this).parent()
+            .stop()
             .slideUp(250);
     });
     
-    openAlert.click(function(e) {
+    openAlertLink.click(function(e) {
         e.preventDefault();
         
-        var targetId = $(this).data('target-id'),
-            targetAlert = $('#' + targetId);
+        var alertId = $(this).data('alert-id'),
+            targetAlert = $('#' + alertId);
         
         targetAlert.stop()
             .slideDown(250);
@@ -92,66 +106,111 @@ $(document).ready(function() {
                 }
             });
             if (revealCount >= revealLength) { // Unbind if all elements have been revealed
-                $(window).unbind('scroll');
+                $(window).unbind('scroll', reveal);
             }
         }
         
         reveal(); // Show visisble elements on load
         
-        $(window).scroll(reveal);
+        $(window).on('scroll', reveal);
     }
 });
 
 /* ----------------------------------------
-Modal Functions
+Quick Modal Plugin (Edited for Salesforce1)
 ---------------------------------------- */
+(function($) { // Protect the $ alias (IIF)
+    $.fn.quickModal = function(args) {
+        if (!$('#modal-background').length) $('body .scope').append('<div id="modal-background"></div>'); // Append background; do not append if re-initialized or background already exists
+        
+        if (args !== null && typeof args === 'string') { // If calling a method
+            var bodyTag = $('body'),
+                closeModalLink = $('.close-modal'),
+                modalBackground = $('#modal-background'),
+                targetModal = this;
+            
+            switch (args) {
+                case 'open':
+                    bodyTag.addClass('disable-scroll');
+                    modalBackground.show();
+                    targetModal.show();
+                    setTimeout(function() { // Ensure elements are displayed before adding classes
+                        modalBackground.addClass('visible');
+                        targetModal.addClass('visible');
+                    }, 25);
+                    targetModal.trigger('modalopen'); // Trigger custom 'open' event
+                    
+                    closeModalLink.click(function(e) { // Bind events based on options
+                        e.preventDefault();
+                        targetModal.quickModal('close');
+                    });
+                    
+                    $(document).keyup(function(e) {
+                        if (e.keyCode == 27) targetModal.quickModal('close'); // Esc
+                    });
+                    
+                    modalBackground.click(function() {
+                        targetModal.quickModal('close');
+                    });
+                    break;
+                    
+                case 'close':
+                    bodyTag.removeClass('disable-scroll');
+                    modalBackground.removeClass('visible');
+                    targetModal.removeClass('visible');
+                    setTimeout(function() {
+                        modalBackground.hide();
+                        targetModal.hide();
+                        targetModal.trigger('modalclose'); // Trigger custom 'close' event
+                    }, 250);
+                    break;
+            }
+        } else { // If initializing plugin with options
+            var settings = $.extend({ // Extend the default settings established below
+                    modalWindowClass: '.modal',
+                    closeModalClass: '.close-modal'
+                }, args),
+                bodyTag = $('body'),
+                openModalLink = this,
+                modalWindow = $(settings.modalWindowClass),
+                closeModalLink = $(settings.closeModalClass),
+                modalBackground = $('#modal-background');
+            
+            function closeModal() {
+                var visibleModal = $(settings.modalWindowClass + '.visible');
+                
+                visibleModal.quickModal('close');
+            }
+            
+            openModalLink.click(function(e) {
+                e.preventDefault();
+                
+                var modalId = $(this).data('modal-id'),
+                    targetModal = $('#' + modalId);
+                
+                if (modalId === undefined) console.error('No "data-modal-id" attribute is set.');
+                
+                targetModal.quickModal('open');
+            });
+            
+            closeModalLink.click(function(e) { // Bind events based on options
+                e.preventDefault();
+                closeModal();
+            });
+            
+            $(document).keyup(function(e) {
+                if (e.keyCode == 27) closeModal(); // Esc
+            });
+            
+            modalBackground.click(closeModal);
+        }
+        
+        return this; // Return the object to enable chaining
+    }
+}(jQuery));
+
 $(document).ready(function() {
-    var bodyTag = $('body'),
-        openModal = $('.open-modal'),
-        modalWindow = $('.modal'),
-        closeModal = $('.close-modal');
-    
-    if (openModal.length > 0) { // Add modal background if modal links are present
-        $('.scope').append('<div id="modal-background"></div>');
-        
-        var modalBackground = $('#modal-background');
-    }
-    
-    function closeModals() {
-        bodyTag.removeClass('disable-scroll');
-        modalBackground.removeClass('visible');
-        modalWindow.removeClass('visible');
-        setTimeout(function() {
-            modalBackground.hide();
-            modalWindow.hide();
-        }, 250);
-    }
-    
-    openModal.click(function(e) {
-        e.preventDefault();
-        
-        var targetId = $(this).data('target-id'),
-            targetModal = $('#' + targetId);
-        
-        bodyTag.addClass('disable-scroll');
-        modalBackground.show();
-        targetModal.show();
-        setTimeout(function() { // Ensure elements are displayed before adding classes
-            modalBackground.addClass('visible');
-            $('#' + targetId).addClass('visible');
-        }, 25);
-    });
-    
-    closeModal.click(function(e) {
-        e.preventDefault();
-        closeModals();
-    });
-    
-    $(document).keyup(function(e) {
-        if (e.keyCode == 27) closeModals(); // Esc
-    });
-    
-    modalBackground.click(closeModals);
+    $('.open-modal').quickModal(); // Initialize plugin
 });
 
 /* ----------------------------------------
