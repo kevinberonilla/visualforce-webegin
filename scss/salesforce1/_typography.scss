@@ -62,6 +62,9 @@ hr {
     border: none;
     border-bottom: $card-border;
     @include type-margin;
+    &:last-child {
+        display: none;
+    }
 }
 a, a:visited {
     color: $blue;
@@ -94,10 +97,32 @@ pre {
 .caps {
     text-transform: uppercase;
 }
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+@media only screen and (max-width: $tablet-landscape-breakpoint) {
+    @include breakpoint-text-aligns($tablet-landscape-affix);
+}
+@media only screen and (max-width: $tablet-portrait-breakpoint) {
+    @include breakpoint-text-aligns($tablet-portrait-affix, $tablet-landscape-affix);
+}
+@media only screen and (max-width: $phone-breakpoint) {
+    @include breakpoint-text-aligns($phone-affix, $tablet-portrait-affix);
+}
 .icon {
     &.im { // IcoMoon
         position: relative;
         top: 2px;
+    }
+    &.fa { // FontAwesome
+        position: relative;
+        top: 0.5px;
     }
     &.margin-right {
         margin-right: $type-spacing / 2;

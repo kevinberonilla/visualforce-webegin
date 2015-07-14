@@ -39,7 +39,7 @@
         &.has-buttons {
             min-height: 76px;
             h2 {
-                margin-top: $type-spacing - 2;
+                margin-top: $type-spacing - 4;
                 @media only screen and (max-width: $tablet-landscape-breakpoint) {
                     margin-top: 0;
                 }
@@ -229,9 +229,8 @@ ul.card {
 }
 table {
     width: 100%;
-    text-align: center;
     td {
-        padding: $card-padding;
+        padding: ($card-padding / 2) $card-padding;
         white-space: nowrap;
     }
     thead {
@@ -244,9 +243,45 @@ table {
             background-color: $grey;
         }
     }
+    &.lined {
+        border-collapse: collapse;
+        tr {
+            border-top: $card-border;
+            &:first-child {
+                border-top: none;
+            }
+        }
+        thead {
+            background-color: initial;
+            color: $text-dark;
+            font-weight: $semibold;
+        }
+        tbody {
+            border-top: $card-border;
+            border-width: 3px;
+            tr:nth-child(even) {
+                background-color: initial;
+            }
+        }
+    }
+    &.align-center {
+        text-align: center;
+    }
+    @include type-margin;
 }
 .table-container {
     overflow: auto;
+    @include type-margin;
+}
+.mobile-only {
+    @media only screen and (min-width: $tablet-landscape-breakpoint + 1) {
+        display: none;
+    }
+}
+.desktop-only {
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        display: none;
+    }
 }
 footer {
     @extend .hero;

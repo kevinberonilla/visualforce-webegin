@@ -325,49 +325,49 @@ body .scope .margin-bottom-x2 {
   body .scope .column.half {
     width: 100%;
   }
-  body .scope .column.twelfth-md {
+  body .scope .column.twelfth-tl {
     width: 8.333%;
   }
-  body .scope .column.twelfth-x5-md {
+  body .scope .column.twelfth-x5-tl {
     width: 41.666%;
   }
-  body .scope .column.twelfth-x7-md {
+  body .scope .column.twelfth-x7-tl {
     width: 58.333%;
   }
-  body .scope .column.twelfth-x11-md {
+  body .scope .column.twelfth-x11-tl {
     width: 91.666%;
   }
-  body .scope .column.eighth-md {
+  body .scope .column.eighth-tl {
     width: 12.5%;
   }
-  body .scope .column.eighth-x3-md {
+  body .scope .column.eighth-x3-tl {
     width: 37.5%;
   }
-  body .scope .column.eighth-x5-md {
+  body .scope .column.eighth-x5-tl {
     width: 62.5%;
   }
-  body .scope .column.eighth-x7-md {
+  body .scope .column.eighth-x7-tl {
     width: 87.5%;
   }
-  body .scope .column.sixth-md {
+  body .scope .column.sixth-tl {
     width: 16.666%;
   }
-  body .scope .column.sixth-x5-md {
+  body .scope .column.sixth-x5-tl {
     width: 83.333%;
   }
-  body .scope .column.fourth-md {
+  body .scope .column.fourth-tl {
     width: 25%;
   }
-  body .scope .column.fourth-x3-md {
+  body .scope .column.fourth-x3-tl {
     width: 75%;
   }
-  body .scope .column.third-md {
+  body .scope .column.third-tl {
     width: 33.333%;
   }
-  body .scope .column.third-x2-md {
+  body .scope .column.third-x2-tl {
     width: 66.666%;
   }
-  body .scope .column.half-md {
+  body .scope .column.half-tl {
     width: 50%;
   }
   body .scope .column.margin-twelfth {
@@ -415,49 +415,49 @@ body .scope .margin-bottom-x2 {
   body .scope .column.margin-half {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-md {
+  body .scope .column.margin-twelfth-tl {
     margin-left: 8.333%;
   }
-  body .scope .column.margin-twelfth-x5-md {
+  body .scope .column.margin-twelfth-x5-tl {
     margin-left: 41.666%;
   }
-  body .scope .column.margin-twelfth-x7-md {
+  body .scope .column.margin-twelfth-x7-tl {
     margin-left: 58.333%;
   }
-  body .scope .column.margin-twelfth-x11-md {
+  body .scope .column.margin-twelfth-x11-tl {
     margin-left: 91.666%;
   }
-  body .scope .column.margin-eighth-md {
+  body .scope .column.margin-eighth-tl {
     margin-left: 12.5%;
   }
-  body .scope .column.margin-eighth-x3-md {
+  body .scope .column.margin-eighth-x3-tl {
     margin-left: 37.5%;
   }
-  body .scope .column.margin-eighth-x5-md {
+  body .scope .column.margin-eighth-x5-tl {
     margin-left: 62.5%;
   }
-  body .scope .column.margin-eighth-x7-md {
+  body .scope .column.margin-eighth-x7-tl {
     margin-left: 87.5%;
   }
-  body .scope .column.margin-sixth-md {
+  body .scope .column.margin-sixth-tl {
     margin-left: 16.666%;
   }
-  body .scope .column.margin-sixth-x5-md {
+  body .scope .column.margin-sixth-x5-tl {
     margin-left: 83.333%;
   }
-  body .scope .column.margin-fourth-md {
+  body .scope .column.margin-fourth-tl {
     margin-left: 25%;
   }
-  body .scope .column.margin-fourth-x3-md {
+  body .scope .column.margin-fourth-x3-tl {
     margin-left: 75%;
   }
-  body .scope .column.margin-third-md {
+  body .scope .column.margin-third-tl {
     margin-left: 33.333%;
   }
-  body .scope .column.margin-third-x2-md {
+  body .scope .column.margin-third-x2-tl {
     margin-left: 66.666%;
   }
-  body .scope .column.margin-half-md {
+  body .scope .column.margin-half-tl {
     margin-left: 50%;
   }
   body .scope .column.float-right.margin-twelfth {
@@ -505,637 +505,637 @@ body .scope .margin-bottom-x2 {
   body .scope .column.float-right.margin-half {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-md {
+  body .scope .column.float-right.margin-twelfth-tl {
     margin-left: 0;
     margin-right: 8.333%;
   }
-  body .scope .column.float-right.margin-twelfth-x5-md {
+  body .scope .column.float-right.margin-twelfth-x5-tl {
     margin-left: 0;
     margin-right: 41.666%;
   }
-  body .scope .column.float-right.margin-twelfth-x7-md {
+  body .scope .column.float-right.margin-twelfth-x7-tl {
     margin-left: 0;
     margin-right: 58.333%;
   }
-  body .scope .column.float-right.margin-twelfth-x11-md {
+  body .scope .column.float-right.margin-twelfth-x11-tl {
     margin-left: 0;
     margin-right: 91.666%;
   }
-  body .scope .column.float-right.margin-eighth-md {
+  body .scope .column.float-right.margin-eighth-tl {
     margin-left: 0;
     margin-right: 12.5%;
   }
-  body .scope .column.float-right.margin-eighth-x3-md {
+  body .scope .column.float-right.margin-eighth-x3-tl {
     margin-left: 0;
     margin-right: 37.5%;
   }
-  body .scope .column.float-right.margin-eighth-x5-md {
+  body .scope .column.float-right.margin-eighth-x5-tl {
     margin-left: 0;
     margin-right: 62.5%;
   }
-  body .scope .column.float-right.margin-eighth-x7-md {
+  body .scope .column.float-right.margin-eighth-x7-tl {
     margin-left: 0;
     margin-right: 87.5%;
   }
-  body .scope .column.float-right.margin-sixth-md {
+  body .scope .column.float-right.margin-sixth-tl {
     margin-left: 0;
     margin-right: 16.666%;
   }
-  body .scope .column.float-right.margin-sixth-x5-md {
+  body .scope .column.float-right.margin-sixth-x5-tl {
     margin-left: 0;
     margin-right: 83.333%;
   }
-  body .scope .column.float-right.margin-fourth-md {
+  body .scope .column.float-right.margin-fourth-tl {
     margin-left: 0;
     margin-right: 25%;
   }
-  body .scope .column.float-right.margin-fourth-x3-md {
+  body .scope .column.float-right.margin-fourth-x3-tl {
     margin-left: 0;
     margin-right: 75%;
   }
-  body .scope .column.float-right.margin-third-md {
+  body .scope .column.float-right.margin-third-tl {
     margin-left: 0;
     margin-right: 33.333%;
   }
-  body .scope .column.float-right.margin-third-x2-md {
+  body .scope .column.float-right.margin-third-x2-tl {
     margin-left: 0;
     margin-right: 66.666%;
   }
-  body .scope .column.float-right.margin-half-md {
+  body .scope .column.float-right.margin-half-tl {
     margin-left: 0;
     margin-right: 50%;
   }
 }
 @media only screen and (max-width: 768px) {
-  body .scope .column.twelfth-md {
+  body .scope .column.twelfth-tl {
     width: 100%;
   }
-  body .scope .column.twelfth-x5-md {
+  body .scope .column.twelfth-x5-tl {
     width: 100%;
   }
-  body .scope .column.twelfth-x7-md {
+  body .scope .column.twelfth-x7-tl {
     width: 100%;
   }
-  body .scope .column.twelfth-x11-md {
+  body .scope .column.twelfth-x11-tl {
     width: 100%;
   }
-  body .scope .column.eighth-md {
+  body .scope .column.eighth-tl {
     width: 100%;
   }
-  body .scope .column.eighth-x3-md {
+  body .scope .column.eighth-x3-tl {
     width: 100%;
   }
-  body .scope .column.eighth-x5-md {
+  body .scope .column.eighth-x5-tl {
     width: 100%;
   }
-  body .scope .column.eighth-x7-md {
+  body .scope .column.eighth-x7-tl {
     width: 100%;
   }
-  body .scope .column.sixth-md {
+  body .scope .column.sixth-tl {
     width: 100%;
   }
-  body .scope .column.sixth-x5-md {
+  body .scope .column.sixth-x5-tl {
     width: 100%;
   }
-  body .scope .column.fourth-md {
+  body .scope .column.fourth-tl {
     width: 100%;
   }
-  body .scope .column.fourth-x3-md {
+  body .scope .column.fourth-x3-tl {
     width: 100%;
   }
-  body .scope .column.third-md {
+  body .scope .column.third-tl {
     width: 100%;
   }
-  body .scope .column.third-x2-md {
+  body .scope .column.third-x2-tl {
     width: 100%;
   }
-  body .scope .column.half-md {
+  body .scope .column.half-tl {
     width: 100%;
   }
-  body .scope .column.twelfth-sm {
+  body .scope .column.twelfth-tp {
     width: 8.333%;
   }
-  body .scope .column.twelfth-x5-sm {
+  body .scope .column.twelfth-x5-tp {
     width: 41.666%;
   }
-  body .scope .column.twelfth-x7-sm {
+  body .scope .column.twelfth-x7-tp {
     width: 58.333%;
   }
-  body .scope .column.twelfth-x11-sm {
+  body .scope .column.twelfth-x11-tp {
     width: 91.666%;
   }
-  body .scope .column.eighth-sm {
+  body .scope .column.eighth-tp {
     width: 12.5%;
   }
-  body .scope .column.eighth-x3-sm {
+  body .scope .column.eighth-x3-tp {
     width: 37.5%;
   }
-  body .scope .column.eighth-x5-sm {
+  body .scope .column.eighth-x5-tp {
     width: 62.5%;
   }
-  body .scope .column.eighth-x7-sm {
+  body .scope .column.eighth-x7-tp {
     width: 87.5%;
   }
-  body .scope .column.sixth-sm {
+  body .scope .column.sixth-tp {
     width: 16.666%;
   }
-  body .scope .column.sixth-x5-sm {
+  body .scope .column.sixth-x5-tp {
     width: 83.333%;
   }
-  body .scope .column.fourth-sm {
+  body .scope .column.fourth-tp {
     width: 25%;
   }
-  body .scope .column.fourth-x3-sm {
+  body .scope .column.fourth-x3-tp {
     width: 75%;
   }
-  body .scope .column.third-sm {
+  body .scope .column.third-tp {
     width: 33.333%;
   }
-  body .scope .column.third-x2-sm {
+  body .scope .column.third-x2-tp {
     width: 66.666%;
   }
-  body .scope .column.half-sm {
+  body .scope .column.half-tp {
     width: 50%;
   }
-  body .scope .column.margin-twelfth-md {
+  body .scope .column.margin-twelfth-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-x5-md {
+  body .scope .column.margin-twelfth-x5-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-x7-md {
+  body .scope .column.margin-twelfth-x7-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-x11-md {
+  body .scope .column.margin-twelfth-x11-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-md {
+  body .scope .column.margin-eighth-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-x3-md {
+  body .scope .column.margin-eighth-x3-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-x5-md {
+  body .scope .column.margin-eighth-x5-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-x7-md {
+  body .scope .column.margin-eighth-x7-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-sixth-md {
+  body .scope .column.margin-sixth-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-sixth-x5-md {
+  body .scope .column.margin-sixth-x5-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-fourth-md {
+  body .scope .column.margin-fourth-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-fourth-x3-md {
+  body .scope .column.margin-fourth-x3-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-third-md {
+  body .scope .column.margin-third-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-third-x2-md {
+  body .scope .column.margin-third-x2-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-half-md {
+  body .scope .column.margin-half-tl {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-sm {
+  body .scope .column.margin-twelfth-tp {
     margin-left: 8.333%;
   }
-  body .scope .column.margin-twelfth-x5-sm {
+  body .scope .column.margin-twelfth-x5-tp {
     margin-left: 41.666%;
   }
-  body .scope .column.margin-twelfth-x7-sm {
+  body .scope .column.margin-twelfth-x7-tp {
     margin-left: 58.333%;
   }
-  body .scope .column.margin-twelfth-x11-sm {
+  body .scope .column.margin-twelfth-x11-tp {
     margin-left: 91.666%;
   }
-  body .scope .column.margin-eighth-sm {
+  body .scope .column.margin-eighth-tp {
     margin-left: 12.5%;
   }
-  body .scope .column.margin-eighth-x3-sm {
+  body .scope .column.margin-eighth-x3-tp {
     margin-left: 37.5%;
   }
-  body .scope .column.margin-eighth-x5-sm {
+  body .scope .column.margin-eighth-x5-tp {
     margin-left: 62.5%;
   }
-  body .scope .column.margin-eighth-x7-sm {
+  body .scope .column.margin-eighth-x7-tp {
     margin-left: 87.5%;
   }
-  body .scope .column.margin-sixth-sm {
+  body .scope .column.margin-sixth-tp {
     margin-left: 16.666%;
   }
-  body .scope .column.margin-sixth-x5-sm {
+  body .scope .column.margin-sixth-x5-tp {
     margin-left: 83.333%;
   }
-  body .scope .column.margin-fourth-sm {
+  body .scope .column.margin-fourth-tp {
     margin-left: 25%;
   }
-  body .scope .column.margin-fourth-x3-sm {
+  body .scope .column.margin-fourth-x3-tp {
     margin-left: 75%;
   }
-  body .scope .column.margin-third-sm {
+  body .scope .column.margin-third-tp {
     margin-left: 33.333%;
   }
-  body .scope .column.margin-third-x2-sm {
+  body .scope .column.margin-third-x2-tp {
     margin-left: 66.666%;
   }
-  body .scope .column.margin-half-sm {
+  body .scope .column.margin-half-tp {
     margin-left: 50%;
   }
-  body .scope .column.float-right.margin-twelfth-md {
+  body .scope .column.float-right.margin-twelfth-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-x5-md {
+  body .scope .column.float-right.margin-twelfth-x5-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-x7-md {
+  body .scope .column.float-right.margin-twelfth-x7-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-x11-md {
+  body .scope .column.float-right.margin-twelfth-x11-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-md {
+  body .scope .column.float-right.margin-eighth-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-x3-md {
+  body .scope .column.float-right.margin-eighth-x3-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-x5-md {
+  body .scope .column.float-right.margin-eighth-x5-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-x7-md {
+  body .scope .column.float-right.margin-eighth-x7-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-sixth-md {
+  body .scope .column.float-right.margin-sixth-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-sixth-x5-md {
+  body .scope .column.float-right.margin-sixth-x5-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-fourth-md {
+  body .scope .column.float-right.margin-fourth-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-fourth-x3-md {
+  body .scope .column.float-right.margin-fourth-x3-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-third-md {
+  body .scope .column.float-right.margin-third-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-third-x2-md {
+  body .scope .column.float-right.margin-third-x2-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-half-md {
+  body .scope .column.float-right.margin-half-tl {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-sm {
+  body .scope .column.float-right.margin-twelfth-tp {
     margin-left: 0;
     margin-right: 8.333%;
   }
-  body .scope .column.float-right.margin-twelfth-x5-sm {
+  body .scope .column.float-right.margin-twelfth-x5-tp {
     margin-left: 0;
     margin-right: 41.666%;
   }
-  body .scope .column.float-right.margin-twelfth-x7-sm {
+  body .scope .column.float-right.margin-twelfth-x7-tp {
     margin-left: 0;
     margin-right: 58.333%;
   }
-  body .scope .column.float-right.margin-twelfth-x11-sm {
+  body .scope .column.float-right.margin-twelfth-x11-tp {
     margin-left: 0;
     margin-right: 91.666%;
   }
-  body .scope .column.float-right.margin-eighth-sm {
+  body .scope .column.float-right.margin-eighth-tp {
     margin-left: 0;
     margin-right: 12.5%;
   }
-  body .scope .column.float-right.margin-eighth-x3-sm {
+  body .scope .column.float-right.margin-eighth-x3-tp {
     margin-left: 0;
     margin-right: 37.5%;
   }
-  body .scope .column.float-right.margin-eighth-x5-sm {
+  body .scope .column.float-right.margin-eighth-x5-tp {
     margin-left: 0;
     margin-right: 62.5%;
   }
-  body .scope .column.float-right.margin-eighth-x7-sm {
+  body .scope .column.float-right.margin-eighth-x7-tp {
     margin-left: 0;
     margin-right: 87.5%;
   }
-  body .scope .column.float-right.margin-sixth-sm {
+  body .scope .column.float-right.margin-sixth-tp {
     margin-left: 0;
     margin-right: 16.666%;
   }
-  body .scope .column.float-right.margin-sixth-x5-sm {
+  body .scope .column.float-right.margin-sixth-x5-tp {
     margin-left: 0;
     margin-right: 83.333%;
   }
-  body .scope .column.float-right.margin-fourth-sm {
+  body .scope .column.float-right.margin-fourth-tp {
     margin-left: 0;
     margin-right: 25%;
   }
-  body .scope .column.float-right.margin-fourth-x3-sm {
+  body .scope .column.float-right.margin-fourth-x3-tp {
     margin-left: 0;
     margin-right: 75%;
   }
-  body .scope .column.float-right.margin-third-sm {
+  body .scope .column.float-right.margin-third-tp {
     margin-left: 0;
     margin-right: 33.333%;
   }
-  body .scope .column.float-right.margin-third-x2-sm {
+  body .scope .column.float-right.margin-third-x2-tp {
     margin-left: 0;
     margin-right: 66.666%;
   }
-  body .scope .column.float-right.margin-half-sm {
+  body .scope .column.float-right.margin-half-tp {
     margin-left: 0;
     margin-right: 50%;
   }
 }
 @media only screen and (max-width: 480px) {
-  body .scope .column.twelfth-sm {
+  body .scope .column.twelfth-tp {
     width: 100%;
   }
-  body .scope .column.twelfth-x5-sm {
+  body .scope .column.twelfth-x5-tp {
     width: 100%;
   }
-  body .scope .column.twelfth-x7-sm {
+  body .scope .column.twelfth-x7-tp {
     width: 100%;
   }
-  body .scope .column.twelfth-x11-sm {
+  body .scope .column.twelfth-x11-tp {
     width: 100%;
   }
-  body .scope .column.eighth-sm {
+  body .scope .column.eighth-tp {
     width: 100%;
   }
-  body .scope .column.eighth-x3-sm {
+  body .scope .column.eighth-x3-tp {
     width: 100%;
   }
-  body .scope .column.eighth-x5-sm {
+  body .scope .column.eighth-x5-tp {
     width: 100%;
   }
-  body .scope .column.eighth-x7-sm {
+  body .scope .column.eighth-x7-tp {
     width: 100%;
   }
-  body .scope .column.sixth-sm {
+  body .scope .column.sixth-tp {
     width: 100%;
   }
-  body .scope .column.sixth-x5-sm {
+  body .scope .column.sixth-x5-tp {
     width: 100%;
   }
-  body .scope .column.fourth-sm {
+  body .scope .column.fourth-tp {
     width: 100%;
   }
-  body .scope .column.fourth-x3-sm {
+  body .scope .column.fourth-x3-tp {
     width: 100%;
   }
-  body .scope .column.third-sm {
+  body .scope .column.third-tp {
     width: 100%;
   }
-  body .scope .column.third-x2-sm {
+  body .scope .column.third-x2-tp {
     width: 100%;
   }
-  body .scope .column.half-sm {
+  body .scope .column.half-tp {
     width: 100%;
   }
-  body .scope .column.twelfth-xs {
+  body .scope .column.twelfth-p {
     width: 8.333%;
   }
-  body .scope .column.twelfth-x5-xs {
+  body .scope .column.twelfth-x5-p {
     width: 41.666%;
   }
-  body .scope .column.twelfth-x7-xs {
+  body .scope .column.twelfth-x7-p {
     width: 58.333%;
   }
-  body .scope .column.twelfth-x11-xs {
+  body .scope .column.twelfth-x11-p {
     width: 91.666%;
   }
-  body .scope .column.eighth-xs {
+  body .scope .column.eighth-p {
     width: 12.5%;
   }
-  body .scope .column.eighth-x3-xs {
+  body .scope .column.eighth-x3-p {
     width: 37.5%;
   }
-  body .scope .column.eighth-x5-xs {
+  body .scope .column.eighth-x5-p {
     width: 62.5%;
   }
-  body .scope .column.eighth-x7-xs {
+  body .scope .column.eighth-x7-p {
     width: 87.5%;
   }
-  body .scope .column.sixth-xs {
+  body .scope .column.sixth-p {
     width: 16.666%;
   }
-  body .scope .column.sixth-x5-xs {
+  body .scope .column.sixth-x5-p {
     width: 83.333%;
   }
-  body .scope .column.fourth-xs {
+  body .scope .column.fourth-p {
     width: 25%;
   }
-  body .scope .column.fourth-x3-xs {
+  body .scope .column.fourth-x3-p {
     width: 75%;
   }
-  body .scope .column.third-xs {
+  body .scope .column.third-p {
     width: 33.333%;
   }
-  body .scope .column.third-x2-xs {
+  body .scope .column.third-x2-p {
     width: 66.666%;
   }
-  body .scope .column.half-xs {
+  body .scope .column.half-p {
     width: 50%;
   }
-  body .scope .column.margin-twelfth-sm {
+  body .scope .column.margin-twelfth-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-x5-sm {
+  body .scope .column.margin-twelfth-x5-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-x7-sm {
+  body .scope .column.margin-twelfth-x7-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-x11-sm {
+  body .scope .column.margin-twelfth-x11-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-sm {
+  body .scope .column.margin-eighth-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-x3-sm {
+  body .scope .column.margin-eighth-x3-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-x5-sm {
+  body .scope .column.margin-eighth-x5-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-eighth-x7-sm {
+  body .scope .column.margin-eighth-x7-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-sixth-sm {
+  body .scope .column.margin-sixth-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-sixth-x5-sm {
+  body .scope .column.margin-sixth-x5-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-fourth-sm {
+  body .scope .column.margin-fourth-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-fourth-x3-sm {
+  body .scope .column.margin-fourth-x3-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-third-sm {
+  body .scope .column.margin-third-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-third-x2-sm {
+  body .scope .column.margin-third-x2-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-half-sm {
+  body .scope .column.margin-half-tp {
     margin-left: 0;
   }
-  body .scope .column.margin-twelfth-xs {
+  body .scope .column.margin-twelfth-p {
     margin-left: 8.333%;
   }
-  body .scope .column.margin-twelfth-x5-xs {
+  body .scope .column.margin-twelfth-x5-p {
     margin-left: 41.666%;
   }
-  body .scope .column.margin-twelfth-x7-xs {
+  body .scope .column.margin-twelfth-x7-p {
     margin-left: 58.333%;
   }
-  body .scope .column.margin-twelfth-x11-xs {
+  body .scope .column.margin-twelfth-x11-p {
     margin-left: 91.666%;
   }
-  body .scope .column.margin-eighth-xs {
+  body .scope .column.margin-eighth-p {
     margin-left: 12.5%;
   }
-  body .scope .column.margin-eighth-x3-xs {
+  body .scope .column.margin-eighth-x3-p {
     margin-left: 37.5%;
   }
-  body .scope .column.margin-eighth-x5-xs {
+  body .scope .column.margin-eighth-x5-p {
     margin-left: 62.5%;
   }
-  body .scope .column.margin-eighth-x7-xs {
+  body .scope .column.margin-eighth-x7-p {
     margin-left: 87.5%;
   }
-  body .scope .column.margin-sixth-xs {
+  body .scope .column.margin-sixth-p {
     margin-left: 16.666%;
   }
-  body .scope .column.margin-sixth-x5-xs {
+  body .scope .column.margin-sixth-x5-p {
     margin-left: 83.333%;
   }
-  body .scope .column.margin-fourth-xs {
+  body .scope .column.margin-fourth-p {
     margin-left: 25%;
   }
-  body .scope .column.margin-fourth-x3-xs {
+  body .scope .column.margin-fourth-x3-p {
     margin-left: 75%;
   }
-  body .scope .column.margin-third-xs {
+  body .scope .column.margin-third-p {
     margin-left: 33.333%;
   }
-  body .scope .column.margin-third-x2-xs {
+  body .scope .column.margin-third-x2-p {
     margin-left: 66.666%;
   }
-  body .scope .column.margin-half-xs {
+  body .scope .column.margin-half-p {
     margin-left: 50%;
   }
-  body .scope .column.float-right.margin-twelfth-sm {
+  body .scope .column.float-right.margin-twelfth-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-x5-sm {
+  body .scope .column.float-right.margin-twelfth-x5-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-x7-sm {
+  body .scope .column.float-right.margin-twelfth-x7-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-x11-sm {
+  body .scope .column.float-right.margin-twelfth-x11-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-sm {
+  body .scope .column.float-right.margin-eighth-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-x3-sm {
+  body .scope .column.float-right.margin-eighth-x3-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-x5-sm {
+  body .scope .column.float-right.margin-eighth-x5-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-eighth-x7-sm {
+  body .scope .column.float-right.margin-eighth-x7-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-sixth-sm {
+  body .scope .column.float-right.margin-sixth-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-sixth-x5-sm {
+  body .scope .column.float-right.margin-sixth-x5-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-fourth-sm {
+  body .scope .column.float-right.margin-fourth-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-fourth-x3-sm {
+  body .scope .column.float-right.margin-fourth-x3-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-third-sm {
+  body .scope .column.float-right.margin-third-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-third-x2-sm {
+  body .scope .column.float-right.margin-third-x2-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-half-sm {
+  body .scope .column.float-right.margin-half-tp {
     margin-right: 0;
   }
-  body .scope .column.float-right.margin-twelfth-xs {
+  body .scope .column.float-right.margin-twelfth-p {
     margin-left: 0;
     margin-right: 8.333%;
   }
-  body .scope .column.float-right.margin-twelfth-x5-xs {
+  body .scope .column.float-right.margin-twelfth-x5-p {
     margin-left: 0;
     margin-right: 41.666%;
   }
-  body .scope .column.float-right.margin-twelfth-x7-xs {
+  body .scope .column.float-right.margin-twelfth-x7-p {
     margin-left: 0;
     margin-right: 58.333%;
   }
-  body .scope .column.float-right.margin-twelfth-x11-xs {
+  body .scope .column.float-right.margin-twelfth-x11-p {
     margin-left: 0;
     margin-right: 91.666%;
   }
-  body .scope .column.float-right.margin-eighth-xs {
+  body .scope .column.float-right.margin-eighth-p {
     margin-left: 0;
     margin-right: 12.5%;
   }
-  body .scope .column.float-right.margin-eighth-x3-xs {
+  body .scope .column.float-right.margin-eighth-x3-p {
     margin-left: 0;
     margin-right: 37.5%;
   }
-  body .scope .column.float-right.margin-eighth-x5-xs {
+  body .scope .column.float-right.margin-eighth-x5-p {
     margin-left: 0;
     margin-right: 62.5%;
   }
-  body .scope .column.float-right.margin-eighth-x7-xs {
+  body .scope .column.float-right.margin-eighth-x7-p {
     margin-left: 0;
     margin-right: 87.5%;
   }
-  body .scope .column.float-right.margin-sixth-xs {
+  body .scope .column.float-right.margin-sixth-p {
     margin-left: 0;
     margin-right: 16.666%;
   }
-  body .scope .column.float-right.margin-sixth-x5-xs {
+  body .scope .column.float-right.margin-sixth-x5-p {
     margin-left: 0;
     margin-right: 83.333%;
   }
-  body .scope .column.float-right.margin-fourth-xs {
+  body .scope .column.float-right.margin-fourth-p {
     margin-left: 0;
     margin-right: 25%;
   }
-  body .scope .column.float-right.margin-fourth-x3-xs {
+  body .scope .column.float-right.margin-fourth-x3-p {
     margin-left: 0;
     margin-right: 75%;
   }
-  body .scope .column.float-right.margin-third-xs {
+  body .scope .column.float-right.margin-third-p {
     margin-left: 0;
     margin-right: 33.333%;
   }
-  body .scope .column.float-right.margin-third-x2-xs {
+  body .scope .column.float-right.margin-third-x2-p {
     margin-left: 0;
     margin-right: 66.666%;
   }
-  body .scope .column.float-right.margin-half-xs {
+  body .scope .column.float-right.margin-half-p {
     margin-left: 0;
     margin-right: 50%;
   }
@@ -1148,7 +1148,7 @@ body .scope h1, body .scope h2 {
   padding-top: 2px;
 }
 body .scope h1 + *, body .scope .scope h1 + *, body .scope h2 + *, body .scope .scope h2 + *, body .scope h1 + *:before, body .scope .scope h1 + *:before, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h1 + *:after, body .scope .scope h1 + *:after, body .scope h2 + *:after, body .scope .scope h2 + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope h1 + :after, body .scope .scope h1 + :after, body .scope h2 + :after, body .scope .scope h2 + :after {
   margin: 0;
@@ -1159,7 +1159,7 @@ body .scope h2 {
   font-weight: 700;
 }
 body .scope h2 + *, body .scope .scope h2 + *, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h2 + *:after, body .scope .scope h2 + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope h2 + :after, body .scope .scope h2 + :after {
   margin: 0;
@@ -1174,7 +1174,7 @@ body .scope h3 {
   color: #adb8c2;
 }
 body .scope h3 + *, body .scope .scope h3 + *, body .scope h3 + *:before, body .scope .scope h3 + *:before, body .scope h3 + *:after, body .scope .scope h3 + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope h3 + :after, body .scope .scope h3 + :after {
   margin: 0;
@@ -1189,7 +1189,7 @@ body .scope h4 {
   color: #adb8c2;
 }
 body .scope h4 + *, body .scope .scope h4 + *, body .scope h4 + *:before, body .scope .scope h4 + *:before, body .scope h4 + *:after, body .scope .scope h4 + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope h4 + :after, body .scope .scope h4 + :after {
   margin: 0;
@@ -1201,7 +1201,7 @@ body .scope h5 {
   color: #525354;
 }
 body .scope h5 + *, body .scope .scope h5 + *, body .scope h5 + *:before, body .scope .scope h5 + *:before, body .scope h5 + *:after, body .scope .scope h5 + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope h5 + :after, body .scope .scope h5 + :after {
   margin: 0;
@@ -1214,7 +1214,7 @@ body .scope small {
   color: #adb8c2;
 }
 body .scope p + *, body .scope .scope p + *, body .scope p + *:before, body .scope .scope p + *:before, body .scope p + *:after, body .scope .scope p + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope p + :after, body .scope .scope p + :after {
   margin: 0;
@@ -1223,7 +1223,7 @@ body .scope ul, body .scope ol {
   margin-left: 32px;
 }
 body .scope ul + *, body .scope .scope ul + *, body .scope ul + *:before, body .scope .scope ul + *:before, body .scope ul + *:after, body .scope .scope ul + *:after, body .scope ol + *, body .scope .scope ol + *, body .scope ol + *:before, body .scope .scope ol + *:before, body .scope ol + *:after, body .scope .scope ol + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope ul + :after, body .scope .scope ul + :after, body .scope ol + :after, body .scope .scope ol + :after {
   margin: 0;
@@ -1233,10 +1233,13 @@ body .scope hr {
   border-bottom: 1px solid #dfe0e1;
 }
 body .scope hr + *, body .scope .scope hr + *, body .scope hr + *:before, body .scope .scope hr + *:before, body .scope hr + *:after, body .scope .scope hr + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope hr + :after, body .scope .scope hr + :after {
   margin: 0;
+}
+body .scope hr:last-child {
+  display: none;
 }
 body .scope a, body .scope a:visited {
   color: #2a94d6;
@@ -1309,15 +1312,70 @@ body .scope .text-light {
 body .scope .caps {
   text-transform: uppercase;
 }
+body .scope .align-left {
+  text-align: left;
+}
+body .scope .align-right {
+  text-align: right;
+}
+body .scope .align-center {
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .align-left, body .scope .align-right, body .scope .align-center {
+    text-align: inherit;
+  }
+  body .scope .align-left-tl {
+    text-align: left;
+  }
+  body .scope .align-right-tl {
+    text-align: right;
+  }
+  body .scope .align-center-tl {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .scope .align-left-tl, body .scope .align-right-tl, body .scope .align-center-tl {
+    text-align: inherit;
+  }
+  body .scope .align-left-tp {
+    text-align: left;
+  }
+  body .scope .align-right-tp {
+    text-align: right;
+  }
+  body .scope .align-center-tp {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .scope .align-left-tp, body .scope .align-right-tp, body .scope .align-center-tp {
+    text-align: inherit;
+  }
+  body .scope .align-left-p {
+    text-align: left;
+  }
+  body .scope .align-right-p {
+    text-align: right;
+  }
+  body .scope .align-center-p {
+    text-align: center;
+  }
+}
 body .scope .icon.im {
   position: relative;
   top: 2px;
 }
+body .scope .icon.fa {
+  position: relative;
+  top: 0.5px;
+}
 body .scope .icon.margin-right {
-  margin-right: 7px;
+  margin-right: 8px;
 }
 body .scope .icon.margin-left {
-  margin-left: 7px;
+  margin-left: 8px;
 }
 body .scope .status {
   display: inline-block;
@@ -1329,7 +1387,7 @@ body .scope .status {
   background-color: #2a94d6;
   color: #fff;
   letter-spacing: 0.25px;
-  margin-left: 7px;
+  margin-left: 8px;
 }
 body .scope .status.text-dark {
   background-color: #2e4052;
@@ -1500,9 +1558,9 @@ body .scope .corner-buttons {
   body .scope .corner-buttons {
     float: none;
   }
-  body .scope .corner-buttons button, body .scope .corner-buttons a.button, body .scope .corner-buttons input[type="submit"], body .scope .corner-buttons textarea[type="submit"], body .scope .corner-buttons select[type="submit"], body .scope .corner-buttons ul[type="submit"].tagit, body .scope .corner-buttons .button-group li a, body .scope .button-group li .corner-buttons a, body .scope .corner-buttons .paginate-links li a, body .scope .paginate-links li .corner-buttons a {
+  body .scope .corner-buttons button, body .scope .corner-buttons a.button, body .scope .corner-buttons input[type="submit"], body .scope .corner-buttons textarea[type="submit"], body .scope .corner-buttons select[type="submit"], body .scope .corner-buttons ul[type="submit"].tagit, body .scope .corner-buttons .button-group > li > a, body .scope .corner-buttons .button-group > li > button, body .scope .corner-buttons .paginate-links li a, body .scope .paginate-links li .corner-buttons a, body .scope .corner-buttons .paginate-links li button, body .scope .paginate-links li .corner-buttons button {
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 body .scope .mobile-header {
@@ -1510,7 +1568,7 @@ body .scope .mobile-header {
 }
 body .scope .mobile-header .corner-buttons .mobile-group-left, body .scope .mobile-header .corner-buttons .mobile-group-right {
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 body .scope .mobile-header .corner-buttons .mobile-group-left:last-child, body .scope .mobile-header .corner-buttons .mobile-group-right:last-child {
   margin-right: 0;
@@ -1522,7 +1580,7 @@ body .scope .mobile-header .corner-buttons .mobile-group-left:last-child, body .
     top: 0;
     left: 0;
   }
-  body .scope .mobile-header .corner-buttons button, body .scope .mobile-header .corner-buttons a.button, body .scope .mobile-header .corner-buttons input[type="submit"], body .scope .mobile-header .corner-buttons textarea[type="submit"], body .scope .mobile-header .corner-buttons select[type="submit"], body .scope .mobile-header .corner-buttons ul[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group li a, body .scope .button-group li .mobile-header .corner-buttons a, body .scope .mobile-header .corner-buttons .paginate-links li a, body .scope .paginate-links li .mobile-header .corner-buttons a {
+  body .scope .mobile-header .corner-buttons button, body .scope .mobile-header .corner-buttons a.button, body .scope .mobile-header .corner-buttons input[type="submit"], body .scope .mobile-header .corner-buttons textarea[type="submit"], body .scope .mobile-header .corner-buttons select[type="submit"], body .scope .mobile-header .corner-buttons ul[type="submit"].tagit, body .scope .mobile-header .corner-buttons .button-group > li > a, body .scope .mobile-header .corner-buttons .paginate-links li a, body .scope .paginate-links li .mobile-header .corner-buttons a {
     display: inline-block;
     width: auto;
     margin: 16px;
@@ -1617,10 +1675,9 @@ body .scope #modal-background.visible {
 }
 body .scope table {
   width: 100%;
-  text-align: center;
 }
 body .scope table td {
-  padding: 16px;
+  padding: 8px 16px;
   white-space: nowrap;
 }
 body .scope table thead {
@@ -1672,11 +1729,57 @@ body .scope table thead.pink {
 body .scope table tbody tr:nth-child(even) {
   background-color: #f0f1f2;
 }
+body .scope table.lined {
+  border-collapse: collapse;
+}
+body .scope table.lined tr {
+  border-top: 1px solid #dfe0e1;
+}
+body .scope table.lined tr:first-child {
+  border-top: none;
+}
+body .scope table.lined thead {
+  background-color: initial;
+  color: #2e4052;
+  font-weight: 700;
+}
+body .scope table.lined tbody {
+  border-top: 1px solid #dfe0e1;
+  border-width: 3px;
+}
+body .scope table.lined tbody tr:nth-child(even) {
+  background-color: initial;
+}
+body .scope table.align-center {
+  text-align: center;
+}
+body .scope table + *, body .scope .scope table + *, body .scope table + *:before, body .scope .scope table + *:before, body .scope table + *:after, body .scope .scope table + *:after {
+  margin-top: 16px;
+}
+body .scope table + :after, body .scope .scope table + :after {
+  margin: 0;
+}
 body .scope .table-container {
   overflow: auto;
 }
+body .scope .table-container + *, body .scope .scope .table-container + *, body .scope .table-container + *:before, body .scope .scope .table-container + *:before, body .scope .table-container + *:after, body .scope .scope .table-container + *:after {
+  margin-top: 16px;
+}
+body .scope .table-container + :after, body .scope .scope .table-container + :after {
+  margin: 0;
+}
+@media only screen and (min-width: 1025px) {
+  body .scope .mobile-only {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .desktop-only {
+    display: none;
+  }
+}
 body .scope footer {
-  padding: 28px 0;
+  padding: 32px 0;
 }
 body .scope footer:after {
   display: none;
@@ -1686,9 +1789,9 @@ body .scope .avatar, body .scope .icon-container {
   width: 45px;
   height: 45px;
   border-radius: 5px;
-  margin-right: 14px;
+  margin-right: 16px;
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 body .scope .avatar.large, body .scope .large.icon-container {
   width: 100px;
@@ -1698,7 +1801,7 @@ body .scope .avatar.large, body .scope .large.icon-container {
 body .scope .avatar + .title, body .scope .scope .avatar + .title, body .scope .icon-container + .title, body .scope .scope .icon-container + .title {
   display: inline-block;
   height: 45px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   vertical-align: top;
 }
 body .scope .icon-container {
@@ -1846,449 +1949,17 @@ body .scope .progress-bar.small .progress:not(:last-child) {
   border-bottom-right-radius: 0;
 }
 body .scope .progress-bar + *, body .scope .scope .progress-bar + *, body .scope .progress-bar + *:before, body .scope .scope .progress-bar + *:before, body .scope .progress-bar + *:after, body .scope .scope .progress-bar + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope .progress-bar + :after, body .scope .scope .progress-bar + :after {
   margin: 0;
 }
-body .scope button, body .scope a.button, body .scope input[type="submit"], body .scope textarea[type="submit"], body .scope select[type="submit"], body .scope ul[type="submit"].tagit, body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
-  -webkit-transition: all 250ms ease;
-  transition: all 250ms ease;
-  opacity: 1;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 10px 12px 12px;
-  margin-right: 14px;
-  border-radius: 5px;
-  border: 1px solid transparent;
-  background-color: #2a94d6;
-  color: #fff;
-  font-weight: 700;
-  text-align: center;
-}
-body .scope button.text-dark, body .scope a.text-dark.button, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"], body .scope ul.text-dark[type="submit"].tagit, body .scope .button-group li a.text-dark, body .scope .paginate-links li a.text-dark {
-  border-color: #2e4052;
-}
-body .scope button.text-normal, body .scope a.text-normal.button, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"], body .scope ul.text-normal[type="submit"].tagit, body .scope .button-group li a.text-normal, body .scope .paginate-links li a.text-normal {
-  border-color: #525354;
-}
-body .scope button.text-light, body .scope a.text-light.button, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"], body .scope ul.text-light[type="submit"].tagit, body .scope .button-group li a.text-light, body .scope .paginate-links li a.text-light {
-  border-color: #adb8c2;
-}
-body .scope button.blue, body .scope a.blue.button, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"], body .scope ul.blue[type="submit"].tagit, body .scope .button-group li a.blue, body .scope .paginate-links li a.blue {
-  border-color: #2a94d6;
-}
-body .scope button.light-blue, body .scope a.light-blue.button, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"], body .scope ul.light-blue[type="submit"].tagit, body .scope .button-group li a.light-blue, body .scope .paginate-links li a.light-blue {
-  border-color: #4eb1cb;
-}
-body .scope button.navy, body .scope a.navy.button, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"], body .scope ul.navy[type="submit"].tagit, body .scope .button-group li a.navy, body .scope .paginate-links li a.navy {
-  border-color: #344a5f;
-}
-body .scope button.grey, body .scope a.grey.button, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"], body .scope ul.grey[type="submit"].tagit, body .scope .button-group li a.grey, body .scope .paginate-links li a.grey {
-  border-color: #f0f1f2;
-}
-body .scope button.light-grey, body .scope a.light-grey.button, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"], body .scope ul.light-grey[type="submit"].tagit, body .scope .button-group li a.light-grey, body .scope .paginate-links li a.light-grey {
-  border-color: #f9fbfc;
-}
-body .scope button.white, body .scope a.white.button, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"], body .scope ul.white[type="submit"].tagit, body .scope .button-group li a.white, body .scope .paginate-links li a.white {
-  border-color: #fff;
-}
-body .scope button.red, body .scope a.red.button, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"], body .scope ul.red[type="submit"].tagit, body .scope .button-group li a.red, body .scope .paginate-links li a.red {
-  border-color: #cf5c60;
-}
-body .scope button.purple, body .scope a.purple.button, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"], body .scope select.purple[type="submit"], body .scope ul.purple[type="submit"].tagit, body .scope .button-group li a.purple, body .scope .paginate-links li a.purple {
-  border-color: #717ecd;
-}
-body .scope button.green, body .scope a.green.button, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"], body .scope select.green[type="submit"], body .scope ul.green[type="submit"].tagit, body .scope .button-group li a.green, body .scope .paginate-links li a.green {
-  border-color: #4ab471;
-}
-body .scope button.orange, body .scope a.orange.button, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"], body .scope select.orange[type="submit"], body .scope ul.orange[type="submit"].tagit, body .scope .button-group li a.orange, body .scope .paginate-links li a.orange {
-  border-color: #f3ae4e;
-}
-body .scope button.pink, body .scope a.pink.button, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"], body .scope select.pink[type="submit"], body .scope ul.pink[type="submit"].tagit, body .scope .button-group li a.pink, body .scope .paginate-links li a.pink {
-  border-color: #d96383;
-}
-body .scope button.text-dark, body .scope a.text-dark.button, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"], body .scope ul.text-dark[type="submit"].tagit, body .scope .button-group li a.text-dark, body .scope .paginate-links li a.text-dark {
-  background-color: #2e4052;
-}
-body .scope button.text-normal, body .scope a.text-normal.button, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"], body .scope ul.text-normal[type="submit"].tagit, body .scope .button-group li a.text-normal, body .scope .paginate-links li a.text-normal {
-  background-color: #525354;
-}
-body .scope button.text-light, body .scope a.text-light.button, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"], body .scope ul.text-light[type="submit"].tagit, body .scope .button-group li a.text-light, body .scope .paginate-links li a.text-light {
-  background-color: #adb8c2;
-}
-body .scope button.blue, body .scope a.blue.button, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"], body .scope ul.blue[type="submit"].tagit, body .scope .button-group li a.blue, body .scope .paginate-links li a.blue {
-  background-color: #2a94d6;
-}
-body .scope button.light-blue, body .scope a.light-blue.button, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"], body .scope ul.light-blue[type="submit"].tagit, body .scope .button-group li a.light-blue, body .scope .paginate-links li a.light-blue {
-  background-color: #4eb1cb;
-}
-body .scope button.navy, body .scope a.navy.button, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"], body .scope ul.navy[type="submit"].tagit, body .scope .button-group li a.navy, body .scope .paginate-links li a.navy {
-  background-color: #344a5f;
-}
-body .scope button.grey, body .scope a.grey.button, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"], body .scope ul.grey[type="submit"].tagit, body .scope .button-group li a.grey, body .scope .paginate-links li a.grey {
-  background-color: #f0f1f2;
-}
-body .scope button.light-grey, body .scope a.light-grey.button, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"], body .scope ul.light-grey[type="submit"].tagit, body .scope .button-group li a.light-grey, body .scope .paginate-links li a.light-grey {
-  background-color: #f9fbfc;
-}
-body .scope button.white, body .scope a.white.button, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"], body .scope ul.white[type="submit"].tagit, body .scope .button-group li a.white, body .scope .paginate-links li a.white {
-  background-color: #fff;
-}
-body .scope button.red, body .scope a.red.button, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"], body .scope ul.red[type="submit"].tagit, body .scope .button-group li a.red, body .scope .paginate-links li a.red {
-  background-color: #cf5c60;
-}
-body .scope button.purple, body .scope a.purple.button, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"], body .scope select.purple[type="submit"], body .scope ul.purple[type="submit"].tagit, body .scope .button-group li a.purple, body .scope .paginate-links li a.purple {
-  background-color: #717ecd;
-}
-body .scope button.green, body .scope a.green.button, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"], body .scope select.green[type="submit"], body .scope ul.green[type="submit"].tagit, body .scope .button-group li a.green, body .scope .paginate-links li a.green {
-  background-color: #4ab471;
-}
-body .scope button.orange, body .scope a.orange.button, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"], body .scope select.orange[type="submit"], body .scope ul.orange[type="submit"].tagit, body .scope .button-group li a.orange, body .scope .paginate-links li a.orange {
-  background-color: #f3ae4e;
-}
-body .scope button.pink, body .scope a.pink.button, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"], body .scope select.pink[type="submit"], body .scope ul.pink[type="submit"].tagit, body .scope .button-group li a.pink, body .scope .paginate-links li a.pink {
-  background-color: #d96383;
-}
-body .scope button.small, body .scope a.small.button, body .scope input.small[type="submit"], body .scope textarea.small[type="submit"], body .scope select.small[type="submit"], body .scope ul.small[type="submit"].tagit, body .scope .button-group li a.small, body .scope .paginate-links li a.small {
-  font-size: 12px;
-  line-height: 16px;
-  padding: 6px 10px;
-}
-body .scope button.inverse, body .scope a.inverse.button, body .scope input.inverse[type="submit"], body .scope textarea.inverse[type="submit"], body .scope select.inverse[type="submit"], body .scope ul.inverse[type="submit"].tagit, body .scope .button-group li a.inverse, body .scope .paginate-links li a.inverse {
-  background-color: transparent;
-  border: 1px solid #2a94d6;
-  color: #2a94d6;
-}
-body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"], body .scope ul.inverse.text-dark[type="submit"].tagit, body .scope .button-group li a.inverse.text-dark, body .scope .paginate-links li a.inverse.text-dark {
-  border-color: #2e4052;
-}
-body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"], body .scope ul.inverse.text-normal[type="submit"].tagit, body .scope .button-group li a.inverse.text-normal, body .scope .paginate-links li a.inverse.text-normal {
-  border-color: #525354;
-}
-body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"], body .scope ul.inverse.text-light[type="submit"].tagit, body .scope .button-group li a.inverse.text-light, body .scope .paginate-links li a.inverse.text-light {
-  border-color: #adb8c2;
-}
-body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"], body .scope ul.inverse.blue[type="submit"].tagit, body .scope .button-group li a.inverse.blue, body .scope .paginate-links li a.inverse.blue {
-  border-color: #2a94d6;
-}
-body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"], body .scope ul.inverse.light-blue[type="submit"].tagit, body .scope .button-group li a.inverse.light-blue, body .scope .paginate-links li a.inverse.light-blue {
-  border-color: #4eb1cb;
-}
-body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"], body .scope ul.inverse.navy[type="submit"].tagit, body .scope .button-group li a.inverse.navy, body .scope .paginate-links li a.inverse.navy {
-  border-color: #344a5f;
-}
-body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"], body .scope ul.inverse.grey[type="submit"].tagit, body .scope .button-group li a.inverse.grey, body .scope .paginate-links li a.inverse.grey {
-  border-color: #f0f1f2;
-}
-body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"], body .scope ul.inverse.light-grey[type="submit"].tagit, body .scope .button-group li a.inverse.light-grey, body .scope .paginate-links li a.inverse.light-grey {
-  border-color: #f9fbfc;
-}
-body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"], body .scope ul.inverse.white[type="submit"].tagit, body .scope .button-group li a.inverse.white, body .scope .paginate-links li a.inverse.white {
-  border-color: #fff;
-}
-body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"], body .scope ul.inverse.red[type="submit"].tagit, body .scope .button-group li a.inverse.red, body .scope .paginate-links li a.inverse.red {
-  border-color: #cf5c60;
-}
-body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"], body .scope select.inverse.purple[type="submit"], body .scope ul.inverse.purple[type="submit"].tagit, body .scope .button-group li a.inverse.purple, body .scope .paginate-links li a.inverse.purple {
-  border-color: #717ecd;
-}
-body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"], body .scope select.inverse.green[type="submit"], body .scope ul.inverse.green[type="submit"].tagit, body .scope .button-group li a.inverse.green, body .scope .paginate-links li a.inverse.green {
-  border-color: #4ab471;
-}
-body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"], body .scope select.inverse.orange[type="submit"], body .scope ul.inverse.orange[type="submit"].tagit, body .scope .button-group li a.inverse.orange, body .scope .paginate-links li a.inverse.orange {
-  border-color: #f3ae4e;
-}
-body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"], body .scope select.inverse.pink[type="submit"], body .scope ul.inverse.pink[type="submit"].tagit, body .scope .button-group li a.inverse.pink, body .scope .paginate-links li a.inverse.pink {
-  border-color: #d96383;
-}
-body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"], body .scope ul.inverse.text-dark[type="submit"].tagit, body .scope .button-group li a.inverse.text-dark, body .scope .paginate-links li a.inverse.text-dark {
-  color: #2e4052;
-}
-body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"], body .scope ul.inverse.text-normal[type="submit"].tagit, body .scope .button-group li a.inverse.text-normal, body .scope .paginate-links li a.inverse.text-normal {
-  color: #525354;
-}
-body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"], body .scope ul.inverse.text-light[type="submit"].tagit, body .scope .button-group li a.inverse.text-light, body .scope .paginate-links li a.inverse.text-light {
-  color: #adb8c2;
-}
-body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"], body .scope ul.inverse.blue[type="submit"].tagit, body .scope .button-group li a.inverse.blue, body .scope .paginate-links li a.inverse.blue {
-  color: #2a94d6;
-}
-body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"], body .scope ul.inverse.light-blue[type="submit"].tagit, body .scope .button-group li a.inverse.light-blue, body .scope .paginate-links li a.inverse.light-blue {
-  color: #4eb1cb;
-}
-body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"], body .scope ul.inverse.navy[type="submit"].tagit, body .scope .button-group li a.inverse.navy, body .scope .paginate-links li a.inverse.navy {
-  color: #344a5f;
-}
-body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"], body .scope ul.inverse.grey[type="submit"].tagit, body .scope .button-group li a.inverse.grey, body .scope .paginate-links li a.inverse.grey {
-  color: #f0f1f2;
-}
-body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"], body .scope ul.inverse.light-grey[type="submit"].tagit, body .scope .button-group li a.inverse.light-grey, body .scope .paginate-links li a.inverse.light-grey {
-  color: #f9fbfc;
-}
-body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"], body .scope ul.inverse.white[type="submit"].tagit, body .scope .button-group li a.inverse.white, body .scope .paginate-links li a.inverse.white {
-  color: #fff;
-}
-body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"], body .scope ul.inverse.red[type="submit"].tagit, body .scope .button-group li a.inverse.red, body .scope .paginate-links li a.inverse.red {
-  color: #cf5c60;
-}
-body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"], body .scope select.inverse.purple[type="submit"], body .scope ul.inverse.purple[type="submit"].tagit, body .scope .button-group li a.inverse.purple, body .scope .paginate-links li a.inverse.purple {
-  color: #717ecd;
-}
-body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"], body .scope select.inverse.green[type="submit"], body .scope ul.inverse.green[type="submit"].tagit, body .scope .button-group li a.inverse.green, body .scope .paginate-links li a.inverse.green {
-  color: #4ab471;
-}
-body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"], body .scope select.inverse.orange[type="submit"], body .scope ul.inverse.orange[type="submit"].tagit, body .scope .button-group li a.inverse.orange, body .scope .paginate-links li a.inverse.orange {
-  color: #f3ae4e;
-}
-body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"], body .scope select.inverse.pink[type="submit"], body .scope ul.inverse.pink[type="submit"].tagit, body .scope .button-group li a.inverse.pink, body .scope .paginate-links li a.inverse.pink {
-  color: #d96383;
-}
-body .scope button.full-width, body .scope a.full-width.button, body .scope input.full-width[type="submit"], body .scope textarea.full-width[type="submit"], body .scope select.full-width[type="submit"], body .scope ul.full-width[type="submit"].tagit, body .scope .button-group li a.full-width, body .scope .paginate-links li a.full-width {
-  width: 100%;
-}
-body .scope button:last-child, body .scope a.button:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child, body .scope select[type="submit"]:last-child, body .scope ul[type="submit"].tagit:last-child, body .scope .button-group li a:last-child, body .scope .paginate-links li a:last-child {
-  margin-right: 0;
-}
-body .scope button:hover, body .scope a.button:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover, body .scope select[type="submit"]:hover, body .scope ul[type="submit"].tagit:hover, body .scope .button-group li a:hover, body .scope .paginate-links li a:hover {
-  opacity: 0.5;
-}
-body .scope button:focus, body .scope a.button:focus, body .scope input[type="submit"]:focus, body .scope textarea[type="submit"]:focus, body .scope select[type="submit"]:focus, body .scope ul[type="submit"].tagit:focus, body .scope .button-group li a:focus, body .scope .paginate-links li a:focus {
-  outline: none;
-}
-body .scope button.dropdown, body .scope a.dropdown.button, body .scope input.dropdown[type="submit"], body .scope textarea.dropdown[type="submit"], body .scope select.dropdown[type="submit"], body .scope ul.dropdown[type="submit"].tagit, body .scope .button-group li a.dropdown, body .scope .paginate-links li a.dropdown {
-  padding-right: 34px;
-  position: relative;
-}
-body .scope button.dropdown:after, body .scope a.dropdown.button:after, body .scope input.dropdown[type="submit"]:after, body .scope textarea.dropdown[type="submit"]:after, body .scope select.dropdown[type="submit"]:after, body .scope ul.dropdown[type="submit"].tagit:after, body .scope .button-group li a.dropdown:after, body .scope .paginate-links li a.dropdown:after {
-  font-family: FontAwesome;
-  content: '\f0d7';
-  display: block;
-  padding: 11px 14px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-body .scope .dropdown-options {
-  border-radius: 5px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  margin-left: 0;
-  margin-top: 4px;
-  background-color: #fff;
-  display: none;
-  position: absolute;
-  z-index: 9998;
-  overflow: hidden;
-}
-body .scope .dropdown-options li a, body .scope .dropdown-options li a:visited {
-  display: block;
-  padding: 8px 16px;
-  color: #525354;
-}
-body .scope .dropdown-options li a:hover, body .scope .dropdown-options li a:visited:hover {
-  color: #fff;
-  background-color: #2a94d6;
-}
-body .scope .accordion {
-  padding: 16px;
-  padding-right: 46px;
-  cursor: pointer;
-  background-color: #f9fafa;
-  color: #525354;
-  font-weight: 700;
-  border: 1px solid #dfe0e1;
-  position: relative;
-}
-body .scope .accordion:after {
-  -webkit-transition: all 250ms ease;
-  transition: all 250ms ease;
-  font-family: 'FontAwesome';
-  content: '\f0d7';
-  display: block;
-  font-size: 16px;
-  color: #adb8c2;
-  position: absolute;
-  top: 16px;
-  right: 20px;
-}
-body .scope .accordion.open:after {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-body .scope .accordion + .accordion-content, body .scope .scope .accordion + .accordion-content {
-  display: none;
-  padding: 16px;
-  border: 1px solid #dfe0e1;
-  border-top: none;
-}
-body .scope .accordion + .accordion-content + .accordion {
-  border-top: none;
-}
-body .scope .button-group, body .scope .paginate-links {
-  margin-left: 0;
-  list-style: none;
-}
-body .scope .button-group li, body .scope .paginate-links li {
-  display: block;
-  float: left;
-  margin-left: 2px;
-}
-body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
-  margin-right: 0;
-  border-radius: 0;
-}
-body .scope .button-group li:first-child, body .scope .paginate-links li:first-child {
-  margin-left: 0;
-}
-body .scope .button-group li:first-child a, body .scope .paginate-links li:first-child a, body .scope .button-group li:first-child a:visited, body .scope .paginate-links li:first-child a:visited {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-body .scope .button-group li:last-child a, body .scope .paginate-links li:last-child a, body .scope .button-group li:last-child a:visited, body .scope .paginate-links li:last-child a:visited {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-@media only screen and (max-width: 1024px) {
-  body .scope .button-group li, body .scope .paginate-links li {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-    margin-top: 2px;
-  }
-  body .scope .button-group li a, body .scope .paginate-links li a, body .scope .button-group li a:visited, body .scope .paginate-links li a:visited {
-    display: block;
-    width: 100%;
-  }
-  body .scope .button-group li:first-child a, body .scope .paginate-links li:first-child a, body .scope .button-group li:first-child a:visited, body .scope .paginate-links li:first-child a:visited {
-    margin-top: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 5px;
-  }
-  body .scope .button-group li:last-child a, body .scope .paginate-links li:last-child a, body .scope .button-group li:last-child a:visited, body .scope .paginate-links li:last-child a:visited {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 5px;
-  }
-}
-body .scope .paginate-links li {
-  margin-left: -1px;
-}
-body .scope .paginate-links li a, body .scope .paginate-links li a:visited {
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 900;
-  padding: 6px 12px;
-  color: #2a94d6;
-  background-color: #fff;
-  border: 1px solid #dfe0e1;
-}
-body .scope .paginate-links li a.current, body .scope .paginate-links li a:visited.current {
-  color: #fff;
-  background-color: #2a94d6;
-}
-body .scope .paginate-links li a.current:hover, body .scope .paginate-links li a:visited.current:hover {
-  opacity: 1;
-}
-@media only screen and (max-width: 1024px) {
-  body .scope .paginate-links li {
-    float: left;
-    width: auto;
-    margin-left: -1px;
-    margin-top: 0;
-  }
-  body .scope .paginate-links li:first-child a, body .scope .paginate-links li:first-child a:visited {
-    margin-top: 0;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 0;
-  }
-  body .scope .paginate-links li:last-child a, body .scope .paginate-links li:last-child a:visited {
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0;
-  }
-  body .scope .paginate-links li a, body .scope .paginate-links li a:visited {
-    display: block;
-    width: 100%;
-  }
-}
-body .scope .ribbon {
-  display: table;
-  width: 100%;
-  background-color: #344a5f;
-}
-body .scope .ribbon ul {
-  display: table-row;
-  list-style: none;
-  margin-left: 0;
-  padding: 0;
-}
-body .scope .ribbon ul li {
-  display: table-cell;
-  text-align: center;
-}
-body .scope .ribbon ul li a, body .scope .ribbon ul li a:visited {
-  font-size: 16px;
-  color: #fff;
-  display: block;
-  width: 100%;
-  opacity: 1;
-}
-body .scope .ribbon ul li a:hover, body .scope .ribbon ul li a:visited:hover {
-  opacity: 0.5;
-}
 body .scope .alert {
-  border: 1px solid #2a94d6;
   background-color: rgba(42, 148, 214, 0.1);
   padding: 16px;
   color: #2a94d6;
   font-weight: 700;
-  margin-bottom: 14px;
-}
-body .scope .alert.text-dark {
-  border-color: #2e4052;
-}
-body .scope .alert.text-normal {
-  border-color: #525354;
-}
-body .scope .alert.text-light {
-  border-color: #adb8c2;
-}
-body .scope .alert.blue {
-  border-color: #2a94d6;
-}
-body .scope .alert.light-blue {
-  border-color: #4eb1cb;
-}
-body .scope .alert.navy {
-  border-color: #344a5f;
-}
-body .scope .alert.grey {
-  border-color: #f0f1f2;
-}
-body .scope .alert.light-grey {
-  border-color: #f9fbfc;
-}
-body .scope .alert.white {
-  border-color: #fff;
-}
-body .scope .alert.red {
-  border-color: #cf5c60;
-}
-body .scope .alert.purple {
-  border-color: #717ecd;
-}
-body .scope .alert.green {
-  border-color: #4ab471;
-}
-body .scope .alert.orange {
-  border-color: #f3ae4e;
-}
-body .scope .alert.pink {
-  border-color: #d96383;
+  margin-bottom: 16px;
 }
 body .scope .alert.text-dark {
   color: #2e4052;
@@ -2408,6 +2079,495 @@ body .scope .alert.small.dismissible:after {
 body .scope .alert.hidden {
   display: none;
 }
+body .scope .accordion {
+  padding: 16px;
+  padding-right: 46px;
+  cursor: pointer;
+  background-color: #f9fafa;
+  color: #525354;
+  font-weight: 700;
+  border: 1px solid #dfe0e1;
+  position: relative;
+}
+body .scope .accordion:after {
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  font-family: 'FontAwesome';
+  content: '\f0d7';
+  display: block;
+  font-size: 16px;
+  color: #adb8c2;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+body .scope .accordion.open:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+body .scope .accordion + .accordion-content, body .scope .scope .accordion + .accordion-content {
+  display: none;
+  padding: 16px;
+  border: 1px solid #dfe0e1;
+  border-top: none;
+}
+body .scope .accordion + .accordion-content + .accordion {
+  border-top: none;
+}
+body .scope .loading {
+  position: relative;
+}
+body .scope .loading:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9996;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+}
+body .scope .loading:after {
+  font-family: 'FontAwesome';
+  content: "\f1ce";
+  display: block;
+  font-size: 36px;
+  height: 0;
+  line-height: 0;
+  color: #2e4052;
+  opacity: 0.25;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 9997;
+  top: 50%;
+  left: -webkit-calc(50% - 18px);
+  left: calc(50% - 18px);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: fa-spin 500ms infinite linear;
+  animation: fa-spin 500ms infinite linear;
+}
+body .scope button, body .scope a.button, body .scope input[type="submit"], body .scope textarea[type="submit"], body .scope select[type="submit"], body .scope ul[type="submit"].tagit, body .scope .button-group > li > a, body .scope .button-group > li > a:visited, body .scope .button-group > li > button, body .scope .paginate-links li a, body .scope .paginate-links li a:visited, body .scope .paginate-links li button {
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  opacity: 1;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 12px 12px;
+  margin-right: 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #2a94d6;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+body .scope button.text-dark, body .scope a.text-dark.button, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"], body .scope ul.text-dark[type="submit"].tagit, body .scope .button-group > li > a.text-dark, body .scope .button-group > li > button.text-dark, body .scope .paginate-links li a.text-dark, body .scope .paginate-links li button.text-dark {
+  border-color: #2e4052;
+}
+body .scope button.text-normal, body .scope a.text-normal.button, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"], body .scope ul.text-normal[type="submit"].tagit, body .scope .button-group > li > a.text-normal, body .scope .button-group > li > button.text-normal, body .scope .paginate-links li a.text-normal, body .scope .paginate-links li button.text-normal {
+  border-color: #525354;
+}
+body .scope button.text-light, body .scope a.text-light.button, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"], body .scope ul.text-light[type="submit"].tagit, body .scope .button-group > li > a.text-light, body .scope .button-group > li > button.text-light, body .scope .paginate-links li a.text-light, body .scope .paginate-links li button.text-light {
+  border-color: #adb8c2;
+}
+body .scope button.blue, body .scope a.blue.button, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"], body .scope ul.blue[type="submit"].tagit, body .scope .button-group > li > a.blue, body .scope .button-group > li > button.blue, body .scope .paginate-links li a.blue, body .scope .paginate-links li button.blue {
+  border-color: #2a94d6;
+}
+body .scope button.light-blue, body .scope a.light-blue.button, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"], body .scope ul.light-blue[type="submit"].tagit, body .scope .button-group > li > a.light-blue, body .scope .button-group > li > button.light-blue, body .scope .paginate-links li a.light-blue, body .scope .paginate-links li button.light-blue {
+  border-color: #4eb1cb;
+}
+body .scope button.navy, body .scope a.navy.button, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"], body .scope ul.navy[type="submit"].tagit, body .scope .button-group > li > a.navy, body .scope .button-group > li > button.navy, body .scope .paginate-links li a.navy, body .scope .paginate-links li button.navy {
+  border-color: #344a5f;
+}
+body .scope button.grey, body .scope a.grey.button, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"], body .scope ul.grey[type="submit"].tagit, body .scope .button-group > li > a.grey, body .scope .button-group > li > button.grey, body .scope .paginate-links li a.grey, body .scope .paginate-links li button.grey {
+  border-color: #f0f1f2;
+}
+body .scope button.light-grey, body .scope a.light-grey.button, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"], body .scope ul.light-grey[type="submit"].tagit, body .scope .button-group > li > a.light-grey, body .scope .button-group > li > button.light-grey, body .scope .paginate-links li a.light-grey, body .scope .paginate-links li button.light-grey {
+  border-color: #f9fbfc;
+}
+body .scope button.white, body .scope a.white.button, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"], body .scope ul.white[type="submit"].tagit, body .scope .button-group > li > a.white, body .scope .button-group > li > button.white, body .scope .paginate-links li a.white, body .scope .paginate-links li button.white {
+  border-color: #fff;
+}
+body .scope button.red, body .scope a.red.button, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"], body .scope ul.red[type="submit"].tagit, body .scope .button-group > li > a.red, body .scope .button-group > li > button.red, body .scope .paginate-links li a.red, body .scope .paginate-links li button.red {
+  border-color: #cf5c60;
+}
+body .scope button.purple, body .scope a.purple.button, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"], body .scope select.purple[type="submit"], body .scope ul.purple[type="submit"].tagit, body .scope .button-group > li > a.purple, body .scope .button-group > li > button.purple, body .scope .paginate-links li a.purple, body .scope .paginate-links li button.purple {
+  border-color: #717ecd;
+}
+body .scope button.green, body .scope a.green.button, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"], body .scope select.green[type="submit"], body .scope ul.green[type="submit"].tagit, body .scope .button-group > li > a.green, body .scope .button-group > li > button.green, body .scope .paginate-links li a.green, body .scope .paginate-links li button.green {
+  border-color: #4ab471;
+}
+body .scope button.orange, body .scope a.orange.button, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"], body .scope select.orange[type="submit"], body .scope ul.orange[type="submit"].tagit, body .scope .button-group > li > a.orange, body .scope .button-group > li > button.orange, body .scope .paginate-links li a.orange, body .scope .paginate-links li button.orange {
+  border-color: #f3ae4e;
+}
+body .scope button.pink, body .scope a.pink.button, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"], body .scope select.pink[type="submit"], body .scope ul.pink[type="submit"].tagit, body .scope .button-group > li > a.pink, body .scope .button-group > li > button.pink, body .scope .paginate-links li a.pink, body .scope .paginate-links li button.pink {
+  border-color: #d96383;
+}
+body .scope button.text-dark, body .scope a.text-dark.button, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"], body .scope ul.text-dark[type="submit"].tagit, body .scope .button-group > li > a.text-dark, body .scope .button-group > li > button.text-dark, body .scope .paginate-links li a.text-dark, body .scope .paginate-links li button.text-dark {
+  background-color: #2e4052;
+}
+body .scope button.text-normal, body .scope a.text-normal.button, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"], body .scope ul.text-normal[type="submit"].tagit, body .scope .button-group > li > a.text-normal, body .scope .button-group > li > button.text-normal, body .scope .paginate-links li a.text-normal, body .scope .paginate-links li button.text-normal {
+  background-color: #525354;
+}
+body .scope button.text-light, body .scope a.text-light.button, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"], body .scope ul.text-light[type="submit"].tagit, body .scope .button-group > li > a.text-light, body .scope .button-group > li > button.text-light, body .scope .paginate-links li a.text-light, body .scope .paginate-links li button.text-light {
+  background-color: #adb8c2;
+}
+body .scope button.blue, body .scope a.blue.button, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"], body .scope ul.blue[type="submit"].tagit, body .scope .button-group > li > a.blue, body .scope .button-group > li > button.blue, body .scope .paginate-links li a.blue, body .scope .paginate-links li button.blue {
+  background-color: #2a94d6;
+}
+body .scope button.light-blue, body .scope a.light-blue.button, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"], body .scope ul.light-blue[type="submit"].tagit, body .scope .button-group > li > a.light-blue, body .scope .button-group > li > button.light-blue, body .scope .paginate-links li a.light-blue, body .scope .paginate-links li button.light-blue {
+  background-color: #4eb1cb;
+}
+body .scope button.navy, body .scope a.navy.button, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"], body .scope ul.navy[type="submit"].tagit, body .scope .button-group > li > a.navy, body .scope .button-group > li > button.navy, body .scope .paginate-links li a.navy, body .scope .paginate-links li button.navy {
+  background-color: #344a5f;
+}
+body .scope button.grey, body .scope a.grey.button, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"], body .scope ul.grey[type="submit"].tagit, body .scope .button-group > li > a.grey, body .scope .button-group > li > button.grey, body .scope .paginate-links li a.grey, body .scope .paginate-links li button.grey {
+  background-color: #f0f1f2;
+}
+body .scope button.light-grey, body .scope a.light-grey.button, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"], body .scope ul.light-grey[type="submit"].tagit, body .scope .button-group > li > a.light-grey, body .scope .button-group > li > button.light-grey, body .scope .paginate-links li a.light-grey, body .scope .paginate-links li button.light-grey {
+  background-color: #f9fbfc;
+}
+body .scope button.white, body .scope a.white.button, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"], body .scope ul.white[type="submit"].tagit, body .scope .button-group > li > a.white, body .scope .button-group > li > button.white, body .scope .paginate-links li a.white, body .scope .paginate-links li button.white {
+  background-color: #fff;
+}
+body .scope button.red, body .scope a.red.button, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"], body .scope ul.red[type="submit"].tagit, body .scope .button-group > li > a.red, body .scope .button-group > li > button.red, body .scope .paginate-links li a.red, body .scope .paginate-links li button.red {
+  background-color: #cf5c60;
+}
+body .scope button.purple, body .scope a.purple.button, body .scope input.purple[type="submit"], body .scope textarea.purple[type="submit"], body .scope select.purple[type="submit"], body .scope ul.purple[type="submit"].tagit, body .scope .button-group > li > a.purple, body .scope .button-group > li > button.purple, body .scope .paginate-links li a.purple, body .scope .paginate-links li button.purple {
+  background-color: #717ecd;
+}
+body .scope button.green, body .scope a.green.button, body .scope input.green[type="submit"], body .scope textarea.green[type="submit"], body .scope select.green[type="submit"], body .scope ul.green[type="submit"].tagit, body .scope .button-group > li > a.green, body .scope .button-group > li > button.green, body .scope .paginate-links li a.green, body .scope .paginate-links li button.green {
+  background-color: #4ab471;
+}
+body .scope button.orange, body .scope a.orange.button, body .scope input.orange[type="submit"], body .scope textarea.orange[type="submit"], body .scope select.orange[type="submit"], body .scope ul.orange[type="submit"].tagit, body .scope .button-group > li > a.orange, body .scope .button-group > li > button.orange, body .scope .paginate-links li a.orange, body .scope .paginate-links li button.orange {
+  background-color: #f3ae4e;
+}
+body .scope button.pink, body .scope a.pink.button, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"], body .scope select.pink[type="submit"], body .scope ul.pink[type="submit"].tagit, body .scope .button-group > li > a.pink, body .scope .button-group > li > button.pink, body .scope .paginate-links li a.pink, body .scope .paginate-links li button.pink {
+  background-color: #d96383;
+}
+body .scope button.small, body .scope a.small.button, body .scope input.small[type="submit"], body .scope textarea.small[type="submit"], body .scope select.small[type="submit"], body .scope ul.small[type="submit"].tagit, body .scope .button-group > li > a.small, body .scope .button-group > li > button.small, body .scope .paginate-links li a.small, body .scope .paginate-links li button.small {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 6px 10px;
+}
+body .scope button.inverse, body .scope a.inverse.button, body .scope input.inverse[type="submit"], body .scope textarea.inverse[type="submit"], body .scope select.inverse[type="submit"], body .scope ul.inverse[type="submit"].tagit, body .scope .button-group > li > a.inverse, body .scope .button-group > li > button.inverse, body .scope .paginate-links li a.inverse, body .scope .paginate-links li button.inverse {
+  background-color: transparent;
+  border: 1px solid #2a94d6;
+  color: #2a94d6;
+}
+body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"], body .scope ul.inverse.text-dark[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-dark, body .scope .paginate-links li a.inverse.text-dark {
+  border-color: #2e4052;
+}
+body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"], body .scope ul.inverse.text-normal[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-normal, body .scope .paginate-links li a.inverse.text-normal {
+  border-color: #525354;
+}
+body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"], body .scope ul.inverse.text-light[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-light, body .scope .paginate-links li a.inverse.text-light {
+  border-color: #adb8c2;
+}
+body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"], body .scope ul.inverse.blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.blue, body .scope .paginate-links li a.inverse.blue {
+  border-color: #2a94d6;
+}
+body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"], body .scope ul.inverse.light-blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-blue, body .scope .paginate-links li a.inverse.light-blue {
+  border-color: #4eb1cb;
+}
+body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"], body .scope ul.inverse.navy[type="submit"].tagit, body .scope .button-group > li > a.inverse.navy, body .scope .paginate-links li a.inverse.navy {
+  border-color: #344a5f;
+}
+body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"], body .scope ul.inverse.grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.grey, body .scope .paginate-links li a.inverse.grey {
+  border-color: #f0f1f2;
+}
+body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"], body .scope ul.inverse.light-grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-grey, body .scope .paginate-links li a.inverse.light-grey {
+  border-color: #f9fbfc;
+}
+body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"], body .scope ul.inverse.white[type="submit"].tagit, body .scope .button-group > li > a.inverse.white, body .scope .paginate-links li a.inverse.white {
+  border-color: #fff;
+}
+body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"], body .scope ul.inverse.red[type="submit"].tagit, body .scope .button-group > li > a.inverse.red, body .scope .paginate-links li a.inverse.red {
+  border-color: #cf5c60;
+}
+body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"], body .scope select.inverse.purple[type="submit"], body .scope ul.inverse.purple[type="submit"].tagit, body .scope .button-group > li > a.inverse.purple, body .scope .paginate-links li a.inverse.purple {
+  border-color: #717ecd;
+}
+body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"], body .scope select.inverse.green[type="submit"], body .scope ul.inverse.green[type="submit"].tagit, body .scope .button-group > li > a.inverse.green, body .scope .paginate-links li a.inverse.green {
+  border-color: #4ab471;
+}
+body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"], body .scope select.inverse.orange[type="submit"], body .scope ul.inverse.orange[type="submit"].tagit, body .scope .button-group > li > a.inverse.orange, body .scope .paginate-links li a.inverse.orange {
+  border-color: #f3ae4e;
+}
+body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"], body .scope select.inverse.pink[type="submit"], body .scope ul.inverse.pink[type="submit"].tagit, body .scope .button-group > li > a.inverse.pink, body .scope .paginate-links li a.inverse.pink {
+  border-color: #d96383;
+}
+body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"], body .scope ul.inverse.text-dark[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-dark, body .scope .paginate-links li a.inverse.text-dark {
+  color: #2e4052;
+}
+body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"], body .scope ul.inverse.text-normal[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-normal, body .scope .paginate-links li a.inverse.text-normal {
+  color: #525354;
+}
+body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"], body .scope ul.inverse.text-light[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-light, body .scope .paginate-links li a.inverse.text-light {
+  color: #adb8c2;
+}
+body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"], body .scope ul.inverse.blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.blue, body .scope .paginate-links li a.inverse.blue {
+  color: #2a94d6;
+}
+body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"], body .scope ul.inverse.light-blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-blue, body .scope .paginate-links li a.inverse.light-blue {
+  color: #4eb1cb;
+}
+body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"], body .scope ul.inverse.navy[type="submit"].tagit, body .scope .button-group > li > a.inverse.navy, body .scope .paginate-links li a.inverse.navy {
+  color: #344a5f;
+}
+body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"], body .scope ul.inverse.grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.grey, body .scope .paginate-links li a.inverse.grey {
+  color: #f0f1f2;
+}
+body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"], body .scope ul.inverse.light-grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-grey, body .scope .paginate-links li a.inverse.light-grey {
+  color: #f9fbfc;
+}
+body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"], body .scope ul.inverse.white[type="submit"].tagit, body .scope .button-group > li > a.inverse.white, body .scope .paginate-links li a.inverse.white {
+  color: #fff;
+}
+body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"], body .scope ul.inverse.red[type="submit"].tagit, body .scope .button-group > li > a.inverse.red, body .scope .paginate-links li a.inverse.red {
+  color: #cf5c60;
+}
+body .scope button.inverse.purple, body .scope a.inverse.purple.button, body .scope input.inverse.purple[type="submit"], body .scope textarea.inverse.purple[type="submit"], body .scope select.inverse.purple[type="submit"], body .scope ul.inverse.purple[type="submit"].tagit, body .scope .button-group > li > a.inverse.purple, body .scope .paginate-links li a.inverse.purple {
+  color: #717ecd;
+}
+body .scope button.inverse.green, body .scope a.inverse.green.button, body .scope input.inverse.green[type="submit"], body .scope textarea.inverse.green[type="submit"], body .scope select.inverse.green[type="submit"], body .scope ul.inverse.green[type="submit"].tagit, body .scope .button-group > li > a.inverse.green, body .scope .paginate-links li a.inverse.green {
+  color: #4ab471;
+}
+body .scope button.inverse.orange, body .scope a.inverse.orange.button, body .scope input.inverse.orange[type="submit"], body .scope textarea.inverse.orange[type="submit"], body .scope select.inverse.orange[type="submit"], body .scope ul.inverse.orange[type="submit"].tagit, body .scope .button-group > li > a.inverse.orange, body .scope .paginate-links li a.inverse.orange {
+  color: #f3ae4e;
+}
+body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"], body .scope select.inverse.pink[type="submit"], body .scope ul.inverse.pink[type="submit"].tagit, body .scope .button-group > li > a.inverse.pink, body .scope .paginate-links li a.inverse.pink {
+  color: #d96383;
+}
+body .scope button.full-width, body .scope a.full-width.button, body .scope input.full-width[type="submit"], body .scope textarea.full-width[type="submit"], body .scope select.full-width[type="submit"], body .scope ul.full-width[type="submit"].tagit, body .scope .button-group > li > a.full-width, body .scope .button-group > li > button.full-width, body .scope .paginate-links li a.full-width, body .scope .paginate-links li button.full-width {
+  width: 100%;
+}
+body .scope button.loading, body .scope a.loading.button, body .scope input.loading[type="submit"], body .scope textarea.loading[type="submit"], body .scope select.loading[type="submit"], body .scope ul.loading[type="submit"].tagit, body .scope .button-group > li > a.loading, body .scope .button-group > li > button.loading, body .scope .paginate-links li a.loading, body .scope .paginate-links li button.loading {
+  pointer-events: none;
+}
+body .scope button.loading:after, body .scope a.loading.button:after, body .scope input.loading[type="submit"]:after, body .scope textarea.loading[type="submit"]:after, body .scope select.loading[type="submit"]:after, body .scope ul.loading[type="submit"].tagit:after, body .scope .button-group > li > a.loading:after, body .scope .paginate-links li a.loading:after {
+  font-size: 20px;
+  left: -webkit-calc(50% - 9px);
+  left: calc(50% - 9px);
+}
+body .scope button:last-child, body .scope a.button:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child, body .scope select[type="submit"]:last-child, body .scope ul[type="submit"].tagit:last-child, body .scope .button-group > li > a:last-child, body .scope .button-group > li > button:last-child, body .scope .paginate-links li a:last-child, body .scope .paginate-links li button:last-child {
+  margin-right: 0;
+}
+body .scope button:hover, body .scope a.button:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover, body .scope select[type="submit"]:hover, body .scope ul[type="submit"].tagit:hover, body .scope .button-group > li > a:hover, body .scope .button-group > li > button:hover, body .scope .paginate-links li a:hover, body .scope .paginate-links li button:hover {
+  opacity: 0.5;
+}
+body .scope button:focus, body .scope a.button:focus, body .scope input[type="submit"]:focus, body .scope textarea[type="submit"]:focus, body .scope select[type="submit"]:focus, body .scope ul[type="submit"].tagit:focus, body .scope .button-group > li > a:focus, body .scope .button-group > li > button:focus, body .scope .paginate-links li a:focus, body .scope .paginate-links li button:focus {
+  outline: none;
+}
+body .scope button.dropdown, body .scope a.dropdown.button, body .scope input.dropdown[type="submit"], body .scope textarea.dropdown[type="submit"], body .scope select.dropdown[type="submit"], body .scope ul.dropdown[type="submit"].tagit, body .scope .button-group > li > a.dropdown, body .scope .button-group > li > button.dropdown, body .scope .paginate-links li a.dropdown, body .scope .paginate-links li button.dropdown {
+  padding-right: 34px;
+  vertical-align: baseline;
+  position: relative;
+}
+body .scope button.dropdown:after, body .scope a.dropdown.button:after, body .scope input.dropdown[type="submit"]:after, body .scope textarea.dropdown[type="submit"]:after, body .scope select.dropdown[type="submit"]:after, body .scope ul.dropdown[type="submit"].tagit:after, body .scope .button-group > li > a.dropdown:after, body .scope .paginate-links li a.dropdown:after {
+  font-family: FontAwesome;
+  content: '\f0d7';
+  display: block;
+  padding: 11px 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .scope button.disabled, body .scope a.disabled.button, body .scope input.disabled[type="submit"], body .scope textarea.disabled[type="submit"], body .scope select.disabled[type="submit"], body .scope ul.disabled[type="submit"].tagit, body .scope .button-group > li > a.disabled, body .scope .button-group > li > button.disabled, body .scope .paginate-links li a.disabled, body .scope .paginate-links li button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+body .scope .dropdown-options {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin-left: 0;
+  margin-top: 4px;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  z-index: 9998;
+  overflow: hidden;
+}
+body .scope .dropdown-options li a, body .scope .dropdown-options li a:visited {
+  display: block;
+  padding: 8px 16px;
+  color: #525354;
+}
+body .scope .dropdown-options li a:hover, body .scope .dropdown-options li a:visited:hover {
+  color: #fff;
+  background-color: #2a94d6;
+}
+body .scope .dropdown-options + *, body .scope .scope .dropdown-options + *, body .scope .dropdown-options + *:before, body .scope .scope .dropdown-options + *:before, body .scope .dropdown-options + *:after, body .scope .scope .dropdown-options + *:after {
+  margin-top: auto;
+}
+body .scope .button-group, body .scope .paginate-links {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 16px;
+  list-style: none;
+}
+body .scope .button-group > li, body .scope .scope .button-group > li, body .scope .paginate-links > li, body .scope .scope .paginate-links > li {
+  display: block;
+  float: left;
+  margin-left: 1px;
+}
+body .scope .button-group > li > a, body .scope .paginate-links > li > a, body .scope .button-group > li > a:visited, body .scope .paginate-links > li > a:visited, body .scope .button-group > li > input[type="submit"], body .scope .paginate-links > li > input[type="submit"], body .scope .button-group > li > textarea[type="submit"], body .scope .paginate-links > li > textarea[type="submit"], body .scope .button-group > li > select[type="submit"], body .scope .paginate-links > li > select[type="submit"], body .scope .button-group > li > ul[type="submit"].tagit, body .scope .paginate-links > li > ul[type="submit"].tagit, body .scope .button-group > li > a, body .scope .button-group > li > a:visited, body .scope .button-group > li > button, body .scope .paginate-links > li > a, body .scope .paginate-links > li > a:visited, body .scope .paginate-links > li > button {
+  margin-right: 0;
+  border-radius: 0;
+  min-height: 44px;
+}
+body .scope .button-group > li > a.dropdown, body .scope .paginate-links > li > a.dropdown, body .scope .button-group > li > a:visited.dropdown, body .scope .paginate-links > li > a:visited.dropdown, body .scope .button-group > li > input.dropdown[type="submit"], body .scope .paginate-links > li > input.dropdown[type="submit"], body .scope .button-group > li > textarea.dropdown[type="submit"], body .scope .paginate-links > li > textarea.dropdown[type="submit"], body .scope .button-group > li > select.dropdown[type="submit"], body .scope .paginate-links > li > select.dropdown[type="submit"], body .scope .button-group > li > ul.dropdown[type="submit"].tagit, body .scope .paginate-links > li > ul.dropdown[type="submit"].tagit, body .scope .button-group > li > a.dropdown, body .scope .button-group > li > button.dropdown, body .scope .paginate-links > li > a.dropdown, body .scope .paginate-links > li > button.dropdown {
+  padding: 18px;
+}
+body .scope .button-group > li:first-child, body .scope .scope .button-group > li:first-child, body .scope .paginate-links > li:first-child, body .scope .scope .paginate-links > li:first-child {
+  margin-left: 0;
+}
+body .scope .button-group > li:first-child > a, body .scope .paginate-links > li:first-child > a, body .scope .button-group > li:first-child > a:visited, body .scope .paginate-links > li:first-child > a:visited, body .scope .button-group > li:first-child button, body .scope .paginate-links > li:first-child button, body .scope .button-group > li:first-child a.button, body .scope .paginate-links > li:first-child a.button, body .scope .button-group > li:first-child input[type="submit"], body .scope .paginate-links > li:first-child input[type="submit"], body .scope .button-group > li:first-child textarea[type="submit"], body .scope .paginate-links > li:first-child textarea[type="submit"], body .scope .button-group > li:first-child select[type="submit"], body .scope .paginate-links > li:first-child select[type="submit"], body .scope .button-group > li:first-child ul[type="submit"].tagit, body .scope .paginate-links > li:first-child ul[type="submit"].tagit, body .scope .button-group > li:first-child .button-group > li > a, body .scope .button-group > li:first-child .paginate-links > li > a, body .scope .paginate-links .button-group > li:first-child a, body .scope .paginate-links > li:first-child li a {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body .scope .button-group > li:last-child > a, body .scope .paginate-links > li:last-child > a, body .scope .button-group > li:last-child > a:visited, body .scope .paginate-links > li:last-child > a:visited, body .scope .button-group > li:last-child button, body .scope .paginate-links > li:last-child button, body .scope .button-group > li:last-child a.button, body .scope .paginate-links > li:last-child a.button, body .scope .button-group > li:last-child input[type="submit"], body .scope .paginate-links > li:last-child input[type="submit"], body .scope .button-group > li:last-child textarea[type="submit"], body .scope .paginate-links > li:last-child textarea[type="submit"], body .scope .button-group > li:last-child select[type="submit"], body .scope .paginate-links > li:last-child select[type="submit"], body .scope .button-group > li:last-child ul[type="submit"].tagit, body .scope .paginate-links > li:last-child ul[type="submit"].tagit, body .scope .button-group > li:last-child .button-group > li > a, body .scope .button-group > li:last-child .paginate-links > li > a, body .scope .paginate-links .button-group > li:last-child a, body .scope .paginate-links > li:last-child li a {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .button-group > li, body .scope .scope .button-group > li, body .scope .paginate-links > li, body .scope .scope .paginate-links > li {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2px;
+  }
+  body .scope .button-group > li > a, body .scope .paginate-links > li > a, body .scope .button-group > li > a:visited, body .scope .paginate-links > li > a:visited, body .scope .button-group > li button, body .scope .paginate-links > li button, body .scope .button-group > li a.button, body .scope .paginate-links > li a.button, body .scope .button-group > li input[type="submit"], body .scope .paginate-links > li input[type="submit"], body .scope .button-group > li textarea[type="submit"], body .scope .paginate-links > li textarea[type="submit"], body .scope .button-group > li select[type="submit"], body .scope .paginate-links > li select[type="submit"], body .scope .button-group > li ul[type="submit"].tagit, body .scope .paginate-links > li ul[type="submit"].tagit, body .scope .button-group > li > a, body .scope .paginate-links > li > a, body .scope .button-group > li > a:visited, body .scope .paginate-links > li > a:visited, body .scope .paginate-links .button-group > li a, body .scope .paginate-links > li li a, body .scope .paginate-links > li li a:visited {
+    display: block;
+    width: 100%;
+  }
+  body .scope .button-group > li:first-child > a, body .scope .paginate-links > li:first-child > a, body .scope .button-group > li:first-child > a:visited, body .scope .paginate-links > li:first-child > a:visited, body .scope .button-group > li:first-child button, body .scope .paginate-links > li:first-child button, body .scope .button-group > li:first-child a.button, body .scope .paginate-links > li:first-child a.button, body .scope .button-group > li:first-child input[type="submit"], body .scope .paginate-links > li:first-child input[type="submit"], body .scope .button-group > li:first-child textarea[type="submit"], body .scope .paginate-links > li:first-child textarea[type="submit"], body .scope .button-group > li:first-child select[type="submit"], body .scope .paginate-links > li:first-child select[type="submit"], body .scope .button-group > li:first-child ul[type="submit"].tagit, body .scope .paginate-links > li:first-child ul[type="submit"].tagit, body .scope .button-group > li:first-child .button-group > li > a, body .scope .button-group > li:first-child .paginate-links > li > a, body .scope .paginate-links .button-group > li:first-child a, body .scope .paginate-links > li:first-child li a {
+    margin-top: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
+  body .scope .button-group > li:last-child > a, body .scope .paginate-links > li:last-child > a, body .scope .button-group > li:last-child > a:visited, body .scope .paginate-links > li:last-child > a:visited, body .scope .button-group > li:last-child button, body .scope .paginate-links > li:last-child button, body .scope .button-group > li:last-child a.button, body .scope .paginate-links > li:last-child a.button, body .scope .button-group > li:last-child input[type="submit"], body .scope .paginate-links > li:last-child input[type="submit"], body .scope .button-group > li:last-child textarea[type="submit"], body .scope .paginate-links > li:last-child textarea[type="submit"], body .scope .button-group > li:last-child select[type="submit"], body .scope .paginate-links > li:last-child select[type="submit"], body .scope .button-group > li:last-child ul[type="submit"].tagit, body .scope .paginate-links > li:last-child ul[type="submit"].tagit, body .scope .button-group > li:last-child .button-group > li > a, body .scope .button-group > li:last-child .paginate-links > li > a, body .scope .paginate-links .button-group > li:last-child a, body .scope .paginate-links > li:last-child li a {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+}
+body .scope .button-group:last-child, body .scope .paginate-links:last-child {
+  margin-right: 0;
+}
+body .scope .button-group + *, body .scope .scope .button-group + *, body .scope .paginate-links + *, body .scope .scope .paginate-links + *, body .scope .button-group + *:before, body .scope .scope .button-group + *:before, body .scope .paginate-links + *:before, body .scope .scope .paginate-links + *:before, body .scope .button-group + *:after, body .scope .scope .button-group + *:after, body .scope .paginate-links + *:after, body .scope .scope .paginate-links + *:after {
+  margin-top: 0;
+}
+body .scope .button-group.has-dropdown > li, body .scope .scope .button-group.has-dropdown > li, body .scope .has-dropdown.paginate-links > li, body .scope .scope .has-dropdown.paginate-links > li {
+  float: left;
+  width: auto;
+  margin-left: 1px;
+  margin-top: 0;
+}
+body .scope .button-group.has-dropdown > li > a, body .scope .has-dropdown.paginate-links > li > a, body .scope .button-group.has-dropdown > li > a:visited, body .scope .has-dropdown.paginate-links > li > a:visited, body .scope .button-group.has-dropdown > li button, body .scope .has-dropdown.paginate-links > li button, body .scope .button-group.has-dropdown > li a.button, body .scope .has-dropdown.paginate-links > li a.button, body .scope .button-group.has-dropdown > li input[type="submit"], body .scope .has-dropdown.paginate-links > li input[type="submit"], body .scope .button-group.has-dropdown > li textarea[type="submit"], body .scope .has-dropdown.paginate-links > li textarea[type="submit"], body .scope .button-group.has-dropdown > li select[type="submit"], body .scope .has-dropdown.paginate-links > li select[type="submit"], body .scope .button-group.has-dropdown > li ul[type="submit"].tagit, body .scope .has-dropdown.paginate-links > li ul[type="submit"].tagit, body .scope .button-group.has-dropdown > li > a, body .scope .paginate-links.has-dropdown > li > a, body .scope .paginate-links .button-group.has-dropdown > li a, body .scope .has-dropdown.paginate-links > li li a {
+  display: inline-block;
+  width: auto;
+}
+body .scope .button-group.has-dropdown > li:first-child > a, body .scope .has-dropdown.paginate-links > li:first-child > a, body .scope .button-group.has-dropdown > li:first-child > a:visited, body .scope .has-dropdown.paginate-links > li:first-child > a:visited, body .scope .button-group.has-dropdown > li:first-child button, body .scope .has-dropdown.paginate-links > li:first-child button, body .scope .button-group.has-dropdown > li:first-child a.button, body .scope .has-dropdown.paginate-links > li:first-child a.button, body .scope .button-group.has-dropdown > li:first-child input[type="submit"], body .scope .has-dropdown.paginate-links > li:first-child input[type="submit"], body .scope .button-group.has-dropdown > li:first-child textarea[type="submit"], body .scope .has-dropdown.paginate-links > li:first-child textarea[type="submit"], body .scope .button-group.has-dropdown > li:first-child select[type="submit"], body .scope .has-dropdown.paginate-links > li:first-child select[type="submit"], body .scope .button-group.has-dropdown > li:first-child ul[type="submit"].tagit, body .scope .has-dropdown.paginate-links > li:first-child ul[type="submit"].tagit, body .scope .button-group.has-dropdown > li:first-child .button-group > li > a, body .scope .button-group.has-dropdown > li:first-child .paginate-links > li > a, body .scope .paginate-links .button-group.has-dropdown > li:first-child a, body .scope .has-dropdown.paginate-links > li:first-child li a {
+  margin-top: 0;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+}
+body .scope .button-group.has-dropdown > li:last-child > a, body .scope .has-dropdown.paginate-links > li:last-child > a, body .scope .button-group.has-dropdown > li:last-child > a:visited, body .scope .has-dropdown.paginate-links > li:last-child > a:visited, body .scope .button-group.has-dropdown > li:last-child button, body .scope .has-dropdown.paginate-links > li:last-child button, body .scope .button-group.has-dropdown > li:last-child a.button, body .scope .has-dropdown.paginate-links > li:last-child a.button, body .scope .button-group.has-dropdown > li:last-child input[type="submit"], body .scope .has-dropdown.paginate-links > li:last-child input[type="submit"], body .scope .button-group.has-dropdown > li:last-child textarea[type="submit"], body .scope .has-dropdown.paginate-links > li:last-child textarea[type="submit"], body .scope .button-group.has-dropdown > li:last-child select[type="submit"], body .scope .has-dropdown.paginate-links > li:last-child select[type="submit"], body .scope .button-group.has-dropdown > li:last-child ul[type="submit"].tagit, body .scope .has-dropdown.paginate-links > li:last-child ul[type="submit"].tagit, body .scope .button-group.has-dropdown > li:last-child .button-group > li > a, body .scope .button-group.has-dropdown > li:last-child .paginate-links > li > a, body .scope .paginate-links .button-group.has-dropdown > li:last-child a, body .scope .has-dropdown.paginate-links > li:last-child li a {
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+}
+body .scope .button-group-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+}
+body .scope .button-group-container:last-child {
+  margin-right: 0;
+}
+body .scope .paginate-links li {
+  margin-left: -1px;
+}
+body .scope .paginate-links li a, body .scope .paginate-links li a:visited, body .scope .paginate-links li input[type="submit"], body .scope .paginate-links li textarea[type="submit"], body .scope .paginate-links li select[type="submit"], body .scope .paginate-links li ul[type="submit"].tagit, body .scope .paginate-links li a, body .scope .paginate-links li a:visited, body .scope .paginate-links li button {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  padding: 6px 12px;
+  color: #2a94d6;
+  background-color: #fff;
+  border: 1px solid #dfe0e1;
+  min-height: 0;
+}
+body .scope .paginate-links li a.current, body .scope .paginate-links li a:visited.current, body .scope .paginate-links li input.current[type="submit"], body .scope .paginate-links li textarea.current[type="submit"], body .scope .paginate-links li select.current[type="submit"], body .scope .paginate-links li ul.current[type="submit"].tagit, body .scope .paginate-links li a.current, body .scope .paginate-links li button.current {
+  color: #fff;
+  background-color: #2a94d6;
+}
+body .scope .paginate-links li a.current:hover, body .scope .paginate-links li a:visited.current:hover, body .scope .paginate-links li input.current[type="submit"]:hover, body .scope .paginate-links li textarea.current[type="submit"]:hover, body .scope .paginate-links li select.current[type="submit"]:hover, body .scope .paginate-links li ul.current[type="submit"].tagit:hover, body .scope .paginate-links li a.current:hover, body .scope .paginate-links li button.current:hover {
+  opacity: 1;
+}
+@media only screen and (max-width: 1024px) {
+  body .scope .paginate-links li {
+    float: left;
+    width: auto;
+    margin-left: -1px;
+    margin-top: 0;
+  }
+  body .scope .paginate-links li:first-child a, body .scope .paginate-links li:first-child a:visited {
+    margin-top: 0;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+  }
+  body .scope .paginate-links li:last-child a, body .scope .paginate-links li:last-child a:visited {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  body .scope .paginate-links li a, body .scope .paginate-links li a:visited {
+    display: block;
+    width: 100%;
+  }
+}
+body .scope .paginate-links + *, body .scope .scope .paginate-links + *, body .scope .paginate-links + *:before, body .scope .scope .paginate-links + *:before, body .scope .paginate-links + *:after, body .scope .scope .paginate-links + *:after {
+  margin-top: 16px;
+}
+body .scope .paginate-links + :after, body .scope .scope .paginate-links + :after {
+  margin: 0;
+}
+body .scope .ribbon {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  background-color: #344a5f;
+}
+body .scope .ribbon ul {
+  display: table-row;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+body .scope .ribbon ul li {
+  display: table-cell;
+  text-align: center;
+}
+body .scope .ribbon ul li a, body .scope .ribbon ul li a:visited {
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  opacity: 1;
+}
+body .scope .ribbon ul li a:hover, body .scope .ribbon ul li a:visited:hover {
+  opacity: 0.5;
+}
 body .scope label {
   display: block;
   color: #adb8c2;
@@ -2431,7 +2591,7 @@ body .scope input:focus, body .scope textarea:focus, body .scope select:focus, b
   outline: none;
 }
 body .scope input + *, body .scope .scope input + *, body .scope textarea + *, body .scope .scope textarea + *, body .scope select + *, body .scope .scope select + *, body .scope ul.tagit + *, body .scope .scope ul.tagit + *, body .scope input + *:before, body .scope .scope input + *:before, body .scope textarea + *:before, body .scope .scope textarea + *:before, body .scope select + *:before, body .scope .scope select + *:before, body .scope ul.tagit + *:before, body .scope .scope ul.tagit + *:before, body .scope input + *:after, body .scope .scope input + *:after, body .scope textarea + *:after, body .scope .scope textarea + *:after, body .scope select + *:after, body .scope .scope select + *:after, body .scope ul.tagit + *:after, body .scope .scope ul.tagit + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope input + :after, body .scope .scope input + :after, body .scope textarea + :after, body .scope .scope textarea + :after, body .scope select + :after, body .scope .scope select + :after, body .scope ul.tagit + :after, body .scope .scope ul.tagit + :after {
   margin: 0;
@@ -2456,7 +2616,7 @@ body .scope select::-ms-expand {
 body .scope input[type="radio"], body .scope textarea[type="radio"], body .scope select[type="radio"], body .scope input[type="checkbox"], body .scope textarea[type="checkbox"], body .scope select[type="checkbox"], body .scope ul[type="checkbox"].tagit, body .scope ul[type="radio"].tagit {
   display: inline-block;
   width: auto;
-  margin-right: 7px;
+  margin-right: 8px;
   border-radius: 22px;
   border: 1px solid #dfe0e1;
   width: 22px;
@@ -2472,7 +2632,7 @@ body .scope input[type="radio"] + label, body .scope .scope input[type="radio"] 
   color: #525354;
   display: inline-block;
   margin-top: 0;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 body .scope input[type="radio"]:checked, body .scope textarea[type="radio"]:checked, body .scope select[type="radio"]:checked, body .scope input[type="checkbox"]:checked, body .scope textarea[type="checkbox"]:checked, body .scope select[type="checkbox"]:checked, body .scope ul[type="checkbox"].tagit:checked, body .scope ul[type="radio"].tagit:checked {
   background-color: #2a94d6;
@@ -2523,7 +2683,7 @@ body .scope .select-container:after, body .scope .autocomplete-container:after, 
   pointer-events: none;
 }
 body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .tags + *, body .scope .scope .tags + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .tags + *:before, body .scope .scope .tags + *:before, body .scope .date-picker-container + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .tags + *:after, body .scope .scope .tags + *:after, body .scope .date-picker-container + *:after, body .scope .scope .date-picker-container + *:after {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 body .scope .select-container + :after, body .scope .scope .select-container + :after, body .scope .autocomplete-container + :after, body .scope .scope .autocomplete-container + :after, body .scope .tags + :after, body .scope .scope .tags + :after, body .scope .date-picker-container + :after, body .scope .scope .date-picker-container + :after {
   margin: 0;
@@ -2567,7 +2727,7 @@ body .mce-menu-item .mce-text, body .scope .mce-menu-item .mce-text {
   font-weight: 300;
   color: #525354;
 }
-body .mce-ico, body .mce-menubar .mce-menubtn button span, body .mce-menubar .mce-menubtn .scope a.button span, body .scope .mce-menubar .mce-menubtn a.button span, body .mce-menubar .mce-menubtn .scope input[type="submit"] span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .mce-menubar .mce-menubtn .scope textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .mce-menubar .mce-menubtn .scope select[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span, body .mce-menubar .mce-menubtn .scope ul[type="submit"].tagit span, body .scope .mce-menubar .mce-menubtn ul[type="submit"].tagit span, body .mce-menubar .mce-menubtn .scope .button-group li a span, body .scope .mce-menubar .mce-menubtn .button-group li a span, body .scope .button-group li .mce-menubar .mce-menubtn a span, body .mce-menubar .mce-menubtn .scope .paginate-links li a span, body .scope .mce-menubar .mce-menubtn .paginate-links li a span, body .scope .paginate-links li .mce-menubar .mce-menubtn a span, body .scope .mce-ico, body .scope .mce-menubar .mce-menubtn button span, body .scope .mce-menubar .mce-menubtn a.button span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span, body .scope .mce-menubar .mce-menubtn ul[type="submit"].tagit span, body .scope .mce-menubar .mce-menubtn .button-group li a span, body .scope .button-group li .mce-menubar .mce-menubtn a span, body .scope .mce-menubar .mce-menubtn .paginate-links li a span, body .scope .paginate-links li .mce-menubar .mce-menubtn a span {
+body .mce-ico, body .mce-menubar .mce-menubtn button span, body .mce-menubar .mce-menubtn .scope a.button span, body .scope .mce-menubar .mce-menubtn a.button span, body .mce-menubar .mce-menubtn .scope input[type="submit"] span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .mce-menubar .mce-menubtn .scope textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .mce-menubar .mce-menubtn .scope select[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span, body .mce-menubar .mce-menubtn .scope ul[type="submit"].tagit span, body .scope .mce-menubar .mce-menubtn ul[type="submit"].tagit span, body .mce-menubar .mce-menubtn .scope .button-group > li > a span, body .scope .mce-menubar .mce-menubtn .button-group > li > a span, body .mce-menubar .mce-menubtn .scope .paginate-links li a span, body .scope .mce-menubar .mce-menubtn .paginate-links li a span, body .scope .paginate-links li .mce-menubar .mce-menubtn a span, body .scope .mce-ico, body .scope .mce-menubar .mce-menubtn button span, body .scope .mce-menubar .mce-menubtn a.button span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span, body .scope .mce-menubar .mce-menubtn ul[type="submit"].tagit span, body .scope .mce-menubar .mce-menubtn .button-group > li > a span, body .scope .mce-menubar .mce-menubtn .paginate-links li a span, body .scope .paginate-links li .mce-menubar .mce-menubtn a span {
   color: #525354;
 }
 body .mce-stack-layout-item, body .scope .mce-stack-layout-item {
@@ -2581,7 +2741,7 @@ body .mce-menubtn span, body .scope .mce-menubtn span {
   font-size: 14px;
   line-height: 22px;
 }
-body .mce-menubtn button, body .mce-menubtn .scope a.button, body .scope .mce-menubtn a.button, body .mce-menubtn .scope input[type="submit"], body .scope .mce-menubtn input[type="submit"], body .mce-menubtn .scope textarea[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .mce-menubtn .scope select[type="submit"], body .scope .mce-menubtn select[type="submit"], body .mce-menubtn .scope ul[type="submit"].tagit, body .scope .mce-menubtn ul[type="submit"].tagit, body .mce-menubtn .scope .button-group li a, body .scope .mce-menubtn .button-group li a, body .scope .button-group li .mce-menubtn a, body .mce-menubtn .scope .paginate-links li a, body .scope .mce-menubtn .paginate-links li a, body .scope .paginate-links li .mce-menubtn a, body .mce-btn button, body .mce-btn .scope a.button, body .scope .mce-btn a.button, body .mce-btn .scope input[type="submit"], body .scope .mce-btn input[type="submit"], body .mce-btn .scope textarea[type="submit"], body .scope .mce-btn textarea[type="submit"], body .mce-btn .scope select[type="submit"], body .scope .mce-btn select[type="submit"], body .mce-btn .scope ul[type="submit"].tagit, body .scope .mce-btn ul[type="submit"].tagit, body .mce-btn .scope .button-group li a, body .scope .mce-btn .button-group li a, body .scope .button-group li .mce-btn a, body .mce-btn .scope .paginate-links li a, body .scope .mce-btn .paginate-links li a, body .scope .paginate-links li .mce-btn a, body .scope .mce-menubtn button, body .scope .mce-menubtn a.button, body .scope .mce-menubtn input[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .scope .mce-menubtn select[type="submit"], body .scope .mce-menubtn ul[type="submit"].tagit, body .scope .mce-menubtn .button-group li a, body .scope .button-group li .mce-menubtn a, body .scope .mce-menubtn .paginate-links li a, body .scope .paginate-links li .mce-menubtn a, body .scope .mce-btn button, body .scope .mce-btn a.button, body .scope .mce-btn input[type="submit"], body .scope .mce-btn textarea[type="submit"], body .scope .mce-btn select[type="submit"], body .scope .mce-btn ul[type="submit"].tagit, body .scope .mce-btn .button-group li a, body .scope .button-group li .mce-btn a, body .scope .mce-btn .paginate-links li a, body .scope .paginate-links li .mce-btn a {
+body .mce-menubtn button, body .mce-menubtn .scope a.button, body .scope .mce-menubtn a.button, body .mce-menubtn .scope input[type="submit"], body .scope .mce-menubtn input[type="submit"], body .mce-menubtn .scope textarea[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .mce-menubtn .scope select[type="submit"], body .scope .mce-menubtn select[type="submit"], body .mce-menubtn .scope ul[type="submit"].tagit, body .scope .mce-menubtn ul[type="submit"].tagit, body .mce-menubtn .scope .button-group > li > a, body .scope .mce-menubtn .button-group > li > a, body .mce-menubtn .scope .button-group > li > button, body .scope .mce-menubtn .button-group > li > button, body .mce-menubtn .scope .paginate-links li a, body .scope .mce-menubtn .paginate-links li a, body .scope .paginate-links li .mce-menubtn a, body .mce-menubtn .scope .paginate-links li button, body .scope .mce-menubtn .paginate-links li button, body .scope .paginate-links li .mce-menubtn button, body .mce-btn button, body .mce-btn .scope a.button, body .scope .mce-btn a.button, body .mce-btn .scope input[type="submit"], body .scope .mce-btn input[type="submit"], body .mce-btn .scope textarea[type="submit"], body .scope .mce-btn textarea[type="submit"], body .mce-btn .scope select[type="submit"], body .scope .mce-btn select[type="submit"], body .mce-btn .scope ul[type="submit"].tagit, body .scope .mce-btn ul[type="submit"].tagit, body .mce-btn .scope .button-group > li > a, body .scope .mce-btn .button-group > li > a, body .mce-btn .scope .button-group > li > button, body .scope .mce-btn .button-group > li > button, body .mce-btn .scope .paginate-links li a, body .scope .mce-btn .paginate-links li a, body .scope .paginate-links li .mce-btn a, body .mce-btn .scope .paginate-links li button, body .scope .mce-btn .paginate-links li button, body .scope .paginate-links li .mce-btn button, body .scope .mce-menubtn button, body .scope .mce-menubtn a.button, body .scope .mce-menubtn input[type="submit"], body .scope .mce-menubtn textarea[type="submit"], body .scope .mce-menubtn select[type="submit"], body .scope .mce-menubtn ul[type="submit"].tagit, body .scope .mce-menubtn .button-group > li > a, body .scope .mce-menubtn .button-group > li > button, body .scope .mce-menubtn .paginate-links li a, body .scope .paginate-links li .mce-menubtn a, body .scope .mce-menubtn .paginate-links li button, body .scope .paginate-links li .mce-menubtn button, body .scope .mce-btn button, body .scope .mce-btn a.button, body .scope .mce-btn input[type="submit"], body .scope .mce-btn textarea[type="submit"], body .scope .mce-btn select[type="submit"], body .scope .mce-btn ul[type="submit"].tagit, body .scope .mce-btn .button-group > li > a, body .scope .mce-btn .button-group > li > button, body .scope .mce-btn .paginate-links li a, body .scope .paginate-links li .mce-btn a, body .scope .mce-btn .paginate-links li button, body .scope .paginate-links li .mce-btn button {
   border-radius: 5px;
   padding: 6px 10px;
   background-color: #fff;
@@ -2610,7 +2770,7 @@ body .mce-menubar, body .scope .mce-menubar {
   padding-left: 3px;
   background-color: #f0f1f2;
 }
-body .mce-stack-layout .mce-widget button, body .mce-stack-layout .mce-widget .scope a.button, body .scope .mce-stack-layout .mce-widget a.button, body .mce-stack-layout .mce-widget .scope input[type="submit"], body .scope .mce-stack-layout .mce-widget input[type="submit"], body .mce-stack-layout .mce-widget .scope textarea[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .mce-stack-layout .mce-widget .scope select[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"], body .mce-stack-layout .mce-widget .scope ul[type="submit"].tagit, body .scope .mce-stack-layout .mce-widget ul[type="submit"].tagit, body .mce-stack-layout .mce-widget .scope .button-group li a, body .scope .mce-stack-layout .mce-widget .button-group li a, body .scope .button-group li .mce-stack-layout .mce-widget a, body .mce-stack-layout .mce-widget .scope .paginate-links li a, body .scope .mce-stack-layout .mce-widget .paginate-links li a, body .scope .paginate-links li .mce-stack-layout .mce-widget a, body .scope .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget a.button, body .scope .mce-stack-layout .mce-widget input[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"], body .scope .mce-stack-layout .mce-widget ul[type="submit"].tagit, body .scope .mce-stack-layout .mce-widget .button-group li a, body .scope .button-group li .mce-stack-layout .mce-widget a, body .scope .mce-stack-layout .mce-widget .paginate-links li a, body .scope .paginate-links li .mce-stack-layout .mce-widget a {
+body .mce-stack-layout .mce-widget button, body .mce-stack-layout .mce-widget .scope a.button, body .scope .mce-stack-layout .mce-widget a.button, body .mce-stack-layout .mce-widget .scope input[type="submit"], body .scope .mce-stack-layout .mce-widget input[type="submit"], body .mce-stack-layout .mce-widget .scope textarea[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .mce-stack-layout .mce-widget .scope select[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"], body .mce-stack-layout .mce-widget .scope ul[type="submit"].tagit, body .scope .mce-stack-layout .mce-widget ul[type="submit"].tagit, body .mce-stack-layout .mce-widget .scope .button-group > li > a, body .scope .mce-stack-layout .mce-widget .button-group > li > a, body .mce-stack-layout .mce-widget .scope .button-group > li > button, body .scope .mce-stack-layout .mce-widget .button-group > li > button, body .mce-stack-layout .mce-widget .scope .paginate-links li a, body .scope .mce-stack-layout .mce-widget .paginate-links li a, body .scope .paginate-links li .mce-stack-layout .mce-widget a, body .mce-stack-layout .mce-widget .scope .paginate-links li button, body .scope .mce-stack-layout .mce-widget .paginate-links li button, body .scope .paginate-links li .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget a.button, body .scope .mce-stack-layout .mce-widget input[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"], body .scope .mce-stack-layout .mce-widget ul[type="submit"].tagit, body .scope .mce-stack-layout .mce-widget .button-group > li > a, body .scope .mce-stack-layout .mce-widget .paginate-links li a, body .scope .paginate-links li .mce-stack-layout .mce-widget a {
   margin: 1px 2px;
 }
 body .mce-toolbar-grp, body .scope .mce-toolbar-grp {
@@ -2650,7 +2810,7 @@ body ul.tagit, body .scope ul.tagit {
   padding: 8px 8px;
 }
 body ul.tagit li, body .scope ul.tagit li {
-  margin: 0 7px 0 0;
+  margin: 0 8px 0 0;
 }
 body ul.tagit li.tagit-choice, body .scope ul.tagit li.tagit-choice {
   font-size: 12px;
@@ -2706,7 +2866,7 @@ body .ui-autocomplete, body .scope .ui-autocomplete {
   overflow: hidden;
 }
 body .ui-menu .ui-menu-item, body .scope .ui-menu .ui-menu-item {
-  padding: 7px 14px;
+  padding: 8px 16px;
 }
 body .ui-widget-content .ui-state-default, body .scope .ui-widget-content .ui-state-default {
   border: none;

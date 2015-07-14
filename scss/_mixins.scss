@@ -99,3 +99,23 @@
         }
     }
 }
+@mixin breakpoint-text-aligns($establish, $override: null) {
+    @if ($override) {
+        .align-left-#{$override}, .align-right-#{$override}, .align-center-#{$override} {
+            text-align: inherit;
+        }
+    } @else {
+        .align-left, .align-right, .align-center {
+            text-align: inherit;
+        }
+    }
+    .align-left-#{$establish} {
+        text-align: left;
+    }
+    .align-right-#{$establish} {
+        text-align: right
+    }
+    .align-center-#{$establish} {
+        text-align: center;
+    }
+}

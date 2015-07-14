@@ -18,33 +18,6 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
-Dropdown Button Functions
----------------------------------------- */
-$(document).ready(function() {
-    var dropdown = $('.dropdown'),
-        dropdownOptions = $('.dropdown-options');
-    
-    dropdown.each(function() { // Set options width to match button on load
-        var buttonWidth = $(this).outerWidth();
-         $('+ .dropdown-options', this).css('min-width', buttonWidth + 'px');
-    });
-    
-    $(document).click(function() {
-        dropdownOptions.hide();
-    });
-    
-    dropdown.click(function(e) {
-        e.stopPropagation(); // Don't alert document of this click
-        
-        if ($('+ .dropdown-options', this).length > 0) {
-            $('+ .dropdown-options', this).show();
-        } else {
-            console.error('No immediate sibling with the "dropdown-options" class exists.');
-        }
-    });
-});
-
-/* ----------------------------------------
 Alert Functions
 ---------------------------------------- */
 $(document).ready(function() {
@@ -70,10 +43,56 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
+Dropdown Button Functions
+---------------------------------------- */
+$(document).ready(function() {
+    var dropdown = $('.dropdown'),
+        dropdownOptions = $('.dropdown-options');
+    
+    dropdown.each(function() { // Set options width to match button on load
+        var buttonWidth = $(this).outerWidth();
+        $('+ .dropdown-options', this).css('min-width', buttonWidth + 'px');
+    });
+    
+    $(document).click(function() {
+        dropdownOptions.hide();
+    });
+    
+    dropdown.click(function(e) {
+        e.stopPropagation(); // Don't alert document of this click
+        e.preventDefault();
+        
+        if ($('+ .dropdown-options', this).length > 0) {
+            dropdownOptions.hide(); // Close currently opened options
+            
+            var positionX = $(this).offset().left,
+                positionY = $(this).offset().top,
+                offsetY = $(this).outerHeight();
+            
+            $('+ .dropdown-options', this).css('left', positionX + 'px')
+                .css('top', positionY + offsetY + 'px')
+                .show();
+        } else {
+            console.error('No immediate sibling with the "dropdown-options" class exists.');
+        }
+    });
+});
+
+/* ----------------------------------------
+Loading Functions
+---------------------------------------- */
+$(document).ready(function() {
+    var loadingButton = $('.js-loading');
+    
+    loadingButton.click(function() {
+        $(this).addClass('loading');
+    });
+});
+
+/* ----------------------------------------
 Progress Functions
 ---------------------------------------- */
 $(document).ready(function() {
-    
     $('.progress').each(function() {
         var progressPercentage = $(this).data('percentage');
         
@@ -117,44 +136,94 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
-Quick Modal Plugin (Edited for Salesforce1)
+Quick Modal Plugin (by Kevin Beronilla; edited for Salesforce1)
 ---------------------------------------- */
-(function($) { // Protect the $ alias (IIF)
-    $.fn.quickModal = function(args) {
-        if (!$('#modal-background').length) $('body .scope').append('<div id="modal-background"></div>'); // Append background; do not append if re-initialized or background already exists
+$.fn.setSpeed = function(speed) {
+    this.css('-webkit-transition-duration', speed + 'ms')
+        .css('-moz-transition-duration', speed + 'ms')
+        .css('-ms-transition-duration', speed + 'ms')
+        .css('-o-transition-duration', speed + 'ms')
+        .css('transition-duration', speed + 'ms');
+}
+
+$.fn.setTiming = function(timing) {
+    this.css('-webkit-transition-timing-function', timing)
+        .css('-moz-transition-timing-function', timing)
+        .css('-ms-transition-timing-function', timing)
+        .css('-o-transition-timing-function', timing)
+        .css('transition-timing-function', timing);
+}
+
+function checkSettings(modalObj, backgroundObj, settings) {
+    modalObj.setSpeed(null);
+    modalObj.setTiming(null);
+    backgroundObj.setSpeed(null);
+    backgroundObj.setTiming(null);
+
+    if (settings.speed != 250 || settings.timing != 'ease') { // Set CSS if settings not equal to default
+        modalObj.setSpeed(settings.speed);
+        modalObj.setTiming(settings.timing);
+        backgroundObj.setSpeed(settings.speed);
+        backgroundObj.setTiming(settings.timing);
+    }
+}
+
+$.fn.quickModal = function(args, options) {
+    if (!$('#modal-background').length) $('body .scope').append('<div id="modal-background"></div>'); // Append background; do not append if re-initialized or background already exists
+
+    if (args !== null && typeof args === 'string') { // If calling a method
+        var settings = $.extend({ // Extend the default settings established below
+                animation: 'fade-zoom',
+                speed: 250,
+                timing: 'ease',
+                closeModalSelector: '.close-modal'
+            }, options),
+            bodyTag = $('body'),
+            closeModalLink = $(settings.closeModalSelector),
+            modalBackground = $('#modal-background'),
+            targetModal = this,
+            modal = $('.modal');
         
-        if (args !== null && typeof args === 'string') { // If calling a method
-            var bodyTag = $('body'),
-                closeModalLink = $('.close-modal'),
-                modalBackground = $('#modal-background'),
-                targetModal = this;
-            
-            switch (args) {
-                case 'open':
-                    bodyTag.addClass('disable-scroll');
-                    modalBackground.show();
-                    targetModal.show();
-                    setTimeout(function() { // Ensure elements are displayed before adding classes
-                        modalBackground.addClass('visible');
-                        targetModal.addClass('visible');
-                    }, 25);
-                    targetModal.trigger('modalopen'); // Trigger custom 'open' event
-                    
-                    closeModalLink.click(function(e) { // Bind events based on options
+        checkSettings(targetModal, modalBackground, settings);
+        
+        targetModal.removeClass()
+            .addClass('modal')
+            .addClass('animation-' + settings.animation);
+        
+        switch (args) {
+            case 'open':
+                $(document).unbind('keyup', keyUpCheck); // Unbind lingering events
+                bodyTag.addClass('disable-scroll');
+                modalBackground.show();
+                targetModal.show();
+                setTimeout(function() { // Ensure elements are displayed before adding classes
+                    modalBackground.addClass('visible');
+                    targetModal.addClass('visible');
+                }, 25);
+                targetModal.trigger('modalopen'); // Trigger custom 'open' event
+                
+                function keyUpCheck(e) {
+                    if (e.keyCode == 27 && modal.is(':visible')) { // Esc
+                        targetModal.quickModal('close', settings);
+                    }
+                }
+                
+                closeModalLink.unbind('click') // Unbind previously bound events to remove lingering settings
+                    .click(function(e) { // Bind events based on options
                         e.preventDefault();
-                        targetModal.quickModal('close');
+                        targetModal.quickModal('close', settings);
                     });
-                    
-                    $(document).keyup(function(e) {
-                        if (e.keyCode == 27) targetModal.quickModal('close'); // Esc
+                
+                $(document).keyup(keyUpCheck);
+                
+                modalBackground.unbind('click')
+                    .click(function() { // Unbind previously bound events to remove lingering settings
+                        targetModal.quickModal('close', settings);
                     });
-                    
-                    modalBackground.click(function() {
-                        targetModal.quickModal('close');
-                    });
-                    break;
-                    
-                case 'close':
+                break;
+            
+            case 'close':
+                if (targetModal.is(':visible')) {
                     bodyTag.removeClass('disable-scroll');
                     modalBackground.removeClass('visible');
                     targetModal.removeClass('visible');
@@ -162,55 +231,32 @@ Quick Modal Plugin (Edited for Salesforce1)
                         modalBackground.hide();
                         targetModal.hide();
                         targetModal.trigger('modalclose'); // Trigger custom 'close' event
-                    }, 250);
-                    break;
-            }
-        } else { // If initializing plugin with options
-            var settings = $.extend({ // Extend the default settings established below
-                    modalWindowClass: '.modal',
-                    closeModalClass: '.close-modal'
-                }, args),
-                bodyTag = $('body'),
-                openModalLink = this,
-                modalWindow = $(settings.modalWindowClass),
-                closeModalLink = $(settings.closeModalClass),
-                modalBackground = $('#modal-background');
-            
-            function closeModal() {
-                var visibleModal = $(settings.modalWindowClass + '.visible');
-                
-                visibleModal.quickModal('close');
-            }
-            
-            openModalLink.click(function(e) {
-                e.preventDefault();
-                
-                var modalId = $(this).data('modal-id'),
-                    targetModal = $('#' + modalId);
-                
-                if (modalId === undefined) console.error('No "data-modal-id" attribute is set.');
-                
-                targetModal.quickModal('open');
-            });
-            
-            closeModalLink.click(function(e) { // Bind events based on options
-                e.preventDefault();
-                closeModal();
-            });
-            
-            $(document).keyup(function(e) {
-                if (e.keyCode == 27) closeModal(); // Esc
-            });
-            
-            modalBackground.click(closeModal);
+                    }, settings.speed);
+                } else {
+                    console.error('Target modal is not currently visible.');
+                }
+                break;
         }
-        
-        return this; // Return the object to enable chaining
+    } else { // If initializing plugin with options
+        var openModalLink = this;
+
+        openModalLink.click(function(e) {
+            e.preventDefault();
+
+            var modalId = $(this).data('modal-id'),
+                targetModal = $('#' + modalId);
+
+            if (modalId === undefined) console.error('No "data-modal-id" attribute is set.');
+
+            targetModal.quickModal('open', args);
+        });
     }
-}(jQuery));
+
+    return this; // Return the object to enable chaining
+}
 
 $(document).ready(function() {
-    $('.open-modal').quickModal(); // Initialize plugin
+    $('.js-open-modal').quickModal(); // Initialize plugin
 });
 
 /* ----------------------------------------
@@ -221,7 +267,7 @@ $(document).ready(function() {
         selector: 'textarea.rich-text',
         statusbar: false,
         resize: true,
-        height: 192
+        height: 200
     });
 });
 
