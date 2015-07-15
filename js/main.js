@@ -136,7 +136,7 @@ $(document).ready(function() {
 });
 
 /* ----------------------------------------
-Quick Modal Plugin (by Kevin Beronilla; edited for Salesforce1)
+Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
 ---------------------------------------- */
 $.fn.setSpeed = function(speed) {
     this.css('-webkit-transition-duration', speed + 'ms')
@@ -173,7 +173,7 @@ $.fn.quickModal = function(args, options) {
 
     if (args !== null && typeof args === 'string') { // If calling a method
         var settings = $.extend({ // Extend the default settings established below
-                animation: 'fade-zoom',
+                animation: 'fade-up',
                 speed: 250,
                 timing: 'ease',
                 closeModalSelector: '.close-modal'
@@ -190,9 +190,15 @@ $.fn.quickModal = function(args, options) {
             .addClass('modal')
             .addClass('animation-' + settings.animation);
         
+        function keyUpCheck(e) {
+            if (e.keyCode == 27 && modal.is(':visible')) { // Esc
+                targetModal.quickModal('close', settings);
+                console.log('esc');
+            }
+        }
+        
         switch (args) {
             case 'open':
-                $(document).unbind('keyup', keyUpCheck); // Unbind lingering events
                 bodyTag.addClass('disable-scroll');
                 modalBackground.show();
                 targetModal.show();
@@ -201,12 +207,6 @@ $.fn.quickModal = function(args, options) {
                     targetModal.addClass('visible');
                 }, 25);
                 targetModal.trigger('modalopen'); // Trigger custom 'open' event
-                
-                function keyUpCheck(e) {
-                    if (e.keyCode == 27 && modal.is(':visible')) { // Esc
-                        targetModal.quickModal('close', settings);
-                    }
-                }
                 
                 closeModalLink.unbind('click') // Unbind previously bound events to remove lingering settings
                     .click(function(e) { // Bind events based on options
@@ -239,15 +239,15 @@ $.fn.quickModal = function(args, options) {
         }
     } else { // If initializing plugin with options
         var openModalLink = this;
-
+        
         openModalLink.click(function(e) {
             e.preventDefault();
-
+            
             var modalId = $(this).data('modal-id'),
                 targetModal = $('#' + modalId);
-
+            
             if (modalId === undefined) console.error('No "data-modal-id" attribute is set.');
-
+            
             targetModal.quickModal('open', args);
         });
     }
@@ -267,7 +267,7 @@ $(document).ready(function() {
         selector: 'textarea.rich-text',
         statusbar: false,
         resize: true,
-        height: 200
+        height: 208
     });
 });
 
@@ -275,7 +275,7 @@ $(document).ready(function() {
 Tag-it Initialize
 ---------------------------------------- */
 $(document).ready(function() {
-    $('.tags').tagit({
+    $('.js-tags').tagit({
         allowSpaces: true,
         
     });
@@ -285,7 +285,7 @@ $(document).ready(function() {
 Tooltipster Initialize
 ---------------------------------------- */
 $(document).ready(function() {
-    $('.tooltip').tooltipster({
+    $('.js-tooltip').tooltipster({
         delay: 0,
         animation: 'fade',
         touchDevices: true,
@@ -298,7 +298,7 @@ $(document).ready(function() {
 jQuery UI Autocomplete Initialize
 ---------------------------------------- */
 $(document).ready(function() {
-    $('.autocomplete').each(function() { // Set list data for each
+    $('.js-autocomplete').each(function() { // Set list data for each
         var autocompleteList = eval($(this).data('list')); // Use eval() to interpolate
         
         $(this).autocomplete({
@@ -311,7 +311,7 @@ $(document).ready(function() {
 jQuery UI Date Picker Initialize
 ---------------------------------------- */
 $(document).ready(function() {
-    $('.date-picker').datepicker({
+    $('.js-date-picker').datepicker({
         dateFormat: 'mm/dd/yy',
         showAnim: ''
     });

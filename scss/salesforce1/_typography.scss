@@ -54,6 +54,9 @@ small {
 p {
     @include type-margin;
 }
+span {
+    @include color-classes(color);
+}
 ul, ol {
     margin-left: 32px;
     @include type-margin;
@@ -62,6 +65,9 @@ hr {
     border: none;
     border-bottom: $card-border;
     @include type-margin;
+    &.margin-top {
+        margin-top: $type-spacing;
+    }
     &:last-child {
         display: none;
     }
@@ -69,7 +75,6 @@ hr {
 a, a:visited {
     color: $blue;
     text-decoration: none;
-    @include color-classes(color);
 }
 code {
     display: inline-block;
@@ -81,9 +86,11 @@ code {
 }
 pre {
     @extend code;
+    line-height: 16px;
     display: block;
     padding: $card-padding / 2;
     overflow: auto;
+    max-height: 400px;
 }
 .text-dark {
     color: $text-dark;
@@ -122,7 +129,7 @@ pre {
     }
     &.fa { // FontAwesome
         position: relative;
-        top: 0.5px;
+        top: 0.25px;
     }
     &.margin-right {
         margin-right: $type-spacing / 2;

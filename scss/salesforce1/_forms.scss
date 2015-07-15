@@ -22,7 +22,7 @@ input {
 }
 textarea {
     @extend input;
-    height: 190px;
+    height: 198px;
     resize: none;
     &.resizable {
         resize: both;
@@ -97,6 +97,7 @@ input[type="checkbox"] {
 }
 .select-container {
     position: relative;
+    @include type-margin;
     &:after {
         font-family: 'FontAwesome';
         content: '\f0d7';
@@ -105,10 +106,9 @@ input[type="checkbox"] {
         position: absolute;
         top: 0;
         right: 2px;
-        padding: 12px 16px;
+        padding: 11px 16px;
         pointer-events: none;
     }
-    @include type-margin;
 }
 .autocomplete-container {
     @extend .select-container;
@@ -116,11 +116,14 @@ input[type="checkbox"] {
         content: '\f141';
     }
 }
-.tags {
-    @extend .select-container;
-    &:after {
-        content: '\f02b';
-        right: -2px;
+.tags-container {
+    @include type-margin;
+    > ul {
+        @extend .select-container;
+        &:after {
+            content: '\f02b';
+            right: -2px;
+        }
     }
 }
 .date-picker-container {

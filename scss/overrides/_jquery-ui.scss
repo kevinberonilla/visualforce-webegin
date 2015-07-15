@@ -10,6 +10,7 @@
     border-radius: $round-corner-small;
     box-shadow: $card-shadow;
     overflow: hidden;
+    z-index: 9999;
 }
 .ui-menu .ui-menu-item {
     padding: ($type-spacing / 2) $type-spacing;
@@ -25,7 +26,7 @@
     border: none;
     margin: 0;
 }
-.scope .ui-widget, .ui-widget {
+.ui-widget {
     color: $text-normal;
 }
 .ui-widget-header {

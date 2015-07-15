@@ -10,10 +10,11 @@
     }
     h1, h2, h3, h4, h5 {
         color: $white;
-        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
         width: 60%;
     }
-    p {
+    p, hr {
         margin-left: auto;
         margin-right: auto;
         width: 75%;
@@ -26,7 +27,14 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.1) 100%);
+    }
+}
+.hero-buttons, footer {
+    @extend .hero;
+    padding: ($type-spacing * 2) 0;
+    &:after {
+        display: none;
     }
 }
 .card {
@@ -34,6 +42,9 @@
     border-radius: $round-corner-small;
     background-color: $white;
     overflow: hidden;
+    &.transparent {
+        background-color: transparent;
+    }
     > div, > section {
         padding: $card-padding;
         &.has-buttons {
@@ -44,7 +55,7 @@
                     margin-top: 0;
                 }
                 &.has-subhead {
-                    margin-top: 1px;
+                    margin-top: 2px;
                     + h3 {
                         margin-top: 0;
                     }
@@ -181,52 +192,6 @@ ul.card {
         top: 0;
     }
 }
-.modal {
-    @include animated;
-    @extend .card;
-    @extend .vertical-align;
-    width: $container-width - 100px;
-    display: none;
-    opacity: 0;
-    margin-top: 0;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-    box-shadow: $card-shadow;
-    .close-modal {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 18px;
-        cursor: pointer;
-        &:focus {
-            outline: none;
-        }
-    }
-    &.visible {
-        opacity: 1;
-        margin-top: -100px;
-    }
-    @media only screen and (max-width: $tablet-landscape-breakpoint) {
-        width: 80%;
-    }
-}
-#modal-background {
-    @include animated;
-    display: none;
-    opacity: 0;
-    background-color: rgba($text-dark, 0.9);
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    &.visible {
-        opacity: 1;
-    }
-}
 table {
     width: 100%;
     td {
@@ -280,13 +245,6 @@ table {
 }
 .desktop-only {
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
-        display: none;
-    }
-}
-footer {
-    @extend .hero;
-    padding: ($type-spacing * 2) 0;
-    &:after {
         display: none;
     }
 }

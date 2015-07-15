@@ -4,7 +4,10 @@
     &.no-padding {
         padding-top: 0;
         padding-bottom: 0;
+        margin-top: -#{$grid-spacing};
+        margin-bottom: -#{$grid-spacing};
     }
+    
 }
 .row {
     @extend .clearfix;

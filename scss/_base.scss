@@ -33,6 +33,7 @@ body .scope { // Control Salesforce1 overrides
     a {
         @include animated;
         img {
+            border: none;
             outline: none;
         }
     }

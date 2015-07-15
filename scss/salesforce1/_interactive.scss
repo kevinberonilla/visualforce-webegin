@@ -1,115 +1,3 @@
-.alert {
-    background-color: rgba($blue, 0.1);
-    padding: $card-padding;
-    color: $blue;
-    font-weight: $semibold;
-    margin-bottom: $type-spacing;
-    @include color-classes(color);
-    @include background-color-classes(0.1);
-    a, a:visited {
-        color: inherit;
-        font-weight: $bold;
-        text-decoration: underline;
-    }
-    &.dismissible {
-        padding-right: 46px;
-        position: relative;
-        .close-alert {
-            font-size: 10px;
-            padding: 16px 18px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            cursor: pointer;
-            &:after {
-                font-family: IcoMoon-Free;
-                content: '\ea0f';
-                display: block;
-            }
-        }
-    }
-    &.small {
-        padding: $card-padding / 2;
-        &.dismissible {
-            padding-right: 30px;
-            &:after {
-                padding: 8px 10px;
-            }
-        }
-    }
-    &.hidden {
-        display: none;
-    }
-}
-.accordion {
-    padding: $card-padding;
-    padding-right: 46px;
-    cursor: pointer;
-    background-color: $light-grey;
-    color: $text-normal;
-    font-weight: $semibold;
-    border: $card-border;
-    position: relative;
-    &:after {
-        @include animated;
-        font-family: 'FontAwesome';
-        content: '\f0d7';
-        display: block;
-        font-size: 16px;
-        color: $text-light;
-        position: absolute;
-        top: 16px;
-        right: 20px;
-    }
-    &.open {
-        &:after {
-            transform: rotate(180deg);
-        }
-    }
-    + .accordion-content {
-        display: none;
-        padding: $card-padding;
-        border: $card-border;
-        border-top: none;
-        + .accordion {
-            border-top: none;
-        }
-    }
-}   
-.loading {
-    position: relative;
-    &:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 9996;
-        top: 0;
-        left: 0;
-        background-color: rgba($white, 0.75);
-        border-radius: $round-corner-small - 1;
-    }
-    &:after {
-        font-family: 'FontAwesome';
-        content: "\f1ce";   
-        display: block;
-        font-size: 36px;
-        height: 0;
-        line-height: 0;
-        color: $text-dark;
-        opacity: 0.25;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        z-index: 9997;
-        top: 50%;
-        left: calc(50% - 18px);
-        transform: translateX(-50%) translateY(-50%);
-        -webkit-animation: fa-spin 500ms infinite linear;
-        animation: fa-spin 500ms infinite linear;
-    }
-}
 button {
     @include animated;
     opacity: 1;
@@ -215,7 +103,7 @@ a.button, input[type="submit"] {
     > li {
         display: block;
         float: left;
-        margin-left: 1px;
+        margin-left: 2px;
         > a, > a:visited, > button {
             @extend button;
             margin-right: 0;
@@ -272,7 +160,7 @@ a.button, input[type="submit"] {
         > li {
             float: left;
             width: auto;
-            margin-left: 1px;
+            margin-left: 2px;
             margin-top: 0;
             > a, > a:visited, button {
                 display: inline-block;
@@ -296,6 +184,7 @@ a.button, input[type="submit"] {
 }
 .button-group-container {
     display: inline-block;
+    line-height: 0;
     vertical-align: top;
     margin-right: $type-spacing;
     &:last-child {
@@ -374,5 +263,151 @@ a.button, input[type="submit"] {
                 }
             }
         }
+    }
+}
+
+/* --------------------------------------------------
+Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
+-------------------------------------------------- */
+.modal {
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    display: none;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 60%;
+    min-height: 60px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.modal .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px;
+    cursor: pointer;
+    color: #ccc;
+}
+.modal .close-modal:after {
+    content: '\2716';
+    display: inline-block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+.modal .close-modal:focus {
+    outline: none;
+}
+#modal-background {
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    display: none;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#modal-background.visible {
+    opacity: 1;
+}
+.modal {
+    @include animated;
+    @extend .card;
+    @extend .vertical-align;
+    width: $container-width - 100px;
+    display: none;
+    opacity: 0;
+    margin-top: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    box-shadow: $card-shadow;
+    min-height: 56px;
+    .close-modal {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 18px;
+        cursor: pointer;
+        &:after {
+            font-family: 'FontAwesome';
+            content: '\f00d';
+            display: inline-block;
+            font-size: 20px;
+            color: $text-light;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        width: 80%;
+    }
+    &.animation-fade {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    &.animation-fade-up {
+        transform: translate(-50%, 150%) scale(1);
+    }
+    &.animation-fade-right {
+        transform: translate(-150%, -50%) scale(1);
+    }
+    &.animation-fade-down {
+        transform: translate(-50%, -150%) scale(1);
+    }
+    &.animation-fade-left {
+        transform: translate(150%, -50%) scale(1);
+    }
+    &.animation-fade-zoom {
+        transform: translate(-50%, -50%) scale(2);
+    }
+    &.animation-fade-zoom-up {
+        transform: translate(-50%, 150%) scale(2);
+    }
+    &.animation-fade-zoom-right {
+        transform: translate(-150%, -50%) scale(2);
+    }
+    &.animation-fade-zoom-down {
+        transform: translate(-50%, -150%) scale(2);
+    }
+    &.animation-fade-zoom-left {
+        transform: translate(150%, -50%) scale(2);
+    }
+    &.visible {
+        opacity: 1;
+        &.animation-fade, &.animation-fade-up, &.animation-fade-right, &.animation-fade-down, &.animation-fade-left, &.animation-fade-zoom, &.animation-fade-zoom-up, &.animation-fade-zoom-right, &.animation-fade-zoom-down, &.animation-fade-zoom-left {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}
+#modal-background {
+    @include animated;
+    display: none;
+    opacity: 0;
+    background-color: rgba($text-dark, 0.9);
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &.visible {
+        opacity: 1;
     }
 }
