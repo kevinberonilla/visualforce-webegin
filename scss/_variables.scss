@@ -20,8 +20,8 @@ $purple: #717ecd;
 $green: #4ab471;
 $orange: #f3ae4e;
 $pink: #d96383;
-$container-width: 984px;
-$grid-spacing: 10px;
+$container-width: 992px; // Allows for 16px padding to the left and right on mobile ((1024px - 992px) / 2)
+$grid-spacing: 8px;
 $type-spacing: 16px;
 $card-padding: 16px;
 $card-border: 1px solid #dfe0e1;

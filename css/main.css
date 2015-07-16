@@ -52,13 +52,13 @@ body .scope img {
   height: auto;
 }
 body .scope .container {
-  width: 984px;
+  width: 992px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .container {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 body .scope .clearfix:after, body .scope .row:after, body .scope .mobile-header .corner-buttons:after, body .scope .progress-bar:after {
@@ -98,24 +98,24 @@ body .scope {
   ---------------------------------------- */
 }
 body .scope .grid {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 body .scope .grid.no-padding {
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: -10px;
-  margin-bottom: -10px;
+  margin-top: -8px;
+  margin-bottom: -8px;
 }
 body .scope .row {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 body .scope .column {
   display: block;
   width: 100%;
   float: left;
-  padding: 10px;
+  padding: 8px;
 }
 body .scope .column.no-padding {
   padding: 0;
@@ -274,16 +274,16 @@ body .scope .column.float-right.margin-half {
   margin-right: 50%;
 }
 body .scope .margin-top {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 body .scope .margin-top-x2 {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 body .scope .margin-bottom {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 body .scope .margin-bottom-x2 {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .column.twelfth {
@@ -1446,29 +1446,29 @@ body .scope .status a, body .scope .status a:visited {
   text-decoration: underline;
   color: #fff;
 }
-body .scope .hero, body .scope .hero-buttons, body .scope footer, body .scope .scope footer {
+body .scope .hero, body .scope .hero-subhead, body .scope footer, body .scope .scope footer {
   background-color: #344a5f;
   text-align: center;
   color: #fff;
   padding: 100px 0;
   position: relative;
 }
-body .scope .hero .container, body .scope .hero-buttons .container, body .scope footer .container, body .scope .scope footer .container {
+body .scope .hero .container, body .scope .hero-subhead .container, body .scope footer .container, body .scope .scope footer .container {
   position: relative;
   z-index: 9998;
 }
-body .scope .hero h1, body .scope .hero-buttons h1, body .scope footer h1, body .scope .scope footer h1, body .scope .hero h2, body .scope .hero-buttons h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h2, body .scope .hero-buttons h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope .hero-buttons h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope .hero-buttons h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope .hero-buttons h5, body .scope footer h5, body .scope .scope footer h5 {
+body .scope .hero h1, body .scope .hero-subhead h1, body .scope footer h1, body .scope .scope footer h1, body .scope .hero h2, body .scope .hero-subhead h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h2, body .scope .hero-subhead h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope .hero-subhead h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope .hero-subhead h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope .hero-subhead h5, body .scope footer h5, body .scope .scope footer h5 {
   color: #fff;
   margin-right: auto;
   margin-left: auto;
   width: 60%;
 }
-body .scope .hero p, body .scope .hero-buttons p, body .scope footer p, body .scope .scope footer p, body .scope .hero hr, body .scope .hero-buttons hr, body .scope footer hr, body .scope .scope footer hr {
+body .scope .hero p, body .scope .hero-subhead p, body .scope footer p, body .scope .scope footer p, body .scope .hero hr, body .scope .hero-subhead hr, body .scope footer hr, body .scope .scope footer hr {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
 }
-body .scope .hero:after, body .scope .hero-buttons:after, body .scope footer:after, body .scope .scope footer:after {
+body .scope .hero:after, body .scope .hero-subhead:after, body .scope footer:after, body .scope .scope footer:after {
   content: '';
   display: block;
   position: absolute;
@@ -1480,10 +1480,10 @@ body .scope .hero:after, body .scope .hero-buttons:after, body .scope footer:aft
   background: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
 }
-body .scope .hero-buttons, body .scope footer {
+body .scope .hero-subhead, body .scope footer {
   padding: 32px 0;
 }
-body .scope .hero-buttons:after, body .scope footer:after {
+body .scope .hero-subhead:after, body .scope footer:after {
   display: none;
 }
 body .scope .card, body .scope .modal {
@@ -1520,22 +1520,28 @@ body .scope .card > div.has-buttons h2.has-subhead + h3, body .scope .modal > di
     min-height: 66px;
   }
 }
+body .scope .card > div.no-padding, body .scope .scope .card > div.no-padding, body .scope .modal > div.no-padding, body .scope .scope .modal > div.no-padding, body .scope .card > section.no-padding, body .scope .scope .card > section.no-padding, body .scope .modal > section.no-padding, body .scope .scope .modal > section.no-padding {
+  padding: 0;
+}
 body .scope .card .border-top, body .scope .modal .border-top {
   border-top: 1px solid #dfe0e1;
 }
 body .scope .card .border-bottom, body .scope .modal .border-bottom {
   border-bottom: 1px solid #dfe0e1;
 }
-body .scope .card .grey, body .scope .modal .grey {
+body .scope .card .header, body .scope .modal .header {
   background-color: #f9fafa;
+}
+body .scope .card .padded, body .scope .modal .padded {
+  padding: 16px;
 }
 @media only screen and (max-width: 1024px) {
   body .scope .card.fullscreen, body .scope .fullscreen.modal {
     border-radius: 0;
     margin-top: 0;
-    margin-right: -20px;
+    margin-right: -16px;
     margin-bottom: 0;
-    margin-left: -20px;
+    margin-left: -16px;
   }
   body .scope .card.fullscreen + .fullscreen, body .scope .scope .card.fullscreen + .fullscreen, body .scope .fullscreen.modal + .fullscreen, body .scope .scope .fullscreen.modal + .fullscreen {
     border-top: none;
@@ -2391,7 +2397,7 @@ body .scope #modal-background.visible {
 body .scope .modal {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
-  width: 884px;
+  width: 892px;
   display: none;
   opacity: 0;
   margin-top: 0;
@@ -2854,4 +2860,5 @@ body .ui-datepicker td a, body .scope .ui-datepicker td a {
   line-height: 35px;
   text-align: center;
 }
+
 
