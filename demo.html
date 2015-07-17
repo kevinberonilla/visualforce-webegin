@@ -73,7 +73,7 @@
         </style>
     </head>
     <body>
-        <div class="scope">
+        <div id="scope" class="scope">
             <a id="kb-logo" href="http://www.kevinberonilla.com" target="_blank"><img src="http://www.kevinberonilla.com/hosted/kb-logo-reversed.svg"></a>
             <div id="hero-code">
                 <div class="hero">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-subhead margin-bottom-x2">
+            <div class="hero-footer margin-bottom">
                 <div class="container">
                     <div>
                         <button class="purple js-view-code js-open-modal" data-source-id="hero-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Hero Code</button>
@@ -103,151 +103,209 @@
                 </div>
             </div>
             <div class="container">
-                <!-- /Grid Section -->
+                <!-- Typography Section -->
                 <div class="demo-section">
-                    <div class="row">
-                        <div class="column">
-                            <h2>Responsive Grid Layouts</h2>
-                            <p>Support for floating grid elements with classes for managing breakpoint layouts, float direction, and column spacing. Affixes include <code>-tl</code> for tablet landscape, <code>-tp</code> for tablet portrait, and <code>-p</code> for phone. Adding the <code>.margin</code> class will add a margin in the same direction as the float, and accepts all breakpoint affixes.</p>
-                            <p>Columns can make use of the <code>.no-padding</code> class to remove the column spacing. Containers with the <code>.row</code> class will both clear floats and negate the left and right spacing of its children. Containers with the <code>.grid</code> class will add uniform padding to the top and bottom of a grid (allowing sibling elements to be spaced according to the grid spacing), unless the container also makes use of the <code>.no-padding</code> class, which negates the top and bottom spacing of its columns. The latter class is helpful for controlling grids within elements.</p>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="column span-7 span-7-tl float-right">
+                                <h2>Typography</h2>
+                                <p>Type stuff yo.</p>
+                            </div>
+                            <div class="column span-4 span-4-tl float-right margin-span-1">
+                                <div id="typography-code">
+                                    <div class="grid">
+                                        <div class="row">
+                                            <div class="column span-6">
+                                                <h1>Header 1</h1>
+                                                <h2>Header 2</h2>
+                                                <h3>Header 3</h3>
+                                                <h4>Header 4</h4>
+                                                <h5>Header 5</h5>
+                                            </div>
+                                            <div class="column span-6">
+                                                <p class="margin-top">This is a short paragraph with a <a href="#">link</a>.</p>
+                                                <ul>
+                                                    <li>Unordered List</li>
+                                                    <li>Unordered List</li>
+                                                </ul>
+                                                <ol>
+                                                    <li>Ordered List</li>
+                                                    <li>Ordered List</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="purple js-view-code js-open-modal margin-top margin-bottom" data-source-id="typography-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Typography Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Typography Section -->
+                <hr class="margin-top">
+                <!-- Grid Section -->
+                <div class="demo-section">
+                    <div class="grid margin-bottom">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Responsive Grid Layouts</h2>
+                                <p>Webegin for Visualforce supports floating grid elements with classes for managing breakpoint layouts, float direction, and column spacing. Columns require the <code>.column</code> class, and sizing is determined by an associated <code>.span-<em><strong>n</strong></em></code> class, where <em><strong>n</strong></em> represents a numerator over 12 (100% width).</p>
+                                <p>Class affixes for enabling sizing within breakpoints include <code>-tl</code> for tablet landscape, <code>-tp</code> for tablet portrait, and <code>-p</code> for phone. Adding the <code>.margin-<em><strong>n</strong></em></code> class will add a margin of the specified size in the same direction as the float, and accepts all breakpoint-related affixes.</p>
+                                <p>Containers with the <code>.grid</code> class will negate the top and bottom spacing of its descendant columns. Containers with the <code>.row</code> class will both clear floats and negate the left and right spacing of its descendant columns. Neither the <code>.grid</code> nor <code>.row</code> classes should be used if columns utilize the <code>.no-padding</code> class, which removes grid spacing. In this particular case, you can use the <code>.clearfix</code> class on the container to clear floats.</p>
+                            </div>
                         </div>
                     </div>
                     <div id="grid-code">
-                        <div class="row">
-                            <div class="column half half-tl">
-                                <div class="card transparent">
-                                    <pre class="align-center">column half half-tl</pre>
+                        <div class="grid">
+                            <div class="row">
+                                <div class="column span-6 span-6-tl span-6-tp">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column span-6 span-6-tl span-6-tp</pre>
+                                    </div>
+                                </div>
+                                <div class="column span-4 span-4-tl margin-span-2-p">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column span-4 span-4-tl margin-span-2-p</pre>
+                                    </div>
+                                </div>
+                                <div class="column span-2">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column span-2</pre>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column third half-tl">
-                                <div class="card transparent">
-                                    <pre class="align-center">column third half-tl</pre>
+                            <div class="row">
+                                <div class="column float-right span-3 span-8-p">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column float-right span-3 span-8-p</pre>
+                                    </div>
+                                </div>
+                                <div class="column float-right span-6 span-1-p margin-span-1">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column float-right span-6 span-1-p margin-span-1</pre>
+                                    </div>
+                                </div>
+                                <div class="column float-right span-2 span-3-p">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column float-right span-2 span-3-p</pre>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column sixth">
-                                <div class="card transparent">
-                                    <pre class="align-center">column sixth</pre>
+                            <div class="row">
+                                <div class="column span-6-tl span-4-tp span-6-p">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column span-6-tl span-4-tp span-6-p</pre>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column fourth float-right third-x2-p margin-third-p">
-                                <div class="card transparent">
-                                    <pre class="align-center">column fourth float-right third-x2-p margin-third-p</pre>
+                            <div class="row">
+                                <div class="column span-6 span-8-tl">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column span-6 span-8-tl</pre>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="column half margin-twelfth float-right">
-                                <div class="card transparent">
-                                    <pre class="align-center">column half margin-twelfth float-right</pre>
-                                </div>
-                            </div>
-                            <div class="column sixth">
-                                <div class="card transparent">
-                                    <pre class="align-center">column sixth</pre>
-                                </div>
-                            </div>
-                            <div class="column half-tl third-tp half-p">
-                                <div class="card transparent">
-                                    <pre class="align-center">column half-tl third-tp half-p</pre>
-                                </div>
-                            </div>
-                            <div class="column half half-tl third-tp half-p">
-                                <div class="card transparent">
-                                    <pre class="align-center">column half half-tl third-tp half-p</pre>
-                                </div>
-                            </div>
-                            <div class="column half third-tp">
-                                <div class="card transparent">
-                                    <pre class="align-center">column half third-tp</pre>
+                                <div class="column span-6 span-4-tl span-6-p">
+                                    <div class="card transparent">
+                                        <pre class="align-center">column span-6 span-4-tl span-6-p</pre>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="purple js-view-code js-open-modal margin-top margin-bottom" data-source-id="grid-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Grid Code</button>
                     </div>
+                    <button class="purple js-view-code js-open-modal margin-top margin-bottom" data-source-id="grid-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Grid Code</button>
                 </div>
                 <!-- /Grid Section -->
-                <hr class="margin-top-x2">
+                <hr class="margin-top">
                 <!-- Cards Section -->
                 <div class="demo-section">
-                    <div class="row">
-                        <div class="column half">
-                            <h2>Cards</h2>
-                            <p>Cards are containers which visually separate key points of data for your app. You can use the <code>.card</code> class on any <code>&lt;article&gt;</code> or <code>&lt;div&gt;</code>, and add <code>&lt;section&gt;</code> tags within to further establish hierarchy.</p>
-                            <p><code>&lt;section&gt;</code> tags can make use of the <code>.border-top</code> or <code>.border-bottom</code> classes to add lines between them.</p>
-                        <p>Sections being used as card headers have a few optional classes available to them, including the <code>.has-buttons</code> class (allows for spacing to accomodate buttons which float to the right) and the <code>.mobile-header</code> class (emulates the Salesforce1 page header on mobile).</p>
-                            <p>Using the <code>.has-buttons</code> class also allows you to use the <code>.has-subhead</code> class on a contained <code>&lt;h2&gt;</code> to override it's top margin, allowing for room to include an <code>&lt;h3&gt;</code>. The <code>.has-subhead</code> class also overrides the top margin on a sibling <code>&lt;h3&gt;</code>, which can be useful in headers with a subhead, with or without buttons.</p>
-                        </div>
-                        <div class="column half">
-                            <div id="card-code">
-                                <article class="card fullscreen">
-                                    <section class="border-bottom has-buttons mobile-header">
-                                        <div class="corner-buttons">
-                                            <div class="mobile-group-left"><a href="#" class="button red inverse">Cancel</a></div><div class="mobile-group-right"><a href="#" class="button">Save Changes</a></div>
-                                        </div>
-                                        <h2 class="has-subhead">Mobile card</h2>
-                                        <h3>Mobile subhead</h3>
-                                    </section>
-                                    <section>
-                                        <div class="grid no-padding">
-                                            <div class="row">
-                                                <div class="column third">
-                                                    <div class="card transparent">
-                                                        <pre class="align-center">column third</pre>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="column span-6">
+                                <h2>Cards</h2>
+                                <p>Cards are containers which visually separate key points of data for your app. You can use the <code>.card</code> class on any <code>&lt;article&gt;</code> or <code>&lt;div&gt;</code>, and add <code>&lt;section&gt;</code> tags within to further establish hierarchy.</p>
+                                <p><code>&lt;section&gt;</code> tags can make use of the <code>.border-top</code> or <code>.border-bottom</code> classes to add lines between them.</p>
+                            <p>Sections being used as card headers have a few optional classes available to them, including the <code>.has-buttons</code> class (allows for spacing to accomodate buttons which float to the right) and the <code>.mobile-header</code> class (emulates the Salesforce1 page header on mobile).</p>
+                                <p>Using the <code>.has-buttons</code> class also allows you to use the <code>.has-subhead</code> class on a contained <code>&lt;h2&gt;</code> to override it's top margin, allowing for room to include an <code>&lt;h3&gt;</code>. The <code>.has-subhead</code> class also overrides the top margin on a sibling <code>&lt;h3&gt;</code>, which can be useful in headers with a subhead, with or without buttons.</p>
+                            </div>
+                            <div class="column span-6">
+                                <div id="card-code">
+                                    <article class="card fullscreen">
+                                        <section class="border-bottom has-buttons mobile-header">
+                                            <div class="corner-buttons">
+                                                <div class="mobile-group-left"><a href="#" class="button red inverse">Cancel</a></div><div class="mobile-group-right"><a href="#" class="button">Save Changes</a></div>
+                                            </div>
+                                            <h2 class="has-subhead">Mobile card</h2>
+                                            <h3>Mobile subhead</h3>
+                                        </section>
+                                        <section>
+                                            <div class="grid no-padding">
+                                                <div class="row">
+                                                    <div class="column span-4">
+                                                        <div class="card transparent">
+                                                            <pre class="align-center">column span-4</pre>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="column third-x2">
-                                                    <div class="card transparent">
-                                                        <pre class="align-center">column third-x2</pre>
+                                                    <div class="column span-8">
+                                                        <div class="card transparent">
+                                                            <pre class="align-center">column span-8</pre>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </section>
-                                </article>
-                                <article class="card margin-top-x2">
-                                    <section class="border-bottom has-buttons">
-                                        <div class="corner-buttons">
-                                            <a href="#" class="button red inverse">Cancel</a><a href="#" class="button">Save Changes</a>
-                                        </div>
-                                        <h2>Responsive card</h2>
-                                    </section>
-                                    <section>
-                                        <p>You can include any markup here.</p>
-                                    </section>
-                                </article>
-                            </div>
-                            <div class="align-right">
-                                <button class="purple js-view-code js-open-modal margin-top-x2" data-source-id="card-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Card Code</button>
+                                        </section>
+                                    </article>
+                                    <article class="card margin-top">
+                                        <section class="border-bottom has-buttons">
+                                            <div class="corner-buttons">
+                                                <a href="#" class="button red inverse">Cancel</a><a href="#" class="button">Save Changes</a>
+                                            </div>
+                                            <h2>Responsive card</h2>
+                                        </section>
+                                        <section class="header">
+                                            <h4 class="caps">This is a section header</h4>
+                                        </section>
+                                        <section class="border-top">
+                                            <p>You can include any type of markup within cards.</p>
+                                        </section>
+                                    </article>
+                                </div>
+                                <div class="align-right">
+                                    <button class="purple js-view-code js-open-modal margin-top" data-source-id="card-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Card Code</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /Cards Section -->
-                <hr class="margin-top-x2">
+                <hr class="margin-top">
                 <!-- Cards Section -->
                 <div class="demo-section">
-                    <div class="row">
-                        <div class="column half">
-                            <h2>Cards</h2>
-                            <p>Cards are containers which visually separate key points of data for your app. You can use the <code>.card</code> class on any <code>&lt;article&gt;</code> or <code>&lt;div&gt;</code>, and add <code>&lt;section&gt;</code> tags within to further establish hierarchy.</p>
-                            <p><code>&lt;section&gt;</code> tags can make use of the <code>.border-top</code> or <code>.border-bottom</code> classes to add lines between them.</p>
-                        <p>Sections being used as card headers have a few optional classes available to them, including the <code>.has-buttons</code> class (allows for spacing to accomodate buttons which float to the right) and the <code>.mobile-header</code> class (emulates the Salesforce1 page header on mobile).</p>
-                        </div>
-                        <div class="column half">
-                            <div id="card-code">
-                                <article class="card">
-                                    <section class="border-bottom">
-                                        <h2>This is a card</h2>
-                                    </section>
-                                    <section>
-                                        <p>Place your markup here.</p>
-                                    </section>
-                                </article>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="column span-6">
+                                <h2>Cards</h2>
+                                <p>Cards are containers which visually separate key points of data for your app. You can use the <code>.card</code> class on any <code>&lt;article&gt;</code> or <code>&lt;div&gt;</code>, and add <code>&lt;section&gt;</code> tags within to further establish hierarchy.</p>
+                                <p><code>&lt;section&gt;</code> tags can make use of the <code>.border-top</code> or <code>.border-bottom</code> classes to add lines between them.</p>
+                            <p>Sections being used as card headers have a few optional classes available to them, including the <code>.has-buttons</code> class (allows for spacing to accomodate buttons which float to the right) and the <code>.mobile-header</code> class (emulates the Salesforce1 page header on mobile).</p>
+                            </div>
+                            <div class="column span-6">
+                                <div id="card-code">
+                                    <article class="card">
+                                        <section class="border-bottom">
+                                            <h2>This is a card</h2>
+                                        </section>
+                                        <section>
+                                            <p>Place your markup here.</p>
+                                        </section>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /Cards Section -->
             </div>
-            <footer class="margin-top-x2">
+            <footer class="margin-top">
                 <div class="container">
                     &copy; 2015 Company Name
                 </div>

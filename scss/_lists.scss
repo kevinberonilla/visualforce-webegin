@@ -1,19 +1,15 @@
 $column-list: (
-    (twelfth, 8.333%),
-    (twelfth-x5, 41.666%),
-    (twelfth-x7, 58.333%),
-    (twelfth-x11, 91.666%),
-    (eighth, 12.5%),
-    (eighth-x3, 37.5%),
-    (eighth-x5, 62.5%),
-    (eighth-x7, 87.5%),
-    (sixth, 16.666%),
-    (sixth-x5, 83.333%),
-    (fourth, 25%),
-    (fourth-x3, 75%),
-    (third, 33.333%),
-    (third-x2, 66.666%),
-    (half, 50%)
+    (span-1, 8.333%),
+    (span-2, 16.666%),
+    (span-3, 25%),
+    (span-4, 33.333%),
+    (span-5, 41.666%),
+    (span-6, 50%),
+    (span-7, 58.333%),
+    (span-8, 66.666%),
+    (span-9, 75%),
+    (span-10, 83.333%),
+    (span-11, 91.666%)
 );
 $color-list: (
     (text-dark, #2e4052),
@@ -29,5 +25,5 @@ $color-list: (
     (purple, #717ecd),
     (green, #4ab471),
     (orange, #f3ae4e),
-    (pink, #d96383),
+    (pink, #d96383)
 );

@@ -82,6 +82,7 @@ button {
             display: block;
             padding: ($card-padding / 2) $card-padding;
             color: $text-normal;
+            line-height: initial;
             &:hover {
                 color: $white;
                 background-color: $blue;
@@ -97,6 +98,7 @@ a.button, input[type="submit"] {
 }
 .button-group {
     display: inline-block;
+    vertical-align: bottom;
     margin-left: 0;
     margin-right: $type-spacing;
     list-style: none;

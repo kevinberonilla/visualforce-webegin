@@ -1,13 +1,6 @@
 .grid {
-    padding-top: $grid-spacing;
-    padding-bottom: $grid-spacing;
-    &.no-padding {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: -#{$grid-spacing};
-        margin-bottom: -#{$grid-spacing};
-    }
-    
+    margin-top: -#{$grid-spacing};
+    margin-bottom: -#{$grid-spacing};
 }
 .row {
     @extend .clearfix;
@@ -43,15 +36,9 @@
     }
 }
 .margin-top {
-    margin-top: $grid-spacing;
-}
-.margin-top-x2 {
     margin-top: $grid-spacing * 2;
 }
 .margin-bottom {
-    margin-bottom: $grid-spacing;
-}
-.margin-bottom-x2 {
     margin-bottom: $grid-spacing * 2;
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
