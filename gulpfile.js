@@ -26,7 +26,7 @@ gulp.task('sass', function() {
 gulp.task('minify-css', function() {
     return gulp.src(['css/**/*.css', '!css/**/*.min.css'])
         .pipe(save('before-minify-css')) // Cache file
-        .pipe(minifyCss({ compatibility: 'ie 9' }))
+        .pipe(minifyCss())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
         .pipe(save.restore('before-minify-css')) // Restore cached file
