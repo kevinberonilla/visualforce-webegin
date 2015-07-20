@@ -137,6 +137,7 @@ pre {
     &.margin-left {
         margin-left: $type-spacing / 2;
     }
+    @include color-classes(color);
 }
 .status {
     display: inline-block;

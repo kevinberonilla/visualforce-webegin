@@ -27,3 +27,15 @@ $color-list: (
     (orange, #f3ae4e),
     (pink, #d96383)
 );
+$adjustment-list: (
+    (m, margin),
+    (p, padding),
+    (b, border)
+);
+$property-list: (
+    (t, top),
+    (r, right),
+    (b, bottom),
+    (l, left),
+    (a, all)
+);

@@ -119,3 +119,69 @@
         text-align: center;
     }
 }
+/*@mixin breakpoint-adjustments($establish, $override: null) {
+    if ($override) {
+        
+    } @else {
+        
+    }
+}*/
+@mixin adjustments($breakpoint: false) {
+    @if ($breakpoint) {
+        @each $adjustment in $adjustment-list {
+            &-#{nth($adjustment, 1)} {
+                @each $property in $property-list {
+                    &-#{nth($property, 1)} {
+                        @for $i from 1 through $adjustment-max {
+                            &-#{$i} {
+                                @if (nth($adjustment, 1) == b) { // Border only
+                                    @if (nth($property, 1) == a) {
+                                        #{nth($adjustment, 2)}: $card-border;
+                                        border-width: #{$i}px;
+                                    } @else {
+                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: $card-border;
+                                        border-width: #{$i}px;
+                                    }
+                                } @else {
+                                    @if (nth($property, 1) == a) {
+                                        #{nth($adjustment, 2)}: #{$i}px;
+                                    } @else {
+                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: #{$i}px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } @else {
+        @each $adjustment in $adjustment-list {
+            &-#{nth($adjustment, 1)} {
+                @each $property in $property-list {
+                    &-#{nth($property, 1)} {
+                        @for $i from 1 through $adjustment-max {
+                            &-#{$i} {
+                                @if (nth($adjustment, 1) == b) { // Border only
+                                    @if (nth($property, 1) == a) {
+                                        #{nth($adjustment, 2)}: $card-border;
+                                        border-width: #{$i}px;
+                                    } @else {
+                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: $card-border;
+                                        border-width: #{$i}px;
+                                    }
+                                } @else {
+                                    @if (nth($property, 1) == a) {
+                                        #{nth($adjustment, 2)}: #{$i}px;
+                                    } @else {
+                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: #{$i}px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

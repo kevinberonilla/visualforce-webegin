@@ -254,3 +254,6 @@ table {
         display: none;
     }
 }
+.background-color {
+    @include background-color-classes;
+}

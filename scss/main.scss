@@ -34,7 +34,7 @@ body, body .scope { // Plugin elements can dynamically appear outside of scope
 
 body #scope { // Override all the things
     /* ----------------------------------------
-    Molecular Styles
+    Adjustment Styles
     ---------------------------------------- */
-    @import 'molecular';
+    @import 'adjustment';
 }
