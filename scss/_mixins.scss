@@ -119,36 +119,32 @@
         text-align: center;
     }
 }
-/*@mixin breakpoint-adjustments($establish, $override: null) {
-    if ($override) {
-        
+@mixin adjustment-properties($adjustment-value, $property-value, $pixels) {
+    @if (nth($adjustment-value, 1) == b) {
+        @if (nth($property-value, 1) == a) {
+            #{nth($adjustment-value, 2)}: $card-border;
+            border-width: #{$pixels}px;
+        } @else {
+            #{nth($adjustment-value, 2)}-#{nth($property-value, 2)}: $card-border;
+            border-width: #{$pixels}px;
+        }
     } @else {
-        
+        @if (nth($property-value, 1) == a) {
+            #{nth($adjustment-value, 2)}: #{$pixels}px;
+        } @else {
+            #{nth($adjustment-value, 2)}-#{nth($property-value, 2)}: #{$pixels}px;
+        }
     }
-}*/
-@mixin adjustments($breakpoint: false) {
+}
+@mixin adjustments($breakpoint: null) {
     @if ($breakpoint) {
         @each $adjustment in $adjustment-list {
             &-#{nth($adjustment, 1)} {
                 @each $property in $property-list {
                     &-#{nth($property, 1)} {
                         @for $i from 1 through $adjustment-max {
-                            &-#{$i} {
-                                @if (nth($adjustment, 1) == b) { // Border only
-                                    @if (nth($property, 1) == a) {
-                                        #{nth($adjustment, 2)}: $card-border;
-                                        border-width: #{$i}px;
-                                    } @else {
-                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: $card-border;
-                                        border-width: #{$i}px;
-                                    }
-                                } @else {
-                                    @if (nth($property, 1) == a) {
-                                        #{nth($adjustment, 2)}: #{$i}px;
-                                    } @else {
-                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: #{$i}px;
-                                    }
-                                }
+                            &-#{$i}-#{$breakpoint} {
+                                @include adjustment-properties($adjustment, $property, $i);
                             }
                         }
                     }
@@ -162,21 +158,7 @@
                     &-#{nth($property, 1)} {
                         @for $i from 1 through $adjustment-max {
                             &-#{$i} {
-                                @if (nth($adjustment, 1) == b) { // Border only
-                                    @if (nth($property, 1) == a) {
-                                        #{nth($adjustment, 2)}: $card-border;
-                                        border-width: #{$i}px;
-                                    } @else {
-                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: $card-border;
-                                        border-width: #{$i}px;
-                                    }
-                                } @else {
-                                    @if (nth($property, 1) == a) {
-                                        #{nth($adjustment, 2)}: #{$i}px;
-                                    } @else {
-                                        #{nth($adjustment, 2)}-#{nth($property, 2)}: #{$i}px;
-                                    }
-                                }
+                                @include adjustment-properties($adjustment, $property, $i);
                             }
                         }
                     }

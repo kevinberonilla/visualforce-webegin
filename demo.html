@@ -114,20 +114,37 @@
                     <div id="overview-code">
                         <div class="grid">
                             <div class="row align-center align-center-tl align-center-tp align-center-p">
-                                <div class="column span-4 span-4-tl adjust-padding-bottom-20-p">
+                                <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container pink large"><span class="icon fa fa-cog white"></span></div>
                                     <h3 class="text-dark">Made with Sass, Gulp, &amp; jQuery</h3>
                                     <p>Nothing beats oragnized, automated, and simplified coding, so Webegin utilizes the latest tools for better front-end development.</p>
                                 </div>
-                                <div class="column span-4 span-4-tl adjust-padding-bottom-20-p">
+                                <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container blue large"><span class="icon im im-cloud white"></span></div>
                                     <h3 class="text-dark">Styled for Salesforce1</h3>
                                     <p>Seamlessly integrate your Visualforce pages into Salesforce1 with Webegin's styled elements for a consistent user experience.</p>
                                 </div>
-                                <div class="column span-4 span-4-tl adjust-padding-bottom-20-p">
+                                <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container green large"><span class="icon fa fa-wrench white"></span></div>
                                     <h3 class="text-dark">Enhancement &amp; Customization</span></h3>
                                     <p>Meticulously developed with maintainability in mind, Webegin allows you to get down and dirty with the source code when needed.</p>
+                                </div>
+                            </div>
+                            <div class="row align-center align-center-tl align-center-tp align-center-p margin-top margin-bottom">
+                                <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
+                                    <div class="icon-container light-blue large"><span class="icon im im-mobile white"></span></div>
+                                    <h3 class="text-dark">Breakpoint Affixing</h3>
+                                    <p>Stylize your layouts for all devices and viewports with the <code>-tl</code> (tablet landscape), <code>-tp</code> (tablet portrait), and <code>-p</code> (phone) class affixes.</p>
+                                </div>
+                                <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
+                                    <div class="icon-container orange large"><span class="icon fa fa-bars white"></span></div>
+                                    <h3 class="text-dark">Responsive Grid Layouts</h3>
+                                    <p>With Webegin's 12-column floating grid system, you can create intricate, responsive layouts for all sorts of content types.</p>
+                                </div>
+                                <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
+                                    <div class="icon-container red large"><span class="icon fa fa-sliders white"></span></div>
+                                    <h3 class="text-dark">Adjustment Classes</span></h3>
+                                    <p>Are your <code>padding-bottom</code> pixels looking a bit off? Ditch those inline styles and fine-tune your block elements with <code>.adjust-p-b-8</code> instead.</p>
                                 </div>
                             </div>
                         </div>
@@ -144,10 +161,10 @@
                 <div class="demo-section">
                     <div class="grid">
                         <div class="row">
-                            <div class="column span-5    span-7-tl float-right">
+                            <div class="column span-5 margin-span-1 span-7-tl float-right">
                                 <h2>Typography</h2>
                                 <p>Resembling Salesforce1, Webegin for Visualforce comes pre-styled with five headings that can be used throughout your copy. Each heading carries its own set of <code>font-size</code>, <code>line-height</code>, and <code>color</code> properties.</p>
-                                <p>Other elements, including paragraphs, unordered lists, and ordered lists are also style according to Salesforce1. Block-level elements such as <code>&lt;p&gt;</code> tags can make use of the <code>.align-center</code> class, which sets the <code>text-align</code> CSS property to center on desktop and specified breakpoints by utilizing breakpoint affixes.</p>
+                                <p>Other elements, including paragraphs, unordered lists, and ordered lists are also styled. Block-level elements such as <code>&lt;p&gt;</code> tags can make use of the <code>.align-center</code> class, which sets the <code>text-align</code> CSS property to center on desktop and specified breakpoints by utilizing breakpoint affixes.</p>
                             </div>
                             <div class="column span-4 span-4-tl float-right margin-span-1">
                                 <div id="typography-code">
@@ -161,7 +178,7 @@
                                                 <h5>Header 5</h5>
                                             </div>
                                             <div class="column span-6">
-                                                <p>This is a short paragraph with a <a href="#">link</a>.</p>
+                                                <p class="adjust-m-t-10">This is a short paragraph with a <a href="#">link</a>.</p>
                                                 <hr>
                                                 <ul>
                                                     <li><strong>Unordered List</strong></li>
@@ -196,7 +213,7 @@
                                                     <section class="color-chip molecular background-color blue"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Blue</h4>
-                                                        Test
+                                                        #2a94d6
                                                     </section>
                                                 </article>
                                             </div>
@@ -205,7 +222,7 @@
                                                     <section class="color-chip molecular background-color light-blue"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Light Blue</h4>
-                                                        Test
+                                                        #4eb1cb
                                                     </section>
                                                 </article>
                                             </div>
@@ -214,7 +231,7 @@
                                                     <section class="color-chip molecular background-color navy"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Navy</h4>
-                                                        Test
+                                                        #344a5f
                                                     </section>
                                                 </article>
                                             </div>
@@ -223,7 +240,7 @@
                                                     <section class="color-chip molecular background-color red"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Red</h4>
-                                                        Test
+                                                        #cf5c60
                                                     </section>
                                                 </article>
                                             </div>
@@ -234,7 +251,7 @@
                                                     <section class="color-chip molecular background-color purple"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Purple</h4>
-                                                        Test
+                                                        #717ecd
                                                     </section>
                                                 </article>
                                             </div>
@@ -243,7 +260,7 @@
                                                     <section class="color-chip molecular background-color green"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Green</h4>
-                                                        Test
+                                                        #4ab471
                                                     </section>
                                                 </article>
                                             </div>
@@ -252,7 +269,7 @@
                                                     <section class="color-chip molecular background-color orange"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Orange</h4>
-                                                        Test
+                                                        #f3ae4e
                                                     </section>
                                                 </article>
                                             </div>
@@ -261,7 +278,7 @@
                                                     <section class="color-chip molecular background-color pink"></section>
                                                     <section class="align-center">
                                                         <h4 class="caps ellipsis">Pink</h4>
-                                                        Test
+                                                        #d96383
                                                     </section>
                                                 </article>
                                             </div>
@@ -276,20 +293,6 @@
                     </div>
                 </div>
                 <!-- /Colors Section -->
-                <hr class="margin-top">
-                <!-- Buttons Section -->
-                <div class="demo-section">
-                        <h2>Buttons</h2>
-                        <p><code>&lt;button&gt;</code> tags will automatically carry Salesforce1's button styles. Alternatively, <code>&lt;a&gt;</code> tags with the <code>.button</code> class and <code>input[type="submit"]</code> elements extend these styles.</p>
-                        <p>Buttons can make use of the colors from the Colors Section by including a class based on the color's name (e.g., <code>.light-blue</code> for Light Blue). They can also make use of the <code>.inverse</code> class, which turns its background transparent and applies the specified color to the <code>color</code> and <code>border-color</code> CSS properties.</p>
-                        <p>&nbsp;</p>
-                        <div id="buttons-code">
-                            <p><button class="green">Green Button</button><a href="#" class="button">Link with .button Class</a><button class="red inverse">Red Inverse Button</button><button class="orange small">Orange Button with .small Class</button></p>
-                            <p><button class="navy">Navy Button</button><a href="#" class="button purple inverse small">Purple Inverse Link with .button and .small Classes</a><button class="light-blue">Light-Blue Button</button><a href="#" class="button pink">Link with .pink Class</a></p>
-                        </div>
-                        <button class="purple js-view-code js-open-modal margin-top margin-bottom" data-source-id="buttons-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Buttons Code</button>
-                </div>
-                <!-- /Buttons Section -->
                 <hr class="margin-top">
                 <!-- Grid Section -->
                 <div class="demo-section">
@@ -364,6 +367,29 @@
                 </div>
                 <!-- /Grid Section -->
                 <hr class="margin-top">
+                <!-- Buttons Section -->
+                <div class="demo-section">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="column span-4 margin-span-1">
+                                <h2>Buttons</h2>
+                                <p><code>&lt;button&gt;</code> tags will automatically carry Salesforce1's button styles. <code>&lt;a&gt;</code> tags with the <code>.button</code> class and <code>input[type="submit"]</code> elements extend these styles.</p>
+                                <p>Buttons can make use of the colors from the Colors Section by including a class based on the color's name (e.g., <code>.light-blue</code> for Light Blue). They can also make use of the <code>.inverse</code> class, which turns its background transparent and applies the specified color to the <code>color</code> and <code>border-color</code> CSS properties.</p>
+                            </div>
+                            <div class="column span-6 margin-span-1">
+                                <div id="buttons-code">
+                                    <p><button class="green">Green Button</button><a href="#" class="button">Link with .button Class</a></p>
+                                    <p><button class="red inverse">Red Inverse Button</button><button class="orange small">Orange Button with .small Class</button></p>
+                                    <p><button class="navy">Navy Button</button><a href="#" class="button purple inverse small">Purple Inverse Button with .small Class</a></p>
+                                    <p><button class="light-blue">Light-Blue Button</button><a href="#" class="button pink">Link with .pink Class</a></p>
+                                </div>
+                                <button class="purple js-view-code js-open-modal margin-top margin-bottom" data-source-id="buttons-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Buttons Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Buttons Section -->
+                <hr class="margin-top">
                 <!-- Cards Section -->
                 <div class="demo-section">
                     <div class="grid">
@@ -419,33 +445,6 @@
                                 </div>
                                 <div class="align-right">
                                     <button class="purple js-view-code js-open-modal margin-top" data-source-id="card-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Card Code</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Cards Section -->
-                <hr class="margin-top">
-                <!-- Cards Section -->
-                <div class="demo-section">
-                    <div class="grid">
-                        <div class="row">
-                            <div class="column span-6">
-                                <h2>Cards</h2>
-                                <p>Cards are containers which visually separate key points of data for your app. You can use the <code>.card</code> class on any <code>&lt;article&gt;</code> or <code>&lt;div&gt;</code>, and add <code>&lt;section&gt;</code> tags within to further establish hierarchy.</p>
-                                <p><code>&lt;section&gt;</code> tags can make use of the <code>.border-top</code> or <code>.border-bottom</code> classes to add lines between them.</p>
-                            <p>Sections being used as card headers have a few optional classes available to them, including the <code>.has-buttons</code> class (allows for spacing to accomodate buttons which float to the right) and the <code>.mobile-header</code> class (emulates the Salesforce1 page header on mobile).</p>
-                            </div>
-                            <div class="column span-6">
-                                <div id="card-code">
-                                    <article class="card">
-                                        <section class="border-bottom">
-                                            <h2>This is a card</h2>
-                                        </section>
-                                        <section>
-                                            <p>Place your markup here.</p>
-                                        </section>
-                                    </article>
                                 </div>
                             </div>
                         </div>

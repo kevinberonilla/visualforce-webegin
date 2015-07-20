@@ -1,3 +1,12 @@
 .adjust {
     @include adjustments;
+    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+        @include adjustments($tablet-landscape-affix);
+    }
+    @media only screen and (max-width: $tablet-portrait-breakpoint) {
+        @include adjustments($tablet-portrait-affix);
+    }
+    @media only screen and (max-width: $phone-breakpoint) {
+        @include adjustments($phone-affix);
+    }
 }
