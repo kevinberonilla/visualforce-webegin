@@ -54,9 +54,6 @@ small {
 p {
     @include type-margin;
 }
-span {
-    @include color-classes(color);
-}
 ul, ol {
     margin-left: 32px;
     @include type-margin;

@@ -948,48 +948,6 @@ body .scope p + *, body .scope .scope p + *, body .scope p + *:before, body .sco
 body .scope p + :after, body .scope .scope p + :after {
   margin: 0;
 }
-body .scope span.text-dark {
-  color: #2e4052;
-}
-body .scope span.text-normal {
-  color: #525354;
-}
-body .scope span.text-light {
-  color: #adb8c2;
-}
-body .scope span.blue {
-  color: #2a94d6;
-}
-body .scope span.light-blue {
-  color: #4eb1cb;
-}
-body .scope span.navy {
-  color: #344a5f;
-}
-body .scope span.grey {
-  color: #f0f1f2;
-}
-body .scope span.light-grey {
-  color: #f9fbfc;
-}
-body .scope span.white {
-  color: #fff;
-}
-body .scope span.red {
-  color: #cf5c60;
-}
-body .scope span.purple {
-  color: #717ecd;
-}
-body .scope span.green {
-  color: #4ab471;
-}
-body .scope span.orange {
-  color: #f3ae4e;
-}
-body .scope span.pink {
-  color: #d96383;
-}
 body .scope ul, body .scope ol {
   margin-left: 32px;
 }
