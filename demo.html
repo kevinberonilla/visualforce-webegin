@@ -113,15 +113,15 @@
                 <div class="demo-section">
                     <div id="overview-code">
                         <div class="grid">
-                            <div class="row align-center align-center-tl align-center-tp align-center-p">
+                            <div class="row align-center-tp align-center-p">
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon fa fa-cog pink"></span></div>
-                                    <h3 class="text-dark">Made with Sass, Gulp, &amp; jQuery</h3>
+                                    <h3 class="text-dark">Sass, Gulp, &amp; jQuery</h3>
                                     <p>Nothing beats organized, automated, and simplified coding, so Webegin utilizes the latest tools for better front-end development.</p>
                                 </div>
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon im im-cloud blue"></span></div>
-                                    <h3 class="text-dark">Styled for Salesforce1</h3>
+                                    <h3 class="text-dark">Salesforce1-Ready Theme</h3>
                                     <p>Seamlessly integrate your Visualforce pages into Salesforce1 with Webegin's styled elements for a consistent user experience.</p>
                                 </div>
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
@@ -130,27 +130,27 @@
                                     <p>Meticulously developed with maintainability in mind, Webegin allows you to get down and dirty with the source code when needed.</p>
                                 </div>
                             </div>
-                            <div class="row align-center align-center-tl align-center-tp align-center-p margin-top margin-bottom">
+                            <div class="row align-center-tp align-center-p margin-top margin-bottom">
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon im im-mobile light-blue"></span></div>
-                                    <h3 class="text-dark">Breakpoint Affixing</h3>
+                                    <h3 class="text-dark">Breakpoint Affixes</h3>
                                     <p>Stylize your layouts for all devices and viewports with the <code>-tl</code> (tablet landscape), <code>-tp</code> (tablet portrait), and <code>-p</code> (phone) class affixes.</p>
                                 </div>
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
-                                    <div class="icon-container large"><span class="icon fa fa-bars orange"></span></div>
+                                    <div class="icon-container large"><span class="icon im im-insert-template orange"></span></div>
                                     <h3 class="text-dark">Responsive Grid Layouts</h3>
                                     <p>With Webegin's 12-column floating grid system, you can create intricate, responsive layouts for all sorts of content types.</p>
                                 </div>
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon fa fa-sliders red"></span></div>
                                     <h3 class="text-dark">Adjustment Classes</span></h3>
-                                    <p>Are your <code>padding-bottom</code> pixels looking a bit off? Ditch those inline styles and fine-tune your block elements with <code>.adjust-p-b-8</code> instead.</p>
+                                    <p>Are your <code>padding-bottom</code> pixels looking 3 pixels off? Ditch those inline styles and fine-tune your block elements with <code>.adjust-p-b-3</code> instead.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column align-center align-center-tl align-center-tp align-center-p">
+                        <div class="column align-center-tp align-center-p margin-top">
                             <button class="purple js-view-code js-open-modal margin-top margin-bottom" data-source-id="overview-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Overview Code</button>
                         </div>
                     </div>
@@ -476,7 +476,7 @@
             (function( $ ) {
                 $.fn.prettyPre = function( method ) {
                     var defaults = {
-                        ignoreExpression: /\s/ // what should be ignored?
+                        ignoreExpression: /\s|&lt;/ // what should be ignored?
                     };
                     var methods = {
                         init: function( options ) {
