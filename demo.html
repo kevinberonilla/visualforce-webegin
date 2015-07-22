@@ -110,14 +110,14 @@
             </div>
             <div class="container">
                 <!-- Overview Section -->
-                <div class="demo-section">
+                <div class="demo-section align-center align-center-tl align-center-tp align-center-p">
                     <div id="overview-code">
                         <div class="grid">
-                            <div class="row align-center-tp align-center-p">
+                            <div class="row">
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon fa fa-cog pink"></span></div>
                                     <h3 class="text-dark">Sass, Gulp, &amp; jQuery</h3>
-                                    <p>Nothing beats organized, automated, and simplified coding, so Webegin utilizes the latest tools for better front-end development.</p>
+                                    <p>Nothing beats organized, automated, and simplified coding, so Webegin utilizes the latest and greatest tools for better front-end development.</p>
                                 </div>
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon im im-cloud blue"></span></div>
@@ -139,12 +139,12 @@
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon im im-insert-template orange"></span></div>
                                     <h3 class="text-dark">Responsive Grid Layouts</h3>
-                                    <p>With Webegin's 12-column floating grid system, you can create intricate, responsive layouts for all sorts of content types.</p>
+                                    <p>With Webegin's 12-column floating grid system, you're able to create intricate, responsive layouts for all sorts of content types.</p>
                                 </div>
                                 <div class="column span-4 span-4-tl adjust-p-b-16-tp adjust-p-b-16-p">
                                     <div class="icon-container large"><span class="icon fa fa-sliders red"></span></div>
                                     <h3 class="text-dark">Adjustment Classes</span></h3>
-                                    <p>Are your <code>padding-bottom</code> pixels looking 3 pixels off? Ditch those inline styles and fine-tune your block elements with <code>.adjust-p-b-3</code> instead.</p>
+                                    <p>Need to add a <code>padding-bottom</code> of <code>3px</code>? Ditch those inline styles and fine-tune your block elements with <code>.adjust-p-b-3</code> instead.</p>
                                 </div>
                             </div>
                         </div>
@@ -371,24 +371,89 @@
                 <div class="demo-section">
                     <div class="grid">
                         <div class="row">
-                            <div class="column span-4 margin-span-1">
+                            <div class="column span-5 margin-span-1">
                                 <h2>Buttons</h2>
                                 <p><code>&lt;button&gt;</code> tags will automatically carry Salesforce1's button styles. <code>&lt;a&gt;</code> tags with the <code>.button</code> class and <code>input[type="submit"]</code> elements extend these styles.</p>
                                 <p>Buttons can make use of the colors from the Colors Section by including a class based on the color's name (e.g., <code>.light-blue</code> for Light Blue). They can also make use of the <code>.inverse</code> class, which turns its background transparent and applies the specified color to the <code>color</code> and <code>border-color</code> CSS properties.</p>
+                                <p>Dropdown buttons can also be created by adding the <code>.dropdown</code> class to any button. A sibling <code>&lt;ul&gt;</code> element with the <code>.dropdown-options</code> class containing the options as links will need to be present for the dropdown to function.</p>
                             </div>
-                            <div class="column span-6 margin-span-1">
+                            <div class="column span-5 margin-top adjust-p-t-16">
                                 <div id="buttons-code">
                                     <p><button class="green">Green Button</button><a href="#" class="button">Link with .button Class</a></p>
                                     <p><button class="red inverse">Red Inverse Button</button><button class="orange small">Orange Button with .small Class</button></p>
                                     <p><button class="navy">Navy Button</button><a href="#" class="button purple inverse small">Purple Inverse Button with .small Class</a></p>
                                     <p><button class="light-blue">Light-Blue Button</button><a href="#" class="button pink">Link with .pink Class</a></p>
+                                    <div class="margin-top">
+                                        <button class="dropdown red">Dropdown Button</button>
+                                        <ul class="dropdown-options" style="min-width: 153px;">
+                                            <li><a href="#">Option 1</a></li>
+                                            <li><a href="#">Option 2</a></li>
+                                            <li><a href="#">Option 3</a></li>
+                                            <li><a href="#">Option 4</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <button class="purple js-view-code js-open-modal margin-top margin-bottom" data-source-id="buttons-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Buttons Code</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column span-11 margin-span-1 margin-top margin-bottom">
+                            <button class="purple js-view-code js-open-modal" data-source-id="buttons-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Buttons Code</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /Buttons Section -->
+                <hr class="margin-top">
+                <!-- Button Groups Section -->
+                <div class="demo-section">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="column span-10 margin-span-1">
+                                <h2>Button Groups</h2>
+                                <p>Buttons can also be grouped to tie together related actions by use of a <code>&lt;ul&gt;</code> tag with the <code>.button-group</code> class. <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> tags within list items will be styled like the buttons above even without the <code>.button</code> class.</p>
+                                <p>Button groups should be contained by the <code>.button-group-container</code> to ensure its inline properties match those of a normal button. This can be useful for having multiple button groups together on one line.</p>
+                                <p>Button groups can be used several ways: as a normal button group (stacks vertically on mobile), as a button with dropdown with alternative dropdown choices, or as paginate links (by substituting the <code>.button-groups</code> class with the <code>.paginate-links</code> class. A normal button group can also utilize the <code>.mobile-full-width</code> class, which gives all vertically stack buttons in the group 100% width.</p>
+                            </div>
+                            <div class="column span-11 margin-span-1 margin-top">
+                                <div id="button-groups-code">
+                                    <div class="button-group-container">
+                                        <ul class="button-group mobile-full-width">
+                                            <li><a class="orange" href="#">Button Option 1</a></li>
+                                            <li><a class="orange" href="#">Button Option 2</a></li>
+                                            <li><button class="orange">Button Option 3</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="button-group-container">
+                                        <ul class="button-group has-dropdown clearfix">
+                                            <li><a class="red" href="#">Button with Dropdown</a></li>
+                                            <li><a class="red dropdown" href="#"></a>
+                                                <ul class="dropdown-options" style="min-width: 38px;">
+                                                    <li><a href="#">Action 1</a></li>
+                                                    <li><a href="#">Action 2</a></li>
+                                                    <li><a href="#">Action 3</a></li>
+                                                    <li><a href="#">Action 4</a></li>
+                                                    <li><a href="#">Action 5</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="button-group-container">
+                                        <ul class="paginate-links">
+                                            <li><a href="#"><span class="icon fa fa-chevron-left"></span></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><button>2</button></li>
+                                            <li><a href="#" accesskey="" class="current">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#"><span class="icon fa fa-chevron-right"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="purple js-view-code js-open-modal margin-bottom margin-top" data-source-id="button-groups-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Button Groups Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Button Groups Section -->
                 <hr class="margin-top">
                 <!-- Cards Section -->
                 <div class="demo-section">
@@ -476,7 +541,7 @@
             (function( $ ) {
                 $.fn.prettyPre = function( method ) {
                     var defaults = {
-                        ignoreExpression: /\s|&lt;/ // what should be ignored?
+                        ignoreExpression: /\s/ // what should be ignored?
                     };
                     var methods = {
                         init: function( options ) {

@@ -15,7 +15,8 @@ ul.tagit li.tagit-choice {
 ul.tagit li.tagit-choice-editable {
     border-radius: $round-corner-small;
     background-color: $white;
-    padding: 2px 20px 2px 6px;
+    padding: 0 20px 0 6px;
+    margin: 2px;
 }
 ul.tagit li.tagit-new {
     padding: 0;

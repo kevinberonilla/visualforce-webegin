@@ -1957,6 +1957,11 @@ body .scope .button-group, body .scope .paginate-links {
   margin-right: 16px;
   list-style: none;
 }
+@media only screen and (max-width: 1024px) {
+  body .scope .button-group.mobile-full-width, body .scope .mobile-full-width.paginate-links {
+    display: block;
+  }
+}
 body .scope .button-group > li, body .scope .scope .button-group > li, body .scope .paginate-links > li, body .scope .scope .paginate-links > li {
   display: block;
   float: left;
@@ -2117,11 +2122,12 @@ body .scope .modal {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 18px;
   background-color: #fff;
   border-radius: 3px;
   width: 60%;
   min-height: 60px;
+  max-height: 90%;
+  overflow: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2373,16 +2379,19 @@ body .scope input[type="checkbox"]:checked:after, body .scope textarea[type="che
   top: 4px;
   right: 3px;
 }
-body .scope .select-container, body .scope .autocomplete-container, body .scope .tags-container > ul, body .scope .scope .tags-container > ul, body .scope .date-picker-container {
+body .scope .select-container, body .scope .autocomplete-container, body .scope .tags-container > ul.tagit, body .scope .scope .tags-container > ul.tagit, body .scope .date-picker-container {
   position: relative;
 }
-body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .tags-container > ul + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .tags-container > ul + *:before, body .scope .date-picker-container + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .tags-container > ul + *:after, body .scope .date-picker-container + *:after, body .scope .scope .date-picker-container + *:after {
+body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .tags-container > ul.tagit + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .tags-container > ul.tagit + *:before, body .scope .date-picker-container + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .tags-container > ul.tagit + *:after, body .scope .date-picker-container + *:after, body .scope .scope .date-picker-container + *:after {
   margin-top: 16px;
 }
-body .scope .select-container + :after, body .scope .scope .select-container + :after, body .scope .autocomplete-container + :after, body .scope .scope .autocomplete-container + :after, body .scope .tags-container > ul + :after, body .scope .date-picker-container + :after, body .scope .scope .date-picker-container + :after {
+body .scope .select-container + :after, body .scope .scope .select-container + :after, body .scope .autocomplete-container + :after, body .scope .scope .autocomplete-container + :after, body .scope .tags-container > ul.tagit + :after, body .scope .date-picker-container + :after, body .scope .scope .date-picker-container + :after {
   margin: 0;
 }
-body .scope .select-container:after, body .scope .autocomplete-container:after, body .scope .tags-container > ul:after, body .scope .scope .tags-container > ul:after, body .scope .date-picker-container:after {
+body .scope .select-container > input, body .scope .scope .select-container > input, body .scope .autocomplete-container > input, body .scope .scope .autocomplete-container > input, body .scope .tags-container > ul.tagit > input, body .scope .date-picker-container > input, body .scope .scope .date-picker-container > input, body .scope .select-container > textarea, body .scope .scope .select-container > textarea, body .scope .autocomplete-container > textarea, body .scope .scope .autocomplete-container > textarea, body .scope .tags-container > ul.tagit > textarea, body .scope .date-picker-container > textarea, body .scope .scope .date-picker-container > textarea, body .scope .select-container > select, body .scope .scope .select-container > select, body .scope .autocomplete-container > select, body .scope .scope .autocomplete-container > select, body .scope .tags-container > ul.tagit > select, body .scope .date-picker-container > select, body .scope .scope .date-picker-container > select, body .scope .select-container > ul.tagit, body .scope .scope .select-container > ul.tagit, body .scope .autocomplete-container > ul.tagit, body .scope .scope .autocomplete-container > ul.tagit, body .scope .tags-container > ul.tagit > ul.tagit, body .scope .date-picker-container > ul.tagit, body .scope .scope .date-picker-container > ul.tagit {
+  padding-right: 48px;
+}
+body .scope .select-container:after, body .scope .autocomplete-container:after, body .scope .tags-container > ul.tagit:after, body .scope .scope .tags-container > ul.tagit:after, body .scope .date-picker-container:after {
   font-family: 'FontAwesome';
   content: '\f0d7';
   color: #adb8c2;
@@ -2402,7 +2411,10 @@ body .scope .tags-container + *, body .scope .scope .tags-container + *, body .s
 body .scope .tags-container + :after, body .scope .scope .tags-container + :after {
   margin: 0;
 }
-body .scope .tags-container > ul:after, body .scope .scope .tags-container > ul:after {
+body .scope .tags-container > ul.tagit, body .scope .scope .tags-container > ul.tagit {
+  padding-right: 48px;
+}
+body .scope .tags-container > ul.tagit:after, body .scope .scope .tags-container > ul.tagit:after {
   content: '\f02b';
   right: -2px;
 }
@@ -2529,7 +2541,8 @@ body ul.tagit li.tagit-choice, body .scope ul.tagit li.tagit-choice {
 body ul.tagit li.tagit-choice-editable, body .scope ul.tagit li.tagit-choice-editable {
   border-radius: 5px;
   background-color: #fff;
-  padding: 2px 20px 2px 6px;
+  padding: 0 20px 0 6px;
+  margin: 2px;
 }
 body ul.tagit li.tagit-new, body .scope ul.tagit li.tagit-new {
   padding: 0;
