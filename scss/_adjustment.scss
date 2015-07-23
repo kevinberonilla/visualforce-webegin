@@ -1,5 +1,6 @@
 .adjust {
     @include adjustments;
+    
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         @include adjustments($tablet-landscape-affix);
     }

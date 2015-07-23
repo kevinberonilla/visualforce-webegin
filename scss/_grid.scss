@@ -16,19 +16,19 @@
         padding: 0;
     }
     @each $column in $column-list {
-        &.#{unquote(nth($column, 1))} {
+        &.#{nth($column, 1)} {
             width: nth($column, 2);
         }
     }
     @each $column in $column-list {
-        &.margin-#{unquote(nth($column, 1))} {
+        &.margin-#{nth($column, 1)} {
             margin-left: nth($column, 2);
         }
     }
     &.float-right {
         float: right;
         @each $column in $column-list {
-            &.margin-#{unquote(nth($column, 1))} {
+            &.margin-#{nth($column, 1)} {
                 margin-left: initial;
                 margin-right: nth($column, 2);
             }
@@ -45,8 +45,8 @@
     @include breakpoint-columns($tablet-landscape-affix);
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
-    @include breakpoint-columns($tablet-portrait-affix, $tablet-landscape-affix);
+    @include breakpoint-columns($tablet-portrait-affix);
 }
 @media only screen and (max-width: $phone-breakpoint) {
-    @include breakpoint-columns($phone-affix, $tablet-portrait-affix);
+    @include breakpoint-columns($phone-affix);
 }

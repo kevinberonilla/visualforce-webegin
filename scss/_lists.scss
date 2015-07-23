@@ -1,4 +1,5 @@
 $column-list: (
+    (span-0, 0),
     (span-1, 8.333%),
     (span-2, 16.666%),
     (span-3, 25%),
@@ -9,7 +10,8 @@ $column-list: (
     (span-8, 66.666%),
     (span-9, 75%),
     (span-10, 83.333%),
-    (span-11, 91.666%)
+    (span-11, 91.666%),
+    (span-12, 100%)
 );
 $color-list: (
     (text-dark, #2e4052),

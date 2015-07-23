@@ -1,14 +1,6 @@
 @mixin animated($property: all, $duration: 250ms, $function: ease) {
     transition: $property $duration $function;
 }
-@mixin type-margin {
-    + * {
-        margin-top: $type-spacing;
-        &:after {
-            margin: 0;
-        }
-    }
-}
 @mixin column-width($width, $affix) {
     &-#{$affix} {
         width: $width;
@@ -25,37 +17,11 @@
         margin-right: $margin;
     }
 }
-@mixin breakpoint-columns($establish, $override: null) {
+@mixin breakpoint-columns($establish) {
     .column {
-        @if ($override) {
-            @each $column in $column-list {
-                &.#{nth($column, 1)}-#{$override} {
-                    width: 100%;
-                }
-            }
-        } @else {
-            @each $column in $column-list {
-                &.#{nth($column, 1)} {
-                    width: 100%;
-                }
-            }
-        }
         @each $column in $column-list {
             &.#{nth($column, 1)} {
                 @include column-width(nth($column, 2), $establish);
-            }
-        }
-        @if ($override) {
-            @each $column in $column-list {
-                &.margin-#{nth($column, 1)}-#{$override} {
-                    margin-left: 0;
-                }
-            }
-        } @else {
-            @each $column in $column-list {
-                &.margin-#{nth($column, 1)} {
-                    margin-left: 0;
-                }
             }
         }
         @each $column in $column-list {
@@ -64,24 +30,19 @@
             }
         }
         &.float-right {
-            @if ($override) {
-                @each $column in $column-list {
-                    &.margin-#{nth($column, 1)}-#{$override} {
-                        margin-right: 0;
-                    }
-                }
-            } @else {
-                @each $column in $column-list {
-                    &.margin-#{nth($column, 1)} {
-                        margin-right: 0;
-                    }
-                }
-            }
             @each $column in $column-list {
                 &.margin-#{nth($column, 1)} {
                     @include column-float-right-margin(nth($column, 2), $establish);
                 }
             }
+        }
+    }
+}
+@mixin type-margin {
+    + * {
+        margin-top: $type-spacing;
+        &:after {
+            margin: 0;
         }
     }
 }
@@ -99,16 +60,7 @@
         }
     }
 }
-@mixin breakpoint-text-aligns($establish, $override: null) {
-    @if ($override) {
-        .align-left-#{$override}, .align-right-#{$override}, .align-center-#{$override} {
-            text-align: inherit;
-        }
-    } @else {
-        .align-left, .align-right, .align-center {
-            text-align: inherit;
-        }
-    }
+@mixin breakpoint-text-aligns($establish) {
     .align-left-#{$establish} {
         text-align: left;
     }
@@ -142,7 +94,7 @@
             &-#{nth($adjustment, 1)} {
                 @each $property in $property-list {
                     &-#{nth($property, 1)} {
-                        @for $i from 1 through $adjustment-max {
+                        @for $i from 0 through $adjustment-max {
                             &-#{$i}-#{$breakpoint} {
                                 @include adjustment-properties($adjustment, $property, $i);
                             }

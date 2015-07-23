@@ -114,10 +114,10 @@ pre {
     @include breakpoint-text-aligns($tablet-landscape-affix);
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
-    @include breakpoint-text-aligns($tablet-portrait-affix, $tablet-landscape-affix);
+    @include breakpoint-text-aligns($tablet-portrait-affix);
 }
 @media only screen and (max-width: $phone-breakpoint) {
-    @include breakpoint-text-aligns($phone-affix, $tablet-portrait-affix);
+    @include breakpoint-text-aligns($phone-affix);
 }
 .icon {
     &.im { // IcoMoon

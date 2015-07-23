@@ -117,6 +117,9 @@ body .scope .column {
 body .scope .column.no-padding {
   padding: 0;
 }
+body .scope .column.span-0 {
+  width: 0;
+}
 body .scope .column.span-1 {
   width: 8.333%;
 }
@@ -149,6 +152,12 @@ body .scope .column.span-10 {
 }
 body .scope .column.span-11 {
   width: 91.666%;
+}
+body .scope .column.span-12 {
+  width: 100%;
+}
+body .scope .column.margin-span-0 {
+  margin-left: 0;
 }
 body .scope .column.margin-span-1 {
   margin-left: 8.333%;
@@ -183,8 +192,15 @@ body .scope .column.margin-span-10 {
 body .scope .column.margin-span-11 {
   margin-left: 91.666%;
 }
+body .scope .column.margin-span-12 {
+  margin-left: 100%;
+}
 body .scope .column.float-right {
   float: right;
+}
+body .scope .column.float-right.margin-span-0 {
+  margin-left: initial;
+  margin-right: 0;
 }
 body .scope .column.float-right.margin-span-1 {
   margin-left: initial;
@@ -230,6 +246,10 @@ body .scope .column.float-right.margin-span-11 {
   margin-left: initial;
   margin-right: 91.666%;
 }
+body .scope .column.float-right.margin-span-12 {
+  margin-left: initial;
+  margin-right: 100%;
+}
 body .scope .margin-top {
   margin-top: 16px;
 }
@@ -237,38 +257,8 @@ body .scope .margin-bottom {
   margin-bottom: 16px;
 }
 @media only screen and (max-width: 1024px) {
-  body .scope .column.span-1 {
-    width: 100%;
-  }
-  body .scope .column.span-2 {
-    width: 100%;
-  }
-  body .scope .column.span-3 {
-    width: 100%;
-  }
-  body .scope .column.span-4 {
-    width: 100%;
-  }
-  body .scope .column.span-5 {
-    width: 100%;
-  }
-  body .scope .column.span-6 {
-    width: 100%;
-  }
-  body .scope .column.span-7 {
-    width: 100%;
-  }
-  body .scope .column.span-8 {
-    width: 100%;
-  }
-  body .scope .column.span-9 {
-    width: 100%;
-  }
-  body .scope .column.span-10 {
-    width: 100%;
-  }
-  body .scope .column.span-11 {
-    width: 100%;
+  body .scope .column.span-0-tl {
+    width: 0;
   }
   body .scope .column.span-1-tl {
     width: 8.333%;
@@ -303,37 +293,10 @@ body .scope .margin-bottom {
   body .scope .column.span-11-tl {
     width: 91.666%;
   }
-  body .scope .column.margin-span-1 {
-    margin-left: 0;
+  body .scope .column.span-12-tl {
+    width: 100%;
   }
-  body .scope .column.margin-span-2 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-3 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-4 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-5 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-6 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-7 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-8 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-9 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-10 {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-11 {
+  body .scope .column.margin-span-0-tl {
     margin-left: 0;
   }
   body .scope .column.margin-span-1-tl {
@@ -369,37 +332,11 @@ body .scope .margin-bottom {
   body .scope .column.margin-span-11-tl {
     margin-left: 91.666%;
   }
-  body .scope .column.float-right.margin-span-1 {
-    margin-right: 0;
+  body .scope .column.margin-span-12-tl {
+    margin-left: 100%;
   }
-  body .scope .column.float-right.margin-span-2 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-3 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-4 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-5 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-6 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-7 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-8 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-9 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-10 {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-11 {
+  body .scope .column.float-right.margin-span-0-tl {
+    margin-left: 0;
     margin-right: 0;
   }
   body .scope .column.float-right.margin-span-1-tl {
@@ -446,40 +383,14 @@ body .scope .margin-bottom {
     margin-left: 0;
     margin-right: 91.666%;
   }
+  body .scope .column.float-right.margin-span-12-tl {
+    margin-left: 0;
+    margin-right: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
-  body .scope .column.span-1-tl {
-    width: 100%;
-  }
-  body .scope .column.span-2-tl {
-    width: 100%;
-  }
-  body .scope .column.span-3-tl {
-    width: 100%;
-  }
-  body .scope .column.span-4-tl {
-    width: 100%;
-  }
-  body .scope .column.span-5-tl {
-    width: 100%;
-  }
-  body .scope .column.span-6-tl {
-    width: 100%;
-  }
-  body .scope .column.span-7-tl {
-    width: 100%;
-  }
-  body .scope .column.span-8-tl {
-    width: 100%;
-  }
-  body .scope .column.span-9-tl {
-    width: 100%;
-  }
-  body .scope .column.span-10-tl {
-    width: 100%;
-  }
-  body .scope .column.span-11-tl {
-    width: 100%;
+  body .scope .column.span-0-tp {
+    width: 0;
   }
   body .scope .column.span-1-tp {
     width: 8.333%;
@@ -514,37 +425,10 @@ body .scope .margin-bottom {
   body .scope .column.span-11-tp {
     width: 91.666%;
   }
-  body .scope .column.margin-span-1-tl {
-    margin-left: 0;
+  body .scope .column.span-12-tp {
+    width: 100%;
   }
-  body .scope .column.margin-span-2-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-3-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-4-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-5-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-6-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-7-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-8-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-9-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-10-tl {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-11-tl {
+  body .scope .column.margin-span-0-tp {
     margin-left: 0;
   }
   body .scope .column.margin-span-1-tp {
@@ -580,37 +464,11 @@ body .scope .margin-bottom {
   body .scope .column.margin-span-11-tp {
     margin-left: 91.666%;
   }
-  body .scope .column.float-right.margin-span-1-tl {
-    margin-right: 0;
+  body .scope .column.margin-span-12-tp {
+    margin-left: 100%;
   }
-  body .scope .column.float-right.margin-span-2-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-3-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-4-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-5-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-6-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-7-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-8-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-9-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-10-tl {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-11-tl {
+  body .scope .column.float-right.margin-span-0-tp {
+    margin-left: 0;
     margin-right: 0;
   }
   body .scope .column.float-right.margin-span-1-tp {
@@ -657,40 +515,14 @@ body .scope .margin-bottom {
     margin-left: 0;
     margin-right: 91.666%;
   }
+  body .scope .column.float-right.margin-span-12-tp {
+    margin-left: 0;
+    margin-right: 100%;
+  }
 }
 @media only screen and (max-width: 480px) {
-  body .scope .column.span-1-tp {
-    width: 100%;
-  }
-  body .scope .column.span-2-tp {
-    width: 100%;
-  }
-  body .scope .column.span-3-tp {
-    width: 100%;
-  }
-  body .scope .column.span-4-tp {
-    width: 100%;
-  }
-  body .scope .column.span-5-tp {
-    width: 100%;
-  }
-  body .scope .column.span-6-tp {
-    width: 100%;
-  }
-  body .scope .column.span-7-tp {
-    width: 100%;
-  }
-  body .scope .column.span-8-tp {
-    width: 100%;
-  }
-  body .scope .column.span-9-tp {
-    width: 100%;
-  }
-  body .scope .column.span-10-tp {
-    width: 100%;
-  }
-  body .scope .column.span-11-tp {
-    width: 100%;
+  body .scope .column.span-0-p {
+    width: 0;
   }
   body .scope .column.span-1-p {
     width: 8.333%;
@@ -725,37 +557,10 @@ body .scope .margin-bottom {
   body .scope .column.span-11-p {
     width: 91.666%;
   }
-  body .scope .column.margin-span-1-tp {
-    margin-left: 0;
+  body .scope .column.span-12-p {
+    width: 100%;
   }
-  body .scope .column.margin-span-2-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-3-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-4-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-5-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-6-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-7-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-8-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-9-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-10-tp {
-    margin-left: 0;
-  }
-  body .scope .column.margin-span-11-tp {
+  body .scope .column.margin-span-0-p {
     margin-left: 0;
   }
   body .scope .column.margin-span-1-p {
@@ -791,37 +596,11 @@ body .scope .margin-bottom {
   body .scope .column.margin-span-11-p {
     margin-left: 91.666%;
   }
-  body .scope .column.float-right.margin-span-1-tp {
-    margin-right: 0;
+  body .scope .column.margin-span-12-p {
+    margin-left: 100%;
   }
-  body .scope .column.float-right.margin-span-2-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-3-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-4-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-5-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-6-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-7-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-8-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-9-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-10-tp {
-    margin-right: 0;
-  }
-  body .scope .column.float-right.margin-span-11-tp {
+  body .scope .column.float-right.margin-span-0-p {
+    margin-left: 0;
     margin-right: 0;
   }
   body .scope .column.float-right.margin-span-1-p {
@@ -867,6 +646,10 @@ body .scope .margin-bottom {
   body .scope .column.float-right.margin-span-11-p {
     margin-left: 0;
     margin-right: 91.666%;
+  }
+  body .scope .column.float-right.margin-span-12-p {
+    margin-left: 0;
+    margin-right: 100%;
   }
 }
 body .scope h1, body .scope h2 {
@@ -1014,9 +797,6 @@ body .scope .align-center {
   text-align: center;
 }
 @media only screen and (max-width: 1024px) {
-  body .scope .align-left, body .scope .align-right, body .scope .align-center {
-    text-align: inherit;
-  }
   body .scope .align-left-tl {
     text-align: left;
   }
@@ -1028,9 +808,6 @@ body .scope .align-center {
   }
 }
 @media only screen and (max-width: 768px) {
-  body .scope .align-left-tl, body .scope .align-right-tl, body .scope .align-center-tl {
-    text-align: inherit;
-  }
   body .scope .align-left-tp {
     text-align: left;
   }
@@ -1042,9 +819,6 @@ body .scope .align-center {
   }
 }
 @media only screen and (max-width: 480px) {
-  body .scope .align-left-tp, body .scope .align-right-tp, body .scope .align-center-tp {
-    text-align: inherit;
-  }
   body .scope .align-left-p {
     text-align: left;
   }
@@ -3448,6 +3222,9 @@ body #scope .adjust-b-a-16 {
   border-width: 16px;
 }
 @media only screen and (max-width: 1024px) {
+  body #scope .adjust-m-t-0-tl {
+    margin-top: 0px;
+  }
   body #scope .adjust-m-t-1-tl {
     margin-top: 1px;
   }
@@ -3495,6 +3272,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-t-16-tl {
     margin-top: 16px;
+  }
+  body #scope .adjust-m-r-0-tl {
+    margin-right: 0px;
   }
   body #scope .adjust-m-r-1-tl {
     margin-right: 1px;
@@ -3544,6 +3324,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-m-r-16-tl {
     margin-right: 16px;
   }
+  body #scope .adjust-m-b-0-tl {
+    margin-bottom: 0px;
+  }
   body #scope .adjust-m-b-1-tl {
     margin-bottom: 1px;
   }
@@ -3591,6 +3374,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-b-16-tl {
     margin-bottom: 16px;
+  }
+  body #scope .adjust-m-l-0-tl {
+    margin-left: 0px;
   }
   body #scope .adjust-m-l-1-tl {
     margin-left: 1px;
@@ -3640,6 +3426,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-m-l-16-tl {
     margin-left: 16px;
   }
+  body #scope .adjust-m-a-0-tl {
+    margin: 0px;
+  }
   body #scope .adjust-m-a-1-tl {
     margin: 1px;
   }
@@ -3687,6 +3476,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-a-16-tl {
     margin: 16px;
+  }
+  body #scope .adjust-p-t-0-tl {
+    padding-top: 0px;
   }
   body #scope .adjust-p-t-1-tl {
     padding-top: 1px;
@@ -3736,6 +3528,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-t-16-tl {
     padding-top: 16px;
   }
+  body #scope .adjust-p-r-0-tl {
+    padding-right: 0px;
+  }
   body #scope .adjust-p-r-1-tl {
     padding-right: 1px;
   }
@@ -3783,6 +3578,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-p-r-16-tl {
     padding-right: 16px;
+  }
+  body #scope .adjust-p-b-0-tl {
+    padding-bottom: 0px;
   }
   body #scope .adjust-p-b-1-tl {
     padding-bottom: 1px;
@@ -3832,6 +3630,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-b-16-tl {
     padding-bottom: 16px;
   }
+  body #scope .adjust-p-l-0-tl {
+    padding-left: 0px;
+  }
   body #scope .adjust-p-l-1-tl {
     padding-left: 1px;
   }
@@ -3880,6 +3681,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-l-16-tl {
     padding-left: 16px;
   }
+  body #scope .adjust-p-a-0-tl {
+    padding: 0px;
+  }
   body #scope .adjust-p-a-1-tl {
     padding: 1px;
   }
@@ -3927,6 +3731,10 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-p-a-16-tl {
     padding: 16px;
+  }
+  body #scope .adjust-b-t-0-tl {
+    border-top: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-t-1-tl {
     border-top: 1px solid #dfe0e1;
@@ -3992,6 +3800,10 @@ body #scope .adjust-b-a-16 {
     border-top: 1px solid #dfe0e1;
     border-width: 16px;
   }
+  body #scope .adjust-b-r-0-tl {
+    border-right: 1px solid #dfe0e1;
+    border-width: 0px;
+  }
   body #scope .adjust-b-r-1-tl {
     border-right: 1px solid #dfe0e1;
     border-width: 1px;
@@ -4055,6 +3867,10 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-b-r-16-tl {
     border-right: 1px solid #dfe0e1;
     border-width: 16px;
+  }
+  body #scope .adjust-b-b-0-tl {
+    border-bottom: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-b-1-tl {
     border-bottom: 1px solid #dfe0e1;
@@ -4120,6 +3936,10 @@ body #scope .adjust-b-a-16 {
     border-bottom: 1px solid #dfe0e1;
     border-width: 16px;
   }
+  body #scope .adjust-b-l-0-tl {
+    border-left: 1px solid #dfe0e1;
+    border-width: 0px;
+  }
   body #scope .adjust-b-l-1-tl {
     border-left: 1px solid #dfe0e1;
     border-width: 1px;
@@ -4183,6 +4003,10 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-b-l-16-tl {
     border-left: 1px solid #dfe0e1;
     border-width: 16px;
+  }
+  body #scope .adjust-b-a-0-tl {
+    border: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-a-1-tl {
     border: 1px solid #dfe0e1;
@@ -4250,6 +4074,9 @@ body #scope .adjust-b-a-16 {
   }
 }
 @media only screen and (max-width: 768px) {
+  body #scope .adjust-m-t-0-tp {
+    margin-top: 0px;
+  }
   body #scope .adjust-m-t-1-tp {
     margin-top: 1px;
   }
@@ -4297,6 +4124,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-t-16-tp {
     margin-top: 16px;
+  }
+  body #scope .adjust-m-r-0-tp {
+    margin-right: 0px;
   }
   body #scope .adjust-m-r-1-tp {
     margin-right: 1px;
@@ -4346,6 +4176,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-m-r-16-tp {
     margin-right: 16px;
   }
+  body #scope .adjust-m-b-0-tp {
+    margin-bottom: 0px;
+  }
   body #scope .adjust-m-b-1-tp {
     margin-bottom: 1px;
   }
@@ -4393,6 +4226,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-b-16-tp {
     margin-bottom: 16px;
+  }
+  body #scope .adjust-m-l-0-tp {
+    margin-left: 0px;
   }
   body #scope .adjust-m-l-1-tp {
     margin-left: 1px;
@@ -4442,6 +4278,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-m-l-16-tp {
     margin-left: 16px;
   }
+  body #scope .adjust-m-a-0-tp {
+    margin: 0px;
+  }
   body #scope .adjust-m-a-1-tp {
     margin: 1px;
   }
@@ -4489,6 +4328,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-a-16-tp {
     margin: 16px;
+  }
+  body #scope .adjust-p-t-0-tp {
+    padding-top: 0px;
   }
   body #scope .adjust-p-t-1-tp {
     padding-top: 1px;
@@ -4538,6 +4380,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-t-16-tp {
     padding-top: 16px;
   }
+  body #scope .adjust-p-r-0-tp {
+    padding-right: 0px;
+  }
   body #scope .adjust-p-r-1-tp {
     padding-right: 1px;
   }
@@ -4585,6 +4430,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-p-r-16-tp {
     padding-right: 16px;
+  }
+  body #scope .adjust-p-b-0-tp {
+    padding-bottom: 0px;
   }
   body #scope .adjust-p-b-1-tp {
     padding-bottom: 1px;
@@ -4634,6 +4482,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-b-16-tp {
     padding-bottom: 16px;
   }
+  body #scope .adjust-p-l-0-tp {
+    padding-left: 0px;
+  }
   body #scope .adjust-p-l-1-tp {
     padding-left: 1px;
   }
@@ -4682,6 +4533,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-l-16-tp {
     padding-left: 16px;
   }
+  body #scope .adjust-p-a-0-tp {
+    padding: 0px;
+  }
   body #scope .adjust-p-a-1-tp {
     padding: 1px;
   }
@@ -4729,6 +4583,10 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-p-a-16-tp {
     padding: 16px;
+  }
+  body #scope .adjust-b-t-0-tp {
+    border-top: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-t-1-tp {
     border-top: 1px solid #dfe0e1;
@@ -4794,6 +4652,10 @@ body #scope .adjust-b-a-16 {
     border-top: 1px solid #dfe0e1;
     border-width: 16px;
   }
+  body #scope .adjust-b-r-0-tp {
+    border-right: 1px solid #dfe0e1;
+    border-width: 0px;
+  }
   body #scope .adjust-b-r-1-tp {
     border-right: 1px solid #dfe0e1;
     border-width: 1px;
@@ -4857,6 +4719,10 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-b-r-16-tp {
     border-right: 1px solid #dfe0e1;
     border-width: 16px;
+  }
+  body #scope .adjust-b-b-0-tp {
+    border-bottom: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-b-1-tp {
     border-bottom: 1px solid #dfe0e1;
@@ -4922,6 +4788,10 @@ body #scope .adjust-b-a-16 {
     border-bottom: 1px solid #dfe0e1;
     border-width: 16px;
   }
+  body #scope .adjust-b-l-0-tp {
+    border-left: 1px solid #dfe0e1;
+    border-width: 0px;
+  }
   body #scope .adjust-b-l-1-tp {
     border-left: 1px solid #dfe0e1;
     border-width: 1px;
@@ -4985,6 +4855,10 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-b-l-16-tp {
     border-left: 1px solid #dfe0e1;
     border-width: 16px;
+  }
+  body #scope .adjust-b-a-0-tp {
+    border: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-a-1-tp {
     border: 1px solid #dfe0e1;
@@ -5052,6 +4926,9 @@ body #scope .adjust-b-a-16 {
   }
 }
 @media only screen and (max-width: 480px) {
+  body #scope .adjust-m-t-0-p {
+    margin-top: 0px;
+  }
   body #scope .adjust-m-t-1-p {
     margin-top: 1px;
   }
@@ -5099,6 +4976,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-t-16-p {
     margin-top: 16px;
+  }
+  body #scope .adjust-m-r-0-p {
+    margin-right: 0px;
   }
   body #scope .adjust-m-r-1-p {
     margin-right: 1px;
@@ -5148,6 +5028,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-m-r-16-p {
     margin-right: 16px;
   }
+  body #scope .adjust-m-b-0-p {
+    margin-bottom: 0px;
+  }
   body #scope .adjust-m-b-1-p {
     margin-bottom: 1px;
   }
@@ -5195,6 +5078,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-b-16-p {
     margin-bottom: 16px;
+  }
+  body #scope .adjust-m-l-0-p {
+    margin-left: 0px;
   }
   body #scope .adjust-m-l-1-p {
     margin-left: 1px;
@@ -5244,6 +5130,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-m-l-16-p {
     margin-left: 16px;
   }
+  body #scope .adjust-m-a-0-p {
+    margin: 0px;
+  }
   body #scope .adjust-m-a-1-p {
     margin: 1px;
   }
@@ -5291,6 +5180,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-m-a-16-p {
     margin: 16px;
+  }
+  body #scope .adjust-p-t-0-p {
+    padding-top: 0px;
   }
   body #scope .adjust-p-t-1-p {
     padding-top: 1px;
@@ -5340,6 +5232,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-t-16-p {
     padding-top: 16px;
   }
+  body #scope .adjust-p-r-0-p {
+    padding-right: 0px;
+  }
   body #scope .adjust-p-r-1-p {
     padding-right: 1px;
   }
@@ -5387,6 +5282,9 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-p-r-16-p {
     padding-right: 16px;
+  }
+  body #scope .adjust-p-b-0-p {
+    padding-bottom: 0px;
   }
   body #scope .adjust-p-b-1-p {
     padding-bottom: 1px;
@@ -5436,6 +5334,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-b-16-p {
     padding-bottom: 16px;
   }
+  body #scope .adjust-p-l-0-p {
+    padding-left: 0px;
+  }
   body #scope .adjust-p-l-1-p {
     padding-left: 1px;
   }
@@ -5484,6 +5385,9 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-p-l-16-p {
     padding-left: 16px;
   }
+  body #scope .adjust-p-a-0-p {
+    padding: 0px;
+  }
   body #scope .adjust-p-a-1-p {
     padding: 1px;
   }
@@ -5531,6 +5435,10 @@ body #scope .adjust-b-a-16 {
   }
   body #scope .adjust-p-a-16-p {
     padding: 16px;
+  }
+  body #scope .adjust-b-t-0-p {
+    border-top: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-t-1-p {
     border-top: 1px solid #dfe0e1;
@@ -5596,6 +5504,10 @@ body #scope .adjust-b-a-16 {
     border-top: 1px solid #dfe0e1;
     border-width: 16px;
   }
+  body #scope .adjust-b-r-0-p {
+    border-right: 1px solid #dfe0e1;
+    border-width: 0px;
+  }
   body #scope .adjust-b-r-1-p {
     border-right: 1px solid #dfe0e1;
     border-width: 1px;
@@ -5659,6 +5571,10 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-b-r-16-p {
     border-right: 1px solid #dfe0e1;
     border-width: 16px;
+  }
+  body #scope .adjust-b-b-0-p {
+    border-bottom: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-b-1-p {
     border-bottom: 1px solid #dfe0e1;
@@ -5724,6 +5640,10 @@ body #scope .adjust-b-a-16 {
     border-bottom: 1px solid #dfe0e1;
     border-width: 16px;
   }
+  body #scope .adjust-b-l-0-p {
+    border-left: 1px solid #dfe0e1;
+    border-width: 0px;
+  }
   body #scope .adjust-b-l-1-p {
     border-left: 1px solid #dfe0e1;
     border-width: 1px;
@@ -5787,6 +5707,10 @@ body #scope .adjust-b-a-16 {
   body #scope .adjust-b-l-16-p {
     border-left: 1px solid #dfe0e1;
     border-width: 16px;
+  }
+  body #scope .adjust-b-a-0-p {
+    border: 1px solid #dfe0e1;
+    border-width: 0px;
   }
   body #scope .adjust-b-a-1-p {
     border: 1px solid #dfe0e1;
@@ -5853,4 +5777,5 @@ body #scope .adjust-b-a-16 {
     border-width: 16px;
   }
 }
+
 
