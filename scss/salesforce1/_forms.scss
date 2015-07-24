@@ -43,6 +43,7 @@ input[type="radio"] {
     display: inline-block;
     width: auto;
     margin-right: $type-spacing / 2;
+    margin-bottom: $type-spacing / 2;
     border-radius: 22px;
     border: $card-border;
     width: 22px;
@@ -58,6 +59,8 @@ input[type="radio"] {
         display: inline-block;
         margin-top: 0;
         margin-right: $type-spacing;
+        position: relative;
+        top: -($type-spacing / 2);
     }
     &:checked {
         background-color: $blue;

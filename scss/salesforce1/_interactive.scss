@@ -251,9 +251,9 @@ a.button, input[type="submit"] {
     padding: $card-padding;
     color: $blue;
     font-weight: $semibold;
-    margin-bottom: $type-spacing;
     @include color-classes(color);
     @include background-color-classes(0.1);
+    @include type-margin;
     a, a:visited {
         color: inherit;
         font-weight: $bold;

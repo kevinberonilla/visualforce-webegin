@@ -60,17 +60,6 @@
         }
     }
 }
-@mixin breakpoint-text-aligns($establish) {
-    .align-left-#{$establish} {
-        text-align: left;
-    }
-    .align-right-#{$establish} {
-        text-align: right
-    }
-    .align-center-#{$establish} {
-        text-align: center;
-    }
-}
 @mixin adjustment-properties($property-value, $side-value, $pixels) {
     @if (nth($property-value, 1) == b) {
         @if (nth($side-value, 1) == a) {

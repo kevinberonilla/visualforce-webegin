@@ -22,7 +22,7 @@ Alert Functions
 ---------------------------------------- */
 $(document).ready(function() {
     var alertElement = $('.alert'),
-        openAlertLink = $('.open-alert'),
+        openAlertLink = $('.js-open-alert'),
         closeAlertLink = $('.close-alert');
     
     closeAlertLink.click(function() {
@@ -193,7 +193,6 @@ $.fn.quickModal = function(args, options) {
         function keyUpCheck(e) {
             if (e.keyCode == 27 && modal.is(':visible')) { // Esc
                 targetModal.quickModal('close', settings);
-                console.log('esc');
             }
         }
         
@@ -264,7 +263,7 @@ TinyMCE Initialize
 ---------------------------------------- */
 $(document).ready(function() {
     tinymce.init({
-        selector: 'textarea.rich-text',
+        selector: 'textarea.js-rich-text',
         statusbar: false,
         resize: true,
         height: 208

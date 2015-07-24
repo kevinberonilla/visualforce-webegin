@@ -1346,8 +1346,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     background-color: rgba(42, 148, 214, 0.1);
     padding: 16px;
     color: #2a94d6;
-    font-weight: 700;
-    margin-bottom: 16px; }
+    font-weight: 700; }
     body .scope .alert.text-dark {
       color: #2e4052; }
     body .scope .alert.text-normal {
@@ -1404,6 +1403,10 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       background-color: rgba(243, 174, 78, 0.1); }
     body .scope .alert.pink {
       background-color: rgba(217, 99, 131, 0.1); }
+    body .scope .alert + *, body .scope .scope .alert + *, body .scope .alert + *:before, body .scope .scope .alert + *:before, body .scope .alert + *:after, body .scope .scope .alert + *:after {
+      margin-top: 16px; }
+      body .scope .alert + *:after, body .scope .alert + :after, body .scope .scope .alert + :after {
+        margin: 0; }
     body .scope .alert a, body .scope .alert a:visited {
       color: inherit;
       font-weight: 900;
@@ -1691,6 +1694,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     display: inline-block;
     width: auto;
     margin-right: 8px;
+    margin-bottom: 8px;
     border-radius: 22px;
     border: 1px solid #dfe0e1;
     width: 22px;
@@ -1705,7 +1709,9 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       color: #525354;
       display: inline-block;
       margin-top: 0;
-      margin-right: 16px; }
+      margin-right: 16px;
+      position: relative;
+      top: -8px; }
     body .scope input[type="radio"]:checked, body .scope textarea[type="radio"]:checked, body .scope select[type="radio"]:checked, body .scope input[type="checkbox"]:checked, body .scope textarea[type="checkbox"]:checked, body .scope select[type="checkbox"]:checked, body .scope ul[type="checkbox"].tagit:checked, body .scope ul[type="radio"].tagit:checked {
       background-color: #2a94d6; }
       body .scope input[type="radio"]:checked:after, body .scope textarea[type="radio"]:checked:after, body .scope select[type="radio"]:checked:after, body .scope input[type="checkbox"]:checked:after, body .scope textarea[type="checkbox"]:checked:after, body .scope select[type="checkbox"]:checked:after, body .scope ul[type="checkbox"].tagit:checked:after, body .scope ul[type="radio"].tagit:checked:after {
