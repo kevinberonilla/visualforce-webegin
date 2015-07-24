@@ -29,15 +29,44 @@ $color-list: (
     (orange, #f3ae4e),
     (pink, #d96383)
 );
-$adjustment-list: (
+$property-list: (
     (m, margin),
     (p, padding),
     (b, border)
 );
-$property-list: (
+$side-list: (
     (t, top),
     (r, right),
     (b, bottom),
     (l, left),
     (a, all)
+);
+$display-list: (
+    (n, none),
+    (b, block),
+    (ib, inline-block),
+    (i, inline),
+    (t, table),
+    (tr, table-row),
+    (tc, table-cell),
+    (li, list-item)
+);
+$position-list: (
+    (s, static),
+    (r, relative),
+    (a, absolute),
+    (f, fixed),
+);
+$text-align-list: (
+    (l, left),
+    (c, center),
+    (r, right)
+);
+$vertical-align-list: (
+    (t, top),
+    (tt, text-top),
+    (m, middle),
+    (bl, baseline),
+    (b, bottom),
+    (tb, text-bottom)
 );

@@ -192,7 +192,7 @@ a.button, input[type="submit"] {
 .button-group-container {
     display: inline-block;
     line-height: 0;
-    vertical-align: top;
+    vertical-align: middle;
     margin-right: $type-spacing;
     &:last-child {
         margin-right: 0;
@@ -246,10 +246,122 @@ a.button, input[type="submit"] {
     }
     @include type-margin;
 }
+.alert {
+    background-color: rgba($blue, 0.1);
+    padding: $card-padding;
+    color: $blue;
+    font-weight: $semibold;
+    margin-bottom: $type-spacing;
+    @include color-classes(color);
+    @include background-color-classes(0.1);
+    a, a:visited {
+        color: inherit;
+        font-weight: $bold;
+        text-decoration: underline;
+    }
+    &.dismissible {
+        padding-right: 46px;
+        position: relative;
+        .close-alert {
+            font-size: 10px;
+            padding: 16px 18px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            &:after {
+                font-family: IcoMoon-Free;
+                content: '\ea0f';
+                display: block;
+            }
+        }
+    }
+    &.small {
+        padding: $card-padding / 2;
+        &.dismissible {
+            padding-right: 30px;
+            &:after {
+                padding: 8px 10px;
+            }
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+}
+.accordion {
+    padding: $card-padding;
+    padding-right: 46px;
+    cursor: pointer;
+    background-color: $light-grey;
+    color: $text-normal;
+    font-weight: $semibold;
+    border: $card-border;
+    position: relative;
+    &:after {
+        @include animated;
+        font-family: 'FontAwesome';
+        content: '\f0d7';
+        display: block;
+        font-size: 16px;
+        color: $text-light;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+    }
+    &.open {
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+    + .accordion-content {
+        display: none;
+        padding: $card-padding;
+        border: $card-border;
+        border-top: none;
+        + .accordion {
+            border-top: none;
+        }
+    }
+}   
+.loading {
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 9996;
+        top: 0;
+        left: 0;
+        background-color: rgba($white, 0.75);
+        border-radius: $round-corner-small - 1;
+    }
+    &:after {
+        font-family: 'FontAwesome';
+        content: "\f1ce";   
+        display: block;
+        font-size: 36px;
+        height: 0;
+        line-height: 0;
+        color: $text-dark;
+        opacity: 0.25;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 9997;
+        top: 50%;
+        left: calc(50% - 18px);
+        transform: translateX(-50%) translateY(-50%);
+        -webkit-animation: fa-spin 500ms infinite linear;
+        animation: fa-spin 500ms infinite linear;
+    }
+}
 .ribbon {
     display: table;
     table-layout: fixed;
-    width: 100%;
+    width: 100.5%;
     background-color: $navy;
     ul {
         display: table-row;

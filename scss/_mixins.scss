@@ -1,5 +1,5 @@
-@mixin animated($property: all, $duration: 250ms, $function: ease) {
-    transition: $property $duration $function;
+@mixin animated($side: all, $duration: 250ms, $function: ease) {
+    transition: $side $duration $function;
 }
 @mixin column-width($width, $affix) {
     &-#{$affix} {
@@ -46,10 +46,10 @@
         }
     }
 }
-@mixin color-classes($property) {
+@mixin color-classes($side) {
     @each $color in $color-list {
         &.#{nth($color, 1)} {
-            #{$property}: nth($color, 2);
+            #{$side}: nth($color, 2);
         }
     }
 }
@@ -71,32 +71,60 @@
         text-align: center;
     }
 }
-@mixin adjustment-properties($adjustment-value, $property-value, $pixels) {
-    @if (nth($adjustment-value, 1) == b) {
-        @if (nth($property-value, 1) == a) {
-            #{nth($adjustment-value, 2)}: $card-border;
+@mixin adjustment-properties($property-value, $side-value, $pixels) {
+    @if (nth($property-value, 1) == b) {
+        @if (nth($side-value, 1) == a) {
+            #{nth($property-value, 2)}: $card-border;
             border-width: #{$pixels}px;
         } @else {
-            #{nth($adjustment-value, 2)}-#{nth($property-value, 2)}: $card-border;
+            #{nth($property-value, 2)}-#{nth($side-value, 2)}: $card-border;
             border-width: #{$pixels}px;
         }
     } @else {
-        @if (nth($property-value, 1) == a) {
-            #{nth($adjustment-value, 2)}: #{$pixels}px;
+        @if (nth($side-value, 1) == a) {
+            #{nth($property-value, 2)}: #{$pixels}px;
         } @else {
-            #{nth($adjustment-value, 2)}-#{nth($property-value, 2)}: #{$pixels}px;
+            #{nth($property-value, 2)}-#{nth($side-value, 2)}: #{$pixels}px;
         }
     }
 }
 @mixin adjustments($breakpoint: null) {
     @if ($breakpoint) {
-        @each $adjustment in $adjustment-list {
-            &-#{nth($adjustment, 1)} {
-                @each $property in $property-list {
-                    &-#{nth($property, 1)} {
+        &-pos {
+            @each $position in $position-list {
+                &-#{nth($position, 1)}-#{$breakpoint} {
+                    position: #{nth($position, 2)}
+                }
+            }
+        }
+        &-d {
+            @each $display in $display-list {
+                &-#{nth($display, 1)}-#{$breakpoint} {
+                    display: #{nth($display, 2)}
+                }
+            }
+        }
+        &-ta {
+            @each $text-align in $text-align-list {
+                &-#{nth($text-align, 1)}-#{$breakpoint} {
+                    text-align: #{nth($text-align, 2)}
+                }
+            }
+        }
+        &-va {
+            @each $vertical-align in $vertical-align-list {
+                &-#{nth($vertical-align, 1)}-#{$breakpoint} {
+                    vertical-align: #{nth($vertical-align, 2)}
+                }
+            }
+        }
+        @each $property in $property-list {
+            &-#{nth($property, 1)} {
+                @each $side in $side-list {
+                    &-#{nth($side, 1)} {
                         @for $i from 0 through $adjustment-max {
                             &-#{$i}-#{$breakpoint} {
-                                @include adjustment-properties($adjustment, $property, $i);
+                                @include adjustment-properties($property, $side, $i);
                             }
                         }
                     }
@@ -104,13 +132,41 @@
             }
         }
     } @else {
-        @each $adjustment in $adjustment-list {
-            &-#{nth($adjustment, 1)} {
-                @each $property in $property-list {
-                    &-#{nth($property, 1)} {
-                        @for $i from 1 through $adjustment-max {
+        &-pos {
+            @each $position in $position-list {
+                &-#{nth($position, 1)} {
+                    position: #{nth($position, 2)}
+                }
+            }
+        }
+        &-d {
+            @each $display in $display-list {
+                &-#{nth($display, 1)} {
+                    display: #{nth($display, 2)}
+                }
+            }
+        }
+        &-ta {
+            @each $text-align in $text-align-list {
+                &-#{nth($text-align, 1)} {
+                    text-align: #{nth($text-align, 2)}
+                }
+            }
+        }
+        &-va {
+            @each $vertical-align in $vertical-align-list {
+                &-#{nth($vertical-align, 1)} {
+                    vertical-align: #{nth($vertical-align, 2)}
+                }
+            }
+        }
+        @each $property in $property-list {
+            &-#{nth($property, 1)} {
+                @each $side in $side-list {
+                    &-#{nth($side, 1)} {
+                        @for $i from 0 through $adjustment-max {
                             &-#{$i} {
-                                @include adjustment-properties($adjustment, $property, $i);
+                                @include adjustment-properties($property, $side, $i);
                             }
                         }
                     }

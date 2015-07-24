@@ -50,7 +50,7 @@
         &.has-buttons {
             min-height: 76px;
             h2 {
-                margin-top: $type-spacing - 4;
+                margin-top: $type-spacing - ($type-spacing / 2);
                 @media only screen and (max-width: $tablet-landscape-breakpoint) {
                     margin-top: 0;
                 }
@@ -84,13 +84,13 @@
         padding: $card-padding;
     }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
-        &.fullscreen {
+        &.mobile-full-width {
             border-radius: 0;
             margin-top: 0;
             margin-right: -($tablet-landscape-breakpoint - $container-width) / 2;
             margin-bottom: 0;
             margin-left: -($tablet-landscape-breakpoint - $container-width) / 2;
-            + .fullscreen {
+            + .mobile-full-width {
                 border-top: none;
             }
         }
