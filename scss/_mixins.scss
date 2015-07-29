@@ -38,28 +38,6 @@
         }
     }
 }
-@mixin type-margin {
-    + * {
-        margin-top: $type-spacing;
-        &:after {
-            margin: 0;
-        }
-    }
-}
-@mixin color-classes($side) {
-    @each $color in $color-list {
-        &.#{nth($color, 1)} {
-            #{$side}: nth($color, 2);
-        }
-    }
-}
-@mixin background-color-classes($alpha: 1) {
-    @each $color in $color-list {
-        &.#{nth($color, 1)} {
-            background-color: rgba(nth($color, 2), $alpha);
-        }
-    }
-}
 @mixin adjustment-properties($property-value, $side-value, $pixels) {
     @if (nth($property-value, 1) == b) {
         @if (nth($side-value, 1) == a) {
@@ -67,7 +45,7 @@
             border-width: #{$pixels}px;
         } @else {
             #{nth($property-value, 2)}-#{nth($side-value, 2)}: $card-border;
-            border-width: #{$pixels}px;
+            border-#{nth($side-value, 2)}-width: #{$pixels}px;
         }
     } @else {
         @if (nth($side-value, 1) == a) {
@@ -161,6 +139,28 @@
                     }
                 }
             }
+        }
+    }
+}
+@mixin type-margin {
+    + * {
+        margin-top: $type-spacing;
+        &:after {
+            margin: 0;
+        }
+    }
+}
+@mixin color-classes($side) {
+    @each $color in $color-list {
+        &.#{nth($color, 1)} {
+            #{$side}: nth($color, 2);
+        }
+    }
+}
+@mixin background-color-classes($alpha: 1) {
+    @each $color in $color-list {
+        &.#{nth($color, 1)} {
+            background-color: rgba(nth($color, 2), $alpha);
         }
     }
 }

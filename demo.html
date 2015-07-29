@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.min.css">
         <style>
             /* ----------------------------------------
-            Demo Styles
+            Demo-Specific Styles
             ---------------------------------------- */
             #kb-logo {
                 position: absolute;
@@ -529,7 +529,7 @@
                 <div class="demo-section">
                     <div class="grid">
                         <div class="row">
-                            <div class="column float-right span-3 margin-span-1 span-5-tl margin-span-0-tl span-12-tp">
+                            <div class="column float-right span-3 margin-span-1 span-3-tl span-12-tp margin-span-0-tp">
                                 <h2>Dialogs</h2>
                                 <p>Like cards, dialogs can contain any type of content, but are meant to be callouts or violators for your layout. You can create dialogs with the <code>.dialog</code> class.</p>
                                 <p>Each dialog consists of two parts: the <code>.left</code> container and the <code>.right</code> container. The <code>.left</code> container can be empty (to display a colored border), contain an icon, or display an image, while the <code>.right</code> container houses the content for the dialog.</p>
@@ -619,11 +619,11 @@
                 <div class="demo-section">
                     <div class="grid">
                         <div class="row">
-                            <div class="column float-right span-5 span-12-p margin-span-2 span-8-tp margin-span-0-tp">
+                            <div class="column float-right span-5 margin-span-2 span-12-tp margin-span-0-tp">
                                 <h2>Statuses</h2>
                                 <p>Statuses are inline-block elements used to describe the state of your content. They can be created by adding the <code>.status</code> class on <code>&lt;span&gt;</code> tags.</p>
                             </div>
-                            <div class="column float-right span-3 span-12-p span-4-tp">
+                            <div class="column float-right span-3 span-12-tp">
                                 <div id="statuses-code">
                                     <h2 class="ellipsis">Application <span class="status green">Accepted</span></h2>
                                     <h3 class="ellipsis">Mean People <span class="status red"><span class="icon fa fa-ban margin-right"></span>Rejected</h3>
@@ -909,7 +909,7 @@
                                 <p>Mobile users will not be able to trigger tooltips by default, as the settings listen for a mouseover event.</p>
                             </div>
                             <div class="column span-3 span-12-tp">
-                                <div id="tooltips-code">
+                                <div id="tooltips-code" class="adjust-m-t-4 adjust-m-t-0-tp">
                                     <button class="js-tooltip inverse pink adjust-m-t-32 adjust-m-t-0-tp" title="Just kidding, I'm pink!">I am a Blue Inverse Button</button><br>
                                     <button class="js-tooltip navy margin-top" title="Please don't use IE..."><span class="icon im im-IE margin-right"></span>Internet Explorer</button>
                                 </div>
@@ -926,7 +926,7 @@
                 <div class="demo-section">
                     <div class="grid">
                         <div class="row">
-                            <div class="column span-8 margin-span-2 span-10-tp margin-span-1-tp span-12-p margin-span-0-p adjust-ta-c adjust-ta-l-p">
+                            <div class="column span-8 margin-span-2 span-12-tl margin-span-0-tl adjust-ta-c adjust-ta-l-p">
                                 <h2>Tables</h2>
                                 <p>Tables can be constructed with standard HTML markup, and are available in the two styles highlighted below. The first is a standard, classless table with a blue <code>&lt;thead&gt;</code> and grey alternating rows, and the second is a table with the <code>.list</code> class, which carries more simplified styling.</p>
                                 <p>You can contain tables in a <code>.table-container</code> class to control overflow when the table's widths are longer than that of the viewport or container.</p>
@@ -1113,9 +1113,11 @@
                 </div>
             </footer>
             <div id="code-modal" class="modal">
-                <section class="dismissible">
+                <section class="border-bottom dismissible">
                     <a href="#" class="close-modal"></a>
                     <h2>Source Code</h2>
+                </section>
+                <section>
                     <pre class="js-content"></pre>
                 </section>
             </div>
@@ -1187,7 +1189,7 @@
             } )( jQuery );
             
             /* ----------------------------------------
-            Demo Scripts
+            Demo-Specific Scripts
             ---------------------------------------- */
             $(document).ready(function() {
                 var viewCode = $('.js-view-code'),

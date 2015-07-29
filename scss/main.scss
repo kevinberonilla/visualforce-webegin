@@ -12,7 +12,7 @@ body .scope { // Control Salesforce1 overrides
     /* ----------------------------------------
     Grid Styles
     ---------------------------------------- */
-    @import 'grid';
+    @import 'grids';
     
     /* ----------------------------------------
     Salesforce1 Styles
@@ -36,5 +36,5 @@ body #scope { // Override all the things
     /* ----------------------------------------
     Adjustment Styles
     ---------------------------------------- */
-    @import 'adjustment';
+    @import 'adjustments';
 }
