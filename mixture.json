@@ -34,7 +34,7 @@
     },
     "sass": {
         "outputStyle": "expanded",
-        "sourceMap": true,
+        "sourceMap": false,
         "cache": false,
         "lineNumbers": false,
         "useLibSass": false

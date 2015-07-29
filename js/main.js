@@ -119,13 +119,13 @@ $(document).ready(function() {
         
         function reveal() {
             revealElement.each(function() {
-                if (!$(this).hasClass('visible') && $(window).scrollTop() + positionTrigger >= $(this).offset().top) {
+                if (!$(this).hasClass('visible') && $(document).scrollTop() + positionTrigger >= $(this).offset().top) {
                     $(this).addClass('visible');
                     revealCount++;
                 }
             });
             if (revealCount >= revealLength) { // Unbind if all elements have been revealed
-                $(window).unbind('scroll', reveal);
+                $(window).off('scroll', reveal);
             }
         }
         

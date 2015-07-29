@@ -42,13 +42,14 @@
     border-radius: $round-corner-small;
     background-color: $white;
     overflow: hidden;
+    @include type-margin;
     &.transparent {
         background-color: transparent;
     }
     > div, > section {
         padding: $card-padding;
         &.has-buttons {
-            min-height: 76px;
+            min-height: 77px;
             h2 {
                 margin-top: $type-spacing - ($type-spacing / 2);
                 @media only screen and (max-width: $tablet-landscape-breakpoint) {
@@ -69,6 +70,9 @@
         }
         &.no-padding {
             padding: 0;
+        }
+        &.dismissible {
+            padding-right: 48px;
         }
     }
     .border-top {
@@ -104,6 +108,7 @@ ul.card {
         a, a:visited {
             font-weight: $semibold;
             display: block;
+            line-height: 0;
             position: relative;
             padding: $card-padding;
             margin: -$card-padding;
@@ -112,6 +117,7 @@ ul.card {
                 content: '\f054';
                 color: $text-light;
                 display: inline-block;
+                line-height: 20px;
                 position: absolute;
                 top: 1px;
                 right: 0;
@@ -125,6 +131,46 @@ ul.card {
         &:first-child {
             border-top: none;
         }
+    }
+}
+.dialog {
+    border: $card-border;
+    border-radius: $round-corner-small;
+    background-color: $white;
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    @include type-margin;
+    &.transparent {
+        background-color: transparent;
+    }
+    > div, > section {
+        padding: $card-padding;
+        &.no-padding {
+            padding: 0;
+        }
+    }
+    .left {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0;
+        color: $white;
+        width: $type-spacing / 2;
+        @include color-classes(background-color);
+        > .icon {
+            padding: $card-padding;
+            font-size: 20px;
+            display: block;
+        }
+        &.image {
+            background-size: cover;
+            background-position: center center;
+            width: 25%;
+        }
+    }
+    .right {
+        display: table-cell;    
+        vertical-align: middle;
     }
 }
 .corner-buttons {
@@ -214,7 +260,7 @@ table {
             background-color: $grey;
         }
     }
-    &.lined {
+    &.list {
         border-collapse: collapse;
         tr {
             border-top: $card-border;

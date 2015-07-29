@@ -27,7 +27,7 @@ body .scope {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 300;
   color: #525354; }
@@ -682,12 +682,16 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden; }
+    body .scope .card + *, body .scope .scope .card + *, body .scope .modal + *, body .scope .scope .modal + *, body .scope .card + *:before, body .scope .scope .card + *:before, body .scope .modal + *:before, body .scope .scope .modal + *:before, body .scope .card + *:after, body .scope .scope .card + *:after, body .scope .modal + *:after, body .scope .scope .modal + *:after {
+      margin-top: 16px; }
+      body .scope .card + *:after, body .scope .card + :after, body .scope .modal + :after, body .scope .scope .card + :after, body .scope .scope .modal + :after {
+        margin: 0; }
     body .scope .card.transparent, body .scope .transparent.modal {
       background-color: transparent; }
     body .scope .card > div, body .scope .scope .card > div, body .scope .modal > div, body .scope .scope .modal > div, body .scope .card > section, body .scope .scope .card > section, body .scope .modal > section, body .scope .scope .modal > section {
       padding: 16px; }
       body .scope .card > div.has-buttons, body .scope .scope .card > div.has-buttons, body .scope .modal > div.has-buttons, body .scope .scope .modal > div.has-buttons, body .scope .card > section.has-buttons, body .scope .scope .card > section.has-buttons, body .scope .modal > section.has-buttons, body .scope .scope .modal > section.has-buttons {
-        min-height: 76px; }
+        min-height: 77px; }
         body .scope .card > div.has-buttons h2, body .scope .scope .card > div.has-buttons h2, body .scope .modal > div.has-buttons h2, body .scope .scope .modal > div.has-buttons h2, body .scope .card > section.has-buttons h2, body .scope .scope .card > section.has-buttons h2, body .scope .modal > section.has-buttons h2, body .scope .scope .modal > section.has-buttons h2 {
           margin-top: 8px; }
           @media only screen and (max-width: 1024px) {
@@ -702,6 +706,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
             min-height: 66px; } }
       body .scope .card > div.no-padding, body .scope .scope .card > div.no-padding, body .scope .modal > div.no-padding, body .scope .scope .modal > div.no-padding, body .scope .card > section.no-padding, body .scope .scope .card > section.no-padding, body .scope .modal > section.no-padding, body .scope .scope .modal > section.no-padding {
         padding: 0; }
+      body .scope .card > div.dismissible, body .scope .scope .card > div.dismissible, body .scope .modal > div.dismissible, body .scope .scope .modal > div.dismissible, body .scope .card > section.dismissible, body .scope .scope .card > section.dismissible, body .scope .modal > section.dismissible, body .scope .scope .modal > section.dismissible {
+        padding-right: 48px; }
     body .scope .card .border-top, body .scope .modal .border-top {
       border-top: 1px solid #dfe0e1; }
     body .scope .card .border-bottom, body .scope .modal .border-bottom {
@@ -727,6 +733,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       body .scope ul.card li a, body .scope ul.modal li a, body .scope ul.card li a:visited, body .scope ul.modal li a:visited {
         font-weight: 700;
         display: block;
+        line-height: 0;
         position: relative;
         padding: 16px;
         margin: -16px; }
@@ -735,6 +742,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           content: '\f054';
           color: #adb8c2;
           display: inline-block;
+          line-height: 20px;
           position: absolute;
           top: 1px;
           right: 0;
@@ -744,6 +752,68 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           background-color: #2a94d6; }
       body .scope ul.card li:first-child, body .scope ul.modal li:first-child {
         border-top: none; }
+  body .scope .dialog {
+    border: 1px solid #dfe0e1;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    display: table;
+    width: 100%; }
+    body .scope .dialog + *, body .scope .scope .dialog + *, body .scope .dialog + *:before, body .scope .scope .dialog + *:before, body .scope .dialog + *:after, body .scope .scope .dialog + *:after {
+      margin-top: 16px; }
+      body .scope .dialog + *:after, body .scope .dialog + :after, body .scope .scope .dialog + :after {
+        margin: 0; }
+    body .scope .dialog.transparent {
+      background-color: transparent; }
+    body .scope .dialog > div, body .scope .scope .dialog > div, body .scope .dialog > section, body .scope .scope .dialog > section {
+      padding: 16px; }
+      body .scope .dialog > div.no-padding, body .scope .scope .dialog > div.no-padding, body .scope .dialog > section.no-padding, body .scope .scope .dialog > section.no-padding {
+        padding: 0; }
+    body .scope .dialog .left {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0;
+      color: #fff;
+      width: 8px; }
+      body .scope .dialog .left.text-dark {
+        background-color: #2e4052; }
+      body .scope .dialog .left.text-normal {
+        background-color: #525354; }
+      body .scope .dialog .left.text-light {
+        background-color: #adb8c2; }
+      body .scope .dialog .left.blue {
+        background-color: #2a94d6; }
+      body .scope .dialog .left.light-blue {
+        background-color: #4eb1cb; }
+      body .scope .dialog .left.navy {
+        background-color: #344a5f; }
+      body .scope .dialog .left.grey {
+        background-color: #f0f1f2; }
+      body .scope .dialog .left.light-grey {
+        background-color: #f9fbfc; }
+      body .scope .dialog .left.white {
+        background-color: #fff; }
+      body .scope .dialog .left.red {
+        background-color: #cf5c60; }
+      body .scope .dialog .left.purple {
+        background-color: #717ecd; }
+      body .scope .dialog .left.green {
+        background-color: #4ab471; }
+      body .scope .dialog .left.orange {
+        background-color: #f3ae4e; }
+      body .scope .dialog .left.pink {
+        background-color: #d96383; }
+      body .scope .dialog .left > .icon {
+        padding: 16px;
+        font-size: 20px;
+        display: block; }
+      body .scope .dialog .left.image {
+        background-size: cover;
+        background-position: center center;
+        width: 25%; }
+    body .scope .dialog .right {
+      display: table-cell;
+      vertical-align: middle; }
   body .scope .corner-buttons {
     float: right; }
     @media only screen and (max-width: 1024px) {
@@ -836,20 +906,20 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
         background-color: #d96383; }
     body .scope table tbody tr:nth-child(even) {
       background-color: #f0f1f2; }
-    body .scope table.lined {
+    body .scope table.list {
       border-collapse: collapse; }
-      body .scope table.lined tr {
+      body .scope table.list tr {
         border-top: 1px solid #dfe0e1; }
-        body .scope table.lined tr:first-child {
+        body .scope table.list tr:first-child {
           border-top: none; }
-      body .scope table.lined thead {
+      body .scope table.list thead {
         background-color: initial;
         color: #2e4052;
         font-weight: 700; }
-      body .scope table.lined tbody {
+      body .scope table.list tbody {
         border-top: 1px solid #dfe0e1;
         border-width: 3px; }
-        body .scope table.lined tbody tr:nth-child(even) {
+        body .scope table.list tbody tr:nth-child(even) {
           background-color: initial; }
     body .scope table.align-center {
       text-align: center; }
@@ -1057,7 +1127,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     cursor: pointer;
     display: inline-block;
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     padding: 10px 12px 12px;
     margin-right: 16px;
@@ -1664,7 +1734,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
     border-radius: 5px;
     border: 1px solid #dfe0e1;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     padding: 10px 12px;
     color: #525354;
@@ -1791,7 +1861,7 @@ body, body .scope, body .scope {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
   body .mce-menu-item .mce-text, body .scope .mce-menu-item .mce-text {
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     font-weight: 300;
     color: #525354; }
@@ -1889,7 +1959,7 @@ body, body .scope, body .scope {
     top: -1px; }
   body .ui-widget, body .scope .ui-widget {
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif !important;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     font-weight: 300;
     color: #525354; }
@@ -1966,10 +2036,10 @@ body #scope {
     display: table-cell; }
   body #scope .adjust-d-li {
     display: list-item; }
-  body #scope .adjust-ta-l {
-    text-align: left; }
   body #scope .adjust-ta-c {
     text-align: center; }
+  body #scope .adjust-ta-l {
+    text-align: left; }
   body #scope .adjust-ta-r {
     text-align: right; }
   body #scope .adjust-va-t {
@@ -3164,10 +3234,10 @@ body #scope {
       display: table-cell; }
     body #scope .adjust-d-li-tl {
       display: list-item; }
-    body #scope .adjust-ta-l-tl {
-      text-align: left; }
     body #scope .adjust-ta-c-tl {
       text-align: center; }
+    body #scope .adjust-ta-l-tl {
+      text-align: left; }
     body #scope .adjust-ta-r-tl {
       text-align: right; }
     body #scope .adjust-va-t-tl {
@@ -4362,10 +4432,10 @@ body #scope {
       display: table-cell; }
     body #scope .adjust-d-li-tp {
       display: list-item; }
-    body #scope .adjust-ta-l-tp {
-      text-align: left; }
     body #scope .adjust-ta-c-tp {
       text-align: center; }
+    body #scope .adjust-ta-l-tp {
+      text-align: left; }
     body #scope .adjust-ta-r-tp {
       text-align: right; }
     body #scope .adjust-va-t-tp {
@@ -5560,10 +5630,10 @@ body #scope {
       display: table-cell; }
     body #scope .adjust-d-li-p {
       display: list-item; }
-    body #scope .adjust-ta-l-p {
-      text-align: left; }
     body #scope .adjust-ta-c-p {
       text-align: center; }
+    body #scope .adjust-ta-l-p {
+      text-align: left; }
     body #scope .adjust-ta-r-p {
       text-align: right; }
     body #scope .adjust-va-t-p {
