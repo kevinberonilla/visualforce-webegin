@@ -110,11 +110,11 @@ $(document).ready(function() {
     
     if (revealLength > 0) {
         var windowHeight = $(window).height(),
-            positionTrigger = windowHeight * 0.8;
+            positionTrigger = windowHeight * 0.75;
         
         $(window).resize(function() { // Reset if window is resized
             windowHeight = $(window).height();
-            positionTrigger = windowHeight * 0.8;
+            positionTrigger = windowHeight * 0.75;
         });
         
         function reveal() {
