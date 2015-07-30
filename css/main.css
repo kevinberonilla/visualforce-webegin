@@ -1631,7 +1631,9 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    margin: 0;
+    padding: 0; }
   body .scope #modal-background.visible {
     opacity: 1; }
   body .scope .modal {

@@ -1133,6 +1133,7 @@
             prettyPre Plugin by Tim Medora
             ---------------------------------------- */
             (function( $ ) {
+                
                 $.fn.prettyPre = function( method ) {
                     var defaults = {
                         ignoreExpression: /\s/ // what should be ignored?
@@ -1151,9 +1152,15 @@
                                 }
                                 // use the first line as a baseline for how many unwanted leading whitespace characters are present
                                 var superfluousSpaceCount = 0;
+                                var pos = 0;
                                 var currentChar = text.substring( 0, 1 );
                                 while ( context.ignoreExpression.test( currentChar ) ) {
-                                    currentChar = text.substring( ++superfluousSpaceCount, superfluousSpaceCount + 1 );
+                                    if(currentChar !== "\n"){
+                                        superfluousSpaceCount++;
+                                    }else{
+                                        superfluousSpaceCount = 0;
+                                    }
+                                    currentChar = text.substring( ++pos, pos + 1 );
                                 }
                                 // split
                                 var parts = text.split( "\n" );
@@ -1161,6 +1168,10 @@
                                 // reconstruct
                                 var length = parts.length;
                                 for ( var i = 0; i < length; i++ ) {
+                                    // remove leading whitespace (represented by an empty string)
+                                    if(i === 0 && parts[0]=== ""){
+                                        continue;   
+                                    }
                                     // cleanup, and don't append a trailing newline if we are on the last line
                                     reformattedText += parts[i].substring( superfluousSpaceCount ) + ( i == length - 1 ? "" : "\n" );
                                 }
