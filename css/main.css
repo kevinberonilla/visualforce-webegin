@@ -1263,8 +1263,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       pointer-events: none; }
       body .scope button.loading:after, body .scope a.loading.button:after, body .scope input.loading[type="submit"]:after, body .scope textarea.loading[type="submit"]:after, body .scope select.loading[type="submit"]:after, body .scope ul.loading[type="submit"].tagit:after, body .scope .button-group > li > a.loading:after, body .scope .scope .button-group > li > a.loading:after, body .scope .paginate-links li a.loading:after {
         font-size: 20px;
-        left: -webkit-calc(50% - 9px);
-        left: calc(50% - 9px); }
+        left: -webkit-calc(50% - 10px);
+        left: calc(50% - 10px); }
     body .scope button:last-child, body .scope a.button:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child, body .scope select[type="submit"]:last-child, body .scope ul[type="submit"].tagit:last-child, body .scope .button-group > li > a:last-child, body .scope .scope .button-group > li > a:last-child, body .scope .button-group > li > button:last-child, body .scope .scope .button-group > li > button:last-child, body .scope .paginate-links li a:last-child, body .scope .paginate-links li button:last-child {
       margin-right: 0; }
     body .scope button:hover, body .scope a.button:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover, body .scope select[type="submit"]:hover, body .scope ul[type="submit"].tagit:hover, body .scope .button-group > li > a:hover, body .scope .scope .button-group > li > a:hover, body .scope .button-group > li > button:hover, body .scope .scope .button-group > li > button:hover, body .scope .paginate-links li a:hover, body .scope .paginate-links li button:hover {
@@ -1554,6 +1554,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       font-size: 36px;
       height: 0;
       line-height: 0;
+      font-weight: normal;
       color: #2e4052;
       opacity: 0.25;
       padding: 0;
