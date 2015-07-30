@@ -1,6 +1,5 @@
 # Webegin for Visualforce
-A bare-bones web development starting point with extended styles for Visualforce.  
-***(Under Construction)***
+A bare-bones web development starting point with extended styles for Visualforce.
 
 ---
 
