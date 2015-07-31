@@ -1204,13 +1204,18 @@
             ---------------------------------------- */
             $(document).ready(function() {
                 var viewCode = $('.js-view-code'),
-                    codeModalContent = $('#code-modal .js-content');
+                    codeModalContent = $('#code-modal .js-content'),
+                    emptyLinks = $('a[href="#"]');
                 
                 viewCode.click(function() {
                     var sourceCode = $('#' + $(this).data('source-id')).html(),
                         filteredCode = sourceCode.replace(/\</g, '&lt;').replace(/\>/g, '&gt;');
                         
                     codeModalContent.empty().html(filteredCode).prettyPre();
+                });
+                
+                emptyLinks.click(function(e) {
+                    e.preventDefault();
                 });
             });
         </script>
