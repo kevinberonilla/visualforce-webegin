@@ -70,7 +70,7 @@ hr {
     }
 }
 a, a:visited {
-    color: $blue;
+    color: $text-link;
     text-decoration: none;
 }
 code {
@@ -89,6 +89,9 @@ pre {
     overflow: auto;
     max-height: 400px;
 }
+.caps {
+    text-transform: uppercase;
+}
 .text-dark {
     color: $text-dark;
 }
@@ -97,9 +100,6 @@ pre {
 }
 .text-light {
     color: $text-light;
-}
-.caps {
-    text-transform: uppercase;
 }
 .icon {
     &.im { // IcoMoon
@@ -121,7 +121,7 @@ pre {
 .status {
     display: inline-block;
     padding: 0 6px;
-    border-radius: $round-corner-small;
+    border-radius: 20px;
     font-size: 10px;
     font-weight: $bold;
     vertical-align: bottom;

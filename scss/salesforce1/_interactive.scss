@@ -34,8 +34,8 @@ button {
     &.loading {
         pointer-events: none;
         &:after {
-            font-size: 20px;
-            left: calc(50% - 10px);
+            width: 32px;
+            height: 32px;
         }
     }
     &:last-child {
@@ -339,24 +339,20 @@ a.button, input[type="submit"] {
         border-radius: $round-corner-small - 1;
     }
     &:after {
-        font-family: 'FontAwesome';
-        content: "\f1ce";   
+        content: '';
         display: block;
-        font-size: 36px;
-        height: 0;
-        line-height: 0;
-        font-weight: normal;
-        color: $text-dark;
-        opacity: 0.25;
+        width: 56px;
+        height: 56px;
+        background: transparent url(images/loading.gif) no-repeat center center;
+        background-size: contain;
+        opacity: 0.75;
         padding: 0;
         margin: 0;
         position: absolute;
         z-index: 9997;
         top: 50%;
-        left: calc(50% - 18px);
+        left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        -webkit-animation: fa-spin 500ms infinite linear;
-        animation: fa-spin 500ms infinite linear;
     }
 }
 .ribbon {
@@ -435,7 +431,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     transition: all 250ms ease;
     display: none;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba($navy, 0.9);
     position: fixed;
     z-index: 9998;
     top: 0;
@@ -517,20 +513,5 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
         &.animation-fade, &.animation-fade-up, &.animation-fade-right, &.animation-fade-down, &.animation-fade-left, &.animation-fade-zoom, &.animation-fade-zoom-up, &.animation-fade-zoom-right, &.animation-fade-zoom-down, &.animation-fade-zoom-left {
             transform: translate(-50%, -50%) scale(1);
         }
-    }
-}
-#modal-background {
-    @include animated;
-    display: none;
-    opacity: 0;
-    background-color: rgba($text-dark, 0.9);
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    &.visible {
-        opacity: 1;
     }
 }

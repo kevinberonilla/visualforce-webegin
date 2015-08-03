@@ -16,7 +16,7 @@ html, body, body .scope {
   height: 100%; }
 
 body, body .scope {
-  background-color: #ecf0f3; }
+  background-color: #f0f1f2; }
   body.disable-scroll, body .disable-scroll.scope {
     overflow-y: hidden;
     -webkit-overflow-scrolling: none; }
@@ -30,7 +30,7 @@ body .scope {
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
-  color: #525354; }
+  color: #686c70; }
   body .scope a {
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease; }
@@ -470,7 +470,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     font-size: 32px;
     line-height: 32px;
     font-weight: 900;
-    color: #2e4052;
+    color: #3c3d3e;
     padding-top: 2px; }
     body .scope h1 + *, body .scope .scope h1 + *, body .scope h2 + *, body .scope .scope h2 + *, body .scope h1 + *:before, body .scope .scope h1 + *:before, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h1 + *:after, body .scope .scope h1 + *:after, body .scope h2 + *:after, body .scope .scope h2 + *:after {
       margin-top: 16px; }
@@ -510,7 +510,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     font-size: 12px;
     line-height: inherit;
     font-weight: 700;
-    color: #525354; }
+    color: #686c70; }
     body .scope h5 + *, body .scope .scope h5 + *, body .scope h5 + *:before, body .scope .scope h5 + *:before, body .scope h5 + *:after, body .scope .scope h5 + *:after {
       margin-top: 16px; }
       body .scope h5 + *:after, body .scope h5 + :after, body .scope .scope h5 + :after {
@@ -542,13 +542,13 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope hr:last-child {
       display: none; }
   body .scope a, body .scope a:visited {
-    color: #2a94d6;
+    color: #006eb3;
     text-decoration: none; }
   body .scope code, body .scope pre {
     display: inline-block;
     padding: 0 6px;
     border-radius: 5px;
-    background-color: rgba(82, 83, 84, 0.1);
+    background-color: rgba(104, 108, 112, 0.1);
     font-size: 12px;
     line-height: 20px; }
   body .scope pre {
@@ -557,14 +557,14 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     padding: 8px;
     overflow: auto;
     max-height: 400px; }
-  body .scope .text-dark {
-    color: #2e4052; }
-  body .scope .text-normal {
-    color: #525354; }
-  body .scope .text-light {
-    color: #adb8c2; }
   body .scope .caps {
     text-transform: uppercase; }
+  body .scope .text-dark {
+    color: #3c3d3e; }
+  body .scope .text-normal {
+    color: #686c70; }
+  body .scope .text-light {
+    color: #adb8c2; }
   body .scope .icon.im {
     position: relative;
     top: 1px; }
@@ -576,21 +576,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
   body .scope .icon.margin-left {
     margin-left: 8px; }
   body .scope .icon.text-dark {
-    color: #2e4052; }
+    color: #3c3d3e; }
   body .scope .icon.text-normal {
-    color: #525354; }
+    color: #686c70; }
   body .scope .icon.text-light {
     color: #adb8c2; }
+  body .scope .icon.text-link {
+    color: #006eb3; }
   body .scope .icon.blue {
     color: #2a94d6; }
   body .scope .icon.light-blue {
     color: #4eb1cb; }
   body .scope .icon.navy {
-    color: #344a5f; }
+    color: #34495e; }
   body .scope .icon.grey {
     color: #f0f1f2; }
   body .scope .icon.light-grey {
-    color: #f9fbfc; }
+    color: #fafafa; }
   body .scope .icon.white {
     color: #fff; }
   body .scope .icon.red {
@@ -606,7 +608,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
   body .scope .status {
     display: inline-block;
     padding: 0 6px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 10px;
     font-weight: 900;
     vertical-align: bottom;
@@ -615,21 +617,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     letter-spacing: 0.25px;
     margin-left: 8px; }
     body .scope .status.text-dark {
-      background-color: #2e4052; }
+      background-color: #3c3d3e; }
     body .scope .status.text-normal {
-      background-color: #525354; }
+      background-color: #686c70; }
     body .scope .status.text-light {
       background-color: #adb8c2; }
+    body .scope .status.text-link {
+      background-color: #006eb3; }
     body .scope .status.blue {
       background-color: #2a94d6; }
     body .scope .status.light-blue {
       background-color: #4eb1cb; }
     body .scope .status.navy {
-      background-color: #344a5f; }
+      background-color: #34495e; }
     body .scope .status.grey {
       background-color: #f0f1f2; }
     body .scope .status.light-grey {
-      background-color: #f9fbfc; }
+      background-color: #fafafa; }
     body .scope .status.white {
       background-color: #fff; }
     body .scope .status.red {
@@ -646,7 +650,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       text-decoration: underline;
       color: #fff; }
   body .scope .hero, body .scope .hero-footer, body .scope footer {
-    background-color: #344a5f;
+    background-color: #34495e;
     text-align: center;
     color: #fff;
     padding: 100px 0;
@@ -708,12 +712,40 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
         padding: 0; }
       body .scope .card > div.dismissible, body .scope .scope .card > div.dismissible, body .scope .modal > div.dismissible, body .scope .scope .modal > div.dismissible, body .scope .card > section.dismissible, body .scope .scope .card > section.dismissible, body .scope .modal > section.dismissible, body .scope .scope .modal > section.dismissible {
         padding-right: 48px; }
+      body .scope .card > div.text-dark, body .scope .scope .card > div.text-dark, body .scope .modal > div.text-dark, body .scope .scope .modal > div.text-dark, body .scope .card > section.text-dark, body .scope .scope .card > section.text-dark, body .scope .modal > section.text-dark, body .scope .scope .modal > section.text-dark {
+        background-color: #3c3d3e; }
+      body .scope .card > div.text-normal, body .scope .scope .card > div.text-normal, body .scope .modal > div.text-normal, body .scope .scope .modal > div.text-normal, body .scope .card > section.text-normal, body .scope .scope .card > section.text-normal, body .scope .modal > section.text-normal, body .scope .scope .modal > section.text-normal {
+        background-color: #686c70; }
+      body .scope .card > div.text-light, body .scope .scope .card > div.text-light, body .scope .modal > div.text-light, body .scope .scope .modal > div.text-light, body .scope .card > section.text-light, body .scope .scope .card > section.text-light, body .scope .modal > section.text-light, body .scope .scope .modal > section.text-light {
+        background-color: #adb8c2; }
+      body .scope .card > div.text-link, body .scope .scope .card > div.text-link, body .scope .modal > div.text-link, body .scope .scope .modal > div.text-link, body .scope .card > section.text-link, body .scope .scope .card > section.text-link, body .scope .modal > section.text-link, body .scope .scope .modal > section.text-link {
+        background-color: #006eb3; }
+      body .scope .card > div.blue, body .scope .scope .card > div.blue, body .scope .modal > div.blue, body .scope .scope .modal > div.blue, body .scope .card > section.blue, body .scope .scope .card > section.blue, body .scope .modal > section.blue, body .scope .scope .modal > section.blue {
+        background-color: #2a94d6; }
+      body .scope .card > div.light-blue, body .scope .scope .card > div.light-blue, body .scope .modal > div.light-blue, body .scope .scope .modal > div.light-blue, body .scope .card > section.light-blue, body .scope .scope .card > section.light-blue, body .scope .modal > section.light-blue, body .scope .scope .modal > section.light-blue {
+        background-color: #4eb1cb; }
+      body .scope .card > div.navy, body .scope .scope .card > div.navy, body .scope .modal > div.navy, body .scope .scope .modal > div.navy, body .scope .card > section.navy, body .scope .scope .card > section.navy, body .scope .modal > section.navy, body .scope .scope .modal > section.navy {
+        background-color: #34495e; }
+      body .scope .card > div.grey, body .scope .scope .card > div.grey, body .scope .modal > div.grey, body .scope .scope .modal > div.grey, body .scope .card > section.grey, body .scope .scope .card > section.grey, body .scope .modal > section.grey, body .scope .scope .modal > section.grey {
+        background-color: #f0f1f2; }
+      body .scope .card > div.light-grey, body .scope .scope .card > div.light-grey, body .scope .modal > div.light-grey, body .scope .scope .modal > div.light-grey, body .scope .card > section.light-grey, body .scope .scope .card > section.light-grey, body .scope .modal > section.light-grey, body .scope .scope .modal > section.light-grey {
+        background-color: #fafafa; }
+      body .scope .card > div.white, body .scope .scope .card > div.white, body .scope .modal > div.white, body .scope .scope .modal > div.white, body .scope .card > section.white, body .scope .scope .card > section.white, body .scope .modal > section.white, body .scope .scope .modal > section.white {
+        background-color: #fff; }
+      body .scope .card > div.red, body .scope .scope .card > div.red, body .scope .modal > div.red, body .scope .scope .modal > div.red, body .scope .card > section.red, body .scope .scope .card > section.red, body .scope .modal > section.red, body .scope .scope .modal > section.red {
+        background-color: #cf5c60; }
+      body .scope .card > div.purple, body .scope .scope .card > div.purple, body .scope .modal > div.purple, body .scope .scope .modal > div.purple, body .scope .card > section.purple, body .scope .scope .card > section.purple, body .scope .modal > section.purple, body .scope .scope .modal > section.purple {
+        background-color: #717ecd; }
+      body .scope .card > div.green, body .scope .scope .card > div.green, body .scope .modal > div.green, body .scope .scope .modal > div.green, body .scope .card > section.green, body .scope .scope .card > section.green, body .scope .modal > section.green, body .scope .scope .modal > section.green {
+        background-color: #4ab471; }
+      body .scope .card > div.orange, body .scope .scope .card > div.orange, body .scope .modal > div.orange, body .scope .scope .modal > div.orange, body .scope .card > section.orange, body .scope .scope .card > section.orange, body .scope .modal > section.orange, body .scope .scope .modal > section.orange {
+        background-color: #f3ae4e; }
+      body .scope .card > div.pink, body .scope .scope .card > div.pink, body .scope .modal > div.pink, body .scope .scope .modal > div.pink, body .scope .card > section.pink, body .scope .scope .card > section.pink, body .scope .modal > section.pink, body .scope .scope .modal > section.pink {
+        background-color: #d96383; }
     body .scope .card .border-top, body .scope .modal .border-top {
       border-top: 1px solid #dfe0e1; }
     body .scope .card .border-bottom, body .scope .modal .border-bottom {
       border-bottom: 1px solid #dfe0e1; }
-    body .scope .card .header, body .scope .modal .header {
-      background-color: #f9fafa; }
     body .scope .card .padded, body .scope .modal .padded {
       padding: 16px; }
     @media only screen and (max-width: 1024px) {
@@ -776,21 +808,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       color: #fff;
       width: 8px; }
       body .scope .dialog .left.text-dark {
-        background-color: #2e4052; }
+        background-color: #3c3d3e; }
       body .scope .dialog .left.text-normal {
-        background-color: #525354; }
+        background-color: #686c70; }
       body .scope .dialog .left.text-light {
         background-color: #adb8c2; }
+      body .scope .dialog .left.text-link {
+        background-color: #006eb3; }
       body .scope .dialog .left.blue {
         background-color: #2a94d6; }
       body .scope .dialog .left.light-blue {
         background-color: #4eb1cb; }
       body .scope .dialog .left.navy {
-        background-color: #344a5f; }
+        background-color: #34495e; }
       body .scope .dialog .left.grey {
         background-color: #f0f1f2; }
       body .scope .dialog .left.light-grey {
-        background-color: #f9fbfc; }
+        background-color: #fafafa; }
       body .scope .dialog .left.white {
         background-color: #fff; }
       body .scope .dialog .left.red {
@@ -843,7 +877,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           line-height: 21px;
           padding: 6px 12px;
           background-color: #f0f1f2 !important;
-          color: #525354 !important;
+          color: #686c70 !important;
           border-color: transparent !important; }
         body .scope .mobile-header .corner-buttons .mobile-group-left {
           float: left; }
@@ -877,21 +911,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       background-color: #2a94d6;
       color: #fff; }
       body .scope table thead.text-dark {
-        background-color: #2e4052; }
+        background-color: #3c3d3e; }
       body .scope table thead.text-normal {
-        background-color: #525354; }
+        background-color: #686c70; }
       body .scope table thead.text-light {
         background-color: #adb8c2; }
+      body .scope table thead.text-link {
+        background-color: #006eb3; }
       body .scope table thead.blue {
         background-color: #2a94d6; }
       body .scope table thead.light-blue {
         background-color: #4eb1cb; }
       body .scope table thead.navy {
-        background-color: #344a5f; }
+        background-color: #34495e; }
       body .scope table thead.grey {
         background-color: #f0f1f2; }
       body .scope table thead.light-grey {
-        background-color: #f9fbfc; }
+        background-color: #fafafa; }
       body .scope table thead.white {
         background-color: #fff; }
       body .scope table thead.red {
@@ -914,7 +950,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           border-top: none; }
       body .scope table.list thead {
         background-color: initial;
-        color: #2e4052;
+        color: #3c3d3e;
         font-weight: 700; }
       body .scope table.list tbody {
         border-top: 1px solid #dfe0e1;
@@ -940,21 +976,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope .desktop-only {
       display: none; } }
   body .scope .background-color.text-dark {
-    background-color: #2e4052; }
+    background-color: #3c3d3e; }
   body .scope .background-color.text-normal {
-    background-color: #525354; }
+    background-color: #686c70; }
   body .scope .background-color.text-light {
     background-color: #adb8c2; }
+  body .scope .background-color.text-link {
+    background-color: #006eb3; }
   body .scope .background-color.blue {
     background-color: #2a94d6; }
   body .scope .background-color.light-blue {
     background-color: #4eb1cb; }
   body .scope .background-color.navy {
-    background-color: #344a5f; }
+    background-color: #34495e; }
   body .scope .background-color.grey {
     background-color: #f0f1f2; }
   body .scope .background-color.light-grey {
-    background-color: #f9fbfc; }
+    background-color: #fafafa; }
   body .scope .background-color.white {
     background-color: white; }
   body .scope .background-color.red {
@@ -987,21 +1025,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     text-align: center;
     font-size: 26px; }
     body .scope .icon-container.text-dark {
-      background-color: #2e4052; }
+      background-color: #3c3d3e; }
     body .scope .icon-container.text-normal {
-      background-color: #525354; }
+      background-color: #686c70; }
     body .scope .icon-container.text-light {
       background-color: #adb8c2; }
+    body .scope .icon-container.text-link {
+      background-color: #006eb3; }
     body .scope .icon-container.blue {
       background-color: #2a94d6; }
     body .scope .icon-container.light-blue {
       background-color: #4eb1cb; }
     body .scope .icon-container.navy {
-      background-color: #344a5f; }
+      background-color: #34495e; }
     body .scope .icon-container.grey {
       background-color: #f0f1f2; }
     body .scope .icon-container.light-grey {
-      background-color: #f9fbfc; }
+      background-color: #fafafa; }
     body .scope .icon-container.white {
       background-color: #fff; }
     body .scope .icon-container.red {
@@ -1020,21 +1060,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       margin-right: 0;
       color: #fff; }
       body .scope .icon-container .icon.text-dark {
-        color: #2e4052; }
+        color: #3c3d3e; }
       body .scope .icon-container .icon.text-normal {
-        color: #525354; }
+        color: #686c70; }
       body .scope .icon-container .icon.text-light {
         color: #adb8c2; }
+      body .scope .icon-container .icon.text-link {
+        color: #006eb3; }
       body .scope .icon-container .icon.blue {
         color: #2a94d6; }
       body .scope .icon-container .icon.light-blue {
         color: #4eb1cb; }
       body .scope .icon-container .icon.navy {
-        color: #344a5f; }
+        color: #34495e; }
       body .scope .icon-container .icon.grey {
         color: #f0f1f2; }
       body .scope .icon-container .icon.light-grey {
-        color: #f9fbfc; }
+        color: #fafafa; }
       body .scope .icon-container .icon.white {
         color: #fff; }
       body .scope .icon-container .icon.red {
@@ -1071,21 +1113,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       color: #fff;
       text-align: center; }
       body .scope .progress-bar .progress.text-dark {
-        background-color: #2e4052; }
+        background-color: #3c3d3e; }
       body .scope .progress-bar .progress.text-normal {
-        background-color: #525354; }
+        background-color: #686c70; }
       body .scope .progress-bar .progress.text-light {
         background-color: #adb8c2; }
+      body .scope .progress-bar .progress.text-link {
+        background-color: #006eb3; }
       body .scope .progress-bar .progress.blue {
         background-color: #2a94d6; }
       body .scope .progress-bar .progress.light-blue {
         background-color: #4eb1cb; }
       body .scope .progress-bar .progress.navy {
-        background-color: #344a5f; }
+        background-color: #34495e; }
       body .scope .progress-bar .progress.grey {
         background-color: #f0f1f2; }
       body .scope .progress-bar .progress.light-grey {
-        background-color: #f9fbfc; }
+        background-color: #fafafa; }
       body .scope .progress-bar .progress.white {
         background-color: #fff; }
       body .scope .progress-bar .progress.red {
@@ -1138,21 +1182,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     font-weight: 700;
     text-align: center; }
     body .scope button.text-dark, body .scope a.text-dark.button, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"], body .scope ul.text-dark[type="submit"].tagit, body .scope .button-group > li > a.text-dark, body .scope .scope .button-group > li > a.text-dark, body .scope .button-group > li > button.text-dark, body .scope .scope .button-group > li > button.text-dark, body .scope .paginate-links li a.text-dark, body .scope .paginate-links li button.text-dark {
-      border-color: #2e4052; }
+      border-color: #3c3d3e; }
     body .scope button.text-normal, body .scope a.text-normal.button, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"], body .scope ul.text-normal[type="submit"].tagit, body .scope .button-group > li > a.text-normal, body .scope .scope .button-group > li > a.text-normal, body .scope .button-group > li > button.text-normal, body .scope .scope .button-group > li > button.text-normal, body .scope .paginate-links li a.text-normal, body .scope .paginate-links li button.text-normal {
-      border-color: #525354; }
+      border-color: #686c70; }
     body .scope button.text-light, body .scope a.text-light.button, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"], body .scope ul.text-light[type="submit"].tagit, body .scope .button-group > li > a.text-light, body .scope .scope .button-group > li > a.text-light, body .scope .button-group > li > button.text-light, body .scope .scope .button-group > li > button.text-light, body .scope .paginate-links li a.text-light, body .scope .paginate-links li button.text-light {
       border-color: #adb8c2; }
+    body .scope button.text-link, body .scope a.text-link.button, body .scope input.text-link[type="submit"], body .scope textarea.text-link[type="submit"], body .scope select.text-link[type="submit"], body .scope ul.text-link[type="submit"].tagit, body .scope .button-group > li > a.text-link, body .scope .scope .button-group > li > a.text-link, body .scope .button-group > li > button.text-link, body .scope .scope .button-group > li > button.text-link, body .scope .paginate-links li a.text-link, body .scope .paginate-links li button.text-link {
+      border-color: #006eb3; }
     body .scope button.blue, body .scope a.blue.button, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"], body .scope ul.blue[type="submit"].tagit, body .scope .button-group > li > a.blue, body .scope .scope .button-group > li > a.blue, body .scope .button-group > li > button.blue, body .scope .scope .button-group > li > button.blue, body .scope .paginate-links li a.blue, body .scope .paginate-links li button.blue {
       border-color: #2a94d6; }
     body .scope button.light-blue, body .scope a.light-blue.button, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"], body .scope ul.light-blue[type="submit"].tagit, body .scope .button-group > li > a.light-blue, body .scope .scope .button-group > li > a.light-blue, body .scope .button-group > li > button.light-blue, body .scope .scope .button-group > li > button.light-blue, body .scope .paginate-links li a.light-blue, body .scope .paginate-links li button.light-blue {
       border-color: #4eb1cb; }
     body .scope button.navy, body .scope a.navy.button, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"], body .scope ul.navy[type="submit"].tagit, body .scope .button-group > li > a.navy, body .scope .scope .button-group > li > a.navy, body .scope .button-group > li > button.navy, body .scope .scope .button-group > li > button.navy, body .scope .paginate-links li a.navy, body .scope .paginate-links li button.navy {
-      border-color: #344a5f; }
+      border-color: #34495e; }
     body .scope button.grey, body .scope a.grey.button, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"], body .scope ul.grey[type="submit"].tagit, body .scope .button-group > li > a.grey, body .scope .scope .button-group > li > a.grey, body .scope .button-group > li > button.grey, body .scope .scope .button-group > li > button.grey, body .scope .paginate-links li a.grey, body .scope .paginate-links li button.grey {
       border-color: #f0f1f2; }
     body .scope button.light-grey, body .scope a.light-grey.button, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"], body .scope ul.light-grey[type="submit"].tagit, body .scope .button-group > li > a.light-grey, body .scope .scope .button-group > li > a.light-grey, body .scope .button-group > li > button.light-grey, body .scope .scope .button-group > li > button.light-grey, body .scope .paginate-links li a.light-grey, body .scope .paginate-links li button.light-grey {
-      border-color: #f9fbfc; }
+      border-color: #fafafa; }
     body .scope button.white, body .scope a.white.button, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"], body .scope ul.white[type="submit"].tagit, body .scope .button-group > li > a.white, body .scope .scope .button-group > li > a.white, body .scope .button-group > li > button.white, body .scope .scope .button-group > li > button.white, body .scope .paginate-links li a.white, body .scope .paginate-links li button.white {
       border-color: #fff; }
     body .scope button.red, body .scope a.red.button, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"], body .scope ul.red[type="submit"].tagit, body .scope .button-group > li > a.red, body .scope .scope .button-group > li > a.red, body .scope .button-group > li > button.red, body .scope .scope .button-group > li > button.red, body .scope .paginate-links li a.red, body .scope .paginate-links li button.red {
@@ -1166,21 +1212,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope button.pink, body .scope a.pink.button, body .scope input.pink[type="submit"], body .scope textarea.pink[type="submit"], body .scope select.pink[type="submit"], body .scope ul.pink[type="submit"].tagit, body .scope .button-group > li > a.pink, body .scope .scope .button-group > li > a.pink, body .scope .button-group > li > button.pink, body .scope .scope .button-group > li > button.pink, body .scope .paginate-links li a.pink, body .scope .paginate-links li button.pink {
       border-color: #d96383; }
     body .scope button.text-dark, body .scope a.text-dark.button, body .scope input.text-dark[type="submit"], body .scope textarea.text-dark[type="submit"], body .scope select.text-dark[type="submit"], body .scope ul.text-dark[type="submit"].tagit, body .scope .button-group > li > a.text-dark, body .scope .scope .button-group > li > a.text-dark, body .scope .button-group > li > button.text-dark, body .scope .scope .button-group > li > button.text-dark, body .scope .paginate-links li a.text-dark, body .scope .paginate-links li button.text-dark {
-      background-color: #2e4052; }
+      background-color: #3c3d3e; }
     body .scope button.text-normal, body .scope a.text-normal.button, body .scope input.text-normal[type="submit"], body .scope textarea.text-normal[type="submit"], body .scope select.text-normal[type="submit"], body .scope ul.text-normal[type="submit"].tagit, body .scope .button-group > li > a.text-normal, body .scope .scope .button-group > li > a.text-normal, body .scope .button-group > li > button.text-normal, body .scope .scope .button-group > li > button.text-normal, body .scope .paginate-links li a.text-normal, body .scope .paginate-links li button.text-normal {
-      background-color: #525354; }
+      background-color: #686c70; }
     body .scope button.text-light, body .scope a.text-light.button, body .scope input.text-light[type="submit"], body .scope textarea.text-light[type="submit"], body .scope select.text-light[type="submit"], body .scope ul.text-light[type="submit"].tagit, body .scope .button-group > li > a.text-light, body .scope .scope .button-group > li > a.text-light, body .scope .button-group > li > button.text-light, body .scope .scope .button-group > li > button.text-light, body .scope .paginate-links li a.text-light, body .scope .paginate-links li button.text-light {
       background-color: #adb8c2; }
+    body .scope button.text-link, body .scope a.text-link.button, body .scope input.text-link[type="submit"], body .scope textarea.text-link[type="submit"], body .scope select.text-link[type="submit"], body .scope ul.text-link[type="submit"].tagit, body .scope .button-group > li > a.text-link, body .scope .scope .button-group > li > a.text-link, body .scope .button-group > li > button.text-link, body .scope .scope .button-group > li > button.text-link, body .scope .paginate-links li a.text-link, body .scope .paginate-links li button.text-link {
+      background-color: #006eb3; }
     body .scope button.blue, body .scope a.blue.button, body .scope input.blue[type="submit"], body .scope textarea.blue[type="submit"], body .scope select.blue[type="submit"], body .scope ul.blue[type="submit"].tagit, body .scope .button-group > li > a.blue, body .scope .scope .button-group > li > a.blue, body .scope .button-group > li > button.blue, body .scope .scope .button-group > li > button.blue, body .scope .paginate-links li a.blue, body .scope .paginate-links li button.blue {
       background-color: #2a94d6; }
     body .scope button.light-blue, body .scope a.light-blue.button, body .scope input.light-blue[type="submit"], body .scope textarea.light-blue[type="submit"], body .scope select.light-blue[type="submit"], body .scope ul.light-blue[type="submit"].tagit, body .scope .button-group > li > a.light-blue, body .scope .scope .button-group > li > a.light-blue, body .scope .button-group > li > button.light-blue, body .scope .scope .button-group > li > button.light-blue, body .scope .paginate-links li a.light-blue, body .scope .paginate-links li button.light-blue {
       background-color: #4eb1cb; }
     body .scope button.navy, body .scope a.navy.button, body .scope input.navy[type="submit"], body .scope textarea.navy[type="submit"], body .scope select.navy[type="submit"], body .scope ul.navy[type="submit"].tagit, body .scope .button-group > li > a.navy, body .scope .scope .button-group > li > a.navy, body .scope .button-group > li > button.navy, body .scope .scope .button-group > li > button.navy, body .scope .paginate-links li a.navy, body .scope .paginate-links li button.navy {
-      background-color: #344a5f; }
+      background-color: #34495e; }
     body .scope button.grey, body .scope a.grey.button, body .scope input.grey[type="submit"], body .scope textarea.grey[type="submit"], body .scope select.grey[type="submit"], body .scope ul.grey[type="submit"].tagit, body .scope .button-group > li > a.grey, body .scope .scope .button-group > li > a.grey, body .scope .button-group > li > button.grey, body .scope .scope .button-group > li > button.grey, body .scope .paginate-links li a.grey, body .scope .paginate-links li button.grey {
       background-color: #f0f1f2; }
     body .scope button.light-grey, body .scope a.light-grey.button, body .scope input.light-grey[type="submit"], body .scope textarea.light-grey[type="submit"], body .scope select.light-grey[type="submit"], body .scope ul.light-grey[type="submit"].tagit, body .scope .button-group > li > a.light-grey, body .scope .scope .button-group > li > a.light-grey, body .scope .button-group > li > button.light-grey, body .scope .scope .button-group > li > button.light-grey, body .scope .paginate-links li a.light-grey, body .scope .paginate-links li button.light-grey {
-      background-color: #f9fbfc; }
+      background-color: #fafafa; }
     body .scope button.white, body .scope a.white.button, body .scope input.white[type="submit"], body .scope textarea.white[type="submit"], body .scope select.white[type="submit"], body .scope ul.white[type="submit"].tagit, body .scope .button-group > li > a.white, body .scope .scope .button-group > li > a.white, body .scope .button-group > li > button.white, body .scope .scope .button-group > li > button.white, body .scope .paginate-links li a.white, body .scope .paginate-links li button.white {
       background-color: #fff; }
     body .scope button.red, body .scope a.red.button, body .scope input.red[type="submit"], body .scope textarea.red[type="submit"], body .scope select.red[type="submit"], body .scope ul.red[type="submit"].tagit, body .scope .button-group > li > a.red, body .scope .scope .button-group > li > a.red, body .scope .button-group > li > button.red, body .scope .scope .button-group > li > button.red, body .scope .paginate-links li a.red, body .scope .paginate-links li button.red {
@@ -1202,21 +1250,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       border: 1px solid #2a94d6;
       color: #2a94d6; }
       body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"], body .scope ul.inverse.text-dark[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-dark, body .scope .scope .button-group > li > a.inverse.text-dark, body .scope .paginate-links li a.inverse.text-dark {
-        border-color: #2e4052; }
+        border-color: #3c3d3e; }
       body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"], body .scope ul.inverse.text-normal[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-normal, body .scope .scope .button-group > li > a.inverse.text-normal, body .scope .paginate-links li a.inverse.text-normal {
-        border-color: #525354; }
+        border-color: #686c70; }
       body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"], body .scope ul.inverse.text-light[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-light, body .scope .scope .button-group > li > a.inverse.text-light, body .scope .paginate-links li a.inverse.text-light {
         border-color: #adb8c2; }
+      body .scope button.inverse.text-link, body .scope a.inverse.text-link.button, body .scope input.inverse.text-link[type="submit"], body .scope textarea.inverse.text-link[type="submit"], body .scope select.inverse.text-link[type="submit"], body .scope ul.inverse.text-link[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-link, body .scope .scope .button-group > li > a.inverse.text-link, body .scope .paginate-links li a.inverse.text-link {
+        border-color: #006eb3; }
       body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"], body .scope ul.inverse.blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.blue, body .scope .scope .button-group > li > a.inverse.blue, body .scope .paginate-links li a.inverse.blue {
         border-color: #2a94d6; }
       body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"], body .scope ul.inverse.light-blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-blue, body .scope .scope .button-group > li > a.inverse.light-blue, body .scope .paginate-links li a.inverse.light-blue {
         border-color: #4eb1cb; }
       body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"], body .scope ul.inverse.navy[type="submit"].tagit, body .scope .button-group > li > a.inverse.navy, body .scope .scope .button-group > li > a.inverse.navy, body .scope .paginate-links li a.inverse.navy {
-        border-color: #344a5f; }
+        border-color: #34495e; }
       body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"], body .scope ul.inverse.grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.grey, body .scope .scope .button-group > li > a.inverse.grey, body .scope .paginate-links li a.inverse.grey {
         border-color: #f0f1f2; }
       body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"], body .scope ul.inverse.light-grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-grey, body .scope .scope .button-group > li > a.inverse.light-grey, body .scope .paginate-links li a.inverse.light-grey {
-        border-color: #f9fbfc; }
+        border-color: #fafafa; }
       body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"], body .scope ul.inverse.white[type="submit"].tagit, body .scope .button-group > li > a.inverse.white, body .scope .scope .button-group > li > a.inverse.white, body .scope .paginate-links li a.inverse.white {
         border-color: #fff; }
       body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"], body .scope ul.inverse.red[type="submit"].tagit, body .scope .button-group > li > a.inverse.red, body .scope .scope .button-group > li > a.inverse.red, body .scope .paginate-links li a.inverse.red {
@@ -1230,21 +1280,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       body .scope button.inverse.pink, body .scope a.inverse.pink.button, body .scope input.inverse.pink[type="submit"], body .scope textarea.inverse.pink[type="submit"], body .scope select.inverse.pink[type="submit"], body .scope ul.inverse.pink[type="submit"].tagit, body .scope .button-group > li > a.inverse.pink, body .scope .scope .button-group > li > a.inverse.pink, body .scope .paginate-links li a.inverse.pink {
         border-color: #d96383; }
       body .scope button.inverse.text-dark, body .scope a.inverse.text-dark.button, body .scope input.inverse.text-dark[type="submit"], body .scope textarea.inverse.text-dark[type="submit"], body .scope select.inverse.text-dark[type="submit"], body .scope ul.inverse.text-dark[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-dark, body .scope .scope .button-group > li > a.inverse.text-dark, body .scope .paginate-links li a.inverse.text-dark {
-        color: #2e4052; }
+        color: #3c3d3e; }
       body .scope button.inverse.text-normal, body .scope a.inverse.text-normal.button, body .scope input.inverse.text-normal[type="submit"], body .scope textarea.inverse.text-normal[type="submit"], body .scope select.inverse.text-normal[type="submit"], body .scope ul.inverse.text-normal[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-normal, body .scope .scope .button-group > li > a.inverse.text-normal, body .scope .paginate-links li a.inverse.text-normal {
-        color: #525354; }
+        color: #686c70; }
       body .scope button.inverse.text-light, body .scope a.inverse.text-light.button, body .scope input.inverse.text-light[type="submit"], body .scope textarea.inverse.text-light[type="submit"], body .scope select.inverse.text-light[type="submit"], body .scope ul.inverse.text-light[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-light, body .scope .scope .button-group > li > a.inverse.text-light, body .scope .paginate-links li a.inverse.text-light {
         color: #adb8c2; }
+      body .scope button.inverse.text-link, body .scope a.inverse.text-link.button, body .scope input.inverse.text-link[type="submit"], body .scope textarea.inverse.text-link[type="submit"], body .scope select.inverse.text-link[type="submit"], body .scope ul.inverse.text-link[type="submit"].tagit, body .scope .button-group > li > a.inverse.text-link, body .scope .scope .button-group > li > a.inverse.text-link, body .scope .paginate-links li a.inverse.text-link {
+        color: #006eb3; }
       body .scope button.inverse.blue, body .scope a.inverse.blue.button, body .scope input.inverse.blue[type="submit"], body .scope textarea.inverse.blue[type="submit"], body .scope select.inverse.blue[type="submit"], body .scope ul.inverse.blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.blue, body .scope .scope .button-group > li > a.inverse.blue, body .scope .paginate-links li a.inverse.blue {
         color: #2a94d6; }
       body .scope button.inverse.light-blue, body .scope a.inverse.light-blue.button, body .scope input.inverse.light-blue[type="submit"], body .scope textarea.inverse.light-blue[type="submit"], body .scope select.inverse.light-blue[type="submit"], body .scope ul.inverse.light-blue[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-blue, body .scope .scope .button-group > li > a.inverse.light-blue, body .scope .paginate-links li a.inverse.light-blue {
         color: #4eb1cb; }
       body .scope button.inverse.navy, body .scope a.inverse.navy.button, body .scope input.inverse.navy[type="submit"], body .scope textarea.inverse.navy[type="submit"], body .scope select.inverse.navy[type="submit"], body .scope ul.inverse.navy[type="submit"].tagit, body .scope .button-group > li > a.inverse.navy, body .scope .scope .button-group > li > a.inverse.navy, body .scope .paginate-links li a.inverse.navy {
-        color: #344a5f; }
+        color: #34495e; }
       body .scope button.inverse.grey, body .scope a.inverse.grey.button, body .scope input.inverse.grey[type="submit"], body .scope textarea.inverse.grey[type="submit"], body .scope select.inverse.grey[type="submit"], body .scope ul.inverse.grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.grey, body .scope .scope .button-group > li > a.inverse.grey, body .scope .paginate-links li a.inverse.grey {
         color: #f0f1f2; }
       body .scope button.inverse.light-grey, body .scope a.inverse.light-grey.button, body .scope input.inverse.light-grey[type="submit"], body .scope textarea.inverse.light-grey[type="submit"], body .scope select.inverse.light-grey[type="submit"], body .scope ul.inverse.light-grey[type="submit"].tagit, body .scope .button-group > li > a.inverse.light-grey, body .scope .scope .button-group > li > a.inverse.light-grey, body .scope .paginate-links li a.inverse.light-grey {
-        color: #f9fbfc; }
+        color: #fafafa; }
       body .scope button.inverse.white, body .scope a.inverse.white.button, body .scope input.inverse.white[type="submit"], body .scope textarea.inverse.white[type="submit"], body .scope select.inverse.white[type="submit"], body .scope ul.inverse.white[type="submit"].tagit, body .scope .button-group > li > a.inverse.white, body .scope .scope .button-group > li > a.inverse.white, body .scope .paginate-links li a.inverse.white {
         color: #fff; }
       body .scope button.inverse.red, body .scope a.inverse.red.button, body .scope input.inverse.red[type="submit"], body .scope textarea.inverse.red[type="submit"], body .scope select.inverse.red[type="submit"], body .scope ul.inverse.red[type="submit"].tagit, body .scope .button-group > li > a.inverse.red, body .scope .scope .button-group > li > a.inverse.red, body .scope .paginate-links li a.inverse.red {
@@ -1262,9 +1314,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope button.loading, body .scope a.loading.button, body .scope input.loading[type="submit"], body .scope textarea.loading[type="submit"], body .scope select.loading[type="submit"], body .scope ul.loading[type="submit"].tagit, body .scope .button-group > li > a.loading, body .scope .scope .button-group > li > a.loading, body .scope .button-group > li > button.loading, body .scope .scope .button-group > li > button.loading, body .scope .paginate-links li a.loading, body .scope .paginate-links li button.loading {
       pointer-events: none; }
       body .scope button.loading:after, body .scope a.loading.button:after, body .scope input.loading[type="submit"]:after, body .scope textarea.loading[type="submit"]:after, body .scope select.loading[type="submit"]:after, body .scope ul.loading[type="submit"].tagit:after, body .scope .button-group > li > a.loading:after, body .scope .scope .button-group > li > a.loading:after, body .scope .paginate-links li a.loading:after {
-        font-size: 20px;
-        left: -webkit-calc(50% - 10px);
-        left: calc(50% - 10px); }
+        width: 32px;
+        height: 32px; }
     body .scope button:last-child, body .scope a.button:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child, body .scope select[type="submit"]:last-child, body .scope ul[type="submit"].tagit:last-child, body .scope .button-group > li > a:last-child, body .scope .scope .button-group > li > a:last-child, body .scope .button-group > li > button:last-child, body .scope .scope .button-group > li > button:last-child, body .scope .paginate-links li a:last-child, body .scope .paginate-links li button:last-child {
       margin-right: 0; }
     body .scope button:hover, body .scope a.button:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover, body .scope select[type="submit"]:hover, body .scope ul[type="submit"].tagit:hover, body .scope .button-group > li > a:hover, body .scope .scope .button-group > li > a:hover, body .scope .button-group > li > button:hover, body .scope .scope .button-group > li > button:hover, body .scope .paginate-links li a:hover, body .scope .paginate-links li button:hover {
@@ -1300,7 +1351,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope .dropdown-options li a, body .scope .dropdown-options li a:visited {
       display: block;
       padding: 8px 16px;
-      color: #525354;
+      color: #686c70;
       line-height: initial; }
       body .scope .dropdown-options li a:hover, body .scope .dropdown-options li a:visited:hover {
         color: #fff;
@@ -1418,21 +1469,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     color: #2a94d6;
     font-weight: 700; }
     body .scope .alert.text-dark {
-      color: #2e4052; }
+      color: #3c3d3e; }
     body .scope .alert.text-normal {
-      color: #525354; }
+      color: #686c70; }
     body .scope .alert.text-light {
       color: #adb8c2; }
+    body .scope .alert.text-link {
+      color: #006eb3; }
     body .scope .alert.blue {
       color: #2a94d6; }
     body .scope .alert.light-blue {
       color: #4eb1cb; }
     body .scope .alert.navy {
-      color: #344a5f; }
+      color: #34495e; }
     body .scope .alert.grey {
       color: #f0f1f2; }
     body .scope .alert.light-grey {
-      color: #f9fbfc; }
+      color: #fafafa; }
     body .scope .alert.white {
       color: #fff; }
     body .scope .alert.red {
@@ -1446,21 +1499,23 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope .alert.pink {
       color: #d96383; }
     body .scope .alert.text-dark {
-      background-color: rgba(46, 64, 82, 0.1); }
+      background-color: rgba(60, 61, 62, 0.1); }
     body .scope .alert.text-normal {
-      background-color: rgba(82, 83, 84, 0.1); }
+      background-color: rgba(104, 108, 112, 0.1); }
     body .scope .alert.text-light {
       background-color: rgba(173, 184, 194, 0.1); }
+    body .scope .alert.text-link {
+      background-color: rgba(0, 110, 179, 0.1); }
     body .scope .alert.blue {
       background-color: rgba(42, 148, 214, 0.1); }
     body .scope .alert.light-blue {
       background-color: rgba(78, 177, 203, 0.1); }
     body .scope .alert.navy {
-      background-color: rgba(52, 74, 95, 0.1); }
+      background-color: rgba(52, 73, 94, 0.1); }
     body .scope .alert.grey {
       background-color: rgba(240, 241, 242, 0.1); }
     body .scope .alert.light-grey {
-      background-color: rgba(249, 251, 252, 0.1); }
+      background-color: rgba(250, 250, 250, 0.1); }
     body .scope .alert.white {
       background-color: rgba(255, 255, 255, 0.1); }
     body .scope .alert.red {
@@ -1507,8 +1562,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     padding: 16px;
     padding-right: 46px;
     cursor: pointer;
-    background-color: #f9fafa;
-    color: #525354;
+    background-color: #fafafa;
+    color: #686c70;
     font-weight: 700;
     border: 1px solid #dfe0e1;
     position: relative; }
@@ -1548,32 +1603,27 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       background-color: rgba(255, 255, 255, 0.75);
       border-radius: 4px; }
     body .scope .loading:after {
-      font-family: 'FontAwesome';
-      content: "\f1ce";
+      content: '';
       display: block;
-      font-size: 36px;
-      height: 0;
-      line-height: 0;
-      font-weight: normal;
-      color: #2e4052;
-      opacity: 0.25;
+      width: 56px;
+      height: 56px;
+      background: transparent url(images/loading.gif) no-repeat center center;
+      background-size: contain;
+      opacity: 0.75;
       padding: 0;
       margin: 0;
       position: absolute;
       z-index: 9997;
       top: 50%;
-      left: -webkit-calc(50% - 18px);
-      left: calc(50% - 18px);
+      left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-      -webkit-animation: fa-spin 500ms infinite linear;
-      animation: fa-spin 500ms infinite linear; }
+      transform: translateX(-50%) translateY(-50%); }
   body .scope .ribbon {
     display: table;
     table-layout: fixed;
     width: 100.5%;
-    background-color: #344a5f; }
+    background-color: #34495e; }
     body .scope .ribbon ul {
       display: table-row;
       list-style: none;
@@ -1626,7 +1676,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     transition: all 250ms ease;
     display: none;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(52, 73, 94, 0.9);
     position: fixed;
     z-index: 9998;
     top: 0;
@@ -1713,20 +1763,6 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
         -webkit-transform: translate(-50%, -50%) scale(1);
         -ms-transform: translate(-50%, -50%) scale(1);
         transform: translate(-50%, -50%) scale(1); }
-  body .scope #modal-background {
-    -webkit-transition: all 250ms ease;
-    transition: all 250ms ease;
-    display: none;
-    opacity: 0;
-    background-color: rgba(46, 64, 82, 0.9);
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-    body .scope #modal-background.visible {
-      opacity: 1; }
   body .scope label {
     display: block;
     color: #adb8c2; }
@@ -1740,7 +1776,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     font-size: 15px;
     line-height: 20px;
     padding: 10px 12px;
-    color: #525354;
+    color: #686c70;
     background-color: #f0f1f2;
     width: 100%; }
     body .scope input:focus, body .scope textarea:focus, body .scope select:focus, body .scope ul.tagit:focus {
@@ -1779,7 +1815,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     -webkit-appearance: none;
     -moz-appearance: none; }
     body .scope input[type="radio"] + label, body .scope .scope input[type="radio"] + label, body .scope textarea[type="radio"] + label, body .scope .scope textarea[type="radio"] + label, body .scope select[type="radio"] + label, body .scope .scope select[type="radio"] + label, body .scope input[type="checkbox"] + label, body .scope .scope input[type="checkbox"] + label, body .scope textarea[type="checkbox"] + label, body .scope .scope textarea[type="checkbox"] + label, body .scope select[type="checkbox"] + label, body .scope .scope select[type="checkbox"] + label, body .scope ul[type="checkbox"].tagit + label, body .scope .scope ul[type="checkbox"].tagit + label, body .scope ul[type="radio"].tagit + label, body .scope .scope ul[type="radio"].tagit + label {
-      color: #525354;
+      color: #686c70;
       display: inline-block;
       margin-top: 0;
       margin-right: 16px;
@@ -1867,9 +1903,9 @@ body, body .scope, body .scope {
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
-    color: #525354; }
+    color: #686c70; }
   body .mce-ico, body .mce-menubar .mce-menubtn button span, body .mce-menubar .mce-menubtn .scope a.button span, body .scope .mce-menubar .mce-menubtn a.button span, body .mce-menubar .mce-menubtn .scope input[type="submit"] span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .mce-menubar .mce-menubtn .scope textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .mce-menubar .mce-menubtn .scope select[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span, body .mce-menubar .mce-menubtn .scope ul[type="submit"].tagit span, body .scope .mce-menubar .mce-menubtn ul[type="submit"].tagit span, body .mce-menubar .mce-menubtn .scope .button-group > li > a span, body .scope .mce-menubar .mce-menubtn .button-group > li > a span, body .mce-menubar .mce-menubtn .scope .scope .button-group > li > a span, body .mce-menubar .mce-menubtn .scope .paginate-links li a span, body .scope .mce-menubar .mce-menubtn .paginate-links li a span, body .scope .paginate-links li .mce-menubar .mce-menubtn a span, body .scope .mce-ico, body .scope .mce-menubar .mce-menubtn button span, body .scope .mce-menubar .mce-menubtn a.button span, body .scope .mce-menubar .mce-menubtn input[type="submit"] span, body .scope .mce-menubar .mce-menubtn textarea[type="submit"] span, body .scope .mce-menubar .mce-menubtn select[type="submit"] span, body .scope .mce-menubar .mce-menubtn ul[type="submit"].tagit span, body .scope .mce-menubar .mce-menubtn .button-group > li > a span, body .scope .mce-menubar .mce-menubtn .scope .button-group > li > a span, body .scope .mce-menubar .mce-menubtn .paginate-links li a span, body .scope .paginate-links li .mce-menubar .mce-menubtn a span {
-    color: #525354; }
+    color: #686c70; }
   body .mce-stack-layout-item, body .scope .mce-stack-layout-item {
     border: none; }
   body .mce-stack-layout-item.mce-last, body .scope .mce-stack-layout-item.mce-last {
@@ -1902,7 +1938,7 @@ body, body .scope, body .scope {
   body .mce-stack-layout .mce-widget button, body .mce-stack-layout .mce-widget .scope a.button, body .scope .mce-stack-layout .mce-widget a.button, body .mce-stack-layout .mce-widget .scope input[type="submit"], body .scope .mce-stack-layout .mce-widget input[type="submit"], body .mce-stack-layout .mce-widget .scope textarea[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .mce-stack-layout .mce-widget .scope select[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"], body .mce-stack-layout .mce-widget .scope ul[type="submit"].tagit, body .scope .mce-stack-layout .mce-widget ul[type="submit"].tagit, body .mce-stack-layout .mce-widget .scope .button-group > li > a, body .scope .mce-stack-layout .mce-widget .button-group > li > a, body .mce-stack-layout .mce-widget .scope .scope .button-group > li > a, body .mce-stack-layout .mce-widget .scope .button-group > li > button, body .scope .mce-stack-layout .mce-widget .button-group > li > button, body .mce-stack-layout .mce-widget .scope .scope .button-group > li > button, body .mce-stack-layout .mce-widget .scope .paginate-links li a, body .scope .mce-stack-layout .mce-widget .paginate-links li a, body .scope .paginate-links li .mce-stack-layout .mce-widget a, body .mce-stack-layout .mce-widget .scope .paginate-links li button, body .scope .mce-stack-layout .mce-widget .paginate-links li button, body .scope .paginate-links li .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget button, body .scope .mce-stack-layout .mce-widget a.button, body .scope .mce-stack-layout .mce-widget input[type="submit"], body .scope .mce-stack-layout .mce-widget textarea[type="submit"], body .scope .mce-stack-layout .mce-widget select[type="submit"], body .scope .mce-stack-layout .mce-widget ul[type="submit"].tagit, body .scope .mce-stack-layout .mce-widget .button-group > li > a, body .scope .mce-stack-layout .mce-widget .scope .button-group > li > a, body .scope .mce-stack-layout .mce-widget .paginate-links li a, body .scope .paginate-links li .mce-stack-layout .mce-widget a {
     margin: 1px 2px; }
   body .mce-toolbar-grp, body .scope .mce-toolbar-grp {
-    background-color: #f9fafa; }
+    background-color: #fafafa; }
   body .mce-flow-layout-item, body .scope .mce-flow-layout-item {
     margin: 5px 0; }
   body .mce-menubar .mce-menubtn:hover, body .mce-menubar .mce-menubtn.mce-active, body .mce-menubar .mce-menubtn:focus, body .scope .mce-menubar .mce-menubtn:hover, body .scope .mce-menubar .mce-menubtn.mce-active, body .scope .mce-menubar .mce-menubtn:focus {
@@ -1917,9 +1953,9 @@ body, body .scope, body .scope {
   body .mce-tooltip-inner, body .scope .mce-tooltip-inner {
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
     box-shadow: none;
-    background-color: #2e4052; }
+    background-color: #3c3d3e; }
   body .mce-tooltip-arrow, body .scope .mce-tooltip-arrow {
-    border: 5px dashed #2e4052; }
+    border: 5px dashed #3c3d3e; }
   body ul.tagit, body .scope ul.tagit {
     -webkit-transition: none;
     transition: none;
@@ -1951,7 +1987,7 @@ body, body .scope, body .scope {
     border-radius: 5px;
     border: 1px solid #dfe0e1;
     border-color: transparent;
-    background: #2e4052;
+    background: #3c3d3e;
     color: #fff; }
   body .tooltipster-default .tooltipster-content, body .scope .tooltipster-default .tooltipster-content {
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
@@ -1965,7 +2001,7 @@ body, body .scope, body .scope {
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
-    color: #525354; }
+    color: #686c70; }
   body .ui-autocomplete, body .scope .ui-autocomplete {
     border: none;
     border-radius: 5px;
@@ -1984,10 +2020,10 @@ body, body .scope, body .scope {
     border: none;
     margin: 0; }
   body .ui-widget, body .scope .ui-widget {
-    color: #525354; }
+    color: #686c70; }
   body .ui-widget-header, body .scope .ui-widget-header {
     background: #f0f1f2;
-    color: #525354;
+    color: #686c70;
     border: none; }
   body .ui-state-highlight, body .ui-widget-content .ui-state-highlight, body .ui-widget-header .ui-state-highlight, body .scope .ui-state-highlight, body .scope .ui-widget-content .ui-state-highlight, body .scope .ui-widget-header .ui-state-highlight {
     background-color: #f3ae4e;

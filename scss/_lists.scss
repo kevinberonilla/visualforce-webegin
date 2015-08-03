@@ -14,20 +14,21 @@ $column-list: (
     (span-12, 100%)
 );
 $color-list: (
-    (text-dark, #2e4052),
-    (text-normal, #525354),
-    (text-light, #adb8c2),
-    (blue, #2a94d6),
-    (light-blue, #4eb1cb),
-    (navy, #344a5f),
-    (grey, #f0f1f2),
-    (light-grey, #f9fbfc),
-    (white, #fff),
-    (red, #cf5c60),
-    (purple, #717ecd),
-    (green, #4ab471),
-    (orange, #f3ae4e),
-    (pink, #d96383)
+    (text-dark, $text-dark),
+    (text-normal, $text-normal),
+    (text-light, $text-light),
+    (text-link, $text-link),
+    (blue, $blue),
+    (light-blue, $light-blue),
+    (navy, $navy),
+    (grey, $grey),
+    (light-grey, $light-grey),
+    (white, $white),
+    (red, $red),
+    (purple, $purple),
+    (green, $green),
+    (orange, $orange),
+    (pink, $pink)
 );
 $property-list: (
     (m, margin),

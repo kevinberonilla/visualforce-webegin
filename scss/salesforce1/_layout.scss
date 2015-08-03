@@ -74,15 +74,13 @@
         &.dismissible {
             padding-right: 48px;
         }
+        @include color-classes(background-color);
     }
     .border-top {
         border-top: $card-border;
     }
     .border-bottom {
         border-bottom: $card-border;
-    }
-    .header {
-        background-color: $light-grey;
     }
     .padded {
         padding: $card-padding;
