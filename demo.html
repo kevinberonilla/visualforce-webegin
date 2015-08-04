@@ -382,9 +382,9 @@
                             <div class="column span-5 span-12-tp margin-span-0-tp margin-top adjust-p-t-32 adjust-p-t-0-tp">
                                 <div id="buttons-code">
                                     <p><button class="green">Green Button</button><a href="#" class="button">Link with .button Class<span class="icon fa fa-user margin-left"></span></a></p>
-                                    <p><button class="red inverse">Red Inverse Button</button><button class="orange small disabled">Small Orange Disabled Button</button></p>
+                                    <p><button class="red inverse">Red Inverse Button</button><button class="orange small">Small Orange Button</button></p>
                                     <p><button class="navy">Navy Button</button><a href="#" class="button purple inverse small">Small Purple Inverse Button</a></p>
-                                    <p><button class="light-blue"><span class="icon fa fa-cog margin-right"></span>Light-Blue Button</button><a href="#" class="button pink loading">Pink Loading Button</a></p>
+                                    <p><a href="#" class="button pink disabled">Disabled Button</a><button class="light-blue"><span class="icon fa fa-cog margin-right"></span>Light-Blue Button</button></p>
                                     <div class="margin-top">
                                         <button class="dropdown red">Dropdown Button</button>
                                         <ul class="dropdown-options" style="min-width: 153px;">
@@ -393,7 +393,6 @@
                                             <li><a href="#">Option 3</a></li>
                                             <li><a href="#">Option 4</a></li>
                                         </ul>
-                                        <button class="js-loading inverse">Click Me to Load</button>
                                     </div>
                                 </div>
                             </div>
@@ -614,6 +613,41 @@
                     </div>
                 </div>
                 <!-- /Card Lists Section -->
+                <hr class="margin-top">
+                <!-- Loading States Section -->
+                <div class="demo-section">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="column span-8 margin-span-2 span-12-tp margin-span-0-tp">
+                                <h2>Loading States</h2>
+                                <p>The <code>.loading</code> can be applied to any block-level element or contianer to add a loading state and disable click events. This can come in handy during AJAX events.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="loading-states-code">
+                                <div class="column span-6 margin-span-2 span-12-tp margin-span-0-tp">
+                                    <article class="card loading">
+                                        <section class="border-bottom">
+                                            <h2>Loading Card</h2>
+                                        </section>
+                                        <section>
+                                            <p>Dynamic content incoming. Stay tuned!</p>
+                                            <p>For the sake of this demo, nothing is actually being loaded. But we can pretend something great is about to happen.</p>
+                                        </section>
+                                    </article>
+                                </div>
+                                <div class="column span-4 span-12-tp">
+                                    <p><a href="#" class="button pink loading">Loading Button</a></p>
+                                    <p><button class="js-loading inverse">Click Me to Load</button></p>
+                                </div>
+                                <div class="column span-8 margin-span-2 span-12-tp margin-span-0-tp">
+                                    <button class="purple js-view-code js-open-modal" data-source-id="loading-states-code" data-modal-id="code-modal"><span class="icon margin-right fa fa-code"></span>View Loading States Code</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Loading States Section -->
                 <hr class="margin-top">
                 <!-- Statuses Section -->
                 <div class="demo-section">
