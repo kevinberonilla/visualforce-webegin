@@ -13,23 +13,6 @@ $column-list: (
     (span-11, 91.666%),
     (span-12, 100%)
 );
-$color-list: (
-    (text-dark, $text-dark),
-    (text-normal, $text-normal),
-    (text-light, $text-light),
-    (text-link, $text-link),
-    (blue, $blue),
-    (light-blue, $light-blue),
-    (navy, $navy),
-    (grey, $grey),
-    (light-grey, $light-grey),
-    (white, $white),
-    (red, $red),
-    (purple, $purple),
-    (green, $green),
-    (orange, $orange),
-    (pink, $pink)
-);
 $block-property-list: (
     (m, margin),
     (p, padding),
@@ -76,4 +59,21 @@ $vertical-align-list: (
     (bl, baseline),
     (b, bottom),
     (tb, text-bottom)
+);
+$color-list: (
+    (text-dark, $text-dark),
+    (text-normal, $text-normal),
+    (text-light, $text-light),
+    (text-link, $text-link),
+    (blue, $blue),
+    (light-blue, $light-blue),
+    (navy, $navy),
+    (grey, $grey),
+    (light-grey, $light-grey),
+    (white, $white),
+    (red, $red),
+    (purple, $purple),
+    (green, $green),
+    (orange, $orange),
+    (pink, $pink)
 );
