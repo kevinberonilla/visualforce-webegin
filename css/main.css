@@ -62,10 +62,6 @@ body .scope {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
-  body .scope .float-left {
-    float: left; }
-  body .scope .float-right {
-    float: right; }
 
 body .scope {
   /* ----------------------------------------
@@ -186,9 +182,9 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       body .scope .column.float-right.margin-span-12 {
         margin-left: initial;
         margin-right: 100%; }
-  body .scope .margin-top {
+  body .scope .grid-margin-top {
     margin-top: 16px; }
-  body .scope .margin-bottom {
+  body .scope .grid-margin-bottom {
     margin-bottom: 16px; }
   @media only screen and (max-width: 1024px) {
     body .scope .column.span-0-tl {
@@ -2081,6 +2077,14 @@ body #scope {
     text-align: left; }
   body #scope .adjust-ta-r {
     text-align: right; }
+  body #scope .adjust-ta-j {
+    text-align: justify; }
+  body #scope .adjust-f-l {
+    float: left; }
+  body #scope .adjust-f-r {
+    float: right; }
+  body #scope .adjust-f-n {
+    float: none; }
   body #scope .adjust-va-t {
     vertical-align: top; }
   body #scope .adjust-va-tt {
@@ -2127,38 +2131,6 @@ body #scope {
     margin-top: 15px; }
   body #scope .adjust-m-t-16 {
     margin-top: 16px; }
-  body #scope .adjust-m-t-17 {
-    margin-top: 17px; }
-  body #scope .adjust-m-t-18 {
-    margin-top: 18px; }
-  body #scope .adjust-m-t-19 {
-    margin-top: 19px; }
-  body #scope .adjust-m-t-20 {
-    margin-top: 20px; }
-  body #scope .adjust-m-t-21 {
-    margin-top: 21px; }
-  body #scope .adjust-m-t-22 {
-    margin-top: 22px; }
-  body #scope .adjust-m-t-23 {
-    margin-top: 23px; }
-  body #scope .adjust-m-t-24 {
-    margin-top: 24px; }
-  body #scope .adjust-m-t-25 {
-    margin-top: 25px; }
-  body #scope .adjust-m-t-26 {
-    margin-top: 26px; }
-  body #scope .adjust-m-t-27 {
-    margin-top: 27px; }
-  body #scope .adjust-m-t-28 {
-    margin-top: 28px; }
-  body #scope .adjust-m-t-29 {
-    margin-top: 29px; }
-  body #scope .adjust-m-t-30 {
-    margin-top: 30px; }
-  body #scope .adjust-m-t-31 {
-    margin-top: 31px; }
-  body #scope .adjust-m-t-32 {
-    margin-top: 32px; }
   body #scope .adjust-m-r-0 {
     margin-right: 0px; }
   body #scope .adjust-m-r-1 {
@@ -2193,38 +2165,6 @@ body #scope {
     margin-right: 15px; }
   body #scope .adjust-m-r-16 {
     margin-right: 16px; }
-  body #scope .adjust-m-r-17 {
-    margin-right: 17px; }
-  body #scope .adjust-m-r-18 {
-    margin-right: 18px; }
-  body #scope .adjust-m-r-19 {
-    margin-right: 19px; }
-  body #scope .adjust-m-r-20 {
-    margin-right: 20px; }
-  body #scope .adjust-m-r-21 {
-    margin-right: 21px; }
-  body #scope .adjust-m-r-22 {
-    margin-right: 22px; }
-  body #scope .adjust-m-r-23 {
-    margin-right: 23px; }
-  body #scope .adjust-m-r-24 {
-    margin-right: 24px; }
-  body #scope .adjust-m-r-25 {
-    margin-right: 25px; }
-  body #scope .adjust-m-r-26 {
-    margin-right: 26px; }
-  body #scope .adjust-m-r-27 {
-    margin-right: 27px; }
-  body #scope .adjust-m-r-28 {
-    margin-right: 28px; }
-  body #scope .adjust-m-r-29 {
-    margin-right: 29px; }
-  body #scope .adjust-m-r-30 {
-    margin-right: 30px; }
-  body #scope .adjust-m-r-31 {
-    margin-right: 31px; }
-  body #scope .adjust-m-r-32 {
-    margin-right: 32px; }
   body #scope .adjust-m-b-0 {
     margin-bottom: 0px; }
   body #scope .adjust-m-b-1 {
@@ -2259,38 +2199,6 @@ body #scope {
     margin-bottom: 15px; }
   body #scope .adjust-m-b-16 {
     margin-bottom: 16px; }
-  body #scope .adjust-m-b-17 {
-    margin-bottom: 17px; }
-  body #scope .adjust-m-b-18 {
-    margin-bottom: 18px; }
-  body #scope .adjust-m-b-19 {
-    margin-bottom: 19px; }
-  body #scope .adjust-m-b-20 {
-    margin-bottom: 20px; }
-  body #scope .adjust-m-b-21 {
-    margin-bottom: 21px; }
-  body #scope .adjust-m-b-22 {
-    margin-bottom: 22px; }
-  body #scope .adjust-m-b-23 {
-    margin-bottom: 23px; }
-  body #scope .adjust-m-b-24 {
-    margin-bottom: 24px; }
-  body #scope .adjust-m-b-25 {
-    margin-bottom: 25px; }
-  body #scope .adjust-m-b-26 {
-    margin-bottom: 26px; }
-  body #scope .adjust-m-b-27 {
-    margin-bottom: 27px; }
-  body #scope .adjust-m-b-28 {
-    margin-bottom: 28px; }
-  body #scope .adjust-m-b-29 {
-    margin-bottom: 29px; }
-  body #scope .adjust-m-b-30 {
-    margin-bottom: 30px; }
-  body #scope .adjust-m-b-31 {
-    margin-bottom: 31px; }
-  body #scope .adjust-m-b-32 {
-    margin-bottom: 32px; }
   body #scope .adjust-m-l-0 {
     margin-left: 0px; }
   body #scope .adjust-m-l-1 {
@@ -2325,38 +2233,6 @@ body #scope {
     margin-left: 15px; }
   body #scope .adjust-m-l-16 {
     margin-left: 16px; }
-  body #scope .adjust-m-l-17 {
-    margin-left: 17px; }
-  body #scope .adjust-m-l-18 {
-    margin-left: 18px; }
-  body #scope .adjust-m-l-19 {
-    margin-left: 19px; }
-  body #scope .adjust-m-l-20 {
-    margin-left: 20px; }
-  body #scope .adjust-m-l-21 {
-    margin-left: 21px; }
-  body #scope .adjust-m-l-22 {
-    margin-left: 22px; }
-  body #scope .adjust-m-l-23 {
-    margin-left: 23px; }
-  body #scope .adjust-m-l-24 {
-    margin-left: 24px; }
-  body #scope .adjust-m-l-25 {
-    margin-left: 25px; }
-  body #scope .adjust-m-l-26 {
-    margin-left: 26px; }
-  body #scope .adjust-m-l-27 {
-    margin-left: 27px; }
-  body #scope .adjust-m-l-28 {
-    margin-left: 28px; }
-  body #scope .adjust-m-l-29 {
-    margin-left: 29px; }
-  body #scope .adjust-m-l-30 {
-    margin-left: 30px; }
-  body #scope .adjust-m-l-31 {
-    margin-left: 31px; }
-  body #scope .adjust-m-l-32 {
-    margin-left: 32px; }
   body #scope .adjust-m-a-0 {
     margin: 0px; }
   body #scope .adjust-m-a-1 {
@@ -2391,38 +2267,6 @@ body #scope {
     margin: 15px; }
   body #scope .adjust-m-a-16 {
     margin: 16px; }
-  body #scope .adjust-m-a-17 {
-    margin: 17px; }
-  body #scope .adjust-m-a-18 {
-    margin: 18px; }
-  body #scope .adjust-m-a-19 {
-    margin: 19px; }
-  body #scope .adjust-m-a-20 {
-    margin: 20px; }
-  body #scope .adjust-m-a-21 {
-    margin: 21px; }
-  body #scope .adjust-m-a-22 {
-    margin: 22px; }
-  body #scope .adjust-m-a-23 {
-    margin: 23px; }
-  body #scope .adjust-m-a-24 {
-    margin: 24px; }
-  body #scope .adjust-m-a-25 {
-    margin: 25px; }
-  body #scope .adjust-m-a-26 {
-    margin: 26px; }
-  body #scope .adjust-m-a-27 {
-    margin: 27px; }
-  body #scope .adjust-m-a-28 {
-    margin: 28px; }
-  body #scope .adjust-m-a-29 {
-    margin: 29px; }
-  body #scope .adjust-m-a-30 {
-    margin: 30px; }
-  body #scope .adjust-m-a-31 {
-    margin: 31px; }
-  body #scope .adjust-m-a-32 {
-    margin: 32px; }
   body #scope .adjust-p-t-0 {
     padding-top: 0px; }
   body #scope .adjust-p-t-1 {
@@ -2457,38 +2301,6 @@ body #scope {
     padding-top: 15px; }
   body #scope .adjust-p-t-16 {
     padding-top: 16px; }
-  body #scope .adjust-p-t-17 {
-    padding-top: 17px; }
-  body #scope .adjust-p-t-18 {
-    padding-top: 18px; }
-  body #scope .adjust-p-t-19 {
-    padding-top: 19px; }
-  body #scope .adjust-p-t-20 {
-    padding-top: 20px; }
-  body #scope .adjust-p-t-21 {
-    padding-top: 21px; }
-  body #scope .adjust-p-t-22 {
-    padding-top: 22px; }
-  body #scope .adjust-p-t-23 {
-    padding-top: 23px; }
-  body #scope .adjust-p-t-24 {
-    padding-top: 24px; }
-  body #scope .adjust-p-t-25 {
-    padding-top: 25px; }
-  body #scope .adjust-p-t-26 {
-    padding-top: 26px; }
-  body #scope .adjust-p-t-27 {
-    padding-top: 27px; }
-  body #scope .adjust-p-t-28 {
-    padding-top: 28px; }
-  body #scope .adjust-p-t-29 {
-    padding-top: 29px; }
-  body #scope .adjust-p-t-30 {
-    padding-top: 30px; }
-  body #scope .adjust-p-t-31 {
-    padding-top: 31px; }
-  body #scope .adjust-p-t-32 {
-    padding-top: 32px; }
   body #scope .adjust-p-r-0 {
     padding-right: 0px; }
   body #scope .adjust-p-r-1 {
@@ -2523,38 +2335,6 @@ body #scope {
     padding-right: 15px; }
   body #scope .adjust-p-r-16 {
     padding-right: 16px; }
-  body #scope .adjust-p-r-17 {
-    padding-right: 17px; }
-  body #scope .adjust-p-r-18 {
-    padding-right: 18px; }
-  body #scope .adjust-p-r-19 {
-    padding-right: 19px; }
-  body #scope .adjust-p-r-20 {
-    padding-right: 20px; }
-  body #scope .adjust-p-r-21 {
-    padding-right: 21px; }
-  body #scope .adjust-p-r-22 {
-    padding-right: 22px; }
-  body #scope .adjust-p-r-23 {
-    padding-right: 23px; }
-  body #scope .adjust-p-r-24 {
-    padding-right: 24px; }
-  body #scope .adjust-p-r-25 {
-    padding-right: 25px; }
-  body #scope .adjust-p-r-26 {
-    padding-right: 26px; }
-  body #scope .adjust-p-r-27 {
-    padding-right: 27px; }
-  body #scope .adjust-p-r-28 {
-    padding-right: 28px; }
-  body #scope .adjust-p-r-29 {
-    padding-right: 29px; }
-  body #scope .adjust-p-r-30 {
-    padding-right: 30px; }
-  body #scope .adjust-p-r-31 {
-    padding-right: 31px; }
-  body #scope .adjust-p-r-32 {
-    padding-right: 32px; }
   body #scope .adjust-p-b-0 {
     padding-bottom: 0px; }
   body #scope .adjust-p-b-1 {
@@ -2589,38 +2369,6 @@ body #scope {
     padding-bottom: 15px; }
   body #scope .adjust-p-b-16 {
     padding-bottom: 16px; }
-  body #scope .adjust-p-b-17 {
-    padding-bottom: 17px; }
-  body #scope .adjust-p-b-18 {
-    padding-bottom: 18px; }
-  body #scope .adjust-p-b-19 {
-    padding-bottom: 19px; }
-  body #scope .adjust-p-b-20 {
-    padding-bottom: 20px; }
-  body #scope .adjust-p-b-21 {
-    padding-bottom: 21px; }
-  body #scope .adjust-p-b-22 {
-    padding-bottom: 22px; }
-  body #scope .adjust-p-b-23 {
-    padding-bottom: 23px; }
-  body #scope .adjust-p-b-24 {
-    padding-bottom: 24px; }
-  body #scope .adjust-p-b-25 {
-    padding-bottom: 25px; }
-  body #scope .adjust-p-b-26 {
-    padding-bottom: 26px; }
-  body #scope .adjust-p-b-27 {
-    padding-bottom: 27px; }
-  body #scope .adjust-p-b-28 {
-    padding-bottom: 28px; }
-  body #scope .adjust-p-b-29 {
-    padding-bottom: 29px; }
-  body #scope .adjust-p-b-30 {
-    padding-bottom: 30px; }
-  body #scope .adjust-p-b-31 {
-    padding-bottom: 31px; }
-  body #scope .adjust-p-b-32 {
-    padding-bottom: 32px; }
   body #scope .adjust-p-l-0 {
     padding-left: 0px; }
   body #scope .adjust-p-l-1 {
@@ -2655,38 +2403,6 @@ body #scope {
     padding-left: 15px; }
   body #scope .adjust-p-l-16 {
     padding-left: 16px; }
-  body #scope .adjust-p-l-17 {
-    padding-left: 17px; }
-  body #scope .adjust-p-l-18 {
-    padding-left: 18px; }
-  body #scope .adjust-p-l-19 {
-    padding-left: 19px; }
-  body #scope .adjust-p-l-20 {
-    padding-left: 20px; }
-  body #scope .adjust-p-l-21 {
-    padding-left: 21px; }
-  body #scope .adjust-p-l-22 {
-    padding-left: 22px; }
-  body #scope .adjust-p-l-23 {
-    padding-left: 23px; }
-  body #scope .adjust-p-l-24 {
-    padding-left: 24px; }
-  body #scope .adjust-p-l-25 {
-    padding-left: 25px; }
-  body #scope .adjust-p-l-26 {
-    padding-left: 26px; }
-  body #scope .adjust-p-l-27 {
-    padding-left: 27px; }
-  body #scope .adjust-p-l-28 {
-    padding-left: 28px; }
-  body #scope .adjust-p-l-29 {
-    padding-left: 29px; }
-  body #scope .adjust-p-l-30 {
-    padding-left: 30px; }
-  body #scope .adjust-p-l-31 {
-    padding-left: 31px; }
-  body #scope .adjust-p-l-32 {
-    padding-left: 32px; }
   body #scope .adjust-p-a-0 {
     padding: 0px; }
   body #scope .adjust-p-a-1 {
@@ -2721,38 +2437,6 @@ body #scope {
     padding: 15px; }
   body #scope .adjust-p-a-16 {
     padding: 16px; }
-  body #scope .adjust-p-a-17 {
-    padding: 17px; }
-  body #scope .adjust-p-a-18 {
-    padding: 18px; }
-  body #scope .adjust-p-a-19 {
-    padding: 19px; }
-  body #scope .adjust-p-a-20 {
-    padding: 20px; }
-  body #scope .adjust-p-a-21 {
-    padding: 21px; }
-  body #scope .adjust-p-a-22 {
-    padding: 22px; }
-  body #scope .adjust-p-a-23 {
-    padding: 23px; }
-  body #scope .adjust-p-a-24 {
-    padding: 24px; }
-  body #scope .adjust-p-a-25 {
-    padding: 25px; }
-  body #scope .adjust-p-a-26 {
-    padding: 26px; }
-  body #scope .adjust-p-a-27 {
-    padding: 27px; }
-  body #scope .adjust-p-a-28 {
-    padding: 28px; }
-  body #scope .adjust-p-a-29 {
-    padding: 29px; }
-  body #scope .adjust-p-a-30 {
-    padding: 30px; }
-  body #scope .adjust-p-a-31 {
-    padding: 31px; }
-  body #scope .adjust-p-a-32 {
-    padding: 32px; }
   body #scope .adjust-b-t-0 {
     border-top: 1px solid #dfe0e1;
     border-top-width: 0px; }
@@ -2804,54 +2488,6 @@ body #scope {
   body #scope .adjust-b-t-16 {
     border-top: 1px solid #dfe0e1;
     border-top-width: 16px; }
-  body #scope .adjust-b-t-17 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 17px; }
-  body #scope .adjust-b-t-18 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 18px; }
-  body #scope .adjust-b-t-19 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 19px; }
-  body #scope .adjust-b-t-20 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 20px; }
-  body #scope .adjust-b-t-21 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 21px; }
-  body #scope .adjust-b-t-22 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 22px; }
-  body #scope .adjust-b-t-23 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 23px; }
-  body #scope .adjust-b-t-24 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 24px; }
-  body #scope .adjust-b-t-25 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 25px; }
-  body #scope .adjust-b-t-26 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 26px; }
-  body #scope .adjust-b-t-27 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 27px; }
-  body #scope .adjust-b-t-28 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 28px; }
-  body #scope .adjust-b-t-29 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 29px; }
-  body #scope .adjust-b-t-30 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 30px; }
-  body #scope .adjust-b-t-31 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 31px; }
-  body #scope .adjust-b-t-32 {
-    border-top: 1px solid #dfe0e1;
-    border-top-width: 32px; }
   body #scope .adjust-b-r-0 {
     border-right: 1px solid #dfe0e1;
     border-right-width: 0px; }
@@ -2903,54 +2539,6 @@ body #scope {
   body #scope .adjust-b-r-16 {
     border-right: 1px solid #dfe0e1;
     border-right-width: 16px; }
-  body #scope .adjust-b-r-17 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 17px; }
-  body #scope .adjust-b-r-18 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 18px; }
-  body #scope .adjust-b-r-19 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 19px; }
-  body #scope .adjust-b-r-20 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 20px; }
-  body #scope .adjust-b-r-21 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 21px; }
-  body #scope .adjust-b-r-22 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 22px; }
-  body #scope .adjust-b-r-23 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 23px; }
-  body #scope .adjust-b-r-24 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 24px; }
-  body #scope .adjust-b-r-25 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 25px; }
-  body #scope .adjust-b-r-26 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 26px; }
-  body #scope .adjust-b-r-27 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 27px; }
-  body #scope .adjust-b-r-28 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 28px; }
-  body #scope .adjust-b-r-29 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 29px; }
-  body #scope .adjust-b-r-30 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 30px; }
-  body #scope .adjust-b-r-31 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 31px; }
-  body #scope .adjust-b-r-32 {
-    border-right: 1px solid #dfe0e1;
-    border-right-width: 32px; }
   body #scope .adjust-b-b-0 {
     border-bottom: 1px solid #dfe0e1;
     border-bottom-width: 0px; }
@@ -3002,54 +2590,6 @@ body #scope {
   body #scope .adjust-b-b-16 {
     border-bottom: 1px solid #dfe0e1;
     border-bottom-width: 16px; }
-  body #scope .adjust-b-b-17 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 17px; }
-  body #scope .adjust-b-b-18 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 18px; }
-  body #scope .adjust-b-b-19 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 19px; }
-  body #scope .adjust-b-b-20 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 20px; }
-  body #scope .adjust-b-b-21 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 21px; }
-  body #scope .adjust-b-b-22 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 22px; }
-  body #scope .adjust-b-b-23 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 23px; }
-  body #scope .adjust-b-b-24 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 24px; }
-  body #scope .adjust-b-b-25 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 25px; }
-  body #scope .adjust-b-b-26 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 26px; }
-  body #scope .adjust-b-b-27 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 27px; }
-  body #scope .adjust-b-b-28 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 28px; }
-  body #scope .adjust-b-b-29 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 29px; }
-  body #scope .adjust-b-b-30 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 30px; }
-  body #scope .adjust-b-b-31 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 31px; }
-  body #scope .adjust-b-b-32 {
-    border-bottom: 1px solid #dfe0e1;
-    border-bottom-width: 32px; }
   body #scope .adjust-b-l-0 {
     border-left: 1px solid #dfe0e1;
     border-left-width: 0px; }
@@ -3101,54 +2641,6 @@ body #scope {
   body #scope .adjust-b-l-16 {
     border-left: 1px solid #dfe0e1;
     border-left-width: 16px; }
-  body #scope .adjust-b-l-17 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 17px; }
-  body #scope .adjust-b-l-18 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 18px; }
-  body #scope .adjust-b-l-19 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 19px; }
-  body #scope .adjust-b-l-20 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 20px; }
-  body #scope .adjust-b-l-21 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 21px; }
-  body #scope .adjust-b-l-22 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 22px; }
-  body #scope .adjust-b-l-23 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 23px; }
-  body #scope .adjust-b-l-24 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 24px; }
-  body #scope .adjust-b-l-25 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 25px; }
-  body #scope .adjust-b-l-26 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 26px; }
-  body #scope .adjust-b-l-27 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 27px; }
-  body #scope .adjust-b-l-28 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 28px; }
-  body #scope .adjust-b-l-29 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 29px; }
-  body #scope .adjust-b-l-30 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 30px; }
-  body #scope .adjust-b-l-31 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 31px; }
-  body #scope .adjust-b-l-32 {
-    border-left: 1px solid #dfe0e1;
-    border-left-width: 32px; }
   body #scope .adjust-b-a-0 {
     border: 1px solid #dfe0e1;
     border-width: 0px; }
@@ -3200,54 +2692,6 @@ body #scope {
   body #scope .adjust-b-a-16 {
     border: 1px solid #dfe0e1;
     border-width: 16px; }
-  body #scope .adjust-b-a-17 {
-    border: 1px solid #dfe0e1;
-    border-width: 17px; }
-  body #scope .adjust-b-a-18 {
-    border: 1px solid #dfe0e1;
-    border-width: 18px; }
-  body #scope .adjust-b-a-19 {
-    border: 1px solid #dfe0e1;
-    border-width: 19px; }
-  body #scope .adjust-b-a-20 {
-    border: 1px solid #dfe0e1;
-    border-width: 20px; }
-  body #scope .adjust-b-a-21 {
-    border: 1px solid #dfe0e1;
-    border-width: 21px; }
-  body #scope .adjust-b-a-22 {
-    border: 1px solid #dfe0e1;
-    border-width: 22px; }
-  body #scope .adjust-b-a-23 {
-    border: 1px solid #dfe0e1;
-    border-width: 23px; }
-  body #scope .adjust-b-a-24 {
-    border: 1px solid #dfe0e1;
-    border-width: 24px; }
-  body #scope .adjust-b-a-25 {
-    border: 1px solid #dfe0e1;
-    border-width: 25px; }
-  body #scope .adjust-b-a-26 {
-    border: 1px solid #dfe0e1;
-    border-width: 26px; }
-  body #scope .adjust-b-a-27 {
-    border: 1px solid #dfe0e1;
-    border-width: 27px; }
-  body #scope .adjust-b-a-28 {
-    border: 1px solid #dfe0e1;
-    border-width: 28px; }
-  body #scope .adjust-b-a-29 {
-    border: 1px solid #dfe0e1;
-    border-width: 29px; }
-  body #scope .adjust-b-a-30 {
-    border: 1px solid #dfe0e1;
-    border-width: 30px; }
-  body #scope .adjust-b-a-31 {
-    border: 1px solid #dfe0e1;
-    border-width: 31px; }
-  body #scope .adjust-b-a-32 {
-    border: 1px solid #dfe0e1;
-    border-width: 32px; }
   @media only screen and (max-width: 1024px) {
     body #scope .adjust-pos-s-tl {
       position: static; }
@@ -3279,6 +2723,14 @@ body #scope {
       text-align: left; }
     body #scope .adjust-ta-r-tl {
       text-align: right; }
+    body #scope .adjust-ta-j-tl {
+      text-align: justify; }
+    body #scope .adjust-f-l-tl {
+      float: left; }
+    body #scope .adjust-f-r-tl {
+      float: right; }
+    body #scope .adjust-f-n-tl {
+      float: none; }
     body #scope .adjust-va-t-tl {
       vertical-align: top; }
     body #scope .adjust-va-tt-tl {
@@ -3325,38 +2777,6 @@ body #scope {
       margin-top: 15px; }
     body #scope .adjust-m-t-16-tl {
       margin-top: 16px; }
-    body #scope .adjust-m-t-17-tl {
-      margin-top: 17px; }
-    body #scope .adjust-m-t-18-tl {
-      margin-top: 18px; }
-    body #scope .adjust-m-t-19-tl {
-      margin-top: 19px; }
-    body #scope .adjust-m-t-20-tl {
-      margin-top: 20px; }
-    body #scope .adjust-m-t-21-tl {
-      margin-top: 21px; }
-    body #scope .adjust-m-t-22-tl {
-      margin-top: 22px; }
-    body #scope .adjust-m-t-23-tl {
-      margin-top: 23px; }
-    body #scope .adjust-m-t-24-tl {
-      margin-top: 24px; }
-    body #scope .adjust-m-t-25-tl {
-      margin-top: 25px; }
-    body #scope .adjust-m-t-26-tl {
-      margin-top: 26px; }
-    body #scope .adjust-m-t-27-tl {
-      margin-top: 27px; }
-    body #scope .adjust-m-t-28-tl {
-      margin-top: 28px; }
-    body #scope .adjust-m-t-29-tl {
-      margin-top: 29px; }
-    body #scope .adjust-m-t-30-tl {
-      margin-top: 30px; }
-    body #scope .adjust-m-t-31-tl {
-      margin-top: 31px; }
-    body #scope .adjust-m-t-32-tl {
-      margin-top: 32px; }
     body #scope .adjust-m-r-0-tl {
       margin-right: 0px; }
     body #scope .adjust-m-r-1-tl {
@@ -3391,38 +2811,6 @@ body #scope {
       margin-right: 15px; }
     body #scope .adjust-m-r-16-tl {
       margin-right: 16px; }
-    body #scope .adjust-m-r-17-tl {
-      margin-right: 17px; }
-    body #scope .adjust-m-r-18-tl {
-      margin-right: 18px; }
-    body #scope .adjust-m-r-19-tl {
-      margin-right: 19px; }
-    body #scope .adjust-m-r-20-tl {
-      margin-right: 20px; }
-    body #scope .adjust-m-r-21-tl {
-      margin-right: 21px; }
-    body #scope .adjust-m-r-22-tl {
-      margin-right: 22px; }
-    body #scope .adjust-m-r-23-tl {
-      margin-right: 23px; }
-    body #scope .adjust-m-r-24-tl {
-      margin-right: 24px; }
-    body #scope .adjust-m-r-25-tl {
-      margin-right: 25px; }
-    body #scope .adjust-m-r-26-tl {
-      margin-right: 26px; }
-    body #scope .adjust-m-r-27-tl {
-      margin-right: 27px; }
-    body #scope .adjust-m-r-28-tl {
-      margin-right: 28px; }
-    body #scope .adjust-m-r-29-tl {
-      margin-right: 29px; }
-    body #scope .adjust-m-r-30-tl {
-      margin-right: 30px; }
-    body #scope .adjust-m-r-31-tl {
-      margin-right: 31px; }
-    body #scope .adjust-m-r-32-tl {
-      margin-right: 32px; }
     body #scope .adjust-m-b-0-tl {
       margin-bottom: 0px; }
     body #scope .adjust-m-b-1-tl {
@@ -3457,38 +2845,6 @@ body #scope {
       margin-bottom: 15px; }
     body #scope .adjust-m-b-16-tl {
       margin-bottom: 16px; }
-    body #scope .adjust-m-b-17-tl {
-      margin-bottom: 17px; }
-    body #scope .adjust-m-b-18-tl {
-      margin-bottom: 18px; }
-    body #scope .adjust-m-b-19-tl {
-      margin-bottom: 19px; }
-    body #scope .adjust-m-b-20-tl {
-      margin-bottom: 20px; }
-    body #scope .adjust-m-b-21-tl {
-      margin-bottom: 21px; }
-    body #scope .adjust-m-b-22-tl {
-      margin-bottom: 22px; }
-    body #scope .adjust-m-b-23-tl {
-      margin-bottom: 23px; }
-    body #scope .adjust-m-b-24-tl {
-      margin-bottom: 24px; }
-    body #scope .adjust-m-b-25-tl {
-      margin-bottom: 25px; }
-    body #scope .adjust-m-b-26-tl {
-      margin-bottom: 26px; }
-    body #scope .adjust-m-b-27-tl {
-      margin-bottom: 27px; }
-    body #scope .adjust-m-b-28-tl {
-      margin-bottom: 28px; }
-    body #scope .adjust-m-b-29-tl {
-      margin-bottom: 29px; }
-    body #scope .adjust-m-b-30-tl {
-      margin-bottom: 30px; }
-    body #scope .adjust-m-b-31-tl {
-      margin-bottom: 31px; }
-    body #scope .adjust-m-b-32-tl {
-      margin-bottom: 32px; }
     body #scope .adjust-m-l-0-tl {
       margin-left: 0px; }
     body #scope .adjust-m-l-1-tl {
@@ -3523,38 +2879,6 @@ body #scope {
       margin-left: 15px; }
     body #scope .adjust-m-l-16-tl {
       margin-left: 16px; }
-    body #scope .adjust-m-l-17-tl {
-      margin-left: 17px; }
-    body #scope .adjust-m-l-18-tl {
-      margin-left: 18px; }
-    body #scope .adjust-m-l-19-tl {
-      margin-left: 19px; }
-    body #scope .adjust-m-l-20-tl {
-      margin-left: 20px; }
-    body #scope .adjust-m-l-21-tl {
-      margin-left: 21px; }
-    body #scope .adjust-m-l-22-tl {
-      margin-left: 22px; }
-    body #scope .adjust-m-l-23-tl {
-      margin-left: 23px; }
-    body #scope .adjust-m-l-24-tl {
-      margin-left: 24px; }
-    body #scope .adjust-m-l-25-tl {
-      margin-left: 25px; }
-    body #scope .adjust-m-l-26-tl {
-      margin-left: 26px; }
-    body #scope .adjust-m-l-27-tl {
-      margin-left: 27px; }
-    body #scope .adjust-m-l-28-tl {
-      margin-left: 28px; }
-    body #scope .adjust-m-l-29-tl {
-      margin-left: 29px; }
-    body #scope .adjust-m-l-30-tl {
-      margin-left: 30px; }
-    body #scope .adjust-m-l-31-tl {
-      margin-left: 31px; }
-    body #scope .adjust-m-l-32-tl {
-      margin-left: 32px; }
     body #scope .adjust-m-a-0-tl {
       margin: 0px; }
     body #scope .adjust-m-a-1-tl {
@@ -3589,38 +2913,6 @@ body #scope {
       margin: 15px; }
     body #scope .adjust-m-a-16-tl {
       margin: 16px; }
-    body #scope .adjust-m-a-17-tl {
-      margin: 17px; }
-    body #scope .adjust-m-a-18-tl {
-      margin: 18px; }
-    body #scope .adjust-m-a-19-tl {
-      margin: 19px; }
-    body #scope .adjust-m-a-20-tl {
-      margin: 20px; }
-    body #scope .adjust-m-a-21-tl {
-      margin: 21px; }
-    body #scope .adjust-m-a-22-tl {
-      margin: 22px; }
-    body #scope .adjust-m-a-23-tl {
-      margin: 23px; }
-    body #scope .adjust-m-a-24-tl {
-      margin: 24px; }
-    body #scope .adjust-m-a-25-tl {
-      margin: 25px; }
-    body #scope .adjust-m-a-26-tl {
-      margin: 26px; }
-    body #scope .adjust-m-a-27-tl {
-      margin: 27px; }
-    body #scope .adjust-m-a-28-tl {
-      margin: 28px; }
-    body #scope .adjust-m-a-29-tl {
-      margin: 29px; }
-    body #scope .adjust-m-a-30-tl {
-      margin: 30px; }
-    body #scope .adjust-m-a-31-tl {
-      margin: 31px; }
-    body #scope .adjust-m-a-32-tl {
-      margin: 32px; }
     body #scope .adjust-p-t-0-tl {
       padding-top: 0px; }
     body #scope .adjust-p-t-1-tl {
@@ -3655,38 +2947,6 @@ body #scope {
       padding-top: 15px; }
     body #scope .adjust-p-t-16-tl {
       padding-top: 16px; }
-    body #scope .adjust-p-t-17-tl {
-      padding-top: 17px; }
-    body #scope .adjust-p-t-18-tl {
-      padding-top: 18px; }
-    body #scope .adjust-p-t-19-tl {
-      padding-top: 19px; }
-    body #scope .adjust-p-t-20-tl {
-      padding-top: 20px; }
-    body #scope .adjust-p-t-21-tl {
-      padding-top: 21px; }
-    body #scope .adjust-p-t-22-tl {
-      padding-top: 22px; }
-    body #scope .adjust-p-t-23-tl {
-      padding-top: 23px; }
-    body #scope .adjust-p-t-24-tl {
-      padding-top: 24px; }
-    body #scope .adjust-p-t-25-tl {
-      padding-top: 25px; }
-    body #scope .adjust-p-t-26-tl {
-      padding-top: 26px; }
-    body #scope .adjust-p-t-27-tl {
-      padding-top: 27px; }
-    body #scope .adjust-p-t-28-tl {
-      padding-top: 28px; }
-    body #scope .adjust-p-t-29-tl {
-      padding-top: 29px; }
-    body #scope .adjust-p-t-30-tl {
-      padding-top: 30px; }
-    body #scope .adjust-p-t-31-tl {
-      padding-top: 31px; }
-    body #scope .adjust-p-t-32-tl {
-      padding-top: 32px; }
     body #scope .adjust-p-r-0-tl {
       padding-right: 0px; }
     body #scope .adjust-p-r-1-tl {
@@ -3721,38 +2981,6 @@ body #scope {
       padding-right: 15px; }
     body #scope .adjust-p-r-16-tl {
       padding-right: 16px; }
-    body #scope .adjust-p-r-17-tl {
-      padding-right: 17px; }
-    body #scope .adjust-p-r-18-tl {
-      padding-right: 18px; }
-    body #scope .adjust-p-r-19-tl {
-      padding-right: 19px; }
-    body #scope .adjust-p-r-20-tl {
-      padding-right: 20px; }
-    body #scope .adjust-p-r-21-tl {
-      padding-right: 21px; }
-    body #scope .adjust-p-r-22-tl {
-      padding-right: 22px; }
-    body #scope .adjust-p-r-23-tl {
-      padding-right: 23px; }
-    body #scope .adjust-p-r-24-tl {
-      padding-right: 24px; }
-    body #scope .adjust-p-r-25-tl {
-      padding-right: 25px; }
-    body #scope .adjust-p-r-26-tl {
-      padding-right: 26px; }
-    body #scope .adjust-p-r-27-tl {
-      padding-right: 27px; }
-    body #scope .adjust-p-r-28-tl {
-      padding-right: 28px; }
-    body #scope .adjust-p-r-29-tl {
-      padding-right: 29px; }
-    body #scope .adjust-p-r-30-tl {
-      padding-right: 30px; }
-    body #scope .adjust-p-r-31-tl {
-      padding-right: 31px; }
-    body #scope .adjust-p-r-32-tl {
-      padding-right: 32px; }
     body #scope .adjust-p-b-0-tl {
       padding-bottom: 0px; }
     body #scope .adjust-p-b-1-tl {
@@ -3787,38 +3015,6 @@ body #scope {
       padding-bottom: 15px; }
     body #scope .adjust-p-b-16-tl {
       padding-bottom: 16px; }
-    body #scope .adjust-p-b-17-tl {
-      padding-bottom: 17px; }
-    body #scope .adjust-p-b-18-tl {
-      padding-bottom: 18px; }
-    body #scope .adjust-p-b-19-tl {
-      padding-bottom: 19px; }
-    body #scope .adjust-p-b-20-tl {
-      padding-bottom: 20px; }
-    body #scope .adjust-p-b-21-tl {
-      padding-bottom: 21px; }
-    body #scope .adjust-p-b-22-tl {
-      padding-bottom: 22px; }
-    body #scope .adjust-p-b-23-tl {
-      padding-bottom: 23px; }
-    body #scope .adjust-p-b-24-tl {
-      padding-bottom: 24px; }
-    body #scope .adjust-p-b-25-tl {
-      padding-bottom: 25px; }
-    body #scope .adjust-p-b-26-tl {
-      padding-bottom: 26px; }
-    body #scope .adjust-p-b-27-tl {
-      padding-bottom: 27px; }
-    body #scope .adjust-p-b-28-tl {
-      padding-bottom: 28px; }
-    body #scope .adjust-p-b-29-tl {
-      padding-bottom: 29px; }
-    body #scope .adjust-p-b-30-tl {
-      padding-bottom: 30px; }
-    body #scope .adjust-p-b-31-tl {
-      padding-bottom: 31px; }
-    body #scope .adjust-p-b-32-tl {
-      padding-bottom: 32px; }
     body #scope .adjust-p-l-0-tl {
       padding-left: 0px; }
     body #scope .adjust-p-l-1-tl {
@@ -3853,38 +3049,6 @@ body #scope {
       padding-left: 15px; }
     body #scope .adjust-p-l-16-tl {
       padding-left: 16px; }
-    body #scope .adjust-p-l-17-tl {
-      padding-left: 17px; }
-    body #scope .adjust-p-l-18-tl {
-      padding-left: 18px; }
-    body #scope .adjust-p-l-19-tl {
-      padding-left: 19px; }
-    body #scope .adjust-p-l-20-tl {
-      padding-left: 20px; }
-    body #scope .adjust-p-l-21-tl {
-      padding-left: 21px; }
-    body #scope .adjust-p-l-22-tl {
-      padding-left: 22px; }
-    body #scope .adjust-p-l-23-tl {
-      padding-left: 23px; }
-    body #scope .adjust-p-l-24-tl {
-      padding-left: 24px; }
-    body #scope .adjust-p-l-25-tl {
-      padding-left: 25px; }
-    body #scope .adjust-p-l-26-tl {
-      padding-left: 26px; }
-    body #scope .adjust-p-l-27-tl {
-      padding-left: 27px; }
-    body #scope .adjust-p-l-28-tl {
-      padding-left: 28px; }
-    body #scope .adjust-p-l-29-tl {
-      padding-left: 29px; }
-    body #scope .adjust-p-l-30-tl {
-      padding-left: 30px; }
-    body #scope .adjust-p-l-31-tl {
-      padding-left: 31px; }
-    body #scope .adjust-p-l-32-tl {
-      padding-left: 32px; }
     body #scope .adjust-p-a-0-tl {
       padding: 0px; }
     body #scope .adjust-p-a-1-tl {
@@ -3919,38 +3083,6 @@ body #scope {
       padding: 15px; }
     body #scope .adjust-p-a-16-tl {
       padding: 16px; }
-    body #scope .adjust-p-a-17-tl {
-      padding: 17px; }
-    body #scope .adjust-p-a-18-tl {
-      padding: 18px; }
-    body #scope .adjust-p-a-19-tl {
-      padding: 19px; }
-    body #scope .adjust-p-a-20-tl {
-      padding: 20px; }
-    body #scope .adjust-p-a-21-tl {
-      padding: 21px; }
-    body #scope .adjust-p-a-22-tl {
-      padding: 22px; }
-    body #scope .adjust-p-a-23-tl {
-      padding: 23px; }
-    body #scope .adjust-p-a-24-tl {
-      padding: 24px; }
-    body #scope .adjust-p-a-25-tl {
-      padding: 25px; }
-    body #scope .adjust-p-a-26-tl {
-      padding: 26px; }
-    body #scope .adjust-p-a-27-tl {
-      padding: 27px; }
-    body #scope .adjust-p-a-28-tl {
-      padding: 28px; }
-    body #scope .adjust-p-a-29-tl {
-      padding: 29px; }
-    body #scope .adjust-p-a-30-tl {
-      padding: 30px; }
-    body #scope .adjust-p-a-31-tl {
-      padding: 31px; }
-    body #scope .adjust-p-a-32-tl {
-      padding: 32px; }
     body #scope .adjust-b-t-0-tl {
       border-top: 1px solid #dfe0e1;
       border-top-width: 0px; }
@@ -4002,54 +3134,6 @@ body #scope {
     body #scope .adjust-b-t-16-tl {
       border-top: 1px solid #dfe0e1;
       border-top-width: 16px; }
-    body #scope .adjust-b-t-17-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 17px; }
-    body #scope .adjust-b-t-18-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 18px; }
-    body #scope .adjust-b-t-19-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 19px; }
-    body #scope .adjust-b-t-20-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 20px; }
-    body #scope .adjust-b-t-21-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 21px; }
-    body #scope .adjust-b-t-22-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 22px; }
-    body #scope .adjust-b-t-23-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 23px; }
-    body #scope .adjust-b-t-24-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 24px; }
-    body #scope .adjust-b-t-25-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 25px; }
-    body #scope .adjust-b-t-26-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 26px; }
-    body #scope .adjust-b-t-27-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 27px; }
-    body #scope .adjust-b-t-28-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 28px; }
-    body #scope .adjust-b-t-29-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 29px; }
-    body #scope .adjust-b-t-30-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 30px; }
-    body #scope .adjust-b-t-31-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 31px; }
-    body #scope .adjust-b-t-32-tl {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 32px; }
     body #scope .adjust-b-r-0-tl {
       border-right: 1px solid #dfe0e1;
       border-right-width: 0px; }
@@ -4101,54 +3185,6 @@ body #scope {
     body #scope .adjust-b-r-16-tl {
       border-right: 1px solid #dfe0e1;
       border-right-width: 16px; }
-    body #scope .adjust-b-r-17-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 17px; }
-    body #scope .adjust-b-r-18-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 18px; }
-    body #scope .adjust-b-r-19-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 19px; }
-    body #scope .adjust-b-r-20-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 20px; }
-    body #scope .adjust-b-r-21-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 21px; }
-    body #scope .adjust-b-r-22-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 22px; }
-    body #scope .adjust-b-r-23-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 23px; }
-    body #scope .adjust-b-r-24-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 24px; }
-    body #scope .adjust-b-r-25-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 25px; }
-    body #scope .adjust-b-r-26-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 26px; }
-    body #scope .adjust-b-r-27-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 27px; }
-    body #scope .adjust-b-r-28-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 28px; }
-    body #scope .adjust-b-r-29-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 29px; }
-    body #scope .adjust-b-r-30-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 30px; }
-    body #scope .adjust-b-r-31-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 31px; }
-    body #scope .adjust-b-r-32-tl {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 32px; }
     body #scope .adjust-b-b-0-tl {
       border-bottom: 1px solid #dfe0e1;
       border-bottom-width: 0px; }
@@ -4200,54 +3236,6 @@ body #scope {
     body #scope .adjust-b-b-16-tl {
       border-bottom: 1px solid #dfe0e1;
       border-bottom-width: 16px; }
-    body #scope .adjust-b-b-17-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 17px; }
-    body #scope .adjust-b-b-18-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 18px; }
-    body #scope .adjust-b-b-19-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 19px; }
-    body #scope .adjust-b-b-20-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 20px; }
-    body #scope .adjust-b-b-21-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 21px; }
-    body #scope .adjust-b-b-22-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 22px; }
-    body #scope .adjust-b-b-23-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 23px; }
-    body #scope .adjust-b-b-24-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 24px; }
-    body #scope .adjust-b-b-25-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 25px; }
-    body #scope .adjust-b-b-26-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 26px; }
-    body #scope .adjust-b-b-27-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 27px; }
-    body #scope .adjust-b-b-28-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 28px; }
-    body #scope .adjust-b-b-29-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 29px; }
-    body #scope .adjust-b-b-30-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 30px; }
-    body #scope .adjust-b-b-31-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 31px; }
-    body #scope .adjust-b-b-32-tl {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 32px; }
     body #scope .adjust-b-l-0-tl {
       border-left: 1px solid #dfe0e1;
       border-left-width: 0px; }
@@ -4299,54 +3287,6 @@ body #scope {
     body #scope .adjust-b-l-16-tl {
       border-left: 1px solid #dfe0e1;
       border-left-width: 16px; }
-    body #scope .adjust-b-l-17-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 17px; }
-    body #scope .adjust-b-l-18-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 18px; }
-    body #scope .adjust-b-l-19-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 19px; }
-    body #scope .adjust-b-l-20-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 20px; }
-    body #scope .adjust-b-l-21-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 21px; }
-    body #scope .adjust-b-l-22-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 22px; }
-    body #scope .adjust-b-l-23-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 23px; }
-    body #scope .adjust-b-l-24-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 24px; }
-    body #scope .adjust-b-l-25-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 25px; }
-    body #scope .adjust-b-l-26-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 26px; }
-    body #scope .adjust-b-l-27-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 27px; }
-    body #scope .adjust-b-l-28-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 28px; }
-    body #scope .adjust-b-l-29-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 29px; }
-    body #scope .adjust-b-l-30-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 30px; }
-    body #scope .adjust-b-l-31-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 31px; }
-    body #scope .adjust-b-l-32-tl {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 32px; }
     body #scope .adjust-b-a-0-tl {
       border: 1px solid #dfe0e1;
       border-width: 0px; }
@@ -4397,55 +3337,7 @@ body #scope {
       border-width: 15px; }
     body #scope .adjust-b-a-16-tl {
       border: 1px solid #dfe0e1;
-      border-width: 16px; }
-    body #scope .adjust-b-a-17-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 17px; }
-    body #scope .adjust-b-a-18-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 18px; }
-    body #scope .adjust-b-a-19-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 19px; }
-    body #scope .adjust-b-a-20-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 20px; }
-    body #scope .adjust-b-a-21-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 21px; }
-    body #scope .adjust-b-a-22-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 22px; }
-    body #scope .adjust-b-a-23-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 23px; }
-    body #scope .adjust-b-a-24-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 24px; }
-    body #scope .adjust-b-a-25-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 25px; }
-    body #scope .adjust-b-a-26-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 26px; }
-    body #scope .adjust-b-a-27-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 27px; }
-    body #scope .adjust-b-a-28-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 28px; }
-    body #scope .adjust-b-a-29-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 29px; }
-    body #scope .adjust-b-a-30-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 30px; }
-    body #scope .adjust-b-a-31-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 31px; }
-    body #scope .adjust-b-a-32-tl {
-      border: 1px solid #dfe0e1;
-      border-width: 32px; } }
+      border-width: 16px; } }
   @media only screen and (max-width: 768px) {
     body #scope .adjust-pos-s-tp {
       position: static; }
@@ -4477,6 +3369,14 @@ body #scope {
       text-align: left; }
     body #scope .adjust-ta-r-tp {
       text-align: right; }
+    body #scope .adjust-ta-j-tp {
+      text-align: justify; }
+    body #scope .adjust-f-l-tp {
+      float: left; }
+    body #scope .adjust-f-r-tp {
+      float: right; }
+    body #scope .adjust-f-n-tp {
+      float: none; }
     body #scope .adjust-va-t-tp {
       vertical-align: top; }
     body #scope .adjust-va-tt-tp {
@@ -4523,38 +3423,6 @@ body #scope {
       margin-top: 15px; }
     body #scope .adjust-m-t-16-tp {
       margin-top: 16px; }
-    body #scope .adjust-m-t-17-tp {
-      margin-top: 17px; }
-    body #scope .adjust-m-t-18-tp {
-      margin-top: 18px; }
-    body #scope .adjust-m-t-19-tp {
-      margin-top: 19px; }
-    body #scope .adjust-m-t-20-tp {
-      margin-top: 20px; }
-    body #scope .adjust-m-t-21-tp {
-      margin-top: 21px; }
-    body #scope .adjust-m-t-22-tp {
-      margin-top: 22px; }
-    body #scope .adjust-m-t-23-tp {
-      margin-top: 23px; }
-    body #scope .adjust-m-t-24-tp {
-      margin-top: 24px; }
-    body #scope .adjust-m-t-25-tp {
-      margin-top: 25px; }
-    body #scope .adjust-m-t-26-tp {
-      margin-top: 26px; }
-    body #scope .adjust-m-t-27-tp {
-      margin-top: 27px; }
-    body #scope .adjust-m-t-28-tp {
-      margin-top: 28px; }
-    body #scope .adjust-m-t-29-tp {
-      margin-top: 29px; }
-    body #scope .adjust-m-t-30-tp {
-      margin-top: 30px; }
-    body #scope .adjust-m-t-31-tp {
-      margin-top: 31px; }
-    body #scope .adjust-m-t-32-tp {
-      margin-top: 32px; }
     body #scope .adjust-m-r-0-tp {
       margin-right: 0px; }
     body #scope .adjust-m-r-1-tp {
@@ -4589,38 +3457,6 @@ body #scope {
       margin-right: 15px; }
     body #scope .adjust-m-r-16-tp {
       margin-right: 16px; }
-    body #scope .adjust-m-r-17-tp {
-      margin-right: 17px; }
-    body #scope .adjust-m-r-18-tp {
-      margin-right: 18px; }
-    body #scope .adjust-m-r-19-tp {
-      margin-right: 19px; }
-    body #scope .adjust-m-r-20-tp {
-      margin-right: 20px; }
-    body #scope .adjust-m-r-21-tp {
-      margin-right: 21px; }
-    body #scope .adjust-m-r-22-tp {
-      margin-right: 22px; }
-    body #scope .adjust-m-r-23-tp {
-      margin-right: 23px; }
-    body #scope .adjust-m-r-24-tp {
-      margin-right: 24px; }
-    body #scope .adjust-m-r-25-tp {
-      margin-right: 25px; }
-    body #scope .adjust-m-r-26-tp {
-      margin-right: 26px; }
-    body #scope .adjust-m-r-27-tp {
-      margin-right: 27px; }
-    body #scope .adjust-m-r-28-tp {
-      margin-right: 28px; }
-    body #scope .adjust-m-r-29-tp {
-      margin-right: 29px; }
-    body #scope .adjust-m-r-30-tp {
-      margin-right: 30px; }
-    body #scope .adjust-m-r-31-tp {
-      margin-right: 31px; }
-    body #scope .adjust-m-r-32-tp {
-      margin-right: 32px; }
     body #scope .adjust-m-b-0-tp {
       margin-bottom: 0px; }
     body #scope .adjust-m-b-1-tp {
@@ -4655,38 +3491,6 @@ body #scope {
       margin-bottom: 15px; }
     body #scope .adjust-m-b-16-tp {
       margin-bottom: 16px; }
-    body #scope .adjust-m-b-17-tp {
-      margin-bottom: 17px; }
-    body #scope .adjust-m-b-18-tp {
-      margin-bottom: 18px; }
-    body #scope .adjust-m-b-19-tp {
-      margin-bottom: 19px; }
-    body #scope .adjust-m-b-20-tp {
-      margin-bottom: 20px; }
-    body #scope .adjust-m-b-21-tp {
-      margin-bottom: 21px; }
-    body #scope .adjust-m-b-22-tp {
-      margin-bottom: 22px; }
-    body #scope .adjust-m-b-23-tp {
-      margin-bottom: 23px; }
-    body #scope .adjust-m-b-24-tp {
-      margin-bottom: 24px; }
-    body #scope .adjust-m-b-25-tp {
-      margin-bottom: 25px; }
-    body #scope .adjust-m-b-26-tp {
-      margin-bottom: 26px; }
-    body #scope .adjust-m-b-27-tp {
-      margin-bottom: 27px; }
-    body #scope .adjust-m-b-28-tp {
-      margin-bottom: 28px; }
-    body #scope .adjust-m-b-29-tp {
-      margin-bottom: 29px; }
-    body #scope .adjust-m-b-30-tp {
-      margin-bottom: 30px; }
-    body #scope .adjust-m-b-31-tp {
-      margin-bottom: 31px; }
-    body #scope .adjust-m-b-32-tp {
-      margin-bottom: 32px; }
     body #scope .adjust-m-l-0-tp {
       margin-left: 0px; }
     body #scope .adjust-m-l-1-tp {
@@ -4721,38 +3525,6 @@ body #scope {
       margin-left: 15px; }
     body #scope .adjust-m-l-16-tp {
       margin-left: 16px; }
-    body #scope .adjust-m-l-17-tp {
-      margin-left: 17px; }
-    body #scope .adjust-m-l-18-tp {
-      margin-left: 18px; }
-    body #scope .adjust-m-l-19-tp {
-      margin-left: 19px; }
-    body #scope .adjust-m-l-20-tp {
-      margin-left: 20px; }
-    body #scope .adjust-m-l-21-tp {
-      margin-left: 21px; }
-    body #scope .adjust-m-l-22-tp {
-      margin-left: 22px; }
-    body #scope .adjust-m-l-23-tp {
-      margin-left: 23px; }
-    body #scope .adjust-m-l-24-tp {
-      margin-left: 24px; }
-    body #scope .adjust-m-l-25-tp {
-      margin-left: 25px; }
-    body #scope .adjust-m-l-26-tp {
-      margin-left: 26px; }
-    body #scope .adjust-m-l-27-tp {
-      margin-left: 27px; }
-    body #scope .adjust-m-l-28-tp {
-      margin-left: 28px; }
-    body #scope .adjust-m-l-29-tp {
-      margin-left: 29px; }
-    body #scope .adjust-m-l-30-tp {
-      margin-left: 30px; }
-    body #scope .adjust-m-l-31-tp {
-      margin-left: 31px; }
-    body #scope .adjust-m-l-32-tp {
-      margin-left: 32px; }
     body #scope .adjust-m-a-0-tp {
       margin: 0px; }
     body #scope .adjust-m-a-1-tp {
@@ -4787,38 +3559,6 @@ body #scope {
       margin: 15px; }
     body #scope .adjust-m-a-16-tp {
       margin: 16px; }
-    body #scope .adjust-m-a-17-tp {
-      margin: 17px; }
-    body #scope .adjust-m-a-18-tp {
-      margin: 18px; }
-    body #scope .adjust-m-a-19-tp {
-      margin: 19px; }
-    body #scope .adjust-m-a-20-tp {
-      margin: 20px; }
-    body #scope .adjust-m-a-21-tp {
-      margin: 21px; }
-    body #scope .adjust-m-a-22-tp {
-      margin: 22px; }
-    body #scope .adjust-m-a-23-tp {
-      margin: 23px; }
-    body #scope .adjust-m-a-24-tp {
-      margin: 24px; }
-    body #scope .adjust-m-a-25-tp {
-      margin: 25px; }
-    body #scope .adjust-m-a-26-tp {
-      margin: 26px; }
-    body #scope .adjust-m-a-27-tp {
-      margin: 27px; }
-    body #scope .adjust-m-a-28-tp {
-      margin: 28px; }
-    body #scope .adjust-m-a-29-tp {
-      margin: 29px; }
-    body #scope .adjust-m-a-30-tp {
-      margin: 30px; }
-    body #scope .adjust-m-a-31-tp {
-      margin: 31px; }
-    body #scope .adjust-m-a-32-tp {
-      margin: 32px; }
     body #scope .adjust-p-t-0-tp {
       padding-top: 0px; }
     body #scope .adjust-p-t-1-tp {
@@ -4853,38 +3593,6 @@ body #scope {
       padding-top: 15px; }
     body #scope .adjust-p-t-16-tp {
       padding-top: 16px; }
-    body #scope .adjust-p-t-17-tp {
-      padding-top: 17px; }
-    body #scope .adjust-p-t-18-tp {
-      padding-top: 18px; }
-    body #scope .adjust-p-t-19-tp {
-      padding-top: 19px; }
-    body #scope .adjust-p-t-20-tp {
-      padding-top: 20px; }
-    body #scope .adjust-p-t-21-tp {
-      padding-top: 21px; }
-    body #scope .adjust-p-t-22-tp {
-      padding-top: 22px; }
-    body #scope .adjust-p-t-23-tp {
-      padding-top: 23px; }
-    body #scope .adjust-p-t-24-tp {
-      padding-top: 24px; }
-    body #scope .adjust-p-t-25-tp {
-      padding-top: 25px; }
-    body #scope .adjust-p-t-26-tp {
-      padding-top: 26px; }
-    body #scope .adjust-p-t-27-tp {
-      padding-top: 27px; }
-    body #scope .adjust-p-t-28-tp {
-      padding-top: 28px; }
-    body #scope .adjust-p-t-29-tp {
-      padding-top: 29px; }
-    body #scope .adjust-p-t-30-tp {
-      padding-top: 30px; }
-    body #scope .adjust-p-t-31-tp {
-      padding-top: 31px; }
-    body #scope .adjust-p-t-32-tp {
-      padding-top: 32px; }
     body #scope .adjust-p-r-0-tp {
       padding-right: 0px; }
     body #scope .adjust-p-r-1-tp {
@@ -4919,38 +3627,6 @@ body #scope {
       padding-right: 15px; }
     body #scope .adjust-p-r-16-tp {
       padding-right: 16px; }
-    body #scope .adjust-p-r-17-tp {
-      padding-right: 17px; }
-    body #scope .adjust-p-r-18-tp {
-      padding-right: 18px; }
-    body #scope .adjust-p-r-19-tp {
-      padding-right: 19px; }
-    body #scope .adjust-p-r-20-tp {
-      padding-right: 20px; }
-    body #scope .adjust-p-r-21-tp {
-      padding-right: 21px; }
-    body #scope .adjust-p-r-22-tp {
-      padding-right: 22px; }
-    body #scope .adjust-p-r-23-tp {
-      padding-right: 23px; }
-    body #scope .adjust-p-r-24-tp {
-      padding-right: 24px; }
-    body #scope .adjust-p-r-25-tp {
-      padding-right: 25px; }
-    body #scope .adjust-p-r-26-tp {
-      padding-right: 26px; }
-    body #scope .adjust-p-r-27-tp {
-      padding-right: 27px; }
-    body #scope .adjust-p-r-28-tp {
-      padding-right: 28px; }
-    body #scope .adjust-p-r-29-tp {
-      padding-right: 29px; }
-    body #scope .adjust-p-r-30-tp {
-      padding-right: 30px; }
-    body #scope .adjust-p-r-31-tp {
-      padding-right: 31px; }
-    body #scope .adjust-p-r-32-tp {
-      padding-right: 32px; }
     body #scope .adjust-p-b-0-tp {
       padding-bottom: 0px; }
     body #scope .adjust-p-b-1-tp {
@@ -4985,38 +3661,6 @@ body #scope {
       padding-bottom: 15px; }
     body #scope .adjust-p-b-16-tp {
       padding-bottom: 16px; }
-    body #scope .adjust-p-b-17-tp {
-      padding-bottom: 17px; }
-    body #scope .adjust-p-b-18-tp {
-      padding-bottom: 18px; }
-    body #scope .adjust-p-b-19-tp {
-      padding-bottom: 19px; }
-    body #scope .adjust-p-b-20-tp {
-      padding-bottom: 20px; }
-    body #scope .adjust-p-b-21-tp {
-      padding-bottom: 21px; }
-    body #scope .adjust-p-b-22-tp {
-      padding-bottom: 22px; }
-    body #scope .adjust-p-b-23-tp {
-      padding-bottom: 23px; }
-    body #scope .adjust-p-b-24-tp {
-      padding-bottom: 24px; }
-    body #scope .adjust-p-b-25-tp {
-      padding-bottom: 25px; }
-    body #scope .adjust-p-b-26-tp {
-      padding-bottom: 26px; }
-    body #scope .adjust-p-b-27-tp {
-      padding-bottom: 27px; }
-    body #scope .adjust-p-b-28-tp {
-      padding-bottom: 28px; }
-    body #scope .adjust-p-b-29-tp {
-      padding-bottom: 29px; }
-    body #scope .adjust-p-b-30-tp {
-      padding-bottom: 30px; }
-    body #scope .adjust-p-b-31-tp {
-      padding-bottom: 31px; }
-    body #scope .adjust-p-b-32-tp {
-      padding-bottom: 32px; }
     body #scope .adjust-p-l-0-tp {
       padding-left: 0px; }
     body #scope .adjust-p-l-1-tp {
@@ -5051,38 +3695,6 @@ body #scope {
       padding-left: 15px; }
     body #scope .adjust-p-l-16-tp {
       padding-left: 16px; }
-    body #scope .adjust-p-l-17-tp {
-      padding-left: 17px; }
-    body #scope .adjust-p-l-18-tp {
-      padding-left: 18px; }
-    body #scope .adjust-p-l-19-tp {
-      padding-left: 19px; }
-    body #scope .adjust-p-l-20-tp {
-      padding-left: 20px; }
-    body #scope .adjust-p-l-21-tp {
-      padding-left: 21px; }
-    body #scope .adjust-p-l-22-tp {
-      padding-left: 22px; }
-    body #scope .adjust-p-l-23-tp {
-      padding-left: 23px; }
-    body #scope .adjust-p-l-24-tp {
-      padding-left: 24px; }
-    body #scope .adjust-p-l-25-tp {
-      padding-left: 25px; }
-    body #scope .adjust-p-l-26-tp {
-      padding-left: 26px; }
-    body #scope .adjust-p-l-27-tp {
-      padding-left: 27px; }
-    body #scope .adjust-p-l-28-tp {
-      padding-left: 28px; }
-    body #scope .adjust-p-l-29-tp {
-      padding-left: 29px; }
-    body #scope .adjust-p-l-30-tp {
-      padding-left: 30px; }
-    body #scope .adjust-p-l-31-tp {
-      padding-left: 31px; }
-    body #scope .adjust-p-l-32-tp {
-      padding-left: 32px; }
     body #scope .adjust-p-a-0-tp {
       padding: 0px; }
     body #scope .adjust-p-a-1-tp {
@@ -5117,38 +3729,6 @@ body #scope {
       padding: 15px; }
     body #scope .adjust-p-a-16-tp {
       padding: 16px; }
-    body #scope .adjust-p-a-17-tp {
-      padding: 17px; }
-    body #scope .adjust-p-a-18-tp {
-      padding: 18px; }
-    body #scope .adjust-p-a-19-tp {
-      padding: 19px; }
-    body #scope .adjust-p-a-20-tp {
-      padding: 20px; }
-    body #scope .adjust-p-a-21-tp {
-      padding: 21px; }
-    body #scope .adjust-p-a-22-tp {
-      padding: 22px; }
-    body #scope .adjust-p-a-23-tp {
-      padding: 23px; }
-    body #scope .adjust-p-a-24-tp {
-      padding: 24px; }
-    body #scope .adjust-p-a-25-tp {
-      padding: 25px; }
-    body #scope .adjust-p-a-26-tp {
-      padding: 26px; }
-    body #scope .adjust-p-a-27-tp {
-      padding: 27px; }
-    body #scope .adjust-p-a-28-tp {
-      padding: 28px; }
-    body #scope .adjust-p-a-29-tp {
-      padding: 29px; }
-    body #scope .adjust-p-a-30-tp {
-      padding: 30px; }
-    body #scope .adjust-p-a-31-tp {
-      padding: 31px; }
-    body #scope .adjust-p-a-32-tp {
-      padding: 32px; }
     body #scope .adjust-b-t-0-tp {
       border-top: 1px solid #dfe0e1;
       border-top-width: 0px; }
@@ -5200,54 +3780,6 @@ body #scope {
     body #scope .adjust-b-t-16-tp {
       border-top: 1px solid #dfe0e1;
       border-top-width: 16px; }
-    body #scope .adjust-b-t-17-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 17px; }
-    body #scope .adjust-b-t-18-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 18px; }
-    body #scope .adjust-b-t-19-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 19px; }
-    body #scope .adjust-b-t-20-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 20px; }
-    body #scope .adjust-b-t-21-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 21px; }
-    body #scope .adjust-b-t-22-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 22px; }
-    body #scope .adjust-b-t-23-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 23px; }
-    body #scope .adjust-b-t-24-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 24px; }
-    body #scope .adjust-b-t-25-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 25px; }
-    body #scope .adjust-b-t-26-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 26px; }
-    body #scope .adjust-b-t-27-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 27px; }
-    body #scope .adjust-b-t-28-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 28px; }
-    body #scope .adjust-b-t-29-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 29px; }
-    body #scope .adjust-b-t-30-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 30px; }
-    body #scope .adjust-b-t-31-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 31px; }
-    body #scope .adjust-b-t-32-tp {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 32px; }
     body #scope .adjust-b-r-0-tp {
       border-right: 1px solid #dfe0e1;
       border-right-width: 0px; }
@@ -5299,54 +3831,6 @@ body #scope {
     body #scope .adjust-b-r-16-tp {
       border-right: 1px solid #dfe0e1;
       border-right-width: 16px; }
-    body #scope .adjust-b-r-17-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 17px; }
-    body #scope .adjust-b-r-18-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 18px; }
-    body #scope .adjust-b-r-19-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 19px; }
-    body #scope .adjust-b-r-20-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 20px; }
-    body #scope .adjust-b-r-21-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 21px; }
-    body #scope .adjust-b-r-22-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 22px; }
-    body #scope .adjust-b-r-23-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 23px; }
-    body #scope .adjust-b-r-24-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 24px; }
-    body #scope .adjust-b-r-25-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 25px; }
-    body #scope .adjust-b-r-26-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 26px; }
-    body #scope .adjust-b-r-27-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 27px; }
-    body #scope .adjust-b-r-28-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 28px; }
-    body #scope .adjust-b-r-29-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 29px; }
-    body #scope .adjust-b-r-30-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 30px; }
-    body #scope .adjust-b-r-31-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 31px; }
-    body #scope .adjust-b-r-32-tp {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 32px; }
     body #scope .adjust-b-b-0-tp {
       border-bottom: 1px solid #dfe0e1;
       border-bottom-width: 0px; }
@@ -5398,54 +3882,6 @@ body #scope {
     body #scope .adjust-b-b-16-tp {
       border-bottom: 1px solid #dfe0e1;
       border-bottom-width: 16px; }
-    body #scope .adjust-b-b-17-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 17px; }
-    body #scope .adjust-b-b-18-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 18px; }
-    body #scope .adjust-b-b-19-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 19px; }
-    body #scope .adjust-b-b-20-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 20px; }
-    body #scope .adjust-b-b-21-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 21px; }
-    body #scope .adjust-b-b-22-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 22px; }
-    body #scope .adjust-b-b-23-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 23px; }
-    body #scope .adjust-b-b-24-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 24px; }
-    body #scope .adjust-b-b-25-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 25px; }
-    body #scope .adjust-b-b-26-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 26px; }
-    body #scope .adjust-b-b-27-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 27px; }
-    body #scope .adjust-b-b-28-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 28px; }
-    body #scope .adjust-b-b-29-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 29px; }
-    body #scope .adjust-b-b-30-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 30px; }
-    body #scope .adjust-b-b-31-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 31px; }
-    body #scope .adjust-b-b-32-tp {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 32px; }
     body #scope .adjust-b-l-0-tp {
       border-left: 1px solid #dfe0e1;
       border-left-width: 0px; }
@@ -5497,54 +3933,6 @@ body #scope {
     body #scope .adjust-b-l-16-tp {
       border-left: 1px solid #dfe0e1;
       border-left-width: 16px; }
-    body #scope .adjust-b-l-17-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 17px; }
-    body #scope .adjust-b-l-18-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 18px; }
-    body #scope .adjust-b-l-19-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 19px; }
-    body #scope .adjust-b-l-20-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 20px; }
-    body #scope .adjust-b-l-21-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 21px; }
-    body #scope .adjust-b-l-22-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 22px; }
-    body #scope .adjust-b-l-23-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 23px; }
-    body #scope .adjust-b-l-24-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 24px; }
-    body #scope .adjust-b-l-25-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 25px; }
-    body #scope .adjust-b-l-26-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 26px; }
-    body #scope .adjust-b-l-27-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 27px; }
-    body #scope .adjust-b-l-28-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 28px; }
-    body #scope .adjust-b-l-29-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 29px; }
-    body #scope .adjust-b-l-30-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 30px; }
-    body #scope .adjust-b-l-31-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 31px; }
-    body #scope .adjust-b-l-32-tp {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 32px; }
     body #scope .adjust-b-a-0-tp {
       border: 1px solid #dfe0e1;
       border-width: 0px; }
@@ -5595,55 +3983,7 @@ body #scope {
       border-width: 15px; }
     body #scope .adjust-b-a-16-tp {
       border: 1px solid #dfe0e1;
-      border-width: 16px; }
-    body #scope .adjust-b-a-17-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 17px; }
-    body #scope .adjust-b-a-18-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 18px; }
-    body #scope .adjust-b-a-19-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 19px; }
-    body #scope .adjust-b-a-20-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 20px; }
-    body #scope .adjust-b-a-21-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 21px; }
-    body #scope .adjust-b-a-22-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 22px; }
-    body #scope .adjust-b-a-23-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 23px; }
-    body #scope .adjust-b-a-24-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 24px; }
-    body #scope .adjust-b-a-25-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 25px; }
-    body #scope .adjust-b-a-26-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 26px; }
-    body #scope .adjust-b-a-27-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 27px; }
-    body #scope .adjust-b-a-28-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 28px; }
-    body #scope .adjust-b-a-29-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 29px; }
-    body #scope .adjust-b-a-30-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 30px; }
-    body #scope .adjust-b-a-31-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 31px; }
-    body #scope .adjust-b-a-32-tp {
-      border: 1px solid #dfe0e1;
-      border-width: 32px; } }
+      border-width: 16px; } }
   @media only screen and (max-width: 480px) {
     body #scope .adjust-pos-s-p {
       position: static; }
@@ -5675,6 +4015,14 @@ body #scope {
       text-align: left; }
     body #scope .adjust-ta-r-p {
       text-align: right; }
+    body #scope .adjust-ta-j-p {
+      text-align: justify; }
+    body #scope .adjust-f-l-p {
+      float: left; }
+    body #scope .adjust-f-r-p {
+      float: right; }
+    body #scope .adjust-f-n-p {
+      float: none; }
     body #scope .adjust-va-t-p {
       vertical-align: top; }
     body #scope .adjust-va-tt-p {
@@ -5721,38 +4069,6 @@ body #scope {
       margin-top: 15px; }
     body #scope .adjust-m-t-16-p {
       margin-top: 16px; }
-    body #scope .adjust-m-t-17-p {
-      margin-top: 17px; }
-    body #scope .adjust-m-t-18-p {
-      margin-top: 18px; }
-    body #scope .adjust-m-t-19-p {
-      margin-top: 19px; }
-    body #scope .adjust-m-t-20-p {
-      margin-top: 20px; }
-    body #scope .adjust-m-t-21-p {
-      margin-top: 21px; }
-    body #scope .adjust-m-t-22-p {
-      margin-top: 22px; }
-    body #scope .adjust-m-t-23-p {
-      margin-top: 23px; }
-    body #scope .adjust-m-t-24-p {
-      margin-top: 24px; }
-    body #scope .adjust-m-t-25-p {
-      margin-top: 25px; }
-    body #scope .adjust-m-t-26-p {
-      margin-top: 26px; }
-    body #scope .adjust-m-t-27-p {
-      margin-top: 27px; }
-    body #scope .adjust-m-t-28-p {
-      margin-top: 28px; }
-    body #scope .adjust-m-t-29-p {
-      margin-top: 29px; }
-    body #scope .adjust-m-t-30-p {
-      margin-top: 30px; }
-    body #scope .adjust-m-t-31-p {
-      margin-top: 31px; }
-    body #scope .adjust-m-t-32-p {
-      margin-top: 32px; }
     body #scope .adjust-m-r-0-p {
       margin-right: 0px; }
     body #scope .adjust-m-r-1-p {
@@ -5787,38 +4103,6 @@ body #scope {
       margin-right: 15px; }
     body #scope .adjust-m-r-16-p {
       margin-right: 16px; }
-    body #scope .adjust-m-r-17-p {
-      margin-right: 17px; }
-    body #scope .adjust-m-r-18-p {
-      margin-right: 18px; }
-    body #scope .adjust-m-r-19-p {
-      margin-right: 19px; }
-    body #scope .adjust-m-r-20-p {
-      margin-right: 20px; }
-    body #scope .adjust-m-r-21-p {
-      margin-right: 21px; }
-    body #scope .adjust-m-r-22-p {
-      margin-right: 22px; }
-    body #scope .adjust-m-r-23-p {
-      margin-right: 23px; }
-    body #scope .adjust-m-r-24-p {
-      margin-right: 24px; }
-    body #scope .adjust-m-r-25-p {
-      margin-right: 25px; }
-    body #scope .adjust-m-r-26-p {
-      margin-right: 26px; }
-    body #scope .adjust-m-r-27-p {
-      margin-right: 27px; }
-    body #scope .adjust-m-r-28-p {
-      margin-right: 28px; }
-    body #scope .adjust-m-r-29-p {
-      margin-right: 29px; }
-    body #scope .adjust-m-r-30-p {
-      margin-right: 30px; }
-    body #scope .adjust-m-r-31-p {
-      margin-right: 31px; }
-    body #scope .adjust-m-r-32-p {
-      margin-right: 32px; }
     body #scope .adjust-m-b-0-p {
       margin-bottom: 0px; }
     body #scope .adjust-m-b-1-p {
@@ -5853,38 +4137,6 @@ body #scope {
       margin-bottom: 15px; }
     body #scope .adjust-m-b-16-p {
       margin-bottom: 16px; }
-    body #scope .adjust-m-b-17-p {
-      margin-bottom: 17px; }
-    body #scope .adjust-m-b-18-p {
-      margin-bottom: 18px; }
-    body #scope .adjust-m-b-19-p {
-      margin-bottom: 19px; }
-    body #scope .adjust-m-b-20-p {
-      margin-bottom: 20px; }
-    body #scope .adjust-m-b-21-p {
-      margin-bottom: 21px; }
-    body #scope .adjust-m-b-22-p {
-      margin-bottom: 22px; }
-    body #scope .adjust-m-b-23-p {
-      margin-bottom: 23px; }
-    body #scope .adjust-m-b-24-p {
-      margin-bottom: 24px; }
-    body #scope .adjust-m-b-25-p {
-      margin-bottom: 25px; }
-    body #scope .adjust-m-b-26-p {
-      margin-bottom: 26px; }
-    body #scope .adjust-m-b-27-p {
-      margin-bottom: 27px; }
-    body #scope .adjust-m-b-28-p {
-      margin-bottom: 28px; }
-    body #scope .adjust-m-b-29-p {
-      margin-bottom: 29px; }
-    body #scope .adjust-m-b-30-p {
-      margin-bottom: 30px; }
-    body #scope .adjust-m-b-31-p {
-      margin-bottom: 31px; }
-    body #scope .adjust-m-b-32-p {
-      margin-bottom: 32px; }
     body #scope .adjust-m-l-0-p {
       margin-left: 0px; }
     body #scope .adjust-m-l-1-p {
@@ -5919,38 +4171,6 @@ body #scope {
       margin-left: 15px; }
     body #scope .adjust-m-l-16-p {
       margin-left: 16px; }
-    body #scope .adjust-m-l-17-p {
-      margin-left: 17px; }
-    body #scope .adjust-m-l-18-p {
-      margin-left: 18px; }
-    body #scope .adjust-m-l-19-p {
-      margin-left: 19px; }
-    body #scope .adjust-m-l-20-p {
-      margin-left: 20px; }
-    body #scope .adjust-m-l-21-p {
-      margin-left: 21px; }
-    body #scope .adjust-m-l-22-p {
-      margin-left: 22px; }
-    body #scope .adjust-m-l-23-p {
-      margin-left: 23px; }
-    body #scope .adjust-m-l-24-p {
-      margin-left: 24px; }
-    body #scope .adjust-m-l-25-p {
-      margin-left: 25px; }
-    body #scope .adjust-m-l-26-p {
-      margin-left: 26px; }
-    body #scope .adjust-m-l-27-p {
-      margin-left: 27px; }
-    body #scope .adjust-m-l-28-p {
-      margin-left: 28px; }
-    body #scope .adjust-m-l-29-p {
-      margin-left: 29px; }
-    body #scope .adjust-m-l-30-p {
-      margin-left: 30px; }
-    body #scope .adjust-m-l-31-p {
-      margin-left: 31px; }
-    body #scope .adjust-m-l-32-p {
-      margin-left: 32px; }
     body #scope .adjust-m-a-0-p {
       margin: 0px; }
     body #scope .adjust-m-a-1-p {
@@ -5985,38 +4205,6 @@ body #scope {
       margin: 15px; }
     body #scope .adjust-m-a-16-p {
       margin: 16px; }
-    body #scope .adjust-m-a-17-p {
-      margin: 17px; }
-    body #scope .adjust-m-a-18-p {
-      margin: 18px; }
-    body #scope .adjust-m-a-19-p {
-      margin: 19px; }
-    body #scope .adjust-m-a-20-p {
-      margin: 20px; }
-    body #scope .adjust-m-a-21-p {
-      margin: 21px; }
-    body #scope .adjust-m-a-22-p {
-      margin: 22px; }
-    body #scope .adjust-m-a-23-p {
-      margin: 23px; }
-    body #scope .adjust-m-a-24-p {
-      margin: 24px; }
-    body #scope .adjust-m-a-25-p {
-      margin: 25px; }
-    body #scope .adjust-m-a-26-p {
-      margin: 26px; }
-    body #scope .adjust-m-a-27-p {
-      margin: 27px; }
-    body #scope .adjust-m-a-28-p {
-      margin: 28px; }
-    body #scope .adjust-m-a-29-p {
-      margin: 29px; }
-    body #scope .adjust-m-a-30-p {
-      margin: 30px; }
-    body #scope .adjust-m-a-31-p {
-      margin: 31px; }
-    body #scope .adjust-m-a-32-p {
-      margin: 32px; }
     body #scope .adjust-p-t-0-p {
       padding-top: 0px; }
     body #scope .adjust-p-t-1-p {
@@ -6051,38 +4239,6 @@ body #scope {
       padding-top: 15px; }
     body #scope .adjust-p-t-16-p {
       padding-top: 16px; }
-    body #scope .adjust-p-t-17-p {
-      padding-top: 17px; }
-    body #scope .adjust-p-t-18-p {
-      padding-top: 18px; }
-    body #scope .adjust-p-t-19-p {
-      padding-top: 19px; }
-    body #scope .adjust-p-t-20-p {
-      padding-top: 20px; }
-    body #scope .adjust-p-t-21-p {
-      padding-top: 21px; }
-    body #scope .adjust-p-t-22-p {
-      padding-top: 22px; }
-    body #scope .adjust-p-t-23-p {
-      padding-top: 23px; }
-    body #scope .adjust-p-t-24-p {
-      padding-top: 24px; }
-    body #scope .adjust-p-t-25-p {
-      padding-top: 25px; }
-    body #scope .adjust-p-t-26-p {
-      padding-top: 26px; }
-    body #scope .adjust-p-t-27-p {
-      padding-top: 27px; }
-    body #scope .adjust-p-t-28-p {
-      padding-top: 28px; }
-    body #scope .adjust-p-t-29-p {
-      padding-top: 29px; }
-    body #scope .adjust-p-t-30-p {
-      padding-top: 30px; }
-    body #scope .adjust-p-t-31-p {
-      padding-top: 31px; }
-    body #scope .adjust-p-t-32-p {
-      padding-top: 32px; }
     body #scope .adjust-p-r-0-p {
       padding-right: 0px; }
     body #scope .adjust-p-r-1-p {
@@ -6117,38 +4273,6 @@ body #scope {
       padding-right: 15px; }
     body #scope .adjust-p-r-16-p {
       padding-right: 16px; }
-    body #scope .adjust-p-r-17-p {
-      padding-right: 17px; }
-    body #scope .adjust-p-r-18-p {
-      padding-right: 18px; }
-    body #scope .adjust-p-r-19-p {
-      padding-right: 19px; }
-    body #scope .adjust-p-r-20-p {
-      padding-right: 20px; }
-    body #scope .adjust-p-r-21-p {
-      padding-right: 21px; }
-    body #scope .adjust-p-r-22-p {
-      padding-right: 22px; }
-    body #scope .adjust-p-r-23-p {
-      padding-right: 23px; }
-    body #scope .adjust-p-r-24-p {
-      padding-right: 24px; }
-    body #scope .adjust-p-r-25-p {
-      padding-right: 25px; }
-    body #scope .adjust-p-r-26-p {
-      padding-right: 26px; }
-    body #scope .adjust-p-r-27-p {
-      padding-right: 27px; }
-    body #scope .adjust-p-r-28-p {
-      padding-right: 28px; }
-    body #scope .adjust-p-r-29-p {
-      padding-right: 29px; }
-    body #scope .adjust-p-r-30-p {
-      padding-right: 30px; }
-    body #scope .adjust-p-r-31-p {
-      padding-right: 31px; }
-    body #scope .adjust-p-r-32-p {
-      padding-right: 32px; }
     body #scope .adjust-p-b-0-p {
       padding-bottom: 0px; }
     body #scope .adjust-p-b-1-p {
@@ -6183,38 +4307,6 @@ body #scope {
       padding-bottom: 15px; }
     body #scope .adjust-p-b-16-p {
       padding-bottom: 16px; }
-    body #scope .adjust-p-b-17-p {
-      padding-bottom: 17px; }
-    body #scope .adjust-p-b-18-p {
-      padding-bottom: 18px; }
-    body #scope .adjust-p-b-19-p {
-      padding-bottom: 19px; }
-    body #scope .adjust-p-b-20-p {
-      padding-bottom: 20px; }
-    body #scope .adjust-p-b-21-p {
-      padding-bottom: 21px; }
-    body #scope .adjust-p-b-22-p {
-      padding-bottom: 22px; }
-    body #scope .adjust-p-b-23-p {
-      padding-bottom: 23px; }
-    body #scope .adjust-p-b-24-p {
-      padding-bottom: 24px; }
-    body #scope .adjust-p-b-25-p {
-      padding-bottom: 25px; }
-    body #scope .adjust-p-b-26-p {
-      padding-bottom: 26px; }
-    body #scope .adjust-p-b-27-p {
-      padding-bottom: 27px; }
-    body #scope .adjust-p-b-28-p {
-      padding-bottom: 28px; }
-    body #scope .adjust-p-b-29-p {
-      padding-bottom: 29px; }
-    body #scope .adjust-p-b-30-p {
-      padding-bottom: 30px; }
-    body #scope .adjust-p-b-31-p {
-      padding-bottom: 31px; }
-    body #scope .adjust-p-b-32-p {
-      padding-bottom: 32px; }
     body #scope .adjust-p-l-0-p {
       padding-left: 0px; }
     body #scope .adjust-p-l-1-p {
@@ -6249,38 +4341,6 @@ body #scope {
       padding-left: 15px; }
     body #scope .adjust-p-l-16-p {
       padding-left: 16px; }
-    body #scope .adjust-p-l-17-p {
-      padding-left: 17px; }
-    body #scope .adjust-p-l-18-p {
-      padding-left: 18px; }
-    body #scope .adjust-p-l-19-p {
-      padding-left: 19px; }
-    body #scope .adjust-p-l-20-p {
-      padding-left: 20px; }
-    body #scope .adjust-p-l-21-p {
-      padding-left: 21px; }
-    body #scope .adjust-p-l-22-p {
-      padding-left: 22px; }
-    body #scope .adjust-p-l-23-p {
-      padding-left: 23px; }
-    body #scope .adjust-p-l-24-p {
-      padding-left: 24px; }
-    body #scope .adjust-p-l-25-p {
-      padding-left: 25px; }
-    body #scope .adjust-p-l-26-p {
-      padding-left: 26px; }
-    body #scope .adjust-p-l-27-p {
-      padding-left: 27px; }
-    body #scope .adjust-p-l-28-p {
-      padding-left: 28px; }
-    body #scope .adjust-p-l-29-p {
-      padding-left: 29px; }
-    body #scope .adjust-p-l-30-p {
-      padding-left: 30px; }
-    body #scope .adjust-p-l-31-p {
-      padding-left: 31px; }
-    body #scope .adjust-p-l-32-p {
-      padding-left: 32px; }
     body #scope .adjust-p-a-0-p {
       padding: 0px; }
     body #scope .adjust-p-a-1-p {
@@ -6315,38 +4375,6 @@ body #scope {
       padding: 15px; }
     body #scope .adjust-p-a-16-p {
       padding: 16px; }
-    body #scope .adjust-p-a-17-p {
-      padding: 17px; }
-    body #scope .adjust-p-a-18-p {
-      padding: 18px; }
-    body #scope .adjust-p-a-19-p {
-      padding: 19px; }
-    body #scope .adjust-p-a-20-p {
-      padding: 20px; }
-    body #scope .adjust-p-a-21-p {
-      padding: 21px; }
-    body #scope .adjust-p-a-22-p {
-      padding: 22px; }
-    body #scope .adjust-p-a-23-p {
-      padding: 23px; }
-    body #scope .adjust-p-a-24-p {
-      padding: 24px; }
-    body #scope .adjust-p-a-25-p {
-      padding: 25px; }
-    body #scope .adjust-p-a-26-p {
-      padding: 26px; }
-    body #scope .adjust-p-a-27-p {
-      padding: 27px; }
-    body #scope .adjust-p-a-28-p {
-      padding: 28px; }
-    body #scope .adjust-p-a-29-p {
-      padding: 29px; }
-    body #scope .adjust-p-a-30-p {
-      padding: 30px; }
-    body #scope .adjust-p-a-31-p {
-      padding: 31px; }
-    body #scope .adjust-p-a-32-p {
-      padding: 32px; }
     body #scope .adjust-b-t-0-p {
       border-top: 1px solid #dfe0e1;
       border-top-width: 0px; }
@@ -6398,54 +4426,6 @@ body #scope {
     body #scope .adjust-b-t-16-p {
       border-top: 1px solid #dfe0e1;
       border-top-width: 16px; }
-    body #scope .adjust-b-t-17-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 17px; }
-    body #scope .adjust-b-t-18-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 18px; }
-    body #scope .adjust-b-t-19-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 19px; }
-    body #scope .adjust-b-t-20-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 20px; }
-    body #scope .adjust-b-t-21-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 21px; }
-    body #scope .adjust-b-t-22-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 22px; }
-    body #scope .adjust-b-t-23-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 23px; }
-    body #scope .adjust-b-t-24-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 24px; }
-    body #scope .adjust-b-t-25-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 25px; }
-    body #scope .adjust-b-t-26-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 26px; }
-    body #scope .adjust-b-t-27-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 27px; }
-    body #scope .adjust-b-t-28-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 28px; }
-    body #scope .adjust-b-t-29-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 29px; }
-    body #scope .adjust-b-t-30-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 30px; }
-    body #scope .adjust-b-t-31-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 31px; }
-    body #scope .adjust-b-t-32-p {
-      border-top: 1px solid #dfe0e1;
-      border-top-width: 32px; }
     body #scope .adjust-b-r-0-p {
       border-right: 1px solid #dfe0e1;
       border-right-width: 0px; }
@@ -6497,54 +4477,6 @@ body #scope {
     body #scope .adjust-b-r-16-p {
       border-right: 1px solid #dfe0e1;
       border-right-width: 16px; }
-    body #scope .adjust-b-r-17-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 17px; }
-    body #scope .adjust-b-r-18-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 18px; }
-    body #scope .adjust-b-r-19-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 19px; }
-    body #scope .adjust-b-r-20-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 20px; }
-    body #scope .adjust-b-r-21-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 21px; }
-    body #scope .adjust-b-r-22-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 22px; }
-    body #scope .adjust-b-r-23-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 23px; }
-    body #scope .adjust-b-r-24-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 24px; }
-    body #scope .adjust-b-r-25-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 25px; }
-    body #scope .adjust-b-r-26-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 26px; }
-    body #scope .adjust-b-r-27-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 27px; }
-    body #scope .adjust-b-r-28-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 28px; }
-    body #scope .adjust-b-r-29-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 29px; }
-    body #scope .adjust-b-r-30-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 30px; }
-    body #scope .adjust-b-r-31-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 31px; }
-    body #scope .adjust-b-r-32-p {
-      border-right: 1px solid #dfe0e1;
-      border-right-width: 32px; }
     body #scope .adjust-b-b-0-p {
       border-bottom: 1px solid #dfe0e1;
       border-bottom-width: 0px; }
@@ -6596,54 +4528,6 @@ body #scope {
     body #scope .adjust-b-b-16-p {
       border-bottom: 1px solid #dfe0e1;
       border-bottom-width: 16px; }
-    body #scope .adjust-b-b-17-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 17px; }
-    body #scope .adjust-b-b-18-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 18px; }
-    body #scope .adjust-b-b-19-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 19px; }
-    body #scope .adjust-b-b-20-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 20px; }
-    body #scope .adjust-b-b-21-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 21px; }
-    body #scope .adjust-b-b-22-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 22px; }
-    body #scope .adjust-b-b-23-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 23px; }
-    body #scope .adjust-b-b-24-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 24px; }
-    body #scope .adjust-b-b-25-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 25px; }
-    body #scope .adjust-b-b-26-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 26px; }
-    body #scope .adjust-b-b-27-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 27px; }
-    body #scope .adjust-b-b-28-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 28px; }
-    body #scope .adjust-b-b-29-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 29px; }
-    body #scope .adjust-b-b-30-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 30px; }
-    body #scope .adjust-b-b-31-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 31px; }
-    body #scope .adjust-b-b-32-p {
-      border-bottom: 1px solid #dfe0e1;
-      border-bottom-width: 32px; }
     body #scope .adjust-b-l-0-p {
       border-left: 1px solid #dfe0e1;
       border-left-width: 0px; }
@@ -6695,54 +4579,6 @@ body #scope {
     body #scope .adjust-b-l-16-p {
       border-left: 1px solid #dfe0e1;
       border-left-width: 16px; }
-    body #scope .adjust-b-l-17-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 17px; }
-    body #scope .adjust-b-l-18-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 18px; }
-    body #scope .adjust-b-l-19-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 19px; }
-    body #scope .adjust-b-l-20-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 20px; }
-    body #scope .adjust-b-l-21-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 21px; }
-    body #scope .adjust-b-l-22-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 22px; }
-    body #scope .adjust-b-l-23-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 23px; }
-    body #scope .adjust-b-l-24-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 24px; }
-    body #scope .adjust-b-l-25-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 25px; }
-    body #scope .adjust-b-l-26-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 26px; }
-    body #scope .adjust-b-l-27-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 27px; }
-    body #scope .adjust-b-l-28-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 28px; }
-    body #scope .adjust-b-l-29-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 29px; }
-    body #scope .adjust-b-l-30-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 30px; }
-    body #scope .adjust-b-l-31-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 31px; }
-    body #scope .adjust-b-l-32-p {
-      border-left: 1px solid #dfe0e1;
-      border-left-width: 32px; }
     body #scope .adjust-b-a-0-p {
       border: 1px solid #dfe0e1;
       border-width: 0px; }
@@ -6793,52 +4629,4 @@ body #scope {
       border-width: 15px; }
     body #scope .adjust-b-a-16-p {
       border: 1px solid #dfe0e1;
-      border-width: 16px; }
-    body #scope .adjust-b-a-17-p {
-      border: 1px solid #dfe0e1;
-      border-width: 17px; }
-    body #scope .adjust-b-a-18-p {
-      border: 1px solid #dfe0e1;
-      border-width: 18px; }
-    body #scope .adjust-b-a-19-p {
-      border: 1px solid #dfe0e1;
-      border-width: 19px; }
-    body #scope .adjust-b-a-20-p {
-      border: 1px solid #dfe0e1;
-      border-width: 20px; }
-    body #scope .adjust-b-a-21-p {
-      border: 1px solid #dfe0e1;
-      border-width: 21px; }
-    body #scope .adjust-b-a-22-p {
-      border: 1px solid #dfe0e1;
-      border-width: 22px; }
-    body #scope .adjust-b-a-23-p {
-      border: 1px solid #dfe0e1;
-      border-width: 23px; }
-    body #scope .adjust-b-a-24-p {
-      border: 1px solid #dfe0e1;
-      border-width: 24px; }
-    body #scope .adjust-b-a-25-p {
-      border: 1px solid #dfe0e1;
-      border-width: 25px; }
-    body #scope .adjust-b-a-26-p {
-      border: 1px solid #dfe0e1;
-      border-width: 26px; }
-    body #scope .adjust-b-a-27-p {
-      border: 1px solid #dfe0e1;
-      border-width: 27px; }
-    body #scope .adjust-b-a-28-p {
-      border: 1px solid #dfe0e1;
-      border-width: 28px; }
-    body #scope .adjust-b-a-29-p {
-      border: 1px solid #dfe0e1;
-      border-width: 29px; }
-    body #scope .adjust-b-a-30-p {
-      border: 1px solid #dfe0e1;
-      border-width: 30px; }
-    body #scope .adjust-b-a-31-p {
-      border: 1px solid #dfe0e1;
-      border-width: 31px; }
-    body #scope .adjust-b-a-32-p {
-      border: 1px solid #dfe0e1;
-      border-width: 32px; } }
+      border-width: 16px; } }

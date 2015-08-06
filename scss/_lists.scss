@@ -30,7 +30,7 @@ $color-list: (
     (orange, $orange),
     (pink, $pink)
 );
-$property-list: (
+$block-property-list: (
     (m, margin),
     (p, padding),
     (b, border)
@@ -61,7 +61,13 @@ $position-list: (
 $text-align-list: (
     (c, center),
     (l, left),
-    (r, right)
+    (r, right),
+    (j, justify)
+);
+$float-list: (
+    (l, left),
+    (r, right),
+    (n, none)
 );
 $vertical-align-list: (
     (t, top),
