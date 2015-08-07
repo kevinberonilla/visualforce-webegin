@@ -1762,6 +1762,14 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
   body .scope label {
     display: block;
     color: #adb8c2; }
+    body .scope label.required:after {
+      font-family: 'FontAwesome';
+      content: '\f069';
+      display: inline-block;
+      margin-left: 4px;
+      vertical-align: top;
+      font-size: 60%;
+      color: #cf5c60; }
   body .scope input, body .scope textarea, body .scope select, body .scope ul.tagit {
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease;
@@ -1775,6 +1783,9 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     color: #686c70;
     background-color: #f0f1f2;
     width: 100%; }
+    body .scope input.error, body .scope textarea.error, body .scope select.error, body .scope ul.error.tagit {
+      border-color: #cf5c60;
+      background-color: #fbefef; }
     body .scope input:focus, body .scope textarea:focus, body .scope select:focus, body .scope ul.tagit:focus {
       background-color: #fff;
       outline: none; }
@@ -1801,7 +1812,6 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     margin-right: 8px;
     margin-bottom: 8px;
     border-radius: 22px;
-    border: 1px solid #dfe0e1;
     width: 22px;
     height: 22px;
     padding: 0;
@@ -1810,6 +1820,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     position: relative;
     -webkit-appearance: none;
     -moz-appearance: none; }
+    body .scope input[type="radio"].error, body .scope textarea[type="radio"].error, body .scope select[type="radio"].error, body .scope input.error[type="checkbox"], body .scope textarea.error[type="checkbox"], body .scope select.error[type="checkbox"], body .scope ul.error[type="checkbox"].tagit, body .scope ul[type="radio"].error.tagit {
+      background-color: #fbefef; }
     body .scope input[type="radio"] + label, body .scope .scope input[type="radio"] + label, body .scope textarea[type="radio"] + label, body .scope .scope textarea[type="radio"] + label, body .scope select[type="radio"] + label, body .scope .scope select[type="radio"] + label, body .scope input[type="checkbox"] + label, body .scope .scope input[type="checkbox"] + label, body .scope textarea[type="checkbox"] + label, body .scope .scope textarea[type="checkbox"] + label, body .scope select[type="checkbox"] + label, body .scope .scope select[type="checkbox"] + label, body .scope ul[type="checkbox"].tagit + label, body .scope .scope ul[type="checkbox"].tagit + label, body .scope ul[type="radio"].tagit + label, body .scope .scope ul[type="radio"].tagit + label {
       color: #686c70;
       display: inline-block;
@@ -1875,6 +1887,10 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope .tags-container > ul.tagit:after, body .scope .scope .tags-container > ul.tagit:after {
       content: '\f02b';
       right: -2px; }
+    body .scope .tags-container > ul.tagit.error input[type="text"], body .scope .scope .tags-container > ul.tagit.error input[type="text"], body .scope .tags-container > ul.tagit.error textarea[type="text"], body .scope .scope .tags-container > ul.tagit.error textarea[type="text"], body .scope .tags-container > ul.tagit.error select[type="text"], body .scope .scope .tags-container > ul.tagit.error select[type="text"], body .scope .tags-container > ul.tagit.error ul[type="text"].tagit, body .scope .scope .tags-container > ul.tagit.error ul[type="text"].tagit {
+      background-color: #fbefef; }
+      body .scope .tags-container > ul.tagit.error input[type="text"]:focus, body .scope .scope .tags-container > ul.tagit.error input[type="text"]:focus, body .scope .tags-container > ul.tagit.error textarea[type="text"]:focus, body .scope .scope .tags-container > ul.tagit.error textarea[type="text"]:focus, body .scope .tags-container > ul.tagit.error select[type="text"]:focus, body .scope .scope .tags-container > ul.tagit.error select[type="text"]:focus, body .scope .tags-container > ul.tagit.error ul[type="text"].tagit:focus, body .scope .scope .tags-container > ul.tagit.error ul[type="text"].tagit:focus {
+        background-color: #fff; }
   body .scope .date-picker-container:after {
     font-family: IcoMoon-Free;
     content: '\e953';

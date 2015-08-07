@@ -1,6 +1,15 @@
 label {
     display: block;
     color: $text-light;
+    &.required:after {
+        font-family: 'FontAwesome';
+        content: '\f069';
+        display: inline-block;
+        margin-left: 4px;
+        vertical-align: top;
+        font-size: 60%;
+        color: $red;
+    }
 }
 input {
     @include animated;
@@ -14,6 +23,10 @@ input {
     color: $text-normal;
     background-color: $grey;
     width: 100%;
+    &.error {
+        border-color: $red;
+        background-color: #fbefef;
+    }
     &:focus {
         background-color: $white;
         outline: none;
@@ -45,7 +58,6 @@ input[type="radio"] {
     margin-right: $type-spacing / 2;
     margin-bottom: $type-spacing / 2;
     border-radius: 22px;
-    border: $card-border;
     width: 22px;
     height: 22px;
     padding: 0;
@@ -54,6 +66,9 @@ input[type="radio"] {
     position: relative;
     -webkit-appearance: none;
     -moz-appearance: none;
+    &.error {
+        background-color: #fbefef;
+    }
     + label {
         color: $text-normal;
         display: inline-block;
@@ -130,6 +145,14 @@ input[type="checkbox"] {
         &:after {
             content: '\f02b';
             right: -2px;
+        }
+        &.error {
+            input[type="text"] {
+                background-color: #fbefef;
+                &:focus {
+                    background-color: $white;
+                }
+            }
         }
     }
 }
