@@ -903,38 +903,38 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope table td {
       padding: 8px 16px;
       white-space: nowrap; }
-    body .scope table thead {
+    body .scope table thead, body .scope table tfoot {
       background-color: #2a94d6;
       color: #fff; }
-      body .scope table thead.text-dark {
+      body .scope table thead.text-dark, body .scope table tfoot.text-dark {
         background-color: #3c3d3e; }
-      body .scope table thead.text-normal {
+      body .scope table thead.text-normal, body .scope table tfoot.text-normal {
         background-color: #686c70; }
-      body .scope table thead.text-light {
+      body .scope table thead.text-light, body .scope table tfoot.text-light {
         background-color: #adb8c2; }
-      body .scope table thead.text-link {
+      body .scope table thead.text-link, body .scope table tfoot.text-link {
         background-color: #006eb3; }
-      body .scope table thead.blue {
+      body .scope table thead.blue, body .scope table tfoot.blue {
         background-color: #2a94d6; }
-      body .scope table thead.light-blue {
+      body .scope table thead.light-blue, body .scope table tfoot.light-blue {
         background-color: #4eb1cb; }
-      body .scope table thead.navy {
+      body .scope table thead.navy, body .scope table tfoot.navy {
         background-color: #34495e; }
-      body .scope table thead.grey {
+      body .scope table thead.grey, body .scope table tfoot.grey {
         background-color: #f0f1f2; }
-      body .scope table thead.light-grey {
+      body .scope table thead.light-grey, body .scope table tfoot.light-grey {
         background-color: #fafafa; }
-      body .scope table thead.white {
+      body .scope table thead.white, body .scope table tfoot.white {
         background-color: #fff; }
-      body .scope table thead.red {
+      body .scope table thead.red, body .scope table tfoot.red {
         background-color: #cf5c60; }
-      body .scope table thead.purple {
+      body .scope table thead.purple, body .scope table tfoot.purple {
         background-color: #717ecd; }
-      body .scope table thead.green {
+      body .scope table thead.green, body .scope table tfoot.green {
         background-color: #4ab471; }
-      body .scope table thead.orange {
+      body .scope table thead.orange, body .scope table tfoot.orange {
         background-color: #f3ae4e; }
-      body .scope table thead.pink {
+      body .scope table thead.pink, body .scope table tfoot.pink {
         background-color: #d96383; }
     body .scope table tbody tr:nth-child(even) {
       background-color: #f0f1f2; }
@@ -944,7 +944,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
         border-top: 1px solid #dfe0e1; }
         body .scope table.list tr:first-child {
           border-top: none; }
-      body .scope table.list thead {
+      body .scope table.list thead, body .scope table.list tfoot {
         background-color: initial;
         color: #3c3d3e;
         font-weight: 700; }

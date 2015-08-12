@@ -253,6 +253,9 @@ table {
         color: $white;
         @include color-classes(background-color);
     }
+    tfoot {
+        @extend thead;
+    }
     tbody {
         tr:nth-child(even) {
             background-color: $grey;
