@@ -142,6 +142,7 @@ input[type="checkbox"] {
     > ul.tagit {
         @extend .select-container;
         padding-right: 48px;
+        overflow: hidden;
         &:after {
             content: '\f02b';
             right: -2px;

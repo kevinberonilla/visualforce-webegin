@@ -699,11 +699,29 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
               margin-top: 0; } }
           body .scope .card > div.has-buttons h2.has-subhead, body .scope .scope .card > div.has-buttons h2.has-subhead, body .scope .modal > div.has-buttons h2.has-subhead, body .scope .scope .modal > div.has-buttons h2.has-subhead, body .scope .card > section.has-buttons h2.has-subhead, body .scope .scope .card > section.has-buttons h2.has-subhead, body .scope .modal > section.has-buttons h2.has-subhead, body .scope .scope .modal > section.has-buttons h2.has-subhead {
             margin-top: 2px; }
+            @media only screen and (max-width: 1024px) {
+              body .scope .card > div.has-buttons h2.has-subhead, body .scope .scope .card > div.has-buttons h2.has-subhead, body .scope .modal > div.has-buttons h2.has-subhead, body .scope .scope .modal > div.has-buttons h2.has-subhead, body .scope .card > section.has-buttons h2.has-subhead, body .scope .scope .card > section.has-buttons h2.has-subhead, body .scope .modal > section.has-buttons h2.has-subhead, body .scope .scope .modal > section.has-buttons h2.has-subhead {
+                margin-top: 0; } }
             body .scope .card > div.has-buttons h2.has-subhead + h3, body .scope .scope .card > div.has-buttons h2.has-subhead + h3, body .scope .modal > div.has-buttons h2.has-subhead + h3, body .scope .scope .modal > div.has-buttons h2.has-subhead + h3, body .scope .card > section.has-buttons h2.has-subhead + h3, body .scope .scope .card > section.has-buttons h2.has-subhead + h3, body .scope .modal > section.has-buttons h2.has-subhead + h3, body .scope .scope .modal > section.has-buttons h2.has-subhead + h3 {
-              margin-top: 0; }
+              margin-top: 1px;
+              margin-bottom: -1px; }
+              @media only screen and (max-width: 1024px) {
+                body .scope .card > div.has-buttons h2.has-subhead + h3, body .scope .scope .card > div.has-buttons h2.has-subhead + h3, body .scope .modal > div.has-buttons h2.has-subhead + h3, body .scope .scope .modal > div.has-buttons h2.has-subhead + h3, body .scope .card > section.has-buttons h2.has-subhead + h3, body .scope .scope .card > section.has-buttons h2.has-subhead + h3, body .scope .modal > section.has-buttons h2.has-subhead + h3, body .scope .scope .modal > section.has-buttons h2.has-subhead + h3 {
+                  margin-top: 2px; } }
+        body .scope .card > div.has-buttons h3.has-subhead, body .scope .scope .card > div.has-buttons h3.has-subhead, body .scope .modal > div.has-buttons h3.has-subhead, body .scope .scope .modal > div.has-buttons h3.has-subhead, body .scope .card > section.has-buttons h3.has-subhead, body .scope .scope .card > section.has-buttons h3.has-subhead, body .scope .modal > section.has-buttons h3.has-subhead, body .scope .scope .modal > section.has-buttons h3.has-subhead {
+          margin-top: 1px; }
+          @media only screen and (max-width: 1024px) {
+            body .scope .card > div.has-buttons h3.has-subhead, body .scope .scope .card > div.has-buttons h3.has-subhead, body .scope .modal > div.has-buttons h3.has-subhead, body .scope .scope .modal > div.has-buttons h3.has-subhead, body .scope .card > section.has-buttons h3.has-subhead, body .scope .scope .card > section.has-buttons h3.has-subhead, body .scope .modal > section.has-buttons h3.has-subhead, body .scope .scope .modal > section.has-buttons h3.has-subhead {
+              margin-top: -1px; } }
+          body .scope .card > div.has-buttons h3.has-subhead + h2, body .scope .scope .card > div.has-buttons h3.has-subhead + h2, body .scope .modal > div.has-buttons h3.has-subhead + h2, body .scope .scope .modal > div.has-buttons h3.has-subhead + h2, body .scope .card > section.has-buttons h3.has-subhead + h2, body .scope .scope .card > section.has-buttons h3.has-subhead + h2, body .scope .modal > section.has-buttons h3.has-subhead + h2, body .scope .scope .modal > section.has-buttons h3.has-subhead + h2 {
+            margin-top: -2px; }
+            @media only screen and (max-width: 1024px) {
+              body .scope .card > div.has-buttons h3.has-subhead + h2, body .scope .scope .card > div.has-buttons h3.has-subhead + h2, body .scope .modal > div.has-buttons h3.has-subhead + h2, body .scope .scope .modal > div.has-buttons h3.has-subhead + h2, body .scope .card > section.has-buttons h3.has-subhead + h2, body .scope .scope .card > section.has-buttons h3.has-subhead + h2, body .scope .modal > section.has-buttons h3.has-subhead + h2, body .scope .scope .modal > section.has-buttons h3.has-subhead + h2 {
+                margin-top: -6px;
+                margin-bottom: -5px; } }
         @media only screen and (max-width: 1024px) {
           body .scope .card > div.has-buttons.mobile-header, body .scope .scope .card > div.has-buttons.mobile-header, body .scope .modal > div.has-buttons.mobile-header, body .scope .scope .modal > div.has-buttons.mobile-header, body .scope .card > section.has-buttons.mobile-header, body .scope .scope .card > section.has-buttons.mobile-header, body .scope .modal > section.has-buttons.mobile-header, body .scope .scope .modal > section.has-buttons.mobile-header {
-            min-height: 66px; } }
+            min-height: 67px; } }
       body .scope .card > div.no-padding, body .scope .scope .card > div.no-padding, body .scope .modal > div.no-padding, body .scope .scope .modal > div.no-padding, body .scope .card > section.no-padding, body .scope .scope .card > section.no-padding, body .scope .modal > section.no-padding, body .scope .scope .modal > section.no-padding {
         padding: 0; }
       body .scope .card > div.dismissible, body .scope .scope .card > div.dismissible, body .scope .modal > div.dismissible, body .scope .scope .modal > div.dismissible, body .scope .card > section.dismissible, body .scope .scope .card > section.dismissible, body .scope .modal > section.dismissible, body .scope .scope .modal > section.dismissible {
@@ -1312,6 +1330,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       body .scope button.loading:after, body .scope a.loading.button:after, body .scope input.loading[type="submit"]:after, body .scope textarea.loading[type="submit"]:after, body .scope select.loading[type="submit"]:after, body .scope ul.loading[type="submit"].tagit:after, body .scope .button-group > li > a.loading:after, body .scope .scope .button-group > li > a.loading:after, body .scope .paginate-links li a.loading:after {
         width: 32px;
         height: 32px; }
+      body .scope button.loading:hover, body .scope a.loading.button:hover, body .scope input.loading[type="submit"]:hover, body .scope textarea.loading[type="submit"]:hover, body .scope select.loading[type="submit"]:hover, body .scope ul.loading[type="submit"].tagit:hover, body .scope .button-group > li > a.loading:hover, body .scope .scope .button-group > li > a.loading:hover, body .scope .paginate-links li a.loading:hover {
+        opacity: 1; }
     body .scope button:last-child, body .scope a.button:last-child, body .scope input[type="submit"]:last-child, body .scope textarea[type="submit"]:last-child, body .scope select[type="submit"]:last-child, body .scope ul[type="submit"].tagit:last-child, body .scope .button-group > li > a:last-child, body .scope .scope .button-group > li > a:last-child, body .scope .button-group > li > button:last-child, body .scope .scope .button-group > li > button:last-child, body .scope .paginate-links li a:last-child, body .scope .paginate-links li button:last-child {
       margin-right: 0; }
     body .scope button:hover, body .scope a.button:hover, body .scope input[type="submit"]:hover, body .scope textarea[type="submit"]:hover, body .scope select[type="submit"]:hover, body .scope ul[type="submit"].tagit:hover, body .scope .button-group > li > a:hover, body .scope .scope .button-group > li > a:hover, body .scope .button-group > li > button:hover, body .scope .scope .button-group > li > button:hover, body .scope .paginate-links li a:hover, body .scope .paginate-links li button:hover {
@@ -1883,7 +1903,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope .tags-container + *:after, body .scope .tags-container + :after, body .scope .scope .tags-container + :after {
       margin: 0; }
   body .scope .tags-container > ul.tagit, body .scope .scope .tags-container > ul.tagit {
-    padding-right: 48px; }
+    padding-right: 48px;
+    overflow: hidden; }
     body .scope .tags-container > ul.tagit:after, body .scope .scope .tags-container > ul.tagit:after {
       content: '\f02b';
       right: -2px; }

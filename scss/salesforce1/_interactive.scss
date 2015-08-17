@@ -37,6 +37,9 @@ button {
             width: 32px;
             height: 32px;
         }
+        &:hover {
+            opacity: 1;
+        }
     }
     &:last-child {
         margin-right: 0;

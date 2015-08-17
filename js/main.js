@@ -289,8 +289,7 @@ Tag-it Initialize
 ---------------------------------------- */
 $(document).ready(function() {
     $('.js-tags').tagit({
-        allowSpaces: true,
-        
+        allowSpaces: true
     });
 });
 

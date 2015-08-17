@@ -57,14 +57,36 @@
                 }
                 &.has-subhead {
                     margin-top: 2px;
-                    + h3 {
+                    @media only screen and (max-width: $tablet-landscape-breakpoint) {
                         margin-top: 0;
+                    }
+                    + h3 {
+                        margin-top: 1px;
+                        margin-bottom: -1px;
+                        @media only screen and (max-width: $tablet-landscape-breakpoint) {
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+            h3 {
+                &.has-subhead {
+                    margin-top: 1px;
+                    @media only screen and (max-width: $tablet-landscape-breakpoint) {
+                        margin-top: -1px;
+                    }
+                    + h2 {
+                        margin-top: -2px;
+                        @media only screen and (max-width: $tablet-landscape-breakpoint) {
+                            margin-top: -6px;
+                            margin-bottom: -5px;
+                        }
                     }
                 }
             }
             &.mobile-header {
                 @media only screen and (max-width: $tablet-landscape-breakpoint) {
-                    min-height: 66px;
+                    min-height: 67px;
                 }
             }
         }
