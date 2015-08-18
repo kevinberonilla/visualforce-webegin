@@ -31,8 +31,8 @@ gulp.task('uglify', function() {
 
 gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['sass']);
-    gulp.watch('css/**/*.css', ['minify-css']);
-    gulp.watch('js/**/*.js', ['uglify']);
+    gulp.watch(['css/**/*.css', '!css/**/*.min.css'], ['minify-css']);
+    gulp.watch(['js/**/*.js', '!js/**/*.min.js'], ['uglify']);
 });
 
 gulp.task('default', ['sass', 'minify-css', 'uglify', 'watch']);
