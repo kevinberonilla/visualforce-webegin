@@ -19,14 +19,14 @@ gulp.task('minify-css', function() {
     return gulp.src(['css/**/*.css', '!css/**/*.min.css'])
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifyCss())
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('uglify', function() {
     return gulp.src(['js/**/*.js', '!js/**/*.min.js'])
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('js'));
 });
 
 gulp.task('watch', function() {
