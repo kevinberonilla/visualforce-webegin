@@ -92,6 +92,13 @@
                 }
             }
         }
+        &-c {
+            @each $cursor in $cursor-list {
+                &-#{nth($cursor, 1)}-#{$breakpoint} {
+                    cursor: #{nth($cursor, 2)}
+                }
+            }
+        }
         @each $block-property in $block-property-list {
             &-#{nth($block-property, 1)} {
                 @each $side in $side-list {
@@ -138,6 +145,13 @@
             @each $vertical-align in $vertical-align-list {
                 &-#{nth($vertical-align, 1)} {
                     vertical-align: #{nth($vertical-align, 2)}
+                }
+            }
+        }
+        &-c {
+            @each $cursor in $cursor-list {
+                &-#{nth($cursor, 1)} {
+                    cursor: #{nth($cursor, 2)}
                 }
             }
         }

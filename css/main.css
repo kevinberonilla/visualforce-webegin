@@ -2134,6 +2134,34 @@ body #scope {
     vertical-align: bottom; }
   body #scope .adjust-va-tb {
     vertical-align: text-bottom; }
+  body #scope .adjust-c-p {
+    cursor: pointer; }
+  body #scope .adjust-c-na {
+    cursor: not-allowed; }
+  body #scope .adjust-c-t {
+    cursor: text; }
+  body #scope .adjust-c-h {
+    cursor: help; }
+  body #scope .adjust-c-nd {
+    cursor: no-drop; }
+  body #scope .adjust-c-w {
+    cursor: wait; }
+  body #scope .adjust-c-c {
+    cursor: cell; }
+  body #scope .adjust-c-m {
+    cursor: move; }
+  body #scope .adjust-c-n {
+    cursor: none; }
+  body #scope .adjust-c-zi {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
+  body #scope .adjust-c-zo {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out; }
+  body #scope .adjust-c-a {
+    cursor: alias; }
+  body #scope .adjust-c-i {
+    cursor: initial; }
   body #scope .adjust-m-t-0 {
     margin-top: 0px; }
   body #scope .adjust-m-t-1 {
@@ -2780,6 +2808,34 @@ body #scope {
       vertical-align: bottom; }
     body #scope .adjust-va-tb-tl {
       vertical-align: text-bottom; }
+    body #scope .adjust-c-p-tl {
+      cursor: pointer; }
+    body #scope .adjust-c-na-tl {
+      cursor: not-allowed; }
+    body #scope .adjust-c-t-tl {
+      cursor: text; }
+    body #scope .adjust-c-h-tl {
+      cursor: help; }
+    body #scope .adjust-c-nd-tl {
+      cursor: no-drop; }
+    body #scope .adjust-c-w-tl {
+      cursor: wait; }
+    body #scope .adjust-c-c-tl {
+      cursor: cell; }
+    body #scope .adjust-c-m-tl {
+      cursor: move; }
+    body #scope .adjust-c-n-tl {
+      cursor: none; }
+    body #scope .adjust-c-zi-tl {
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in; }
+    body #scope .adjust-c-zo-tl {
+      cursor: -webkit-zoom-out;
+      cursor: zoom-out; }
+    body #scope .adjust-c-a-tl {
+      cursor: alias; }
+    body #scope .adjust-c-i-tl {
+      cursor: initial; }
     body #scope .adjust-m-t-0-tl {
       margin-top: 0px; }
     body #scope .adjust-m-t-1-tl {
@@ -3426,6 +3482,34 @@ body #scope {
       vertical-align: bottom; }
     body #scope .adjust-va-tb-tp {
       vertical-align: text-bottom; }
+    body #scope .adjust-c-p-tp {
+      cursor: pointer; }
+    body #scope .adjust-c-na-tp {
+      cursor: not-allowed; }
+    body #scope .adjust-c-t-tp {
+      cursor: text; }
+    body #scope .adjust-c-h-tp {
+      cursor: help; }
+    body #scope .adjust-c-nd-tp {
+      cursor: no-drop; }
+    body #scope .adjust-c-w-tp {
+      cursor: wait; }
+    body #scope .adjust-c-c-tp {
+      cursor: cell; }
+    body #scope .adjust-c-m-tp {
+      cursor: move; }
+    body #scope .adjust-c-n-tp {
+      cursor: none; }
+    body #scope .adjust-c-zi-tp {
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in; }
+    body #scope .adjust-c-zo-tp {
+      cursor: -webkit-zoom-out;
+      cursor: zoom-out; }
+    body #scope .adjust-c-a-tp {
+      cursor: alias; }
+    body #scope .adjust-c-i-tp {
+      cursor: initial; }
     body #scope .adjust-m-t-0-tp {
       margin-top: 0px; }
     body #scope .adjust-m-t-1-tp {
@@ -4072,6 +4156,34 @@ body #scope {
       vertical-align: bottom; }
     body #scope .adjust-va-tb-p {
       vertical-align: text-bottom; }
+    body #scope .adjust-c-p-p {
+      cursor: pointer; }
+    body #scope .adjust-c-na-p {
+      cursor: not-allowed; }
+    body #scope .adjust-c-t-p {
+      cursor: text; }
+    body #scope .adjust-c-h-p {
+      cursor: help; }
+    body #scope .adjust-c-nd-p {
+      cursor: no-drop; }
+    body #scope .adjust-c-w-p {
+      cursor: wait; }
+    body #scope .adjust-c-c-p {
+      cursor: cell; }
+    body #scope .adjust-c-m-p {
+      cursor: move; }
+    body #scope .adjust-c-n-p {
+      cursor: none; }
+    body #scope .adjust-c-zi-p {
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in; }
+    body #scope .adjust-c-zo-p {
+      cursor: -webkit-zoom-out;
+      cursor: zoom-out; }
+    body #scope .adjust-c-a-p {
+      cursor: alias; }
+    body #scope .adjust-c-i-p {
+      cursor: initial; }
     body #scope .adjust-m-t-0-p {
       margin-top: 0px; }
     body #scope .adjust-m-t-1-p {

@@ -60,6 +60,21 @@ $vertical-align-list: (
     (b, bottom),
     (tb, text-bottom)
 );
+$cursor-list: (
+    (p, pointer),
+    (na, not-allowed),
+    (t, text),
+    (h, help),
+    (nd, no-drop),
+    (w, wait),
+    (c, cell),
+    (m, move),
+    (n, none),
+    (zi, zoom-in),
+    (zo, zoom-out),
+    (a, alias),
+    (i, initial)
+);
 $color-list: (
     (text-dark, $text-dark),
     (text-normal, $text-normal),
