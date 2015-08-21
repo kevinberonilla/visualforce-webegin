@@ -20,6 +20,10 @@ ul.tagit li.tagit-choice-editable {
 }
 ul.tagit li.tagit-new {
     padding: 0;
+    margin-left: 2px;
+    &:first-child {
+        margin-left: 0;
+    }
 }
 ul.tagit li input[type="text"] {
     line-height: 24px;

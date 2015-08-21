@@ -2006,7 +2006,10 @@ body, body .scope, body .scope {
     padding: 0 20px 0 6px;
     margin: 2px; }
   body ul.tagit li.tagit-new, body .scope ul.tagit li.tagit-new {
-    padding: 0; }
+    padding: 0;
+    margin-left: 2px; }
+    body ul.tagit li.tagit-new:first-child, body .scope ul.tagit li.tagit-new:first-child {
+      margin-left: 0; }
   body ul.tagit li input[type="text"], body ul.tagit li .scope textarea[type="text"], body .scope ul.tagit li textarea[type="text"], body ul.tagit li .scope select[type="text"], body .scope ul.tagit li select[type="text"], body ul.tagit li ul[type="text"].tagit, body .scope ul.tagit li input[type="text"], body .scope ul.tagit li textarea[type="text"], body .scope ul.tagit li select[type="text"], body .scope ul.tagit li ul[type="text"].tagit {
     line-height: 24px;
     padding-left: 6px;
