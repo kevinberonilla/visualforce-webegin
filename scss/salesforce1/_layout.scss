@@ -114,6 +114,12 @@
             margin-right: -($tablet-landscape-breakpoint - $container-width) / 2;
             margin-bottom: 0;
             margin-left: -($tablet-landscape-breakpoint - $container-width) / 2;
+            .corner-buttons {
+                padding: $card-padding ($card-padding - ($card-padding / 6));
+                button {
+                    margin: 0 ($card-padding / 6);
+                }
+            }
             + .mobile-full-width {
                 border-top: none;
             }
@@ -195,6 +201,9 @@ ul.card {
 }
 .corner-buttons {
     float: right;
+    button {
+        margin-right: $card-padding / 4;
+    }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         float: none;
         button {
@@ -205,22 +214,13 @@ ul.card {
 }
 .mobile-header {
     position: relative;
-    .corner-buttons {
-        @extend .clearfix;
-        .mobile-group-left, .mobile-group-right {
-            display: inline-block;
-            margin-right: $type-spacing;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         .corner-buttons {
             width: 100%;
             position: absolute;
             top: 0;
             left: 0;
+            @extend .clearfix;
             button {
                 display: inline-block;
                 width: auto;
@@ -231,12 +231,6 @@ ul.card {
                 background-color: $grey !important;
                 color: $text-normal !important;
                 border-color: transparent !important;
-            }
-            .mobile-group-left {
-                float: left;
-            }
-            .mobile-group-right {
-                float: right;
             }
         }
         h2 {

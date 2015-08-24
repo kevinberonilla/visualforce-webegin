@@ -769,6 +769,10 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
         margin-right: -16px;
         margin-bottom: 0;
         margin-left: -16px; }
+        body .scope .card.mobile-full-width .corner-buttons, body .scope .mobile-full-width.modal .corner-buttons {
+          padding: 16px 13.33333px; }
+          body .scope .card.mobile-full-width .corner-buttons button, body .scope .mobile-full-width.modal .corner-buttons button, body .scope .card.mobile-full-width .corner-buttons a.button, body .scope .mobile-full-width.modal .corner-buttons a.button, body .scope .card.mobile-full-width .corner-buttons input[type="submit"], body .scope .mobile-full-width.modal .corner-buttons input[type="submit"], body .scope .card.mobile-full-width .corner-buttons textarea[type="submit"], body .scope .mobile-full-width.modal .corner-buttons textarea[type="submit"], body .scope .card.mobile-full-width .corner-buttons select[type="submit"], body .scope .mobile-full-width.modal .corner-buttons select[type="submit"], body .scope .card.mobile-full-width .corner-buttons ul[type="submit"].tagit, body .scope .mobile-full-width.modal .corner-buttons ul[type="submit"].tagit, body .scope .card.mobile-full-width .corner-buttons .button-group > li > a, body .scope .mobile-full-width.modal .corner-buttons .button-group > li > a, body .scope .card.mobile-full-width .corner-buttons .scope .button-group > li > a, body .scope .mobile-full-width.modal .corner-buttons .scope .button-group > li > a, body .scope .card.mobile-full-width .corner-buttons .paginate-links li a, body .scope .paginate-links li .card.mobile-full-width .corner-buttons a, body .scope .mobile-full-width.modal .corner-buttons .paginate-links li a, body .scope .paginate-links li .mobile-full-width.modal .corner-buttons a {
+            margin: 0 2.66667px; }
         body .scope .card.mobile-full-width + .mobile-full-width, body .scope .scope .card.mobile-full-width + .mobile-full-width, body .scope .mobile-full-width.modal + .mobile-full-width, body .scope .scope .mobile-full-width.modal + .mobile-full-width {
           border-top: none; } }
   body .scope ul.card, body .scope ul.modal {
@@ -864,6 +868,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       vertical-align: middle; }
   body .scope .corner-buttons {
     float: right; }
+    body .scope .corner-buttons button, body .scope .corner-buttons a.button, body .scope .corner-buttons input[type="submit"], body .scope .corner-buttons textarea[type="submit"], body .scope .corner-buttons select[type="submit"], body .scope .corner-buttons ul[type="submit"].tagit, body .scope .corner-buttons .button-group > li > a, body .scope .corner-buttons .scope .button-group > li > a, body .scope .corner-buttons .button-group > li > button, body .scope .corner-buttons .scope .button-group > li > button, body .scope .corner-buttons .paginate-links li a, body .scope .paginate-links li .corner-buttons a, body .scope .corner-buttons .paginate-links li button, body .scope .paginate-links li .corner-buttons button {
+      margin-right: 4px; }
     @media only screen and (max-width: 1024px) {
       body .scope .corner-buttons {
         float: none; }
@@ -872,11 +878,6 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           margin-bottom: 16px; } }
   body .scope .mobile-header {
     position: relative; }
-    body .scope .mobile-header .corner-buttons .mobile-group-left, body .scope .mobile-header .corner-buttons .mobile-group-right {
-      display: inline-block;
-      margin-right: 16px; }
-      body .scope .mobile-header .corner-buttons .mobile-group-left:last-child, body .scope .mobile-header .corner-buttons .mobile-group-right:last-child {
-        margin-right: 0; }
     @media only screen and (max-width: 1024px) {
       body .scope .mobile-header .corner-buttons {
         width: 100%;
@@ -893,10 +894,6 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           background-color: #f0f1f2 !important;
           color: #686c70 !important;
           border-color: transparent !important; }
-        body .scope .mobile-header .corner-buttons .mobile-group-left {
-          float: left; }
-        body .scope .mobile-header .corner-buttons .mobile-group-right {
-          float: right; }
       body .scope .mobile-header h2 {
         font-size: 20px;
         line-height: 30px;
