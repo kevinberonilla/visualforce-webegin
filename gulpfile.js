@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
     minifyCss = require('gulp-minify-css'),
@@ -7,11 +8,13 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function() {
     return gulp.src('scss/**/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 5 versions', '> 5%', 'ie 9'],
             cascade: false
         }))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('css'));
 });
 
