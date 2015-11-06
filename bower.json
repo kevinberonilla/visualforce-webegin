@@ -1,0 +1,16 @@
+{
+  "name": "visualforce-webegin",
+  "description": "A bare-bones web development starting point with extended styles for Visualforce.",
+  "authors": [
+    "Kevin Beronilla <kevin.beronilla@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kevinberonilla/visualforce-webegin",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
