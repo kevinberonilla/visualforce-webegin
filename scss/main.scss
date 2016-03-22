@@ -20,9 +20,9 @@ body .scope { // Control Salesforce1 overrides
     @import 'salesforce1/typography', 'salesforce1/layout', 'salesforce1/imagery', 'salesforce1/interactive', 'salesforce1/forms';
     
     /* ----------------------------------------
-    App Styles
+    Project Styles
     ---------------------------------------- */
-    @import 'app';
+    @import 'project';
 }
 
 body, body .scope { // Plugin elements can dynamically appear outside of scope
