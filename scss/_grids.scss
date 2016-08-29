@@ -19,8 +19,6 @@
         &.#{nth($column, 1)} {
             width: nth($column, 2);
         }
-    }
-    @each $column in $column-list {
         &.margin-#{nth($column, 1)} {
             margin-left: nth($column, 2);
         }
@@ -35,11 +33,31 @@
         }
     }
 }
-.grid-margin-top {
-    margin-top: $grid-spacing * 2;
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    &.no-wrap {
+        flex-wrap: nowrap;
+    }
+    > * {
+        flex: 1 1 0;
+    }
 }
-.grid-margin-bottom {
-    margin-bottom: $grid-spacing * 2;
+.flex-column {
+    @each $column in $column-list {
+        &.#{nth($column, 1)} {
+            flex-grow: 0;
+            flex-basis: nth($column, 2);
+        }
+    }
+}
+.grid-margin {
+    &-top {
+        margin-top: $grid-spacing * 2;
+    }
+    &-bottom {
+        margin-bottom: $grid-spacing * 2;
+    }
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
     @include breakpoint-columns($tablet-landscape-affix);

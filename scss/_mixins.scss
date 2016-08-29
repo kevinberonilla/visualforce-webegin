@@ -6,6 +6,12 @@
         width: $width;
     }
 }
+@mixin column-basis($width, $affix) {
+    &-#{$affix} {
+        flex-grow: 0;
+        flex-basis: $width;
+    }
+}
 @mixin column-margin($margin, $affix) {
     &-#{$affix} {
         margin-left: $margin;
@@ -23,8 +29,6 @@
             &.#{nth($column, 1)} {
                 @include column-width(nth($column, 2), $establish);
             }
-        }
-        @each $column in $column-list {
             &.margin-#{nth($column, 1)} {
                 @include column-margin(nth($column, 2), $establish);
             }
@@ -34,6 +38,13 @@
                 &.margin-#{nth($column, 1)} {
                     @include column-float-right-margin(nth($column, 2), $establish);
                 }
+            }
+        }
+    }
+    .flex-column {
+        @each $column in $column-list {
+            &.#{nth($column, 1)} {
+                @include column-basis(nth($column, 2), $establish);
             }
         }
     }
