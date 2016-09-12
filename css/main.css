@@ -8,7 +8,7 @@ Base Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-  *:before, :before, body .scope :before, body .scope .scope :before, *:after, :after, body .scope :after, body .scope .scope :after, body .scope *:before, body .scope :before, body .scope .scope :before, body .scope *:after, body .scope :after, body .scope .scope :after {
+  *:before, :before, body .scope :before, body .scope .scope :before, *:after, :after, body .scope :after, body .scope .scope :after, body .scope *:before, body .scope :before, body .scope :before, body .scope .scope :before, body .scope *:after, body .scope :after, body .scope :after, body .scope .scope :after {
     display: inline-block; }
 
 html, body, body .scope {
@@ -903,7 +903,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     padding-top: 2px; }
     body .scope h1 + *, body .scope .scope h1 + *, body .scope h2 + *, body .scope .scope h2 + *, body .scope h1 + *:before, body .scope .scope h1 + *:before, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h1 + *:after, body .scope .scope h1 + *:after, body .scope h2 + *:after, body .scope .scope h2 + *:after {
       margin-top: 16px; }
-      body .scope h1 + *:after, body .scope h1 + :after, body .scope h2 + :after, body .scope .scope h1 + :after, body .scope .scope h2 + :after {
+      body .scope h1 + *:after, body .scope h2 + *:after, body .scope h1 + :after, body .scope h1 + :after, body .scope h2 + :after, body .scope .scope h1 + :after, body .scope .scope h2 + :after {
         margin: 0; }
   body .scope h2 {
     font-size: 24px;
@@ -911,7 +911,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     font-weight: 700; }
     body .scope h2 + *, body .scope .scope h2 + *, body .scope h2 + *:before, body .scope .scope h2 + *:before, body .scope h2 + *:after, body .scope .scope h2 + *:after {
       margin-top: 16px; }
-      body .scope h2 + *:after, body .scope h2 + :after, body .scope .scope h2 + :after {
+      body .scope h2 + *:after, body .scope h2 + :after, body .scope h2 + :after, body .scope .scope h2 + :after {
         margin: 0; }
     body .scope h2.has-subhead + h3, body .scope .scope h2.has-subhead + h3, body .scope h2.has-subhead + h4, body .scope .scope h2.has-subhead + h4, body .scope h2.has-subhead + h5, body .scope .scope h2.has-subhead + h5 {
       margin-top: 0; }
@@ -922,7 +922,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     color: #adb8c2; }
     body .scope h3 + *, body .scope .scope h3 + *, body .scope h3 + *:before, body .scope .scope h3 + *:before, body .scope h3 + *:after, body .scope .scope h3 + *:after {
       margin-top: 16px; }
-      body .scope h3 + *:after, body .scope h3 + :after, body .scope .scope h3 + :after {
+      body .scope h3 + *:after, body .scope h3 + :after, body .scope h3 + :after, body .scope .scope h3 + :after {
         margin: 0; }
     body .scope h3.has-subhead + h4, body .scope .scope h3.has-subhead + h4, body .scope h3.has-subhead + h5, body .scope .scope h3.has-subhead + h5 {
       margin-top: 0; }
@@ -933,7 +933,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     color: #adb8c2; }
     body .scope h4 + *, body .scope .scope h4 + *, body .scope h4 + *:before, body .scope .scope h4 + *:before, body .scope h4 + *:after, body .scope .scope h4 + *:after {
       margin-top: 16px; }
-      body .scope h4 + *:after, body .scope h4 + :after, body .scope .scope h4 + :after {
+      body .scope h4 + *:after, body .scope h4 + :after, body .scope h4 + :after, body .scope .scope h4 + :after {
         margin: 0; }
   body .scope h5 {
     font-size: 12px;
@@ -942,7 +942,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     color: #686c70; }
     body .scope h5 + *, body .scope .scope h5 + *, body .scope h5 + *:before, body .scope .scope h5 + *:before, body .scope h5 + *:after, body .scope .scope h5 + *:after {
       margin-top: 16px; }
-      body .scope h5 + *:after, body .scope h5 + :after, body .scope .scope h5 + :after {
+      body .scope h5 + *:after, body .scope h5 + :after, body .scope h5 + :after, body .scope .scope h5 + :after {
         margin: 0; }
   body .scope strong {
     font-weight: 900; }
@@ -951,20 +951,20 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     color: #adb8c2; }
   body .scope p + *, body .scope .scope p + *, body .scope p + *:before, body .scope .scope p + *:before, body .scope p + *:after, body .scope .scope p + *:after {
     margin-top: 16px; }
-    body .scope p + *:after, body .scope p + :after, body .scope .scope p + :after {
+    body .scope p + *:after, body .scope p + :after, body .scope p + :after, body .scope .scope p + :after {
       margin: 0; }
   body .scope ul, body .scope ol {
     margin-left: 32px; }
     body .scope ul + *, body .scope .scope ul + *, body .scope ul + *:before, body .scope .scope ul + *:before, body .scope ul + *:after, body .scope .scope ul + *:after, body .scope ol + *, body .scope .scope ol + *, body .scope ol + *:before, body .scope .scope ol + *:before, body .scope ol + *:after, body .scope .scope ol + *:after {
       margin-top: 16px; }
-      body .scope ul + *:after, body .scope ul + :after, body .scope .scope ul + :after, body .scope ol + *:after, body .scope ol + :after, body .scope .scope ol + :after {
+      body .scope ul + *:after, body .scope ul + :after, body .scope ul + :after, body .scope .scope ul + :after, body .scope ol + *:after, body .scope ol + :after, body .scope ol + :after, body .scope .scope ol + :after {
         margin: 0; }
   body .scope hr {
     border: none;
     border-bottom: 1px solid #dfe0e1; }
     body .scope hr + *, body .scope .scope hr + *, body .scope hr + *:before, body .scope .scope hr + *:before, body .scope hr + *:after, body .scope .scope hr + *:after {
       margin-top: 16px; }
-      body .scope hr + *:after, body .scope hr + :after, body .scope .scope hr + :after {
+      body .scope hr + *:after, body .scope hr + :after, body .scope hr + :after, body .scope .scope hr + :after {
         margin: 0; }
     body .scope hr.margin-top {
       margin-top: 16px; }
@@ -1078,25 +1078,25 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope .status a, body .scope .status a:visited {
       text-decoration: underline;
       color: #fff; }
-  body .scope .hero, body .scope .hero-footer, body .scope footer {
+  body .scope .hero, body .scope .hero-footer, body .scope footer, body .scope .scope footer {
     background-color: #34495e;
     text-align: center;
     color: #fff;
     padding: 100px 0;
     position: relative; }
-    body .scope .hero .container, body .scope .hero-footer .container, body .scope footer .container {
+    body .scope .hero .container, body .scope .hero-footer .container, body .scope footer .container, body .scope .scope footer .container {
       position: relative;
       z-index: 9998; }
-    body .scope .hero h1, body .scope .hero-footer h1, body .scope footer h1, body .scope .hero h2, body .scope .hero-footer h2, body .scope footer h2, body .scope .hero h2, body .scope .hero-footer h2, body .scope footer h2, body .scope .hero h3, body .scope .hero-footer h3, body .scope footer h3, body .scope .hero h4, body .scope .hero-footer h4, body .scope footer h4, body .scope .hero h5, body .scope .hero-footer h5, body .scope footer h5 {
+    body .scope .hero h1, body .scope .hero-footer h1, body .scope footer h1, body .scope .scope footer h1, body .scope .hero h2, body .scope .hero-footer h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h2, body .scope .hero-footer h2, body .scope footer h2, body .scope .scope footer h2, body .scope .hero h3, body .scope .hero-footer h3, body .scope footer h3, body .scope .scope footer h3, body .scope .hero h4, body .scope .hero-footer h4, body .scope footer h4, body .scope .scope footer h4, body .scope .hero h5, body .scope .hero-footer h5, body .scope footer h5, body .scope .scope footer h5 {
       color: #fff;
       margin-right: auto;
       margin-left: auto;
       width: 60%; }
-    body .scope .hero p, body .scope .hero-footer p, body .scope footer p, body .scope .hero hr, body .scope .hero-footer hr, body .scope footer hr {
+    body .scope .hero p, body .scope .hero-footer p, body .scope footer p, body .scope .scope footer p, body .scope .hero hr, body .scope .hero-footer hr, body .scope footer hr, body .scope .scope footer hr {
       margin-left: auto;
       margin-right: auto;
       width: 75%; }
-    body .scope .hero:after, body .scope .hero-footer:after, body .scope footer:after {
+    body .scope .hero:after, body .scope .hero-footer:after, body .scope footer:after, body .scope .scope footer:after {
       content: '';
       display: block;
       position: absolute;
@@ -1117,7 +1117,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     overflow: hidden; }
     body .scope .card + *, body .scope .scope .card + *, body .scope .modal + *, body .scope .scope .modal + *, body .scope .card + *:before, body .scope .scope .card + *:before, body .scope .modal + *:before, body .scope .scope .modal + *:before, body .scope .card + *:after, body .scope .scope .card + *:after, body .scope .modal + *:after, body .scope .scope .modal + *:after {
       margin-top: 16px; }
-      body .scope .card + *:after, body .scope .card + :after, body .scope .modal + :after, body .scope .scope .card + :after, body .scope .scope .modal + :after {
+      body .scope .card + *:after, body .scope .modal + *:after, body .scope .card + :after, body .scope .card + :after, body .scope .modal + :after, body .scope .scope .card + :after, body .scope .scope .modal + :after {
         margin: 0; }
     body .scope .card.transparent, body .scope .transparent.modal {
       background-color: transparent; }
@@ -1244,7 +1244,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     width: 100%; }
     body .scope .dialog + *, body .scope .scope .dialog + *, body .scope .dialog + *:before, body .scope .scope .dialog + *:before, body .scope .dialog + *:after, body .scope .scope .dialog + *:after {
       margin-top: 16px; }
-      body .scope .dialog + *:after, body .scope .dialog + :after, body .scope .scope .dialog + :after {
+      body .scope .dialog + *:after, body .scope .dialog + :after, body .scope .dialog + :after, body .scope .scope .dialog + :after {
         margin: 0; }
     body .scope .dialog.transparent {
       background-color: transparent; }
@@ -1403,15 +1403,15 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           background-color: initial; }
     body .scope table.align-center {
       text-align: center; }
-    body .scope table + *, body .scope .scope table + *, body .scope table + *:before, body .scope .scope table + *:before, body .scope table + *:after, body .scope .scope table + *:after {
+    body .scope table + *, body .scope .scope table + *, body .scope table + *:before, body .scope table + *:after, body .scope table + *:before, body .scope .scope table + *:before, body .scope table + *:after, body .scope .scope table + *:after {
       margin-top: 16px; }
-      body .scope table + *:after, body .scope table + :after, body .scope .scope table + :after {
+      body .scope table + *:after, body .scope table + :after, body .scope table + :after, body .scope .scope table + :after {
         margin: 0; }
   body .scope .table-container {
     overflow: auto; }
     body .scope .table-container + *, body .scope .scope .table-container + *, body .scope .table-container + *:before, body .scope .scope .table-container + *:before, body .scope .table-container + *:after, body .scope .scope .table-container + *:after {
       margin-top: 16px; }
-      body .scope .table-container + *:after, body .scope .table-container + :after, body .scope .scope .table-container + :after {
+      body .scope .table-container + *:after, body .scope .table-container + :after, body .scope .table-container + :after, body .scope .scope .table-container + :after {
         margin: 0; }
   @media only screen and (min-width: 1025px) {
     body .scope .mobile-only {
@@ -1606,7 +1606,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           border-bottom-right-radius: 0; }
     body .scope .progress-bar + *, body .scope .scope .progress-bar + *, body .scope .progress-bar + *:before, body .scope .scope .progress-bar + *:before, body .scope .progress-bar + *:after, body .scope .scope .progress-bar + *:after {
       margin-top: 16px; }
-      body .scope .progress-bar + *:after, body .scope .progress-bar + :after, body .scope .scope .progress-bar + :after {
+      body .scope .progress-bar + *:after, body .scope .progress-bar + :after, body .scope .progress-bar + :after, body .scope .scope .progress-bar + :after {
         margin: 0; }
   body .scope button, body .scope a.button, body .scope input[type="submit"], body .scope textarea[type="submit"], body .scope select[type="submit"], body .scope ul[type="submit"].tagit, body .scope .button-group > li > a, body .scope .scope .button-group > li > a, body .scope .button-group > li > a:visited, body .scope .button-group > li > button, body .scope .scope .button-group > li > button, body .scope .paginate-links li a, body .scope .paginate-links li a:visited, body .scope .paginate-links li button {
     -webkit-transition: all 250ms ease;
@@ -1907,7 +1907,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
           width: 100%; } }
   body .scope .paginate-links + *, body .scope .scope .paginate-links + *, body .scope .paginate-links + *:before, body .scope .scope .paginate-links + *:before, body .scope .paginate-links + *:after, body .scope .scope .paginate-links + *:after {
     margin-top: 16px; }
-    body .scope .paginate-links + *:after, body .scope .paginate-links + :after, body .scope .scope .paginate-links + :after {
+    body .scope .paginate-links + *:after, body .scope .paginate-links + :after, body .scope .paginate-links + :after, body .scope .scope .paginate-links + :after {
       margin: 0; }
   body .scope .alert {
     background-color: rgba(42, 148, 214, 0.1);
@@ -1976,7 +1976,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       background-color: rgba(217, 99, 131, 0.1); }
     body .scope .alert + *, body .scope .scope .alert + *, body .scope .alert + *:before, body .scope .scope .alert + *:before, body .scope .alert + *:after, body .scope .scope .alert + *:after {
       margin-top: 16px; }
-      body .scope .alert + *:after, body .scope .alert + :after, body .scope .scope .alert + :after {
+      body .scope .alert + *:after, body .scope .alert + :after, body .scope .alert + :after, body .scope .scope .alert + :after {
         margin: 0; }
     body .scope .alert a, body .scope .alert a:visited {
       color: inherit;
@@ -2239,9 +2239,9 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     body .scope input:focus, body .scope textarea:focus, body .scope select:focus, body .scope ul.tagit:focus {
       background-color: #fff;
       outline: none; }
-    body .scope input + *, body .scope .scope input + *, body .scope textarea + *, body .scope .scope textarea + *, body .scope select + *, body .scope .scope select + *, body .scope ul.tagit + *, body .scope .scope ul.tagit + *, body .scope input + *:before, body .scope .scope input + *:before, body .scope textarea + *:before, body .scope .scope textarea + *:before, body .scope select + *:before, body .scope .scope select + *:before, body .scope ul.tagit + *:before, body .scope .scope ul.tagit + *:before, body .scope input + *:after, body .scope .scope input + *:after, body .scope textarea + *:after, body .scope .scope textarea + *:after, body .scope select + *:after, body .scope .scope select + *:after, body .scope ul.tagit + *:after, body .scope .scope ul.tagit + *:after {
+    body .scope input + *, body .scope .scope input + *, body .scope textarea + *, body .scope .scope textarea + *, body .scope select + *, body .scope .scope select + *, body .scope ul.tagit + *, body .scope .scope ul.tagit + *, body .scope input + *:before, body .scope textarea + *:before, body .scope select + *:before, body .scope input + *:after, body .scope textarea + *:after, body .scope select + *:after, body .scope input + *:before, body .scope textarea + *:before, body .scope select + *:before, body .scope ul.tagit + *:before, body .scope .scope input + *:before, body .scope .scope textarea + *:before, body .scope .scope select + *:before, body .scope .scope ul.tagit + *:before, body .scope input + *:after, body .scope textarea + *:after, body .scope select + *:after, body .scope ul.tagit + *:after, body .scope .scope input + *:after, body .scope .scope textarea + *:after, body .scope .scope select + *:after, body .scope .scope ul.tagit + *:after {
       margin-top: 16px; }
-      body .scope input + *:after, body .scope input + :after, body .scope textarea + :after, body .scope select + :after, body .scope ul.tagit + :after, body .scope .scope input + :after, body .scope .scope textarea + :after, body .scope .scope select + :after, body .scope .scope ul.tagit + :after {
+      body .scope input + *:after, body .scope textarea + *:after, body .scope select + *:after, body .scope input + :after, body .scope input + :after, body .scope textarea + :after, body .scope select + :after, body .scope ul.tagit + :after, body .scope .scope input + :after, body .scope .scope textarea + :after, body .scope .scope select + :after, body .scope .scope ul.tagit + :after {
         margin: 0; }
   body .scope textarea {
     height: 198px;
@@ -2310,9 +2310,9 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       right: 3px; }
   body .scope .select-container, body .scope .autocomplete-container, body .scope .tags-container > ul.tagit, body .scope .scope .tags-container > ul.tagit, body .scope .date-picker-container {
     position: relative; }
-    body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .tags-container > ul.tagit + *, body .scope .scope .tags-container > ul.tagit + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .tags-container > ul.tagit + *:before, body .scope .scope .tags-container > ul.tagit + *:before, body .scope .date-picker-container + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .tags-container > ul.tagit + *:after, body .scope .scope .tags-container > ul.tagit + *:after, body .scope .date-picker-container + *:after, body .scope .scope .date-picker-container + *:after {
+    body .scope .select-container + *, body .scope .scope .select-container + *, body .scope .autocomplete-container + *, body .scope .scope .autocomplete-container + *, body .scope .tags-container > ul.tagit + *, body .scope .scope .tags-container > ul.tagit + *, body .scope .date-picker-container + *, body .scope .scope .date-picker-container + *, body .scope .select-container + *:before, body .scope .autocomplete-container + *:before, body .scope .tags-container > ul.tagit + *:before, body .scope .date-picker-container + *:before, body .scope .scope .select-container + *:before, body .scope .scope .autocomplete-container + *:before, body .scope .scope .tags-container > ul.tagit + *:before, body .scope .scope .date-picker-container + *:before, body .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .tags-container > ul.tagit + *:after, body .scope .date-picker-container + *:after, body .scope .scope .select-container + *:after, body .scope .scope .autocomplete-container + *:after, body .scope .scope .tags-container > ul.tagit + *:after, body .scope .scope .date-picker-container + *:after {
       margin-top: 16px; }
-      body .scope .select-container + *:after, body .scope .select-container + :after, body .scope .autocomplete-container + :after, body .scope .tags-container > ul.tagit + :after, body .scope .date-picker-container + :after, body .scope .scope .select-container + :after, body .scope .scope .autocomplete-container + :after, body .scope .scope .tags-container > ul.tagit + :after, body .scope .scope .date-picker-container + :after {
+      body .scope .select-container + *:after, body .scope .autocomplete-container + *:after, body .scope .date-picker-container + *:after, body .scope .select-container + :after, body .scope .select-container + :after, body .scope .autocomplete-container + :after, body .scope .tags-container > ul.tagit + :after, body .scope .date-picker-container + :after, body .scope .scope .select-container + :after, body .scope .scope .autocomplete-container + :after, body .scope .scope .tags-container > ul.tagit + :after, body .scope .scope .date-picker-container + :after {
         margin: 0; }
     body .scope .select-container > input, body .scope .scope .select-container > input, body .scope .autocomplete-container > input, body .scope .scope .autocomplete-container > input, body .scope .tags-container > ul.tagit > input, body .scope .scope .tags-container > ul.tagit > input, body .scope .date-picker-container > input, body .scope .scope .date-picker-container > input, body .scope .select-container > textarea, body .scope .scope .select-container > textarea, body .scope .autocomplete-container > textarea, body .scope .scope .autocomplete-container > textarea, body .scope .tags-container > ul.tagit > textarea, body .scope .scope .tags-container > ul.tagit > textarea, body .scope .date-picker-container > textarea, body .scope .scope .date-picker-container > textarea, body .scope .select-container > select, body .scope .scope .select-container > select, body .scope .autocomplete-container > select, body .scope .scope .autocomplete-container > select, body .scope .tags-container > ul.tagit > select, body .scope .scope .tags-container > ul.tagit > select, body .scope .date-picker-container > select, body .scope .scope .date-picker-container > select, body .scope .select-container > ul.tagit, body .scope .scope .select-container > ul.tagit, body .scope .autocomplete-container > ul.tagit, body .scope .scope .autocomplete-container > ul.tagit, body .scope .tags-container > ul.tagit > ul.tagit, body .scope .scope .tags-container > ul.tagit > ul.tagit, body .scope .date-picker-container > ul.tagit, body .scope .scope .date-picker-container > ul.tagit {
       padding-right: 48px; }
@@ -2330,7 +2330,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     content: '\f141'; }
   body .scope .tags-container + *, body .scope .scope .tags-container + *, body .scope .tags-container + *:before, body .scope .scope .tags-container + *:before, body .scope .tags-container + *:after, body .scope .scope .tags-container + *:after {
     margin-top: 16px; }
-    body .scope .tags-container + *:after, body .scope .tags-container + :after, body .scope .scope .tags-container + :after {
+    body .scope .tags-container + *:after, body .scope .tags-container + :after, body .scope .tags-container + :after, body .scope .scope .tags-container + :after {
       margin: 0; }
   body .scope .tags-container > ul.tagit, body .scope .scope .tags-container > ul.tagit {
     padding-right: 48px;
