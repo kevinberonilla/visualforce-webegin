@@ -10,7 +10,7 @@ Included is a <a href="http://gulpjs.com/">Gulp</a> file for handling common wat
 
 ---
 
-#### Pre-installed Dependencies
+#### Included Dependencies
 * <a href="http://fontawesome.io/">**Font Awesome**</a> by Dave Gandy
 * <a href="https://icomoon.io/">**IcoMoon Free**</a> by Keyamoon
 * <a href="https://jquery.com/">**jQuery**</a> by jQuery Foundation (Google CDN)
