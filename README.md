@@ -5,6 +5,11 @@ See it in action here: <a href="http://kevinberonilla.com/demos/visualforce-webe
 
 ---
 
+#### Task Management
+Included is a <a href="http://gulpjs.com/">Gulp</a> file for handling common watch tasks including preprocessing, minification, and vendor prefixing.
+
+---
+
 #### Pre-installed Dependencies
 * <a href="http://fontawesome.io/">**Font Awesome**</a> by Dave Gandy
 * <a href="https://icomoon.io/">**IcoMoon Free**</a> by Keyamoon
@@ -13,8 +18,3 @@ See it in action here: <a href="http://kevinberonilla.com/demos/visualforce-webe
 * <a href="http://www.tinymce.com/">**TinyMCE**</a> by Ephox (CacheFly CDN)
 * <a href="http://aehlke.github.io/tag-it/">**Tag-it**</a> by Levy Carneiro Jr., Martin Rehfeld, Tobias Schmidt, Skylar Challand, and Alex Ehlke
 * <a href="http://iamceege.github.io/tooltipster/">**Tooltipster**</a> by Caleb Jacob and Louis Ameline
-
----
-
-#### Task Management
-Included is a <a href="https://nodejs.org/">Node.js</a> package and <a href="http://gulpjs.com/">Gulp</a> file for handling common watch tasks including preprocessing, minification, and vendor prefixing. Also included is a configuration file for a custom <a href="http://mixture.io/">Mixture</a> project for those who still have a working install of the application.
