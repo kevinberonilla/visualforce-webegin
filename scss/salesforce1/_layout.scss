@@ -107,6 +107,11 @@
     .padded {
         padding: $card-padding;
     }
+    .grid, .flex-grid {
+        .padded {
+            padding: $grid-padding;
+        }
+    }
     @media only screen and (max-width: $tablet-landscape-breakpoint) {
         &.mobile-full-width {
             border-radius: 0;

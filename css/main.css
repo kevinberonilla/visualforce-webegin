@@ -27,7 +27,7 @@ body .scope {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 300;
   color: #686c70; }
@@ -47,7 +47,7 @@ body .scope {
       body .scope .container {
         width: 100%;
         padding: 0 16px; } }
-  body .scope .clearfix:after, body .scope .row:after, body .scope .mobile-header .corner-buttons:after, body .scope .progress-bar:after {
+  body .scope .clearfix:after, body .scope .grid:after, body .scope .mobile-header .corner-buttons:after, body .scope .progress-bar:after {
     content: '';
     display: table;
     clear: both; }
@@ -76,19 +76,14 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
   /* ----------------------------------------
     Project Styles
     ---------------------------------------- */ }
-  body .scope .grid {
-    margin-top: -8px;
-    margin-bottom: -8px; }
-  body .scope .row {
-    margin-left: -8px;
-    margin-right: -8px; }
+  body .scope .grid.negate-padding {
+    margin: -8px; }
   body .scope .column {
     display: block;
     width: 100%;
-    float: left;
-    padding: 8px; }
-    body .scope .column.no-padding {
-      padding: 0; }
+    float: left; }
+    body .scope .column.padded {
+      padding: 8px; }
     body .scope .column.span-0 {
       width: 0; }
     body .scope .column.margin-span-0 {
@@ -182,7 +177,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       body .scope .column.float-right.margin-span-12 {
         margin-left: initial;
         margin-right: 100%; }
-  body .scope .flex-row {
+  body .scope .flex-grid {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -190,15 +185,19 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    body .scope .flex-row.no-wrap {
+    body .scope .flex-grid.negate-padding {
+      margin: -8px; }
+    body .scope .flex-grid.no-wrap {
       -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
-    body .scope .flex-row > *, body .scope .scope .flex-row > *, body .scope .flex-row > *:before, body .scope .scope .flex-row > *:before, body .scope .flex-row > *:after, body .scope .scope .flex-row > *:after {
+    body .scope .flex-grid > *, body .scope .scope .flex-grid > *, body .scope .flex-grid > *:before, body .scope .scope .flex-grid > *:before, body .scope .flex-grid > *:after, body .scope .scope .flex-grid > *:after {
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 0;
-      -ms-flex: 1 1 0;
-      flex: 1 1 0; }
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto; }
+  body .scope .flex-column.padded {
+    padding: 8px; }
   body .scope .flex-column.span-0 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
@@ -1195,6 +1194,8 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
       border-bottom: 1px solid #dfe0e1; }
     body .scope .card .padded, body .scope .modal .padded {
       padding: 16px; }
+    body .scope .card .grid .padded, body .scope .modal .grid .padded, body .scope .card .flex-grid .padded, body .scope .modal .flex-grid .padded {
+      padding: 8px; }
     @media only screen and (max-width: 1024px) {
       body .scope .card.mobile-full-width, body .scope .mobile-full-width.modal {
         border-radius: 0;
@@ -1615,7 +1616,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     cursor: pointer;
     display: inline-block;
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     padding: 11px 12px;
     margin-right: 16px;
@@ -2227,7 +2228,7 @@ Quick Modal v1.03 Plugin (by Kevin Beronilla; edited for Salesforce1)
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
     border-radius: 5px;
     border: 1px solid #dfe0e1;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     padding: 10px 12px;
     color: #686c70;
@@ -2363,7 +2364,7 @@ body, body .scope, body .scope {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
   body .mce-menu-item .mce-text, body .scope .mce-menu-item .mce-text {
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     color: #686c70; }
@@ -2464,7 +2465,7 @@ body, body .scope, body .scope {
     top: -1px; }
   body .ui-widget, body .scope .ui-widget {
     font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif !important;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     color: #686c70; }
