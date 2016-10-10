@@ -9,7 +9,9 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
     return gulp.src('scss/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 5 versions', '> 5%', 'ie 9'],
             cascade: false
