@@ -9,9 +9,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
     return gulp.src('scss/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'expanded'
-        }).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 5 versions', '> 5%', 'ie 9'],
             cascade: false
@@ -23,9 +21,7 @@ gulp.task('sass', function() {
 gulp.task('cssnano', function() {
     return gulp.src(['css/**/*.css', '!css/**/*.min.css'])
         .pipe(rename({ suffix: '.min' }))
-        .pipe(cssnano({
-            discardUnused: { fontFace: false }
-        }))
+        .pipe(cssnano({ discardUnused: { fontFace: false } }))
         .pipe(gulp.dest('css'));
 });
 
