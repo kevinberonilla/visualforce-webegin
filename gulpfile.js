@@ -40,5 +40,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function() {
-    runSequence('sass', ['cssnano', 'uglify'], 'watch');
+    runSequence('sass', ['cssnano', 'uglify', 'watch']);
 });
