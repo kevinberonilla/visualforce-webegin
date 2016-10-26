@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    runSequence = require('run-sequence');
 
 gulp.task('sass', function() {
     return gulp.src('scss/**/*.scss')
@@ -38,4 +39,6 @@ gulp.task('watch', function() {
     gulp.watch(['js/**/*.js', '!js/**/*.min.js'], ['uglify']);
 });
 
-gulp.task('default', ['sass', 'cssnano', 'uglify', 'watch']);
+gulp.task('default', function() {
+    runSequence('sass', ['cssnano', 'uglify'], 'watch');
+});
