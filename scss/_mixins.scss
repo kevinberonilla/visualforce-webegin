@@ -1,5 +1,5 @@
-@mixin animated($side: all, $duration: 250ms, $function: ease) {
-    transition: $side $duration $function;
+@mixin animated($property: all, $duration: 250ms, $timing-function: ease, $delay: 0ms) {
+    transition: $property $duration $timing-function $delay;
 }
 @mixin column-width($width, $affix) {
     &-#{$affix} {
