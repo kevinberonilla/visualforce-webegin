@@ -1,5 +1,5 @@
 # Webegin for Visualforce
-A bare-bones web development starting point with extended styles and scripts for Visualforce.
+A bare-bones web development template with extended styles and scripts for Visualforce.
 
 See it in action here: <a href="http://kevinberonilla.com/demos/visualforce-webegin/">kevinberonilla.com/demos/visualforce-webegin</a>
 
