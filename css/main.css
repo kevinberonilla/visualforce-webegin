@@ -41,7 +41,6 @@ body .scope {
 }
 
 body .scope a {
-  -webkit-transition: all 250ms ease 0ms;
   transition: all 250ms ease 0ms;
 }
 
@@ -1570,7 +1569,6 @@ body .scope .hero:after, body .scope .hero-footer:after, body .scope footer:afte
   top: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
 }
 
@@ -1979,7 +1977,6 @@ body .scope .mobile-header {
 }
 
 body .scope .reveal {
-  -webkit-transition: all 750ms ease 0ms;
   transition: all 750ms ease 0ms;
   opacity: 0;
   position: relative;
@@ -2364,7 +2361,6 @@ body .scope .progress-bar {
 }
 
 body .scope .progress-bar .progress {
-  -webkit-transition: all 250ms ease 0ms;
   transition: all 250ms ease 0ms;
   display: block;
   float: left;
@@ -2476,7 +2472,6 @@ body .scope .progress-bar + *:after, body .scope .progress-bar + :after, body .s
 }
 
 body .scope button, body .scope a.button, body .scope input[type="submit"], body .scope textarea[type="submit"], body .scope select[type="submit"], body .scope ul[type="submit"].tagit, body .scope .button-group > li > a, body .scope .scope .button-group > li > a, body .scope .button-group > li > a:visited, body .scope .button-group > li > button, body .scope .scope .button-group > li > button, body .scope .paginate-links li a, body .scope .paginate-links li a:visited, body .scope .paginate-links li button {
-  -webkit-transition: all 250ms ease 0ms;
   transition: all 250ms ease 0ms;
   opacity: 1;
   cursor: pointer;
@@ -3176,7 +3171,6 @@ body .scope .accordion {
 }
 
 body .scope .accordion:after {
-  -webkit-transition: all 250ms ease 0ms;
   transition: all 250ms ease 0ms;
   font-family: 'FontAwesome';
   content: '\f0d7';
@@ -3273,7 +3267,6 @@ body .scope .ribbon ul li a:hover, body .scope .ribbon ul li a:visited:hover {
 }
 
 body .scope .modal {
-  -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   display: none;
   opacity: 0;
@@ -3312,7 +3305,6 @@ body .scope .modal .close-modal:focus {
 }
 
 body .scope #modal-background {
-  -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   display: none;
   opacity: 0;
@@ -3332,7 +3324,6 @@ body .scope #modal-background.visible {
 }
 
 body .scope .modal {
-  -webkit-transition: all 250ms ease 0ms;
   transition: all 250ms ease 0ms;
   width: 892px;
   display: none;
@@ -3458,7 +3449,6 @@ body .scope label.required:after {
 }
 
 body .scope input, body .scope textarea, body .scope select, body .scope ul.tagit {
-  -webkit-transition: all 250ms ease 0ms;
   transition: all 250ms ease 0ms;
   display: block;
   font-family: "ProximaNovaSoft", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
@@ -3764,7 +3754,6 @@ body .mce-tooltip-arrow, body .scope .mce-tooltip-arrow {
 }
 
 body ul.tagit, body .scope ul.tagit {
-  -webkit-transition: none;
   transition: none;
   background: initial;
   background-color: #f0f1f2;
