@@ -7,7 +7,7 @@ var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 
-gulp.task('compile:css', function() {
+gulp.task('compile:css', () => {
     return gulp.src('./scss/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -22,7 +22,7 @@ gulp.task('compile:css', function() {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('minify:css', function() {
+gulp.task('minify:css', () => {
     return gulp.src(['./css/**/*.css', '!./css/**/*.min.css'])
         .pipe(rename({
             suffix: '.min'
@@ -35,7 +35,7 @@ gulp.task('minify:css', function() {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('minify:js', function() {
+gulp.task('minify:js', () => {
     return gulp.src(['./js/**/*.js', '!./js/**/*.min.js'])
         .pipe(rename({
             suffix: '.min'
@@ -44,12 +44,12 @@ gulp.task('minify:js', function() {
         .pipe(gulp.dest('./js'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
     gulp.watch('./scss/**/*.scss', ['compile:css']);
     gulp.watch(['./css/**/*.css', '!./css/**/*.min.css'], ['minify:css']);
     gulp.watch(['./js/**/*.js', '!./js/**/*.min.js'], ['minify:js']);
 });
 
-gulp.task('default', function() {
+gulp.task('default', () => {
     return runSequence('compile:css', ['minify:css', 'minify:js', 'watch']);
 });
