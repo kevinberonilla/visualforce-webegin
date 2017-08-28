@@ -1,44 +1,55 @@
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
 var runSequence = require('run-sequence');
 
-gulp.task('sass', function() {
+gulp.task('compile:css', function() {
     return gulp.src('./scss/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'expanded'
+        })
+        .on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 5 versions', '> 5%', 'ie 9'],
+            browsers: ['last 2 versions', '> 5%', 'ie 10'],
             cascade: false
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('cssnano', function() {
+gulp.task('minify:css', function() {
     return gulp.src(['./css/**/*.css', '!./css/**/*.min.css'])
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(cssnano({ discardUnused: { fontFace: false } }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(cssnano({
+            discardUnused: {
+                fontFace: false
+            }
+        }))
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('uglify', function() {
+gulp.task('minify:js', function() {
     return gulp.src(['./js/**/*.js', '!./js/**/*.min.js'])
-        .pipe(rename({ suffix: '.min' }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(uglify())
         .pipe(gulp.dest('./js'));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch(['./css/**/*.css', '!./css/**/*.min.css'], ['cssnano']);
-    gulp.watch(['./js/**/*.js', '!./js/**/*.min.js'], ['uglify']);
+    gulp.watch('./scss/**/*.scss', ['compile:css']);
+    gulp.watch(['./css/**/*.css', '!./css/**/*.min.css'], ['minify:css']);
+    gulp.watch(['./js/**/*.js', '!./js/**/*.min.js'], ['minify:js']);
 });
 
 gulp.task('default', function() {
-    return runSequence('sass', ['cssnano', 'uglify', 'watch']);
+    return runSequence('compile:css', ['minify:css', 'minify:js', 'watch']);
 });
