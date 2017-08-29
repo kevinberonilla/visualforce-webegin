@@ -7,7 +7,7 @@ var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 
-gulp.task('compile:css', () => {
+gulp.task('compile:sass', () => {
     return gulp.src('./scss/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -45,11 +45,11 @@ gulp.task('minify:js', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('./scss/**/*.scss', ['compile:css']);
+    gulp.watch('./scss/**/*.scss', ['compile:sass']);
     gulp.watch(['./css/**/*.css', '!./css/**/*.min.css'], ['minify:css']);
     gulp.watch(['./js/**/*.js', '!./js/**/*.min.js'], ['minify:js']);
 });
 
 gulp.task('default', () => {
-    return runSequence('compile:css', ['minify:css', 'minify:js', 'watch']);
+    return runSequence('compile:sass', ['minify:css', 'minify:js', 'watch']);
 });
