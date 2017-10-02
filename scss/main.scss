@@ -1,9 +1,9 @@
 /* ----------------------------------------
 Partials
 ---------------------------------------- */
-@import 'variables',
-    'lists',
-    'mixins';
+@import 'variables';
+@import 'lists';
+@import 'mixins';
 
 /* ----------------------------------------
 Base Styles
@@ -19,11 +19,11 @@ body .scope { // Control Salesforce1 overrides
     /* ----------------------------------------
     Salesforce1 Styles
     ---------------------------------------- */
-    @import 'salesforce1/typography',
-        'salesforce1/layout',
-        'salesforce1/imagery',
-        'salesforce1/interactive',
-        'salesforce1/forms';
+    @import 'salesforce1/typography';
+    @import 'salesforce1/layout';
+    @import 'salesforce1/imagery';
+    @import 'salesforce1/interactive';
+    @import 'salesforce1/forms';
     
     /* ----------------------------------------
     Project Styles
@@ -35,10 +35,10 @@ body, body .scope { // Plugin elements can dynamically appear outside of scope
     /* ----------------------------------------
     Overrides
     ---------------------------------------- */
-    @import 'overrides/tinymce',
-        'overrides/tag-it',
-        'overrides/tooltipster',
-        'overrides/jquery-ui';
+    @import 'overrides/tinymce';
+    @import 'overrides/tag-it';
+    @import 'overrides/tooltipster';
+    @import 'overrides/jquery-ui';
 }
 
 body #scope { // Override all the things
