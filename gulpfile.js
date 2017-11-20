@@ -44,12 +44,12 @@ gulp.task('minify:js', () => {
         .pipe(gulp.dest('./js'));
 });
 
-gulp.task('watch', () => {
+gulp.task('init:watch', () => {
     gulp.watch('./scss/**/*.scss', ['compile:sass']);
     gulp.watch(['./css/**/*.css', '!./css/**/*.min.css'], ['minify:css']);
     gulp.watch(['./js/**/*.js', '!./js/**/*.min.js'], ['minify:js']);
 });
 
 gulp.task('default', () => {
-    return runSequence('compile:sass', ['minify:css', 'minify:js', 'watch']);
+    return runSequence('compile:sass', ['minify:css', 'minify:js', 'init:watch']);
 });
